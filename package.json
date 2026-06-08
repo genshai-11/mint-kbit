@@ -11,19 +11,20 @@
     "analyze": "vite build --mode analyze"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.7",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-router-dom": "^7.6.2",
-    "@phosphor-icons/react": "^2.1.7"
+    "react-router-dom": "^7.6.2"
   },
   "devDependencies": {
+    "@types/node": "^25.9.2",
     "@types/react": "^19.1.6",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.5.2",
+    "rollup-plugin-visualizer": "^5.14.0",
+    "sharp": "^0.34.2",
     "typescript": "~5.8.3",
     "vite": "^6.3.5",
-    "vite-imagetools": "^7.0.5",
-    "rollup-plugin-visualizer": "^5.14.0",
-    "sharp": "^0.34.2"
+    "vite-imagetools": "^7.0.5"
   }
 }
