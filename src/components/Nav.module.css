@@ -139,7 +139,7 @@
 }
 
 .drawer {
-  display: none;
+  display: block;
   position: fixed;
   inset: 0;
   z-index: 200;
