@@ -1,0 +1,711 @@
+{
+  "placeholders/placeholder-centers-hero-c6f7937e.png": {
+    "src": "placeholders/placeholder-centers-hero-c6f7937e.png",
+    "variants": {
+      "400w": "placeholders/placeholder-centers-hero-c6f7937e-400w.webp",
+      "800w": "placeholders/placeholder-centers-hero-c6f7937e-800w.webp",
+      "1200w": "placeholders/placeholder-centers-hero-c6f7937e-1200w.webp",
+      "default": "placeholders/placeholder-centers-hero-c6f7937e.webp"
+    },
+    "originalWidth": 1412
+  },
+  "placeholders/placeholder-contact-hero-a641dfdb.png": {
+    "src": "placeholders/placeholder-contact-hero-a641dfdb.png",
+    "variants": {
+      "400w": "placeholders/placeholder-contact-hero-a641dfdb-400w.webp",
+      "800w": "placeholders/placeholder-contact-hero-a641dfdb-800w.webp",
+      "1200w": "placeholders/placeholder-contact-hero-a641dfdb-1200w.webp",
+      "default": "placeholders/placeholder-contact-hero-a641dfdb.webp"
+    },
+    "originalWidth": 1434
+  },
+  "placeholders/placeholder-experts-hero-41dc0c77.png": {
+    "src": "placeholders/placeholder-experts-hero-41dc0c77.png",
+    "variants": {
+      "400w": "placeholders/placeholder-experts-hero-41dc0c77-400w.webp",
+      "800w": "placeholders/placeholder-experts-hero-41dc0c77-800w.webp",
+      "1200w": "placeholders/placeholder-experts-hero-41dc0c77-1200w.webp",
+      "default": "placeholders/placeholder-experts-hero-41dc0c77.webp"
+    },
+    "originalWidth": 1428
+  },
+  "placeholders/placeholder-program-1-bf8d83b9.png": {
+    "src": "placeholders/placeholder-program-1-bf8d83b9.png",
+    "variants": {
+      "400w": "placeholders/placeholder-program-1-bf8d83b9-400w.webp",
+      "800w": "placeholders/placeholder-program-1-bf8d83b9-800w.webp",
+      "1200w": "placeholders/placeholder-program-1-bf8d83b9-1200w.webp",
+      "default": "placeholders/placeholder-program-1-bf8d83b9.webp"
+    },
+    "originalWidth": 1412
+  },
+  "placeholders/placeholder-programs-hero-2075e8ff.png": {
+    "src": "placeholders/placeholder-programs-hero-2075e8ff.png",
+    "variants": {
+      "400w": "placeholders/placeholder-programs-hero-2075e8ff-400w.webp",
+      "800w": "placeholders/placeholder-programs-hero-2075e8ff-800w.webp",
+      "1200w": "placeholders/placeholder-programs-hero-2075e8ff-1200w.webp",
+      "default": "placeholders/placeholder-programs-hero-2075e8ff.webp"
+    },
+    "originalWidth": 1434
+  },
+  "partners/barog-e7be7269.png": {
+    "src": "partners/barog-e7be7269.png",
+    "variants": {
+      "400w": "partners/barog-e7be7269-400w.webp",
+      "default": "partners/barog-e7be7269.webp"
+    },
+    "originalWidth": 432
+  },
+  "partners/byeong-7c4edec1.jpg": {
+    "src": "partners/byeong-7c4edec1.jpg",
+    "variants": {
+      "400w": "partners/byeong-7c4edec1-400w.webp",
+      "800w": "partners/byeong-7c4edec1-800w.webp",
+      "default": "partners/byeong-7c4edec1.webp"
+    },
+    "originalWidth": 831
+  },
+  "partners/cheong-dam-jin-b2f5133a.png": {
+    "src": "partners/cheong-dam-jin-b2f5133a.png",
+    "variants": {
+      "400w": "partners/cheong-dam-jin-b2f5133a-400w.webp",
+      "default": "partners/cheong-dam-jin-b2f5133a.webp"
+    },
+    "originalWidth": 432
+  },
+  "partners/goodday-e0f736f4.jpg": {
+    "src": "partners/goodday-e0f736f4.jpg",
+    "variants": {
+      "400w": "partners/goodday-e0f736f4-400w.webp",
+      "800w": "partners/goodday-e0f736f4-800w.webp",
+      "default": "partners/goodday-e0f736f4.webp"
+    },
+    "originalWidth": 832
+  },
+  "partners/keuliseumaseu-79b8d5f7.png": {
+    "src": "partners/keuliseumaseu-79b8d5f7.png",
+    "variants": {
+      "400w": "partners/keuliseumaseu-79b8d5f7-400w.webp",
+      "800w": "partners/keuliseumaseu-79b8d5f7-800w.webp",
+      "1200w": "partners/keuliseumaseu-79b8d5f7-1200w.webp",
+      "default": "partners/keuliseumaseu-79b8d5f7.webp"
+    },
+    "originalWidth": 1306
+  },
+  "partners/meylin-7e0debce.png": {
+    "src": "partners/meylin-7e0debce.png",
+    "variants": {
+      "default": "partners/meylin-7e0debce.webp"
+    },
+    "originalWidth": 208
+  },
+  "partners/orseyun-1094e63d.jpg": {
+    "src": "partners/orseyun-1094e63d.jpg",
+    "variants": {
+      "400w": "partners/orseyun-1094e63d-400w.webp",
+      "800w": "partners/orseyun-1094e63d-800w.webp",
+      "default": "partners/orseyun-1094e63d.webp"
+    },
+    "originalWidth": 1080
+  },
+  "partners/renovo-0f6c51b4.png": {
+    "src": "partners/renovo-0f6c51b4.png",
+    "variants": {
+      "400w": "partners/renovo-0f6c51b4-400w.webp",
+      "800w": "partners/renovo-0f6c51b4-800w.webp",
+      "default": "partners/renovo-0f6c51b4.webp"
+    },
+    "originalWidth": 842
+  },
+  "partners/senteomko-058e0807.png": {
+    "src": "partners/senteomko-058e0807.png",
+    "variants": {
+      "default": "partners/senteomko-058e0807.webp"
+    },
+    "originalWidth": 396
+  },
+  "partners/verni-0367cfea.png": {
+    "src": "partners/verni-0367cfea.png",
+    "variants": {
+      "400w": "partners/verni-0367cfea-400w.webp",
+      "800w": "partners/verni-0367cfea-800w.webp",
+      "default": "partners/verni-0367cfea.webp"
+    },
+    "originalWidth": 866
+  },
+  "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-1-6841cdc8.jpg": {
+    "src": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-1-6841cdc8.jpg",
+    "variants": {
+      "400w": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-1-6841cdc8-400w.webp",
+      "800w": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-1-6841cdc8-800w.webp",
+      "1200w": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-1-6841cdc8-1200w.webp",
+      "1600w": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-1-6841cdc8-1600w.webp",
+      "default": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-1-6841cdc8.webp"
+    },
+    "originalWidth": 4608
+  },
+  "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-2-eb299842.jpg": {
+    "src": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-2-eb299842.jpg",
+    "variants": {
+      "400w": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-2-eb299842-400w.webp",
+      "800w": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-2-eb299842-800w.webp",
+      "1200w": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-2-eb299842-1200w.webp",
+      "1600w": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-2-eb299842-1600w.webp",
+      "default": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-2-eb299842.webp"
+    },
+    "originalWidth": 6000
+  },
+  "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-3-992452e5.jpg": {
+    "src": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-3-992452e5.jpg",
+    "variants": {
+      "400w": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-3-992452e5-400w.webp",
+      "800w": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-3-992452e5-800w.webp",
+      "1200w": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-3-992452e5-1200w.webp",
+      "1600w": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-3-992452e5-1600w.webp",
+      "default": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-3-992452e5.webp"
+    },
+    "originalWidth": 4608
+  },
+  "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-4-a08a737e.jpg": {
+    "src": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-4-a08a737e.jpg",
+    "variants": {
+      "400w": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-4-a08a737e-400w.webp",
+      "800w": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-4-a08a737e-800w.webp",
+      "1200w": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-4-a08a737e-1200w.webp",
+      "1600w": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-4-a08a737e-1600w.webp",
+      "default": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-4-a08a737e.webp"
+    },
+    "originalWidth": 7008
+  },
+  "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-thumb-6ee67691.png": {
+    "src": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-thumb-6ee67691.png",
+    "variants": {
+      "400w": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-thumb-6ee67691-400w.webp",
+      "800w": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-thumb-6ee67691-800w.webp",
+      "1200w": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-thumb-6ee67691-1200w.webp",
+      "1600w": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-thumb-6ee67691-1600w.webp",
+      "default": "news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-thumb-6ee67691.webp"
+    },
+    "originalWidth": 4608
+  },
+  "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-1-4ed98708.jpg": {
+    "src": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-1-4ed98708.jpg",
+    "variants": {
+      "400w": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-1-4ed98708-400w.webp",
+      "800w": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-1-4ed98708-800w.webp",
+      "1200w": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-1-4ed98708-1200w.webp",
+      "1600w": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-1-4ed98708-1600w.webp",
+      "default": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-1-4ed98708.webp"
+    },
+    "originalWidth": 4608
+  },
+  "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-2-b7636b2f.jpg": {
+    "src": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-2-b7636b2f.jpg",
+    "variants": {
+      "400w": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-2-b7636b2f-400w.webp",
+      "800w": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-2-b7636b2f-800w.webp",
+      "1200w": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-2-b7636b2f-1200w.webp",
+      "1600w": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-2-b7636b2f-1600w.webp",
+      "default": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-2-b7636b2f.webp"
+    },
+    "originalWidth": 6000
+  },
+  "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-3-75b3de78.jpg": {
+    "src": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-3-75b3de78.jpg",
+    "variants": {
+      "400w": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-3-75b3de78-400w.webp",
+      "800w": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-3-75b3de78-800w.webp",
+      "1200w": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-3-75b3de78-1200w.webp",
+      "1600w": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-3-75b3de78-1600w.webp",
+      "default": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-3-75b3de78.webp"
+    },
+    "originalWidth": 4608
+  },
+  "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-4-1fb49fbe.jpg": {
+    "src": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-4-1fb49fbe.jpg",
+    "variants": {
+      "400w": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-4-1fb49fbe-400w.webp",
+      "800w": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-4-1fb49fbe-800w.webp",
+      "1200w": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-4-1fb49fbe-1200w.webp",
+      "1600w": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-4-1fb49fbe-1600w.webp",
+      "default": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-inline-4-1fb49fbe.webp"
+    },
+    "originalWidth": 7008
+  },
+  "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-thumb-ff27750c.png": {
+    "src": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-thumb-ff27750c.png",
+    "variants": {
+      "400w": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-thumb-ff27750c-400w.webp",
+      "800w": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-thumb-ff27750c-800w.webp",
+      "1200w": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-thumb-ff27750c-1200w.webp",
+      "1600w": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-thumb-ff27750c-1600w.webp",
+      "default": "news/news-kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag-thumb-ff27750c.webp"
+    },
+    "originalWidth": 4608
+  },
+  "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-1-e316f9da.jpg": {
+    "src": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-1-e316f9da.jpg",
+    "variants": {
+      "400w": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-1-e316f9da-400w.webp",
+      "800w": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-1-e316f9da-800w.webp",
+      "1200w": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-1-e316f9da-1200w.webp",
+      "1600w": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-1-e316f9da-1600w.webp",
+      "default": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-1-e316f9da.webp"
+    },
+    "originalWidth": 4608
+  },
+  "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-2-59801ed0.jpg": {
+    "src": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-2-59801ed0.jpg",
+    "variants": {
+      "400w": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-2-59801ed0-400w.webp",
+      "800w": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-2-59801ed0-800w.webp",
+      "1200w": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-2-59801ed0-1200w.webp",
+      "1600w": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-2-59801ed0-1600w.webp",
+      "default": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-2-59801ed0.webp"
+    },
+    "originalWidth": 6000
+  },
+  "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-3-5cce493f.jpg": {
+    "src": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-3-5cce493f.jpg",
+    "variants": {
+      "400w": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-3-5cce493f-400w.webp",
+      "800w": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-3-5cce493f-800w.webp",
+      "1200w": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-3-5cce493f-1200w.webp",
+      "1600w": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-3-5cce493f-1600w.webp",
+      "default": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-3-5cce493f.webp"
+    },
+    "originalWidth": 4608
+  },
+  "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-4-36c800b3.jpg": {
+    "src": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-4-36c800b3.jpg",
+    "variants": {
+      "400w": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-4-36c800b3-400w.webp",
+      "800w": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-4-36c800b3-800w.webp",
+      "1200w": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-4-36c800b3-1200w.webp",
+      "1600w": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-4-36c800b3-1600w.webp",
+      "default": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-4-36c800b3.webp"
+    },
+    "originalWidth": 7008
+  },
+  "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-thumb-94365f7e.png": {
+    "src": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-thumb-94365f7e.png",
+    "variants": {
+      "400w": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-thumb-94365f7e-400w.webp",
+      "800w": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-thumb-94365f7e-800w.webp",
+      "1200w": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-thumb-94365f7e-1200w.webp",
+      "1600w": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-thumb-94365f7e-1600w.webp",
+      "default": "news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-thumb-94365f7e.webp"
+    },
+    "originalWidth": 4608
+  },
+  "news/news-le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024-inline-1-18655c57.jpg": {
+    "src": "news/news-le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024-inline-1-18655c57.jpg",
+    "variants": {
+      "400w": "news/news-le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024-inline-1-18655c57-400w.webp",
+      "800w": "news/news-le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024-inline-1-18655c57-800w.webp",
+      "default": "news/news-le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024-inline-1-18655c57.webp"
+    },
+    "originalWidth": 960
+  },
+  "news/news-le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024-inline-2-cc2f0d87.jpg": {
+    "src": "news/news-le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024-inline-2-cc2f0d87.jpg",
+    "variants": {
+      "400w": "news/news-le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024-inline-2-cc2f0d87-400w.webp",
+      "800w": "news/news-le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024-inline-2-cc2f0d87-800w.webp",
+      "1200w": "news/news-le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024-inline-2-cc2f0d87-1200w.webp",
+      "1600w": "news/news-le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024-inline-2-cc2f0d87-1600w.webp",
+      "default": "news/news-le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024-inline-2-cc2f0d87.webp"
+    },
+    "originalWidth": 4000
+  },
+  "news/news-le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024-inline-3-d23a02e2.jpg": {
+    "src": "news/news-le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024-inline-3-d23a02e2.jpg",
+    "variants": {
+      "400w": "news/news-le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024-inline-3-d23a02e2-400w.webp",
+      "800w": "news/news-le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024-inline-3-d23a02e2-800w.webp",
+      "default": "news/news-le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024-inline-3-d23a02e2.webp"
+    },
+    "originalWidth": 960
+  },
+  "news/news-le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024-thumb-d4f61e65.png": {
+    "src": "news/news-le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024-thumb-d4f61e65.png",
+    "variants": {
+      "400w": "news/news-le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024-thumb-d4f61e65-400w.webp",
+      "800w": "news/news-le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024-thumb-d4f61e65-800w.webp",
+      "default": "news/news-le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024-thumb-d4f61e65.webp"
+    },
+    "originalWidth": 960
+  },
+  "news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-2f9512d4.jpg": {
+    "src": "news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-2f9512d4.jpg",
+    "variants": {
+      "400w": "news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-2f9512d4-400w.webp",
+      "800w": "news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-2f9512d4-800w.webp",
+      "default": "news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-2f9512d4.webp"
+    },
+    "originalWidth": 960
+  },
+  "news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-7aed75b9.jpg": {
+    "src": "news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-7aed75b9.jpg",
+    "variants": {
+      "400w": "news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-7aed75b9-400w.webp",
+      "800w": "news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-7aed75b9-800w.webp",
+      "1200w": "news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-7aed75b9-1200w.webp",
+      "1600w": "news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-7aed75b9-1600w.webp",
+      "default": "news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-7aed75b9.webp"
+    },
+    "originalWidth": 4000
+  },
+  "news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-856dc11c.png": {
+    "src": "news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-856dc11c.png",
+    "variants": {
+      "400w": "news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-856dc11c-400w.webp",
+      "800w": "news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-856dc11c-800w.webp",
+      "default": "news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-856dc11c.webp"
+    },
+    "originalWidth": 960
+  },
+  "news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-87c24c80.jpg": {
+    "src": "news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-87c24c80.jpg",
+    "variants": {
+      "400w": "news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-87c24c80-400w.webp",
+      "800w": "news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-87c24c80-800w.webp",
+      "default": "news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-87c24c80.webp"
+    },
+    "originalWidth": 960
+  },
+  "news/news-rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng-inli-4edd9d4d.jpg": {
+    "src": "news/news-rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng-inli-4edd9d4d.jpg",
+    "variants": {
+      "400w": "news/news-rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng-inli-4edd9d4d-400w.webp",
+      "800w": "news/news-rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng-inli-4edd9d4d-800w.webp",
+      "1200w": "news/news-rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng-inli-4edd9d4d-1200w.webp",
+      "1600w": "news/news-rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng-inli-4edd9d4d-1600w.webp",
+      "default": "news/news-rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng-inli-4edd9d4d.webp"
+    },
+    "originalWidth": 4000
+  },
+  "news/news-rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng-inli-726c8d43.jpg": {
+    "src": "news/news-rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng-inli-726c8d43.jpg",
+    "variants": {
+      "400w": "news/news-rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng-inli-726c8d43-400w.webp",
+      "800w": "news/news-rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng-inli-726c8d43-800w.webp",
+      "default": "news/news-rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng-inli-726c8d43.webp"
+    },
+    "originalWidth": 960
+  },
+  "news/news-rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng-inli-e9c60929.jpg": {
+    "src": "news/news-rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng-inli-e9c60929.jpg",
+    "variants": {
+      "400w": "news/news-rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng-inli-e9c60929-400w.webp",
+      "800w": "news/news-rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng-inli-e9c60929-800w.webp",
+      "default": "news/news-rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng-inli-e9c60929.webp"
+    },
+    "originalWidth": 960
+  },
+  "news/news-rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng-thum-e311e27b.png": {
+    "src": "news/news-rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng-thum-e311e27b.png",
+    "variants": {
+      "400w": "news/news-rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng-thum-e311e27b-400w.webp",
+      "800w": "news/news-rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng-thum-e311e27b-800w.webp",
+      "default": "news/news-rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng-thum-e311e27b.webp"
+    },
+    "originalWidth": 960
+  },
+  "misc/apple-icon-5566e24f.png": {
+    "src": "misc/apple-icon-5566e24f.png",
+    "variants": {
+      "default": "misc/apple-icon-5566e24f.webp"
+    },
+    "originalWidth": 180
+  },
+  "misc/icon-ba7db356.png": {
+    "src": "misc/icon-ba7db356.png",
+    "variants": {
+      "400w": "misc/icon-ba7db356-400w.webp",
+      "default": "misc/icon-ba7db356.webp"
+    },
+    "originalWidth": 512
+  },
+  "misc/mrterry-2f1c33d5.jpg": {
+    "src": "misc/mrterry-2f1c33d5.jpg",
+    "variants": {
+      "400w": "misc/mrterry-2f1c33d5-400w.webp",
+      "800w": "misc/mrterry-2f1c33d5-800w.webp",
+      "1200w": "misc/mrterry-2f1c33d5-1200w.webp",
+      "1600w": "misc/mrterry-2f1c33d5-1600w.webp",
+      "default": "misc/mrterry-2f1c33d5.webp"
+    },
+    "originalWidth": 3821
+  },
+  "membership/banner1-abd0c28e.jpg": {
+    "src": "membership/banner1-abd0c28e.jpg",
+    "variants": {
+      "400w": "membership/banner1-abd0c28e-400w.webp",
+      "800w": "membership/banner1-abd0c28e-800w.webp",
+      "1200w": "membership/banner1-abd0c28e-1200w.webp",
+      "1600w": "membership/banner1-abd0c28e-1600w.webp",
+      "default": "membership/banner1-abd0c28e.webp"
+    },
+    "originalWidth": 1920
+  },
+  "icons/zalo2-8c186097.png": {
+    "src": "icons/zalo2-8c186097.png",
+    "variants": {
+      "400w": "icons/zalo2-8c186097-400w.webp",
+      "default": "icons/zalo2-8c186097.webp"
+    },
+    "originalWidth": 480
+  },
+  "home/banner1-8900b3d5.jpg": {
+    "src": "home/banner1-8900b3d5.jpg",
+    "variants": {
+      "400w": "home/banner1-8900b3d5-400w.webp",
+      "800w": "home/banner1-8900b3d5-800w.webp",
+      "1200w": "home/banner1-8900b3d5-1200w.webp",
+      "1600w": "home/banner1-8900b3d5-1600w.webp",
+      "default": "home/banner1-8900b3d5.webp"
+    },
+    "originalWidth": 2160
+  },
+  "home/banner3-4962fcb5.jpg": {
+    "src": "home/banner3-4962fcb5.jpg",
+    "variants": {
+      "400w": "home/banner3-4962fcb5-400w.webp",
+      "800w": "home/banner3-4962fcb5-800w.webp",
+      "1200w": "home/banner3-4962fcb5-1200w.webp",
+      "1600w": "home/banner3-4962fcb5-1600w.webp",
+      "default": "home/banner3-4962fcb5.webp"
+    },
+    "originalWidth": 2160
+  },
+  "home/banner4-b978e3ea.jpg": {
+    "src": "home/banner4-b978e3ea.jpg",
+    "variants": {
+      "400w": "home/banner4-b978e3ea-400w.webp",
+      "800w": "home/banner4-b978e3ea-800w.webp",
+      "1200w": "home/banner4-b978e3ea-1200w.webp",
+      "1600w": "home/banner4-b978e3ea-1600w.webp",
+      "default": "home/banner4-b978e3ea.webp"
+    },
+    "originalWidth": 2160
+  },
+  "events/event-11-bannerimageurl-7aa69047.png": {
+    "src": "events/event-11-bannerimageurl-7aa69047.png",
+    "variants": {
+      "400w": "events/event-11-bannerimageurl-7aa69047-400w.webp",
+      "800w": "events/event-11-bannerimageurl-7aa69047-800w.webp",
+      "1200w": "events/event-11-bannerimageurl-7aa69047-1200w.webp",
+      "1600w": "events/event-11-bannerimageurl-7aa69047-1600w.webp",
+      "default": "events/event-11-bannerimageurl-7aa69047.webp"
+    },
+    "originalWidth": 8001
+  },
+  "events/event-11-detail-1-a1fe3f89.png": {
+    "src": "events/event-11-detail-1-a1fe3f89.png",
+    "variants": {
+      "400w": "events/event-11-detail-1-a1fe3f89-400w.webp",
+      "800w": "events/event-11-detail-1-a1fe3f89-800w.webp",
+      "1200w": "events/event-11-detail-1-a1fe3f89-1200w.webp",
+      "1600w": "events/event-11-detail-1-a1fe3f89-1600w.webp",
+      "default": "events/event-11-detail-1-a1fe3f89.webp"
+    },
+    "originalWidth": 8001
+  },
+  "events/event-11-image-8918d1da.png": {
+    "src": "events/event-11-image-8918d1da.png",
+    "variants": {
+      "400w": "events/event-11-image-8918d1da-400w.webp",
+      "800w": "events/event-11-image-8918d1da-800w.webp",
+      "1200w": "events/event-11-image-8918d1da-1200w.webp",
+      "1600w": "events/event-11-image-8918d1da-1600w.webp",
+      "default": "events/event-11-image-8918d1da.webp"
+    },
+    "originalWidth": 8001
+  },
+  "events/event-11-imageurl2-7d79ebd4.png": {
+    "src": "events/event-11-imageurl2-7d79ebd4.png",
+    "variants": {
+      "400w": "events/event-11-imageurl2-7d79ebd4-400w.webp",
+      "800w": "events/event-11-imageurl2-7d79ebd4-800w.webp",
+      "1200w": "events/event-11-imageurl2-7d79ebd4-1200w.webp",
+      "1600w": "events/event-11-imageurl2-7d79ebd4-1600w.webp",
+      "default": "events/event-11-imageurl2-7d79ebd4.webp"
+    },
+    "originalWidth": 4239
+  },
+  "events/event-12-bannerimageurl-ade6047b.png": {
+    "src": "events/event-12-bannerimageurl-ade6047b.png",
+    "variants": {
+      "400w": "events/event-12-bannerimageurl-ade6047b-400w.webp",
+      "800w": "events/event-12-bannerimageurl-ade6047b-800w.webp",
+      "1200w": "events/event-12-bannerimageurl-ade6047b-1200w.webp",
+      "1600w": "events/event-12-bannerimageurl-ade6047b-1600w.webp",
+      "default": "events/event-12-bannerimageurl-ade6047b.webp"
+    },
+    "originalWidth": 12831
+  },
+  "events/event-12-detail-1-c04da753.jpg": {
+    "src": "events/event-12-detail-1-c04da753.jpg",
+    "variants": {
+      "400w": "events/event-12-detail-1-c04da753-400w.webp",
+      "800w": "events/event-12-detail-1-c04da753-800w.webp",
+      "1200w": "events/event-12-detail-1-c04da753-1200w.webp",
+      "1600w": "events/event-12-detail-1-c04da753-1600w.webp",
+      "default": "events/event-12-detail-1-c04da753.webp"
+    },
+    "originalWidth": 9063
+  },
+  "events/event-12-detail-2-7bc95f01.png": {
+    "src": "events/event-12-detail-2-7bc95f01.png",
+    "variants": {
+      "400w": "events/event-12-detail-2-7bc95f01-400w.webp",
+      "800w": "events/event-12-detail-2-7bc95f01-800w.webp",
+      "1200w": "events/event-12-detail-2-7bc95f01-1200w.webp",
+      "1600w": "events/event-12-detail-2-7bc95f01-1600w.webp",
+      "default": "events/event-12-detail-2-7bc95f01.webp"
+    },
+    "originalWidth": 6746
+  },
+  "events/event-12-image-fc6d2bc8.png": {
+    "src": "events/event-12-image-fc6d2bc8.png",
+    "variants": {
+      "400w": "events/event-12-image-fc6d2bc8-400w.webp",
+      "800w": "events/event-12-image-fc6d2bc8-800w.webp",
+      "1200w": "events/event-12-image-fc6d2bc8-1200w.webp",
+      "1600w": "events/event-12-image-fc6d2bc8-1600w.webp",
+      "default": "events/event-12-image-fc6d2bc8.webp"
+    },
+    "originalWidth": 9063
+  },
+  "events/event-12-imageurl2-3b97537d.png": {
+    "src": "events/event-12-imageurl2-3b97537d.png",
+    "variants": {
+      "400w": "events/event-12-imageurl2-3b97537d-400w.webp",
+      "800w": "events/event-12-imageurl2-3b97537d-800w.webp",
+      "1200w": "events/event-12-imageurl2-3b97537d-1200w.webp",
+      "1600w": "events/event-12-imageurl2-3b97537d-1600w.webp",
+      "default": "events/event-12-imageurl2-3b97537d.webp"
+    },
+    "originalWidth": 6508
+  },
+  "events/event-8-bannerimageurl-a63759c0.png": {
+    "src": "events/event-8-bannerimageurl-a63759c0.png",
+    "variants": {
+      "400w": "events/event-8-bannerimageurl-a63759c0-400w.webp",
+      "800w": "events/event-8-bannerimageurl-a63759c0-800w.webp",
+      "default": "events/event-8-bannerimageurl-a63759c0.webp"
+    },
+    "originalWidth": 960
+  },
+  "events/event-8-detail-1-1ea4d91e.png": {
+    "src": "events/event-8-detail-1-1ea4d91e.png",
+    "variants": {
+      "400w": "events/event-8-detail-1-1ea4d91e-400w.webp",
+      "800w": "events/event-8-detail-1-1ea4d91e-800w.webp",
+      "1200w": "events/event-8-detail-1-1ea4d91e-1200w.webp",
+      "1600w": "events/event-8-detail-1-1ea4d91e-1600w.webp",
+      "default": "events/event-8-detail-1-1ea4d91e.webp"
+    },
+    "originalWidth": 6667
+  },
+  "events/event-8-image-177bbc6c.png": {
+    "src": "events/event-8-image-177bbc6c.png",
+    "variants": {
+      "400w": "events/event-8-image-177bbc6c-400w.webp",
+      "800w": "events/event-8-image-177bbc6c-800w.webp",
+      "1200w": "events/event-8-image-177bbc6c-1200w.webp",
+      "1600w": "events/event-8-image-177bbc6c-1600w.webp",
+      "default": "events/event-8-image-177bbc6c.webp"
+    },
+    "originalWidth": 6667
+  },
+  "events/event-8-imageurl2-cc2f0ea0.png": {
+    "src": "events/event-8-imageurl2-cc2f0ea0.png",
+    "variants": {
+      "400w": "events/event-8-imageurl2-cc2f0ea0-400w.webp",
+      "800w": "events/event-8-imageurl2-cc2f0ea0-800w.webp",
+      "1200w": "events/event-8-imageurl2-cc2f0ea0-1200w.webp",
+      "1600w": "events/event-8-imageurl2-cc2f0ea0-1600w.webp",
+      "default": "events/event-8-imageurl2-cc2f0ea0.webp"
+    },
+    "originalWidth": 1876
+  },
+  "events/event-9-bannerimageurl-fa1c9d57.png": {
+    "src": "events/event-9-bannerimageurl-fa1c9d57.png",
+    "variants": {
+      "400w": "events/event-9-bannerimageurl-fa1c9d57-400w.webp",
+      "800w": "events/event-9-bannerimageurl-fa1c9d57-800w.webp",
+      "1200w": "events/event-9-bannerimageurl-fa1c9d57-1200w.webp",
+      "1600w": "events/event-9-bannerimageurl-fa1c9d57-1600w.webp",
+      "default": "events/event-9-bannerimageurl-fa1c9d57.webp"
+    },
+    "originalWidth": 10667
+  },
+  "events/event-9-detail-1-b79de2e6.png": {
+    "src": "events/event-9-detail-1-b79de2e6.png",
+    "variants": {
+      "400w": "events/event-9-detail-1-b79de2e6-400w.webp",
+      "800w": "events/event-9-detail-1-b79de2e6-800w.webp",
+      "1200w": "events/event-9-detail-1-b79de2e6-1200w.webp",
+      "1600w": "events/event-9-detail-1-b79de2e6-1600w.webp",
+      "default": "events/event-9-detail-1-b79de2e6.webp"
+    },
+    "originalWidth": 10667
+  },
+  "events/event-9-image-e0355d48.png": {
+    "src": "events/event-9-image-e0355d48.png",
+    "variants": {
+      "400w": "events/event-9-image-e0355d48-400w.webp",
+      "800w": "events/event-9-image-e0355d48-800w.webp",
+      "1200w": "events/event-9-image-e0355d48-1200w.webp",
+      "1600w": "events/event-9-image-e0355d48-1600w.webp",
+      "default": "events/event-9-image-e0355d48.webp"
+    },
+    "originalWidth": 10667
+  },
+  "events/event-9-imageurl2-9a3c6057.png": {
+    "src": "events/event-9-imageurl2-9a3c6057.png",
+    "variants": {
+      "400w": "events/event-9-imageurl2-9a3c6057-400w.webp",
+      "800w": "events/event-9-imageurl2-9a3c6057-800w.webp",
+      "1200w": "events/event-9-imageurl2-9a3c6057-1200w.webp",
+      "1600w": "events/event-9-imageurl2-9a3c6057-1600w.webp",
+      "default": "events/event-9-imageurl2-9a3c6057.webp"
+    },
+    "originalWidth": 7501
+  },
+  "centers/center-31-1-71612daa.jpg": {
+    "src": "centers/center-31-1-71612daa.jpg",
+    "variants": {
+      "400w": "centers/center-31-1-71612daa-400w.webp",
+      "800w": "centers/center-31-1-71612daa-800w.webp",
+      "1200w": "centers/center-31-1-71612daa-1200w.webp",
+      "1600w": "centers/center-31-1-71612daa-1600w.webp",
+      "default": "centers/center-31-1-71612daa.webp"
+    },
+    "originalWidth": 4000
+  },
+  "brand/kbit-logo-44082c6c.png": {
+    "src": "brand/kbit-logo-44082c6c.png",
+    "variants": {
+      "400w": "brand/kbit-logo-44082c6c-400w.webp",
+      "800w": "brand/kbit-logo-44082c6c-800w.webp",
+      "1200w": "brand/kbit-logo-44082c6c-1200w.webp",
+      "default": "brand/kbit-logo-44082c6c.webp"
+    },
+    "originalWidth": 1368
+  },
+  "brand/kbit-logo-blue-516a77b2.png": {
+    "src": "brand/kbit-logo-blue-516a77b2.png",
+    "variants": {
+      "400w": "brand/kbit-logo-blue-516a77b2-400w.webp",
+      "800w": "brand/kbit-logo-blue-516a77b2-800w.webp",
+      "1200w": "brand/kbit-logo-blue-516a77b2-1200w.webp",
+      "1600w": "brand/kbit-logo-blue-516a77b2-1600w.webp",
+      "default": "brand/kbit-logo-blue-516a77b2.webp"
+    },
+    "originalWidth": 2150
+  }
+}

@@ -1,0 +1,141 @@
+/* ===== PageHero — shared inner-page banner =====
+   Watermark: giant ghost text anchored to right edge, partially cropped.
+   Used on all inner pages. See 07-ui-system.md § PageHero.
+   ================================================= */
+
+.hero {
+  position: relative;
+  padding-block: var(--sp-10) var(--sp-9);
+  overflow: hidden;
+}
+
+/* Gold hairline separator at bottom */
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--clr-gold), transparent);
+  opacity: 0.45;
+  pointer-events: none;
+  transform-origin: center;
+  animation: heroHairlineIn var(--duration-page) var(--ease-out-expo) 180ms both;
+}
+
+/* ===== Variants ===== */
+.heroDark  { background: var(--clr-midnight); }
+.heroLight { background: var(--clr-ivory); }
+
+/* ===== Ghost watermark ===== */
+.watermark {
+  position: absolute;
+  right: -3%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-display);
+  font-size: clamp(96px, 15vw, 196px);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.82;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  animation: heroWatermarkIn 900ms var(--ease-out-expo) both, pageHeroDrift 11s ease-in-out 900ms infinite;
+}
+
+.watermarkDark {
+  color: var(--clr-navy-soft);
+  opacity: 0.62;
+}
+
+.watermarkLight {
+  color: var(--clr-ash);
+  opacity: 0.95;
+}
+
+/* ===== Content (above watermark) ===== */
+.inner {
+  position: relative;
+  z-index: 1;
+  animation: pageHeroContentIn var(--duration-page) var(--ease-out-expo) both;
+}
+
+.overline {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--type-xs);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: var(--sp-3);
+}
+
+.overlineDark  { color: var(--clr-gold); }
+.overlineLight { color: var(--clr-gold-dark); }
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--type-d2);
+  font-weight: 300;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--sp-4);
+}
+
+.titleDark  { color: var(--clr-white); }
+.titleLight { color: var(--clr-navy); }
+
+.desc {
+  font-size: var(--type-body-lg);
+  font-weight: 300;
+  max-width: 580px;
+  line-height: 1.65;
+}
+
+.descDark  { color: var(--clr-mist); }
+.descLight { color: var(--clr-stone); }
+
+@keyframes pageHeroContentIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroWatermarkIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50%) translateX(28px);
+  }
+}
+
+@keyframes pageHeroDrift {
+  0%, 100% {
+    transform: translateY(-50%) translateX(0);
+  }
+  50% {
+    transform: translateY(calc(-50% - 8px)) translateX(-6px);
+  }
+}
+
+@keyframes heroHairlineIn {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero::after,
+  .watermark,
+  .inner {
+    animation: none;
+  }
+}

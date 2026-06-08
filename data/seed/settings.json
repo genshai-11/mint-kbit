@@ -1,0 +1,117 @@
+{
+  "_note": "Seed cho Setting (key-value) + dữ liệu site toàn cục. Map từ KBIT_Crawled_Data.md. Field i18n thiếu bản dịch đánh dấu [NEEDS_TRANSLATION:xx]. Ảnh sẽ được Content Agent re-host lên Cloudinary; tạm để URL gốc.",
+  "brand": {
+    "logoLight": "https://kbitassociation.com/images/kbit-logo.png",
+    "logoDark": "https://kbitassociation.com/images/kbit-logo-blue.png",
+    "favicon": "[GAP] cần file favicon.ico"
+  },
+  "siteMeta": {
+    "title": {
+      "en": "KBIT - Korean Beauty International Technology Association",
+      "vi": "[NEEDS_TRANSLATION:vi]",
+      "ko": "[NEEDS_TRANSLATION:ko]"
+    },
+    "description": {
+      "en": "KBIT keeps updating the latest rejuvenation technology of Korea to our Members all over the world. We have 16 education centers in Korea and overseas with 20 Key Doctors who are experts in the field of Aesthetics and Plastic Surgery.",
+      "vi": "[NEEDS_TRANSLATION:vi]",
+      "ko": "[NEEDS_TRANSLATION:ko]"
+    },
+    "ogImage": "[GAP] cần OG image 1200x630"
+  },
+  "stats": {
+    "_note": "Số liệu từ meta cũ (16 centers, 20 key doctors). doctors=50+ lấy từ trang Experts. countries & members là [GAP] cần khách xác nhận.",
+    "educationCenters": 16,
+    "doctors": 50,
+    "countries": "[GAP] cần xác nhận (mockup dùng 8)",
+    "members": "[GAP] cần xác nhận (mockup dùng 500)"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/kbitassociation",
+    "zalo": "http://zalo.me/3411967251774244865?src=qr"
+  },
+  "org": {
+    "vicePresident": "Noh Hyun Taek",
+    "businessReg": "880-81-03251",
+    "copyright": {
+      "en": "© 2026 Korean Beauty International Technology (KBIT). All rights reserved.",
+      "vi": "[NEEDS_TRANSLATION:vi]",
+      "ko": "[NEEDS_TRANSLATION:ko]"
+    }
+  },
+  "contact": {
+    "email": "mint@kbitassociation.com",
+    "phoneKr": "010-4159-8777",
+    "phoneVn": "0914539088"
+  },
+  "offices": [
+    {
+      "label": { "en": "Korea Office", "vi": "Văn phòng Hàn Quốc", "ko": "한국 사무소" },
+      "address": {
+        "en": "12, Teheran-ro 70-gil, Gangnam-gu, Seoul, Republic of Korea",
+        "vi": "12, Teheran-ro 70-gil, Gangnam-gu, Seoul, Hàn Quốc",
+        "ko": "[NEEDS_TRANSLATION:ko]"
+      },
+      "hours": {
+        "en": "Mon-Fri 9:00 AM - 6:00 PM (KST)",
+        "vi": "Thứ 2-6: 9:00 - 18:00 (KST)",
+        "ko": "[NEEDS_TRANSLATION:ko]"
+      },
+      "phone": "010-4159-8777",
+      "email": "mint@kbitassociation.com",
+      "mapLat": "[GAP] cần toạ độ",
+      "mapLng": "[GAP] cần toạ độ",
+      "contactPerson": null
+    },
+    {
+      "label": { "en": "Vietnam Office", "vi": "Văn phòng Việt Nam", "ko": "베트남 사무소" },
+      "address": {
+        "en": "17 Tran Quy Kien, Binh Trung Ward, Ho Chi Minh City",
+        "vi": "17 Trần Quý Kiên, phường Bình Trưng, TP. Hồ Chí Minh",
+        "ko": "[NEEDS_TRANSLATION:ko]"
+      },
+      "hours": {
+        "en": "Mon-Fri: 8:00 AM - 5:00 PM",
+        "vi": "Thứ 2-6: 8:00 - 17:00",
+        "ko": "[NEEDS_TRANSLATION:ko]"
+      },
+      "phone": "0914539088",
+      "email": "mint@kbitassociation.com",
+      "mapLat": "[GAP] cần toạ độ",
+      "mapLng": "[GAP] cần toạ độ",
+      "contactPerson": {
+        "en": "Ms. Mint - Foreign Affair Manager",
+        "vi": "Ms. Mint - Quản lý Đối ngoại",
+        "ko": "[NEEDS_TRANSLATION:ko]"
+      }
+    }
+  ],
+  "homeHero": [
+    {
+      "image": "https://kbitassociation.com/images/home_banners/banner1.jpg",
+      "heading": {
+        "en": "With the best Korea doctors and experts",
+        "vi": "[NEEDS_TRANSLATION:vi]",
+        "ko": "[NEEDS_TRANSLATION:ko]"
+      },
+      "sub": { "en": "Welcome to KBIT", "vi": "Chào mừng đến với KBIT", "ko": "[NEEDS_TRANSLATION:ko]" }
+    },
+    {
+      "image": "https://kbitassociation.com/images/home_banners/banner4.jpg",
+      "heading": {
+        "en": "KBIT, Korea Beauty International Technology Association",
+        "vi": "[NEEDS_TRANSLATION:vi]",
+        "ko": "[NEEDS_TRANSLATION:ko]"
+      },
+      "sub": { "en": "Beauty Meets Innovation", "vi": "[NEEDS_TRANSLATION:vi]", "ko": "[NEEDS_TRANSLATION:ko]" }
+    },
+    {
+      "image": "https://kbitassociation.com/images/home_banners/banner3.jpg",
+      "heading": {
+        "en": "The latest rejuvenation technology of Korea",
+        "vi": "[NEEDS_TRANSLATION:vi]",
+        "ko": "[NEEDS_TRANSLATION:ko]"
+      },
+      "sub": { "en": "Beauty Meets Innovation", "vi": "[NEEDS_TRANSLATION:vi]", "ko": "[NEEDS_TRANSLATION:ko]" }
+    }
+  ]
+}

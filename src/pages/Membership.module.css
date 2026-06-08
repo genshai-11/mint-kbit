@@ -1,0 +1,397 @@
+.pageShell {
+  background: var(--clr-ivory);
+}
+
+.indexBand {
+  position: sticky;
+  top: 68px;
+  z-index: 9;
+  background: rgba(253, 251, 247, 0.92);
+  border-bottom: 1px solid var(--clr-ash);
+  backdrop-filter: blur(14px);
+}
+
+.indexGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.indexItem {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  min-height: 64px;
+  padding: var(--sp-3) var(--sp-4);
+  border-right: 1px solid var(--clr-ash);
+  color: var(--clr-navy);
+  transition: background var(--transition-base), color var(--transition-base);
+}
+
+.indexItem:last-child {
+  border-right: 0;
+}
+
+.indexItem:hover {
+  background: rgba(201, 169, 110, 0.1);
+  color: var(--clr-gold-dark);
+}
+
+.indexItem span {
+  font-family: var(--font-mono);
+  color: var(--clr-gold-dark);
+}
+
+.indexItem strong {
+  font-size: var(--type-xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--sp-6);
+  margin-bottom: var(--sp-8);
+}
+
+.structureSection,
+.requirementsSection,
+.formsSection {
+  background: var(--clr-ivory);
+}
+
+.benefitsSection,
+.feeSection {
+  background: var(--clr-section-alt);
+}
+
+.typeGrid,
+.feeGrid,
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-5);
+}
+
+.typeCard,
+.feeCard,
+.stepsCard,
+.requirementsMain,
+.formDownload,
+.formsFrame {
+  border: 1px solid var(--clr-ash);
+  border-radius: var(--radius-lg);
+  background: var(--clr-cream);
+  box-shadow: var(--shadow-card);
+}
+
+.typeCard,
+.feeCard {
+  position: relative;
+  overflow: hidden;
+  padding: var(--sp-6);
+}
+
+.typeCard::after,
+.feeCard::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--clr-gold), transparent);
+  transform: scaleX(0);
+  transition: transform var(--transition-slow);
+}
+
+.typeCard:hover::after,
+.feeCard:hover::after {
+  transform: scaleX(1);
+}
+
+.cardIcon {
+  color: var(--clr-gold-dark);
+  margin-bottom: var(--sp-5);
+}
+
+.typeCard > span,
+.formDownload span {
+  display: block;
+  color: var(--clr-gold-dark);
+  font-size: var(--type-xs);
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: var(--sp-3);
+}
+
+.typeCard h3,
+.benefitHead h3,
+.feeCard h3,
+.requirementsMain h2,
+.stepsCard h3,
+.formsFrame h2 {
+  font-family: var(--font-display);
+  font-size: var(--type-d3);
+  font-weight: 400;
+  line-height: 1.12;
+  color: var(--clr-navy);
+}
+
+.typeCard p,
+.feeCard p,
+.requirementsMain p,
+.formsFrame p {
+  margin-top: var(--sp-4);
+  color: var(--clr-stone);
+  line-height: 1.75;
+}
+
+.typeCard ul,
+.benefitCard ul,
+.requirementItem ul,
+.lifeList {
+  display: grid;
+  gap: var(--sp-3);
+  margin-top: var(--sp-5);
+}
+
+.typeCard li,
+.benefitCard li,
+.requirementItem li,
+.lifeList li {
+  position: relative;
+  padding-left: var(--sp-5);
+  color: var(--clr-charcoal);
+  line-height: 1.65;
+}
+
+.typeCard li::before,
+.benefitCard li::before,
+.requirementItem li::before,
+.lifeList li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.75em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--clr-gold);
+}
+
+.benefitStack {
+  display: grid;
+  gap: var(--sp-5);
+}
+
+.benefitCard {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: var(--sp-6);
+  padding: var(--sp-6);
+  border: 1px solid var(--clr-ash);
+  border-radius: var(--radius-lg);
+  background: var(--clr-cream);
+  box-shadow: var(--shadow-card);
+}
+
+.benefitHead {
+  display: flex;
+  gap: var(--sp-3);
+  align-items: flex-start;
+  color: var(--clr-gold-dark);
+}
+
+.requirementsGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: var(--sp-6);
+  align-items: start;
+}
+
+.requirementsMain,
+.stepsCard,
+.formsFrame {
+  padding: var(--sp-6);
+}
+
+.requirementList {
+  display: grid;
+  gap: var(--sp-5);
+  margin-top: var(--sp-6);
+}
+
+.requirementItem {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: var(--sp-4);
+}
+
+.requirementItem > span,
+.stepsCard li span {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--clr-navy);
+  color: var(--clr-white);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-mono);
+}
+
+.requirementItem h3 {
+  color: var(--clr-navy);
+  font-size: var(--type-h3);
+  margin-bottom: var(--sp-2);
+}
+
+.stepsRail {
+  position: sticky;
+  top: 152px;
+}
+
+.stepsCard svg {
+  color: var(--clr-gold-dark);
+  margin-bottom: var(--sp-4);
+}
+
+.stepsCard ol {
+  display: grid;
+  gap: var(--sp-4);
+  margin-top: var(--sp-5);
+}
+
+.stepsCard li {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: var(--sp-3);
+  align-items: start;
+  color: var(--clr-charcoal);
+}
+
+.packageList {
+  display: grid;
+  gap: var(--sp-3);
+  margin-top: var(--sp-5);
+}
+
+.packageList div {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  padding: var(--sp-3);
+  border: 1px solid var(--clr-ash);
+  background: var(--clr-white);
+}
+
+.packageList span {
+  color: var(--clr-stone);
+}
+
+.packageList strong {
+  color: var(--clr-gold-dark);
+  font-family: var(--font-mono);
+}
+
+.limitPolicy {
+  margin-top: var(--sp-6);
+  padding: var(--sp-5);
+  border: 1px solid rgba(201, 169, 110, 0.34);
+  background: var(--clr-midnight);
+  color: var(--clr-white);
+  border-radius: var(--radius-lg);
+}
+
+.limitPolicy strong,
+.limitPolicy span,
+.limitPolicy p {
+  display: block;
+}
+
+.limitPolicy span {
+  margin-block: var(--sp-2);
+  color: var(--clr-gold-light);
+  font-weight: 700;
+}
+
+.limitPolicy p {
+  color: var(--clr-mist);
+}
+
+.formsFrame {
+  display: grid;
+  gap: var(--sp-6);
+  position: relative;
+  overflow: hidden;
+}
+
+.formsFrame::before {
+  content: 'KBIT';
+  position: absolute;
+  right: var(--sp-6);
+  top: var(--sp-4);
+  font-family: var(--font-display);
+  font-size: clamp(80px, 12vw, 180px);
+  color: var(--clr-navy);
+  opacity: 0.035;
+}
+
+.formDownload {
+  position: relative;
+  padding: var(--sp-5);
+  color: var(--clr-navy);
+}
+
+.formDownload svg {
+  color: var(--clr-gold-dark);
+  margin-bottom: var(--sp-4);
+}
+
+.ctaActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+  align-items: center;
+}
+
+.ctaPrimary,
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: 13px 22px;
+  border-radius: var(--radius-md);
+  font-size: var(--type-xs);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ctaPrimary {
+  background: var(--clr-navy);
+  color: var(--clr-white);
+}
+
+.ctaSecondary {
+  border: 1px solid var(--clr-ash);
+  color: var(--clr-navy);
+}
+
+@media (max-width: 980px) {
+  .indexGrid,
+  .typeGrid,
+  .feeGrid,
+  .formGrid,
+  .requirementsGrid,
+  .benefitCard {
+    grid-template-columns: 1fr;
+  }
+
+  .indexBand,
+  .stepsRail {
+    position: relative;
+    top: auto;
+  }
+}

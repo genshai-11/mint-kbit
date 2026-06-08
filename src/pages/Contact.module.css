@@ -1,0 +1,506 @@
+.intro {
+  background: var(--clr-ivory);
+  position: relative;
+  overflow: hidden;
+}
+
+.intro::before {
+  content: 'CONTACT';
+  position: absolute;
+  right: var(--container-px);
+  top: var(--sp-7);
+  font-family: var(--font-display);
+  font-size: clamp(90px, 13vw, 210px);
+  color: var(--clr-navy);
+  opacity: 0.035;
+  pointer-events: none;
+  animation: contactWatermark 15s var(--ease-soft) infinite alternate;
+}
+
+.introGrid,
+.formGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: var(--sp-6);
+  align-items: start;
+}
+
+.highlightsCard,
+.heroCard,
+.formCard,
+.contactCard,
+.responseCard,
+.officeCard {
+  border: 1px solid var(--clr-ash);
+  border-radius: var(--radius-lg);
+  background: var(--clr-cream);
+  box-shadow: var(--shadow-card);
+  transition:
+    transform var(--duration-base) var(--ease-soft),
+    box-shadow var(--duration-base) var(--ease-soft),
+    border-color var(--duration-base) var(--ease-soft),
+    background var(--duration-base) var(--ease-soft);
+}
+
+.highlightsCard:hover,
+.heroCard:hover,
+.formCard:hover,
+.contactCard:hover,
+.responseCard:hover,
+.officeCard:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(201, 169, 110, 0.55);
+}
+
+.formCard {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--clr-cream), var(--clr-white));
+}
+
+.formCard::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 2px;
+  background: linear-gradient(90deg, var(--clr-gold), rgba(201, 169, 110, 0));
+  opacity: 0.7;
+}
+
+.highlightsCard,
+.formCard {
+  padding: var(--sp-6);
+}
+
+.highlightsCard {
+  background: linear-gradient(180deg, var(--clr-white), var(--clr-cream));
+}
+
+.heroCard {
+  background: linear-gradient(180deg, var(--clr-cream), var(--clr-white));
+}
+
+.highlightsCard h2,
+.heroCardBody h2,
+.formCard h2,
+.officeCard h3 {
+  font-family: var(--font-display);
+  font-size: var(--type-d3);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: var(--clr-navy);
+  margin-bottom: var(--sp-4);
+}
+
+.highlightsGrid {
+  display: grid;
+  gap: var(--sp-4);
+  margin-top: var(--sp-5);
+}
+
+.highlightItem {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: var(--sp-4);
+  align-items: start;
+  padding: var(--sp-4);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(201, 169, 110, 0.16);
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.highlightItem:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.highlightItem:nth-child(even) {
+  background: rgba(240, 237, 230, 0.86);
+}
+
+.highlightIcon {
+  color: var(--clr-gold-dark);
+  margin-top: 2px;
+}
+
+.highlightItem h3,
+.officeInfo strong,
+.contactRows a {
+  font-family: var(--font-body);
+  color: var(--clr-charcoal);
+}
+
+.highlightItem h3 {
+  font-size: var(--type-h3);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.highlightItem p {
+  color: var(--clr-stone);
+  line-height: 1.6;
+}
+
+.heroCard {
+  overflow: hidden;
+}
+
+.heroImageWrap {
+  aspect-ratio: 16 / 10;
+  background: var(--clr-midnight);
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 900ms var(--ease-out-expo), filter 900ms var(--ease-out-expo);
+}
+
+.heroCard:hover .heroImage {
+  transform: scale(1.04);
+  filter: saturate(1.05);
+}
+
+.heroCardBody {
+  padding: var(--sp-5) var(--sp-6) var(--sp-6);
+}
+
+.heroCardTag,
+.cardTag,
+.officeLabel {
+  display: inline-flex;
+  margin-bottom: var(--sp-3);
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  background: rgba(201, 169, 110, 0.12);
+  border: 1px solid rgba(201, 169, 110, 0.24);
+  color: var(--clr-gold-dark);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.heroCardBody p,
+.formNote {
+  color: var(--clr-stone);
+  line-height: 1.75;
+}
+
+.heroActions,
+.formActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+  align-items: center;
+  margin-top: var(--sp-5);
+}
+
+.primaryLink,
+.secondaryLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: var(--radius-md);
+  font-size: var(--type-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.primaryLink {
+  background: var(--clr-navy);
+  color: var(--clr-white);
+}
+
+.secondaryLink {
+  border: 1px solid var(--clr-ash);
+  color: var(--clr-navy);
+}
+
+.sideRail {
+  display: grid;
+  gap: var(--sp-4);
+}
+
+.contactCard {
+  padding: var(--sp-5);
+}
+
+.responseCard {
+  position: relative;
+  overflow: hidden;
+  padding: var(--sp-5);
+  background:
+    linear-gradient(135deg, rgba(22, 32, 64, 0.96), rgba(10, 21, 37, 0.96)),
+    var(--clr-midnight);
+  color: var(--clr-white);
+}
+
+.responseCard::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--clr-gold), transparent);
+  animation: responseLine 2600ms var(--ease-gold) infinite;
+}
+
+.responseIcon {
+  color: var(--clr-gold-light);
+  margin-bottom: var(--sp-4);
+}
+
+.responseCard .cardTag {
+  color: var(--clr-gold-light);
+  border-color: rgba(232, 213, 163, 0.28);
+  background: rgba(232, 213, 163, 0.1);
+}
+
+.responseCard h3 {
+  font-family: var(--font-display);
+  font-size: var(--type-d3);
+  font-weight: 400;
+  line-height: 1.12;
+  margin-bottom: var(--sp-5);
+}
+
+.responseCard ol {
+  display: grid;
+  gap: var(--sp-4);
+}
+
+.responseCard li {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: var(--sp-3);
+  color: rgba(253, 251, 247, 0.78);
+}
+
+.responseCard li span {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(232, 213, 163, 0.34);
+  color: var(--clr-gold-light);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-mono);
+}
+
+.sideRail .contactCard:nth-child(odd) {
+  background: linear-gradient(180deg, var(--clr-white), var(--clr-cream));
+}
+
+.sideRail .contactCard:nth-child(even) {
+  background: linear-gradient(180deg, var(--clr-cream), var(--clr-white));
+}
+
+.contactRows,
+.hoursList {
+  display: grid;
+  gap: var(--sp-4);
+}
+
+.contactRows div,
+.hoursList div {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  padding-bottom: var(--sp-3);
+  border-bottom: 1px solid var(--clr-ash);
+  color: var(--clr-charcoal);
+}
+
+.contactRows div:last-child,
+.hoursList div:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.contactRows span,
+.hoursList div {
+  color: var(--clr-stone);
+}
+
+.contactRows a {
+  color: var(--clr-navy);
+  font-weight: 700;
+}
+
+.form {
+  margin-top: var(--sp-5);
+  display: grid;
+  gap: var(--sp-4);
+}
+
+.fieldGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--sp-4);
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+}
+
+.field span {
+  font-size: var(--type-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--clr-stone);
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  border: 1px solid var(--clr-ash);
+  border-radius: var(--radius-md);
+  background: var(--clr-white);
+  color: var(--clr-charcoal);
+  padding: 14px 16px;
+  font: inherit;
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--clr-gold);
+  box-shadow: 0 0 0 4px rgba(201, 169, 110, 0.12);
+}
+
+.formSection {
+  background: linear-gradient(180deg, var(--clr-ivory), var(--clr-section-alt));
+}
+
+.officesSection {
+  position: relative;
+  background: linear-gradient(180deg, var(--clr-section-alt), var(--clr-ivory));
+}
+
+@keyframes contactWatermark {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-16px, 12px, 0); }
+}
+
+@keyframes responseLine {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.officesSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.55), rgba(255,255,255,0) 28%, rgba(255,255,255,0) 72%, rgba(255,255,255,0.35));
+  pointer-events: none;
+}
+
+.sectionHeader {
+  margin-bottom: var(--sp-6);
+}
+
+.officeGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--sp-5);
+}
+
+.officeCard {
+  padding: var(--sp-6);
+}
+
+.officeCard:nth-child(odd) {
+  background: linear-gradient(180deg, var(--clr-white), var(--clr-cream));
+}
+
+.officeCard:nth-child(even) {
+  background: linear-gradient(180deg, var(--clr-cream), var(--clr-white));
+}
+
+.officeCard:hover .officeIcon {
+  transform: translateY(-2px) scale(1.04);
+}
+
+.officeCardHead {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  align-items: flex-start;
+  margin-bottom: var(--sp-5);
+}
+
+.officeIcon {
+  color: var(--clr-gold-dark);
+  flex-shrink: 0;
+  transition: transform var(--duration-base) var(--ease-soft), color var(--duration-base) var(--ease-soft);
+}
+
+.officeInfo {
+  display: grid;
+  gap: var(--sp-4);
+}
+
+.officeInfo div {
+  padding-bottom: var(--sp-3);
+  border-bottom: 1px solid var(--clr-ash);
+}
+
+.officeInfo div:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.officeInfo span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--clr-stone);
+  font-size: var(--type-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.officeInfo strong {
+  display: block;
+  color: var(--clr-navy);
+  line-height: 1.6;
+}
+
+@media (max-width: 980px) {
+  .introGrid,
+  .formGrid,
+  .officeGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .fieldGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlightsCard,
+  .heroCard,
+  .formCard,
+  .contactCard,
+  .responseCard,
+  .officeCard {
+    transform: none !important;
+  }
+}

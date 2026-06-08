@@ -1,0 +1,192 @@
+{
+  "_note": "Migrated from the legacy membership page content. Public UI must serve all forms locally and must not link to the legacy domain.",
+  "membershipInfo": {
+    "tab": "Membership structure",
+    "title": "Membership Classification Structure",
+    "types": [
+      {
+        "id": "standard",
+        "title": "Standard Member",
+        "subtitle": "Applied Technology Member",
+        "description": "For practicing specialists, nurses, medical assistants, spa owners, and individuals who want to participate in seminars, workshops, and access KBIT training materials.",
+        "highlights": ["Seminars and workshops", "Basic SOP access", "Professional recognition"]
+      },
+      {
+        "id": "professional",
+        "title": "Professional Member",
+        "subtitle": "Professional Academic Member",
+        "description": "For doctors and qualified experts seeking in-depth academic knowledge, protocol development, technology transfer, and networking opportunities.",
+        "highlights": ["Advanced training", "Academic certificates", "KBIT expert network"]
+      },
+      {
+        "id": "strategic",
+        "title": "Strategic Partner",
+        "subtitle": "Institutional Partner",
+        "description": "For clinics, academies, businesses, and organizations wishing to co-develop workshops, training systems, demonstrations, and specialized solutions with KBIT.",
+        "highlights": ["Co-organized events", "Partner certification", "Strategic consulting"]
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Detailed Benefits",
+    "groups": [
+      {
+        "id": "standard",
+        "title": "Standard Member Benefits",
+        "items": [
+          "Invited to two annual high-level KBIT seminars in Vietnam.",
+          "Receive one complimentary ticket to an international KBIT conference in South Korea or a neighboring country.",
+          "Discounts and priority registration for selected advanced training programs.",
+          "Observe advanced treatment demonstrations such as Skinbooster, RF, and Laser under allowed practice scope.",
+          "Receive an official KBIT membership certificate and basic KBIT treatment SOP guidance.",
+          "May be featured through official KBIT communication channels after notable achievements."
+        ]
+      },
+      {
+        "id": "professional",
+        "title": "Professional Member Benefits",
+        "items": [
+          "Priority registration and scholarship consideration for advanced KBIT training in Korea, Vietnam, and Southeast Asia.",
+          "Participate in advanced technology transfer including Skinbooster, RF, Meso, Botox, and Laser.",
+          "Access SOPs, clinical videos, training slides, and case-study resources.",
+          "Join a professional consultation group with Korean and Vietnamese doctors.",
+          "Opportunity to be nominated as lecturer, speaker, trainer, regional agent, or academic partner.",
+          "Use the title Professional Member - KBIT in professional materials."
+        ]
+      },
+      {
+        "id": "strategic",
+        "title": "Strategic Partner Benefits",
+        "items": [
+          "Co-organize in-depth workshops and seminars with KBIT in Vietnam and internationally.",
+          "Receive official Strategic Partner of KBIT recognition and certificate.",
+          "Use standardized KBIT academic materials for internal training.",
+          "Receive 1:1 strategic consulting on clinic models, branding, and long-term development.",
+          "Priority participation in exclusive treatment model development with the KBIT medical team.",
+          "Potential exclusive rights to distribute KBIT-certified products, programs, or high-tech aesthetic models in a representative area."
+        ]
+      }
+    ]
+  },
+  "requirements": {
+    "tab": "Requirements",
+    "general": {
+      "title": "General Requirements for All KBIT Members",
+      "intro": "Applicants must support KBIT's professional standards and meet the following conditions before approval.",
+      "items": [
+        {
+          "title": "Alignment with KBIT values",
+          "points": [
+            "Commitment to professional development in aesthetic and high-tech medical fields.",
+            "Willingness to participate in KBIT training, seminars, and academic networking."
+          ]
+        },
+        {
+          "title": "Clear academic and professional profile",
+          "points": [
+            "Priority for experienced doctors, experts, clinic owners, and aesthetic professionals.",
+            "Standard members may apply without deep expertise, but must show commitment to capacity development."
+          ]
+        },
+        {
+          "title": "Acceptance of membership terms",
+          "points": [
+            "Follow KBIT's code of ethics, internal regulations, and professional standards.",
+            "Do not use the KBIT brand for misleading advertising or unauthorized commercial purposes."
+          ]
+        },
+        {
+          "title": "Complete registration and fee payment",
+          "points": [
+            "Submit the KBIT Membership Registration Form.",
+            "Provide a professional profile and relevant documents when applicable.",
+            "Transfer the membership fee to the official KBIT account after approval."
+          ]
+        }
+      ]
+    },
+    "specific": [
+      {
+        "name": "Standard Member",
+        "points": [
+          "Suitable for individuals working in or oriented toward the aesthetics industry.",
+          "Commitment to participate in at least one KBIT event or workshop per year.",
+          "Submit an application with the reason for joining the academic community."
+        ]
+      },
+      {
+        "name": "Professional Member",
+        "points": [
+          "Requires a professional certificate in medicine, dermatology, aesthetics, or related fields.",
+          "Experience in practical work or research related to beauty technology.",
+          "Subject to KBIT review before official approval."
+        ]
+      },
+      {
+        "name": "Strategic Partner",
+        "points": [
+          "Clinic, academy, business, or institute with capacity for in-depth cooperation.",
+          "Suitable facilities, people, or resources to support professional activities and seminars.",
+          "Evaluation process and formal cooperation agreement are required."
+        ]
+      }
+    ],
+    "steps": [
+      "Send a registration request to KBIT.",
+      "Complete the relevant local registration form.",
+      "Submit a professional profile and reason for joining.",
+      "Confirm approval and transfer membership fee as instructed."
+    ]
+  },
+  "fees": {
+    "tab": "Membership Fee",
+    "title": "KBIT Membership Fee & Incentive Policy 2025",
+    "tiers": [
+      {
+        "id": "standard",
+        "name": "Standard Member",
+        "audience": "Aesthetic professionals, spa owners, and individuals beginning development within the KBIT ecosystem.",
+        "packages": [
+          { "duration": "6 months", "price": "300 USD" },
+          { "duration": "1 year", "price": "500 USD" }
+        ],
+        "notes": ["Professional upgrade is not automatic due to different target groups.", "Can register new or switch directly to Strategic Partner."]
+      },
+      {
+        "id": "professional",
+        "name": "Professional Member",
+        "audience": "Doctors and experts with qualifications in medical, aesthetic, or high-tech fields.",
+        "packages": [
+          { "duration": "1 year", "price": "700 USD" },
+          { "duration": "Life Member", "price": "2,000 USD" }
+        ],
+        "lifeBenefits": ["Lifetime free access to all workshops in Vietnam.", "Priority for one medical tour to South Korea each year.", "Two complimentary advanced technology training courses.", "Lifetime Member plaque and honorary listing."]
+      },
+      {
+        "id": "strategic",
+        "name": "Strategic Partner",
+        "audience": "Clinics, academies, businesses, or individuals able to implement strategic cooperation with KBIT.",
+        "packages": [
+          { "duration": "1 year", "price": "1,000 USD" },
+          { "duration": "Life Member", "price": "3,000 USD" }
+        ],
+        "lifeBenefits": ["Lifetime free access to exclusive SOP materials.", "One complimentary advanced staff training course each year.", "Two complimentary strategic technology training courses.", "Priority rights to distribute new products or programs."]
+      }
+    ],
+    "limitPolicy": {
+      "title": "Lifetime Package Limitation Policy",
+      "releases": ["20 Life Professional slots", "10 Life Strategic Partner slots"],
+      "note": "Life Member applications require an interview to confirm eligibility before approval."
+    }
+  },
+  "registrationForms": {
+    "tab": "Registration Forms",
+    "title": "Download Membership Registration Forms",
+    "description": "Select the registration form corresponding to your membership category. After completing it, submit the file and supporting documents through the KBIT contact channel.",
+    "forms": [
+      { "id": "standard", "title": "Standard Member Registration Form", "filePath": "/forms/kbit-standard-member-registration.pdf" },
+      { "id": "professional", "title": "Professional Member Registration Form", "filePath": "/forms/kbit-professional-member-registration.pdf" },
+      { "id": "strategic", "title": "Strategic Partner Registration Form", "filePath": "/forms/kbit-strategic-partner-registration.pdf" }
+    ]
+  }
+}

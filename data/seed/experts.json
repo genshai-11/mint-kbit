@@ -1,0 +1,16 @@
+{
+  "_note": "TRỐNG trên web cũ ('No experts found') — cần khách cấp 50+ hồ sơ bác sĩ kèm ảnh chân dung. _sample minh hoạ shape, không seed vào prod.",
+  "data": [],
+  "_sample": {
+    "slug": "dr-kim-soo-hyun",
+    "name": "Dr. Kim Soo-Hyun",
+    "title": { "en": "Aesthetic & Plastic Surgery Specialist", "vi": "[NEEDS_TRANSLATION:vi]", "ko": "[NEEDS_TRANSLATION:ko]" },
+    "avatar": "[CLOUDINARY_URL]",
+    "bio": { "en": "[CLIENT_PROVIDE] tiểu sử", "vi": "", "ko": "" },
+    "specialties": ["Thread Lifting", "Rhinoplasty"],
+    "certifications": [{ "name": { "en": "Board Certified Plastic Surgeon", "vi": "", "ko": "" }, "issuer": "Korean Society of Plastic Surgeons", "year": 2015 }],
+    "region": "Seoul",
+    "sortOrder": 1,
+    "isActive": true
+  }
+}

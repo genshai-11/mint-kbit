@@ -1,0 +1,91 @@
+{
+  "seed_counts": {
+    "asset-manifest.json": 70,
+    "centers.json": 1,
+    "content-gaps.json": 10,
+    "events.json": 4,
+    "experts.json": 0,
+    "membership.json": 3,
+    "news.json": 6,
+    "pages.json": 9,
+    "partners.json": 10,
+    "raw-content.json": 3,
+    "settings.json": 9,
+    "testimonials.json": 0,
+    "url-inventory.json": 80
+  },
+  "asset_files_copied": 70,
+  "asset_bytes_copied": 204007621,
+  "direct_files": [
+    {
+      "source": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit\\data\\seed\\asset-manifest.json",
+      "target": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit-new-project\\data\\seed\\asset-manifest.json",
+      "bytes": 45120
+    },
+    {
+      "source": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit\\data\\seed\\centers.json",
+      "target": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit-new-project\\data\\seed\\centers.json",
+      "bytes": 756
+    },
+    {
+      "source": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit\\data\\seed\\content-gaps.json",
+      "target": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit-new-project\\data\\seed\\content-gaps.json",
+      "bytes": 3232
+    },
+    {
+      "source": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit\\data\\seed\\events.json",
+      "target": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit-new-project\\data\\seed\\events.json",
+      "bytes": 57387
+    },
+    {
+      "source": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit\\data\\seed\\experts.json",
+      "target": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit-new-project\\data\\seed\\experts.json",
+      "bytes": 791
+    },
+    {
+      "source": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit\\data\\seed\\membership.json",
+      "target": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit-new-project\\data\\seed\\membership.json",
+      "bytes": 934
+    },
+    {
+      "source": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit\\data\\seed\\news.json",
+      "target": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit-new-project\\data\\seed\\news.json",
+      "bytes": 68125
+    },
+    {
+      "source": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit\\data\\seed\\pages.json",
+      "target": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit-new-project\\data\\seed\\pages.json",
+      "bytes": 11013
+    },
+    {
+      "source": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit\\data\\seed\\partners.json",
+      "target": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit-new-project\\data\\seed\\partners.json",
+      "bytes": 2215
+    },
+    {
+      "source": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit\\data\\seed\\raw-content.json",
+      "target": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit-new-project\\data\\seed\\raw-content.json",
+      "bytes": 196879
+    },
+    {
+      "source": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit\\data\\seed\\settings.json",
+      "target": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit-new-project\\data\\seed\\settings.json",
+      "bytes": 4605
+    },
+    {
+      "source": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit\\data\\seed\\testimonials.json",
+      "target": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit-new-project\\data\\seed\\testimonials.json",
+      "bytes": 174
+    },
+    {
+      "source": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit\\data\\seed\\url-inventory.json",
+      "target": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit-new-project\\data\\seed\\url-inventory.json",
+      "bytes": 68674
+    },
+    {
+      "source": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit\\data\\CONTENT_GAPS.md",
+      "target": "C:\\Users\\gensh\\OneDrive\\Máy tính\\LUCY\\PROJECT-WORKPLACE\\JOLLY\\kbit-new-project\\data\\CONTENT_GAPS.md",
+      "bytes": 977
+    }
+  ]
+}

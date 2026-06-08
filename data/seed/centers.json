@@ -1,0 +1,25 @@
+{
+  "_note": "NEW 2026-06-05 by Craft Agent. Crawled from live centers API. Images downloaded to data/assets/centers.",
+  "data": [
+    {
+      "sourceId": 31,
+      "name": "KBIT 1",
+      "address": "46 Yen The",
+      "phone": "0377971011",
+      "hours": "8:00 AM - 9:00 PM",
+      "lat": null,
+      "lng": null,
+      "images": [
+        {
+          "imageUrl": "data/assets/centers/center-31-1-71612daa.jpg",
+          "altText": "_BMT2004.jpg",
+          "sortOrder": 0,
+          "sourceUrl": "https://api.kbitassociation.com/uploads/centers/file-1749029118870-252258256.jpg"
+        }
+      ],
+      "facilities": [],
+      "createdAt": "2025-06-04T16:25:18.000Z",
+      "updatedAt": "2025-06-04T16:25:18.000Z"
+    }
+  ]
+}

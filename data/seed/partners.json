@@ -1,0 +1,15 @@
+{
+  "_note": "10 đối tác khoa học từ trang Home cũ. description là [GAP] cần khách cấp mô tả từng đối tác cho trang Partners. logoUrl tạm để URL gốc, Content Agent re-host lên Cloudinary (folder partners/).",
+  "data": [
+    { "name": "BAROG", "logoUrl": "https://kbitassociation.com/images/partners/barog.png", "website": null, "description": { "en": "[GAP]", "vi": "[GAP]", "ko": "[GAP]" }, "sortOrder": 1 },
+    { "name": "Cheong-dam-jin", "logoUrl": "https://kbitassociation.com/images/partners/Cheong-dam-jin.png", "website": null, "description": { "en": "[GAP]", "vi": "[GAP]", "ko": "[GAP]" }, "sortOrder": 2 },
+    { "name": "GOODDAY", "logoUrl": "https://kbitassociation.com/images/partners/GOODDAY.jpg", "website": null, "description": { "en": "[GAP]", "vi": "[GAP]", "ko": "[GAP]" }, "sortOrder": 3 },
+    { "name": "Meylin", "logoUrl": "https://kbitassociation.com/images/partners/meylin.png", "website": null, "description": { "en": "[GAP]", "vi": "[GAP]", "ko": "[GAP]" }, "sortOrder": 4 },
+    { "name": "Orseyun", "logoUrl": "https://kbitassociation.com/images/partners/orseyun.jpg", "website": null, "description": { "en": "[GAP]", "vi": "[GAP]", "ko": "[GAP]" }, "sortOrder": 5 },
+    { "name": "RENOVO", "logoUrl": "https://kbitassociation.com/images/partners/RENOVO.png", "website": null, "description": { "en": "[GAP]", "vi": "[GAP]", "ko": "[GAP]" }, "sortOrder": 6 },
+    { "name": "Verni", "logoUrl": "https://kbitassociation.com/images/partners/verni.png", "website": null, "description": { "en": "[GAP]", "vi": "[GAP]", "ko": "[GAP]" }, "sortOrder": 7 },
+    { "name": "Byeong", "logoUrl": "https://kbitassociation.com/images/partners/byeong.jpg", "website": null, "description": { "en": "[GAP]", "vi": "[GAP]", "ko": "[GAP]" }, "sortOrder": 8 },
+    { "name": "Senteomko", "logoUrl": "https://kbitassociation.com/images/partners/senteomko.png", "website": null, "description": { "en": "[GAP]", "vi": "[GAP]", "ko": "[GAP]" }, "sortOrder": 9 },
+    { "name": "Keuliseumaseu", "logoUrl": "https://kbitassociation.com/images/partners/keuliseumaseu.png", "website": null, "description": { "en": "[GAP]", "vi": "[GAP]", "ko": "[GAP]" }, "sortOrder": 10 }
+  ]
+}

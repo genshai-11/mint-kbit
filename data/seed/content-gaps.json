@@ -1,0 +1,95 @@
+{
+  "_note": "Updated 2026-06-05 after live crawl. Events/news moved out of open high-priority gaps; see data/CONTENT_GAPS.md for resolved notes. Open gaps below still need client/review input.",
+  "gaps": [
+    {
+      "id": "G2",
+      "entity": "experts",
+      "field": "toàn bộ",
+      "type": "CLIENT_PROVIDE",
+      "priority": "high",
+      "desc": "50+ hồ sơ bác sĩ: tên, chức danh, ảnh chân dung, bio, chuyên môn, chứng chỉ. Web cũ trống. Chặn go-live."
+    },
+    {
+      "id": "G4",
+      "entity": "membership_tiers",
+      "field": "price, benefits",
+      "type": "CLIENT_PROVIDE",
+      "priority": "high",
+      "desc": "Giá & quyền lợi từng gói hội viên (Basic/Pro/Premium)."
+    },
+    {
+      "id": "G5",
+      "entity": "settings.stats",
+      "field": "countries, members",
+      "type": "CLIENT_PROVIDE",
+      "priority": "medium",
+      "desc": "Xác nhận số quốc gia & số hội viên (mockup tạm 8 / 500)."
+    },
+    {
+      "id": "G6",
+      "entity": "partners",
+      "field": "description, website",
+      "type": "CLIENT_PROVIDE",
+      "priority": "medium",
+      "desc": "Mô tả + website cho 10 đối tác (trang Partners). Logo đã có."
+    },
+    {
+      "id": "G7",
+      "entity": "pages.about",
+      "field": "toàn bộ",
+      "type": "CLIENT_PROVIDE",
+      "priority": "medium",
+      "desc": "Trang About mới: sứ mệnh, tầm nhìn, lịch sử, timeline, danh sách 16 trung tâm, ban lãnh đạo."
+    },
+    {
+      "id": "G8",
+      "entity": "pages.membership.faq",
+      "field": "faq",
+      "type": "AI_DRAFT",
+      "priority": "low",
+      "desc": "6-8 câu FAQ — agent có thể soạn nháp chờ duyệt."
+    },
+    {
+      "id": "G9",
+      "entity": "testimonials",
+      "field": "toàn bộ",
+      "type": "CLIENT_PROVIDE",
+      "priority": "low",
+      "desc": "Lời chứng thực từ hội viên/bác sĩ."
+    },
+    {
+      "id": "G10",
+      "entity": "assets",
+      "field": "hero images",
+      "type": "CLIENT_PROVIDE",
+      "priority": "high",
+      "desc": "Ảnh hero chất lượng cao thay placeholder (experts, contact) + banner đẹp hơn cho Home/Membership."
+    },
+    {
+      "id": "G11",
+      "entity": "settings.brand",
+      "field": "favicon, ogImage, logo SVG",
+      "type": "CLIENT_PROVIDE",
+      "priority": "medium",
+      "desc": "Favicon, OG image 1200x630, logo bản SVG nếu có."
+    },
+    {
+      "id": "G12",
+      "entity": "settings.offices",
+      "field": "mapLat, mapLng",
+      "type": "CLIENT_PROVIDE",
+      "priority": "low",
+      "desc": "Toạ độ Google Map 2 văn phòng."
+    }
+  ],
+  "resolved": [
+    {
+      "id": "G1",
+      "desc": "RESOLVED 2026-06-05: live API has 4 events; mapped to data/seed/events.json with images in data/assets/events. Review/mapping still required before production."
+    },
+    {
+      "id": "G3",
+      "desc": "RESOLVED 2026-06-05: live API/sitemap has 6 news detail records across locales; mapped to data/seed/news.json with images in data/assets/news. Review/mapping still required before production."
+    }
+  ]
+}

@@ -1,0 +1,2449 @@
+{
+  "generatedAt": "2026-06-05T08:32:00Z",
+  "sitemap": [
+    {
+      "loc": "https://kbitassociation.com/en",
+      "locale": "en",
+      "type": "home",
+      "alternates": {
+        "en": "https://kbitassociation.com/en",
+        "vi": "https://kbitassociation.com/vi",
+        "ko": "https://kbitassociation.com/ko",
+        "zh": "https://kbitassociation.com/zh"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/vi",
+      "locale": "vi",
+      "type": "home",
+      "alternates": {
+        "en": "https://kbitassociation.com/en",
+        "vi": "https://kbitassociation.com/vi",
+        "ko": "https://kbitassociation.com/ko",
+        "zh": "https://kbitassociation.com/zh"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/ko",
+      "locale": "ko",
+      "type": "home",
+      "alternates": {
+        "en": "https://kbitassociation.com/en",
+        "vi": "https://kbitassociation.com/vi",
+        "ko": "https://kbitassociation.com/ko",
+        "zh": "https://kbitassociation.com/zh"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/zh",
+      "locale": "zh",
+      "type": "home",
+      "alternates": {
+        "en": "https://kbitassociation.com/en",
+        "vi": "https://kbitassociation.com/vi",
+        "ko": "https://kbitassociation.com/ko",
+        "zh": "https://kbitassociation.com/zh"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/en/centers",
+      "locale": "en",
+      "type": "centers",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/centers",
+        "vi": "https://kbitassociation.com/vi/centers",
+        "ko": "https://kbitassociation.com/ko/centers",
+        "zh": "https://kbitassociation.com/zh/centers"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/vi/centers",
+      "locale": "vi",
+      "type": "centers",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/centers",
+        "vi": "https://kbitassociation.com/vi/centers",
+        "ko": "https://kbitassociation.com/ko/centers",
+        "zh": "https://kbitassociation.com/zh/centers"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/ko/centers",
+      "locale": "ko",
+      "type": "centers",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/centers",
+        "vi": "https://kbitassociation.com/vi/centers",
+        "ko": "https://kbitassociation.com/ko/centers",
+        "zh": "https://kbitassociation.com/zh/centers"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/zh/centers",
+      "locale": "zh",
+      "type": "centers",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/centers",
+        "vi": "https://kbitassociation.com/vi/centers",
+        "ko": "https://kbitassociation.com/ko/centers",
+        "zh": "https://kbitassociation.com/zh/centers"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/en/co-founder",
+      "locale": "en",
+      "type": "co-founder",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/co-founder",
+        "vi": "https://kbitassociation.com/vi/co-founder",
+        "ko": "https://kbitassociation.com/ko/co-founder",
+        "zh": "https://kbitassociation.com/zh/co-founder"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/vi/co-founder",
+      "locale": "vi",
+      "type": "co-founder",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/co-founder",
+        "vi": "https://kbitassociation.com/vi/co-founder",
+        "ko": "https://kbitassociation.com/ko/co-founder",
+        "zh": "https://kbitassociation.com/zh/co-founder"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/ko/co-founder",
+      "locale": "ko",
+      "type": "co-founder",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/co-founder",
+        "vi": "https://kbitassociation.com/vi/co-founder",
+        "ko": "https://kbitassociation.com/ko/co-founder",
+        "zh": "https://kbitassociation.com/zh/co-founder"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/zh/co-founder",
+      "locale": "zh",
+      "type": "co-founder",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/co-founder",
+        "vi": "https://kbitassociation.com/vi/co-founder",
+        "ko": "https://kbitassociation.com/ko/co-founder",
+        "zh": "https://kbitassociation.com/zh/co-founder"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/en/contact",
+      "locale": "en",
+      "type": "contact",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/contact",
+        "vi": "https://kbitassociation.com/vi/contact",
+        "ko": "https://kbitassociation.com/ko/contact",
+        "zh": "https://kbitassociation.com/zh/contact"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/vi/contact",
+      "locale": "vi",
+      "type": "contact",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/contact",
+        "vi": "https://kbitassociation.com/vi/contact",
+        "ko": "https://kbitassociation.com/ko/contact",
+        "zh": "https://kbitassociation.com/zh/contact"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/ko/contact",
+      "locale": "ko",
+      "type": "contact",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/contact",
+        "vi": "https://kbitassociation.com/vi/contact",
+        "ko": "https://kbitassociation.com/ko/contact",
+        "zh": "https://kbitassociation.com/zh/contact"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/zh/contact",
+      "locale": "zh",
+      "type": "contact",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/contact",
+        "vi": "https://kbitassociation.com/vi/contact",
+        "ko": "https://kbitassociation.com/ko/contact",
+        "zh": "https://kbitassociation.com/zh/contact"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/en/events-workshops",
+      "locale": "en",
+      "type": "events-workshops",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/events-workshops",
+        "vi": "https://kbitassociation.com/vi/events-workshops",
+        "ko": "https://kbitassociation.com/ko/events-workshops",
+        "zh": "https://kbitassociation.com/zh/events-workshops"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/vi/events-workshops",
+      "locale": "vi",
+      "type": "events-workshops",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/events-workshops",
+        "vi": "https://kbitassociation.com/vi/events-workshops",
+        "ko": "https://kbitassociation.com/ko/events-workshops",
+        "zh": "https://kbitassociation.com/zh/events-workshops"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/ko/events-workshops",
+      "locale": "ko",
+      "type": "events-workshops",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/events-workshops",
+        "vi": "https://kbitassociation.com/vi/events-workshops",
+        "ko": "https://kbitassociation.com/ko/events-workshops",
+        "zh": "https://kbitassociation.com/zh/events-workshops"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/zh/events-workshops",
+      "locale": "zh",
+      "type": "events-workshops",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/events-workshops",
+        "vi": "https://kbitassociation.com/vi/events-workshops",
+        "ko": "https://kbitassociation.com/ko/events-workshops",
+        "zh": "https://kbitassociation.com/zh/events-workshops"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/en/experts",
+      "locale": "en",
+      "type": "experts",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/experts",
+        "vi": "https://kbitassociation.com/vi/experts",
+        "ko": "https://kbitassociation.com/ko/experts",
+        "zh": "https://kbitassociation.com/zh/experts"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/vi/experts",
+      "locale": "vi",
+      "type": "experts",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/experts",
+        "vi": "https://kbitassociation.com/vi/experts",
+        "ko": "https://kbitassociation.com/ko/experts",
+        "zh": "https://kbitassociation.com/zh/experts"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/ko/experts",
+      "locale": "ko",
+      "type": "experts",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/experts",
+        "vi": "https://kbitassociation.com/vi/experts",
+        "ko": "https://kbitassociation.com/ko/experts",
+        "zh": "https://kbitassociation.com/zh/experts"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/zh/experts",
+      "locale": "zh",
+      "type": "experts",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/experts",
+        "vi": "https://kbitassociation.com/vi/experts",
+        "ko": "https://kbitassociation.com/ko/experts",
+        "zh": "https://kbitassociation.com/zh/experts"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/en/membership",
+      "locale": "en",
+      "type": "membership",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/membership",
+        "vi": "https://kbitassociation.com/vi/membership",
+        "ko": "https://kbitassociation.com/ko/membership",
+        "zh": "https://kbitassociation.com/zh/membership"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/vi/membership",
+      "locale": "vi",
+      "type": "membership",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/membership",
+        "vi": "https://kbitassociation.com/vi/membership",
+        "ko": "https://kbitassociation.com/ko/membership",
+        "zh": "https://kbitassociation.com/zh/membership"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/ko/membership",
+      "locale": "ko",
+      "type": "membership",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/membership",
+        "vi": "https://kbitassociation.com/vi/membership",
+        "ko": "https://kbitassociation.com/ko/membership",
+        "zh": "https://kbitassociation.com/zh/membership"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/zh/membership",
+      "locale": "zh",
+      "type": "membership",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/membership",
+        "vi": "https://kbitassociation.com/vi/membership",
+        "ko": "https://kbitassociation.com/ko/membership",
+        "zh": "https://kbitassociation.com/zh/membership"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/en/news",
+      "locale": "en",
+      "type": "news",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news",
+        "vi": "https://kbitassociation.com/vi/news",
+        "ko": "https://kbitassociation.com/ko/news",
+        "zh": "https://kbitassociation.com/zh/news"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/vi/news",
+      "locale": "vi",
+      "type": "news",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news",
+        "vi": "https://kbitassociation.com/vi/news",
+        "ko": "https://kbitassociation.com/ko/news",
+        "zh": "https://kbitassociation.com/zh/news"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/ko/news",
+      "locale": "ko",
+      "type": "news",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news",
+        "vi": "https://kbitassociation.com/vi/news",
+        "ko": "https://kbitassociation.com/ko/news",
+        "zh": "https://kbitassociation.com/zh/news"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/zh/news",
+      "locale": "zh",
+      "type": "news",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news",
+        "vi": "https://kbitassociation.com/vi/news",
+        "ko": "https://kbitassociation.com/ko/news",
+        "zh": "https://kbitassociation.com/zh/news"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/en/programs",
+      "locale": "en",
+      "type": "programs",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/programs",
+        "vi": "https://kbitassociation.com/vi/programs",
+        "ko": "https://kbitassociation.com/ko/programs",
+        "zh": "https://kbitassociation.com/zh/programs"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/vi/programs",
+      "locale": "vi",
+      "type": "programs",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/programs",
+        "vi": "https://kbitassociation.com/vi/programs",
+        "ko": "https://kbitassociation.com/ko/programs",
+        "zh": "https://kbitassociation.com/zh/programs"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/ko/programs",
+      "locale": "ko",
+      "type": "programs",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/programs",
+        "vi": "https://kbitassociation.com/vi/programs",
+        "ko": "https://kbitassociation.com/ko/programs",
+        "zh": "https://kbitassociation.com/zh/programs"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/zh/programs",
+      "locale": "zh",
+      "type": "programs",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/programs",
+        "vi": "https://kbitassociation.com/vi/programs",
+        "ko": "https://kbitassociation.com/ko/programs",
+        "zh": "https://kbitassociation.com/zh/programs"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/en/welcome-speech",
+      "locale": "en",
+      "type": "welcome-speech",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/welcome-speech",
+        "vi": "https://kbitassociation.com/vi/welcome-speech",
+        "ko": "https://kbitassociation.com/ko/welcome-speech",
+        "zh": "https://kbitassociation.com/zh/welcome-speech"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/vi/welcome-speech",
+      "locale": "vi",
+      "type": "welcome-speech",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/welcome-speech",
+        "vi": "https://kbitassociation.com/vi/welcome-speech",
+        "ko": "https://kbitassociation.com/ko/welcome-speech",
+        "zh": "https://kbitassociation.com/zh/welcome-speech"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/ko/welcome-speech",
+      "locale": "ko",
+      "type": "welcome-speech",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/welcome-speech",
+        "vi": "https://kbitassociation.com/vi/welcome-speech",
+        "ko": "https://kbitassociation.com/ko/welcome-speech",
+        "zh": "https://kbitassociation.com/zh/welcome-speech"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/zh/welcome-speech",
+      "locale": "zh",
+      "type": "welcome-speech",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/welcome-speech",
+        "vi": "https://kbitassociation.com/vi/welcome-speech",
+        "ko": "https://kbitassociation.com/ko/welcome-speech",
+        "zh": "https://kbitassociation.com/zh/welcome-speech"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/en/events-workshops/12",
+      "locale": "en",
+      "type": "event-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/events-workshops/12",
+        "vi": "https://kbitassociation.com/vi/events-workshops/12",
+        "ko": "https://kbitassociation.com/ko/events-workshops/12",
+        "zh": "https://kbitassociation.com/zh/events-workshops/12"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/vi/events-workshops/12",
+      "locale": "vi",
+      "type": "event-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/events-workshops/12",
+        "vi": "https://kbitassociation.com/vi/events-workshops/12",
+        "ko": "https://kbitassociation.com/ko/events-workshops/12",
+        "zh": "https://kbitassociation.com/zh/events-workshops/12"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/ko/events-workshops/12",
+      "locale": "ko",
+      "type": "event-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/events-workshops/12",
+        "vi": "https://kbitassociation.com/vi/events-workshops/12",
+        "ko": "https://kbitassociation.com/ko/events-workshops/12",
+        "zh": "https://kbitassociation.com/zh/events-workshops/12"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/zh/events-workshops/12",
+      "locale": "zh",
+      "type": "event-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/events-workshops/12",
+        "vi": "https://kbitassociation.com/vi/events-workshops/12",
+        "ko": "https://kbitassociation.com/ko/events-workshops/12",
+        "zh": "https://kbitassociation.com/zh/events-workshops/12"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/en/events-workshops/11",
+      "locale": "en",
+      "type": "event-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/events-workshops/11",
+        "vi": "https://kbitassociation.com/vi/events-workshops/11",
+        "ko": "https://kbitassociation.com/ko/events-workshops/11",
+        "zh": "https://kbitassociation.com/zh/events-workshops/11"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/vi/events-workshops/11",
+      "locale": "vi",
+      "type": "event-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/events-workshops/11",
+        "vi": "https://kbitassociation.com/vi/events-workshops/11",
+        "ko": "https://kbitassociation.com/ko/events-workshops/11",
+        "zh": "https://kbitassociation.com/zh/events-workshops/11"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/ko/events-workshops/11",
+      "locale": "ko",
+      "type": "event-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/events-workshops/11",
+        "vi": "https://kbitassociation.com/vi/events-workshops/11",
+        "ko": "https://kbitassociation.com/ko/events-workshops/11",
+        "zh": "https://kbitassociation.com/zh/events-workshops/11"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/zh/events-workshops/11",
+      "locale": "zh",
+      "type": "event-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/events-workshops/11",
+        "vi": "https://kbitassociation.com/vi/events-workshops/11",
+        "ko": "https://kbitassociation.com/ko/events-workshops/11",
+        "zh": "https://kbitassociation.com/zh/events-workshops/11"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/en/events-workshops/9",
+      "locale": "en",
+      "type": "event-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/events-workshops/9",
+        "vi": "https://kbitassociation.com/vi/events-workshops/9",
+        "ko": "https://kbitassociation.com/ko/events-workshops/9",
+        "zh": "https://kbitassociation.com/zh/events-workshops/9"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/vi/events-workshops/9",
+      "locale": "vi",
+      "type": "event-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/events-workshops/9",
+        "vi": "https://kbitassociation.com/vi/events-workshops/9",
+        "ko": "https://kbitassociation.com/ko/events-workshops/9",
+        "zh": "https://kbitassociation.com/zh/events-workshops/9"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/ko/events-workshops/9",
+      "locale": "ko",
+      "type": "event-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/events-workshops/9",
+        "vi": "https://kbitassociation.com/vi/events-workshops/9",
+        "ko": "https://kbitassociation.com/ko/events-workshops/9",
+        "zh": "https://kbitassociation.com/zh/events-workshops/9"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/zh/events-workshops/9",
+      "locale": "zh",
+      "type": "event-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/events-workshops/9",
+        "vi": "https://kbitassociation.com/vi/events-workshops/9",
+        "ko": "https://kbitassociation.com/ko/events-workshops/9",
+        "zh": "https://kbitassociation.com/zh/events-workshops/9"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/en/events-workshops/8",
+      "locale": "en",
+      "type": "event-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/events-workshops/8",
+        "vi": "https://kbitassociation.com/vi/events-workshops/8",
+        "ko": "https://kbitassociation.com/ko/events-workshops/8",
+        "zh": "https://kbitassociation.com/zh/events-workshops/8"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/vi/events-workshops/8",
+      "locale": "vi",
+      "type": "event-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/events-workshops/8",
+        "vi": "https://kbitassociation.com/vi/events-workshops/8",
+        "ko": "https://kbitassociation.com/ko/events-workshops/8",
+        "zh": "https://kbitassociation.com/zh/events-workshops/8"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/ko/events-workshops/8",
+      "locale": "ko",
+      "type": "event-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/events-workshops/8",
+        "vi": "https://kbitassociation.com/vi/events-workshops/8",
+        "ko": "https://kbitassociation.com/ko/events-workshops/8",
+        "zh": "https://kbitassociation.com/zh/events-workshops/8"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/zh/events-workshops/8",
+      "locale": "zh",
+      "type": "event-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/events-workshops/8",
+        "vi": "https://kbitassociation.com/vi/events-workshops/8",
+        "ko": "https://kbitassociation.com/ko/events-workshops/8",
+        "zh": "https://kbitassociation.com/zh/events-workshops/8"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/en/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration",
+      "locale": "en",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration",
+        "vi": "https://kbitassociation.com/vi/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration",
+        "ko": "https://kbitassociation.com/ko/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration",
+        "zh": "https://kbitassociation.com/zh/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/vi/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration",
+      "locale": "vi",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration",
+        "vi": "https://kbitassociation.com/vi/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration",
+        "ko": "https://kbitassociation.com/ko/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration",
+        "zh": "https://kbitassociation.com/zh/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/ko/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration",
+      "locale": "ko",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration",
+        "vi": "https://kbitassociation.com/vi/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration",
+        "ko": "https://kbitassociation.com/ko/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration",
+        "zh": "https://kbitassociation.com/zh/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/zh/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration",
+      "locale": "zh",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration",
+        "vi": "https://kbitassociation.com/vi/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration",
+        "ko": "https://kbitassociation.com/ko/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration",
+        "zh": "https://kbitassociation.com/zh/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/en/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation",
+      "locale": "en",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation",
+        "vi": "https://kbitassociation.com/vi/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation",
+        "ko": "https://kbitassociation.com/ko/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation",
+        "zh": "https://kbitassociation.com/zh/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/vi/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation",
+      "locale": "vi",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation",
+        "vi": "https://kbitassociation.com/vi/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation",
+        "ko": "https://kbitassociation.com/ko/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation",
+        "zh": "https://kbitassociation.com/zh/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/ko/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation",
+      "locale": "ko",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation",
+        "vi": "https://kbitassociation.com/vi/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation",
+        "ko": "https://kbitassociation.com/ko/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation",
+        "zh": "https://kbitassociation.com/zh/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/zh/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation",
+      "locale": "zh",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation",
+        "vi": "https://kbitassociation.com/vi/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation",
+        "ko": "https://kbitassociation.com/ko/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation",
+        "zh": "https://kbitassociation.com/zh/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/en/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet",
+      "locale": "en",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet",
+        "vi": "https://kbitassociation.com/vi/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet",
+        "ko": "https://kbitassociation.com/ko/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet",
+        "zh": "https://kbitassociation.com/zh/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/vi/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet",
+      "locale": "vi",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet",
+        "vi": "https://kbitassociation.com/vi/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet",
+        "ko": "https://kbitassociation.com/ko/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet",
+        "zh": "https://kbitassociation.com/zh/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/ko/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet",
+      "locale": "ko",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet",
+        "vi": "https://kbitassociation.com/vi/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet",
+        "ko": "https://kbitassociation.com/ko/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet",
+        "zh": "https://kbitassociation.com/zh/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/zh/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet",
+      "locale": "zh",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet",
+        "vi": "https://kbitassociation.com/vi/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet",
+        "ko": "https://kbitassociation.com/ko/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet",
+        "zh": "https://kbitassociation.com/zh/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/en/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024",
+      "locale": "en",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024",
+        "vi": "https://kbitassociation.com/vi/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024",
+        "ko": "https://kbitassociation.com/ko/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024",
+        "zh": "https://kbitassociation.com/zh/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/vi/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024",
+      "locale": "vi",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024",
+        "vi": "https://kbitassociation.com/vi/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024",
+        "ko": "https://kbitassociation.com/ko/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024",
+        "zh": "https://kbitassociation.com/zh/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/ko/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024",
+      "locale": "ko",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024",
+        "vi": "https://kbitassociation.com/vi/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024",
+        "ko": "https://kbitassociation.com/ko/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024",
+        "zh": "https://kbitassociation.com/zh/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/zh/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024",
+      "locale": "zh",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024",
+        "vi": "https://kbitassociation.com/vi/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024",
+        "ko": "https://kbitassociation.com/ko/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024",
+        "zh": "https://kbitassociation.com/zh/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/en/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag",
+      "locale": "en",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag",
+        "vi": "https://kbitassociation.com/vi/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag",
+        "ko": "https://kbitassociation.com/ko/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag",
+        "zh": "https://kbitassociation.com/zh/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/vi/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag",
+      "locale": "vi",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag",
+        "vi": "https://kbitassociation.com/vi/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag",
+        "ko": "https://kbitassociation.com/ko/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag",
+        "zh": "https://kbitassociation.com/zh/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/ko/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag",
+      "locale": "ko",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag",
+        "vi": "https://kbitassociation.com/vi/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag",
+        "ko": "https://kbitassociation.com/ko/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag",
+        "zh": "https://kbitassociation.com/zh/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/zh/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag",
+      "locale": "zh",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag",
+        "vi": "https://kbitassociation.com/vi/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag",
+        "ko": "https://kbitassociation.com/ko/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag",
+        "zh": "https://kbitassociation.com/zh/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/en/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng",
+      "locale": "en",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng",
+        "vi": "https://kbitassociation.com/vi/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng",
+        "ko": "https://kbitassociation.com/ko/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng",
+        "zh": "https://kbitassociation.com/zh/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/vi/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng",
+      "locale": "vi",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng",
+        "vi": "https://kbitassociation.com/vi/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng",
+        "ko": "https://kbitassociation.com/ko/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng",
+        "zh": "https://kbitassociation.com/zh/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/ko/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng",
+      "locale": "ko",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng",
+        "vi": "https://kbitassociation.com/vi/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng",
+        "ko": "https://kbitassociation.com/ko/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng",
+        "zh": "https://kbitassociation.com/zh/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng"
+      }
+    },
+    {
+      "loc": "https://kbitassociation.com/zh/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng",
+      "locale": "zh",
+      "type": "news-detail",
+      "alternates": {
+        "en": "https://kbitassociation.com/en/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng",
+        "vi": "https://kbitassociation.com/vi/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng",
+        "ko": "https://kbitassociation.com/ko/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng",
+        "zh": "https://kbitassociation.com/zh/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng"
+      }
+    }
+  ],
+  "api": {
+    "events": {
+      "en": {
+        "list_status": 200,
+        "list": {
+          "status": "SUCCESS",
+          "data": [
+            {
+              "id": 12,
+              "type": "conference",
+              "title": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025 ",
+              "date": "2025-11-01T08:00:00.000Z",
+              "endDate": "2025-11-01T17:30:00.000Z",
+              "date2": "2025-11-02T08:30:00.000Z",
+              "endDate2": "2025-11-02T16:00:00.000Z",
+              "date3": null,
+              "endDate3": null,
+              "location": "REX Hotel Saigon + Le Van Thinh Hospital",
+              "description": [],
+              "shortDescription": "The 1st Korea- Vietnam K-Beauty Advanced Skill Training (K.A.T 2025) is an international academic conference jointly hosted by the Ministry of Health & Welfare of Korea, the Korea Health Industry Development Institute (KHIDI), and Seongnam City; organised by the Korean Medical Device Education and Training Support Center (SNIP, Seoul National University Bundang Hospital, the Korea Smart Medical Devices Foundation), the Korea Beauty International Technology Association (KBIT), and Le Van Thinh Hospital.",
+              "image": "https://api.kbitassociation.com/uploads/events/file-1761368833746-632590418.png",
+              "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1761371966411-37732198.png",
+              "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1760015572978-497927837.png",
+              "isFeatured": 0,
+              "targetAudience": "Doctors, Aesthetic Nurse",
+              "isRegistrationOpen": 0,
+              "fee": null,
+              "isShowFee": 0
+            },
+            {
+              "id": 11,
+              "type": "workshop",
+              "title": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025",
+              "date": "2025-10-07T09:00:00.000Z",
+              "endDate": "2025-10-07T13:00:00.000Z",
+              "date2": null,
+              "endDate2": null,
+              "date3": null,
+              "endDate3": null,
+              "location": "Le Van Thinh Hospital, District 2, HCMC, Vietnam",
+              "description": [],
+              "shortDescription": "The themed workshop “Combination of Botox – Filler – Thread – PLLA in Facial Contouring and Skin Rejuvenation” will take place on October 7, 2025, at Le Van Thinh Hospital. Led by Dr. Lee Jeong Hun (Korea), the program features in-depth lectures and Live Demos, offering participants both knowledge and hands-on experience.",
+              "image": "https://api.kbitassociation.com/uploads/events/file-1758132526849-154633253.png",
+              "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1758126602577-778144718.png",
+              "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1758132540603-900778664.png",
+              "isFeatured": 0,
+              "targetAudience": "Doctors, Aesthetic Nurse, Clinic Manager",
+              "isRegistrationOpen": 1,
+              "fee": "999,000 VND",
+              "isShowFee": 1
+            },
+            {
+              "id": 9,
+              "type": "conference",
+              "title": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation",
+              "date": "2025-06-28T08:00:00.000Z",
+              "endDate": "2025-06-28T13:00:00.000Z",
+              "date2": null,
+              "endDate2": null,
+              "date3": null,
+              "endDate3": null,
+              "location": "Le Van Thinh Hospital, District 2, HCMC, Vietnam",
+              "description": [],
+              "shortDescription": "KLA SYMPOSIUM (Knowledge in Lifting & Aesthetics) is an international scientific forum co-founded by KBIT, KCCS, and Le Van Thinh Hospital, aimed at standardizing non-invasive treatment protocols and updating modern aesthetic technologies.",
+              "image": "https://api.kbitassociation.com/uploads/events/file-1751047405486-752312374.png",
+              "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1751048403583-114085324.png",
+              "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1751047406317-234854348.png",
+              "isFeatured": 0,
+              "targetAudience": "Doctors, Specialists, Beautician",
+              "isRegistrationOpen": 1,
+              "fee": "0",
+              "isShowFee": 0
+            },
+            {
+              "id": 8,
+              "type": "conference",
+              "title": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging",
+              "date": "2025-06-04T14:00:00.000Z",
+              "endDate": "2025-06-04T16:00:00.000Z",
+              "date2": null,
+              "endDate2": null,
+              "date3": null,
+              "endDate3": null,
+              "location": "Seoul National University Hospital, Bundang, South Korea",
+              "description": [],
+              "shortDescription": "KLA – Knowledge in Lifting & Anti-Aging is co-founded by:\n • KCCS – Korean College of Cosmetic Surgery\n • KBIT – Korean Beauty International Technology\n • Le Van Thinh Hospital (Vietnam)",
+              "image": "https://api.kbitassociation.com/uploads/events/file-1750068835957-343631202.png",
+              "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1750129138500-506887540.png",
+              "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1750085034250-32356809.png",
+              "isFeatured": 0,
+              "targetAudience": "Doctors, Specialists, Beautician",
+              "isRegistrationOpen": 1,
+              "fee": "0",
+              "isShowFee": 0
+            }
+          ],
+          "meta": {
+            "total": 4,
+            "offset": 0,
+            "size": 100,
+            "lang": "en"
+          }
+        },
+        "details": {
+          "8": {
+            "status": 200,
+            "data": {
+              "status": "SUCCESS",
+              "data": {
+                "id": 8,
+                "type": "conference",
+                "title": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging",
+                "date": "2025-06-04T14:00:00.000Z",
+                "endDate": "2025-06-04T16:00:00.000Z",
+                "date2": null,
+                "endDate2": null,
+                "date3": null,
+                "endDate3": null,
+                "location": "Seoul National University Hospital, Bundang, South Korea",
+                "description": [
+                  {
+                    "image": "https://api.kbitassociation.com/uploads/events/file-1750066136571-159253807.png",
+                    "description": "KLA KOREA 2025 – CONFERENCE PROGRAM\n\nTime: 04:00 – 06:00 PM (South Korea time)\nTheme: “Redefining Non-Surgical Aesthetics – The New Era of Lifting & Regeneration”\nVenue: Seongnam Industry Promotion Agency, Korea\nOrganized by: KBIT – Korea Beauty International Technology Association and PASCAL KOREA\n\n⸻\n\n04:00 – 04:10 PM | Opening Remarks\n • Welcome speech by KBIT Executive Board\n • Acknowledgment of international guests and partners from Pascal Clinic, SNIP, KBIT Vietnam\n\n⸻\n\n04:10 – 04:40 PM | Keynote Session 1 – Medical Innovation\n\nTopic:\n“The Evolution of Skin Rejuvenation: Integrating ExoNano Technology and Precision Lifting”\nSpeaker: Dr. Kang Kyoung Jin\n(Founder of Pascal Clinic, President of KCCS)\n\nKey Points:\n • Scientific basis and clinical results of ExoNano in skin regeneration\n • Combining ExoNano with RF microneedling or HIFU for next-gen lifting\n • Layered treatment protocols for long-lasting collagen remodeling\n • Case studies from leading aesthetic clinics in Korea and Asia\n\n⸻\n\n04:40 – 05:10 PM | Keynote Session 2 – Business Leadership\n\nTopic:\n“Scaling Aesthetic Clinics with Excellence: The Korean Model of Growth and Standardization”\nSpeaker: Mr. Noh Hyun Taek (Vice President of KBIT)\n\nKey Points:\n • Strategic roadmap for building high-performing aesthetic centers\n • Balancing medical results, customer experience, and profitability\n • Clinic-as-a-brand: From treatment provider to education & innovation hub\n • Lessons from Korea for international clinic expansion\n\n⸻\n\n05:10 – 05:40 PM | Expert Panel Discussion\n\nTopic:\n“The Future of Non-Invasive Aesthetics: Collaboration, Training, and Innovation”\nPanelists:\n • Dr. Kang Kyoung Jin (Founder of Pascal Clinic, President of KCCS)\n • Mr. Noh Hyun Taek (Vice President of KBIT)\n • Mrs. Mint Vo (International Relations Director of KBIT)\n • Ms. Trang HT Nguyen (Representative of Le Van Thinh Hospital)\n\nDiscussion Points:\n • Global opportunities for collaboration in non-invasive aesthetic solutions\n • How education & protocol sharing enhance practitioner standards\n • The role of Korean expertise in shaping Southeast Asia’s aesthetic future\n\n⸻\n\n05:40 – 06:00 PM | Networking & Closing\n • Certificate of appreciation to guest speakers\n • Group photos and networking session\n • Invitation to evening Gala or next-day training workshops (if applicable)"
+                  }
+                ],
+                "shortDescription": "KLA – Knowledge in Lifting & Anti-Aging is co-founded by:\n • KCCS – Korean College of Cosmetic Surgery\n • KBIT – Korean Beauty International Technology\n • Le Van Thinh Hospital (Vietnam)",
+                "image": "https://api.kbitassociation.com/uploads/events/file-1750068835957-343631202.png",
+                "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1750129138500-506887540.png",
+                "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1750085034250-32356809.png",
+                "fee": "0",
+                "isShowFee": 0,
+                "isFeatured": 0,
+                "language": "English",
+                "targetAudience": "Doctors, Specialists, Beautician",
+                "isRegistrationOpen": 1
+              }
+            }
+          },
+          "9": {
+            "status": 200,
+            "data": {
+              "status": "SUCCESS",
+              "data": {
+                "id": 9,
+                "type": "conference",
+                "title": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation",
+                "date": "2025-06-28T08:00:00.000Z",
+                "endDate": "2025-06-28T13:00:00.000Z",
+                "date2": null,
+                "endDate2": null,
+                "date3": null,
+                "endDate3": null,
+                "location": "Le Van Thinh Hospital, District 2, HCMC, Vietnam",
+                "description": [
+                  {
+                    "image": "https://api.kbitassociation.com/uploads/events/file-1751047406919-667364048.png",
+                    "description": "PROGRAM DETAILS\n\nPART I – OPENING & STRATEGIC COLLABORATION\n08:00 – 08:30: Guest Reception – Check-in – Distribution of Materials\n08:30 – 08:40: Opening Remarks & Introduction of Distinguished Guests\n08:40 – 08:50: Welcome Address by Le Van Thinh Hospital – Dr. Trần Văn Khanh, Director, Le Van Thinh Hospital\n08:50 – 09:00: Remarks by KBIT Association – Dr. Park Sung Yong, President, KBIT Association\n09:00 – 09:15: Strategic MOU Signing Ceremony – KBIT – KCCS – Le Van Thinh Hospital. Launch of the KLA International Aesthetic Science Forum\n\nPART II – ADVANCED SCIENTIFIC APPLICATIONS\n09:15 – 09:45: Multipolar RF for Scar Treatment & Skin Rejuvenation – Optimized, Safe Technique with Skinbooster Recovery (Dr. Kang Kyoung Jin, Founder of KCCS)\n09:45 – 10:15: Next-Generation HIFU for Non-Invasive Lifting – Combined with Bio-threads and Skinbooster (Dr. Park Sung Young, Honorary President of KBIT Association)\n10:15 – 10:45: CO₂ Fractional Strategy & Actives for Comprehensive Rejuvenation – Personalized Treatment Pathways by Age & Skin Condition (Dr. Nguyễn Phan Anh Tuấn, Dermatologist, Specialist II)\n10:45 – 11:15: PicoLaser for Melasma in Sensitive Skin – Protocols for Recurrence Control & Recovery with Skinbooster (Dr. Trần Thị Phượng, Dermatologist, Specialist I)\n\nPART III – PANEL DISCUSSION WITH EXPERTS\n11:15 – 11:30 : Panel Discussion\n\nPART IV – PROFESSIONAL NETWORKING & CLOSING\n11:30 – 11:45: CME Certificate Presentation\n11:45 – 12:00: Flower Presentation & Appreciation of Speakers and Partners\n12:00 – 13:00: Light Refreshments & Professional Networking"
+                  }
+                ],
+                "shortDescription": "KLA SYMPOSIUM (Knowledge in Lifting & Aesthetics) is an international scientific forum co-founded by KBIT, KCCS, and Le Van Thinh Hospital, aimed at standardizing non-invasive treatment protocols and updating modern aesthetic technologies.",
+                "image": "https://api.kbitassociation.com/uploads/events/file-1751047405486-752312374.png",
+                "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1751048403583-114085324.png",
+                "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1751047406317-234854348.png",
+                "fee": "0",
+                "isShowFee": 0,
+                "isFeatured": 0,
+                "language": "English, Vietnam",
+                "targetAudience": "Doctors, Specialists, Beautician",
+                "isRegistrationOpen": 1
+              }
+            }
+          },
+          "11": {
+            "status": 200,
+            "data": {
+              "status": "SUCCESS",
+              "data": {
+                "id": 11,
+                "type": "workshop",
+                "title": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025",
+                "date": "2025-10-07T09:00:00.000Z",
+                "endDate": "2025-10-07T13:00:00.000Z",
+                "date2": null,
+                "endDate2": null,
+                "date3": null,
+                "endDate3": null,
+                "location": "Le Van Thinh Hospital, District 2, HCMC, Vietnam",
+                "description": [
+                  {
+                    "image": "https://api.kbitassociation.com/uploads/events/file-1758132545127-708210403.png",
+                    "description": "SEMINAR PROGRAM & SPECIALIZED DEMO \n\nTheme: “Combination of Botox – Filler – Thread – PLLA in Facial Contouring and Skin Rejuvenation”\n\nSpeaker:\nDr. Lee Jeong Hun – Korea\nOver 15 years of expertise in Botox, Filler, and Thread lifting\n\nVenue: Le Van Thinh Hospital\nDate & Time: October 7, 2025 | 09:00 – 13:00\n\n⸻\n09:00 – 09:15: Opening & Program Introduction\n\n09:15 – 10:00: Botox Theory – Comprehensive & Advanced\n• Mechanism of action at the neuromuscular junction\n• Regional analysis:\n• Forehead & glabella: treating dynamic wrinkles while maintaining natural expression\n• Eyes: crow’s feet correction, lower eyelid lifting\n• Jaw & V-line: facial slimming applications\n• Lifting & contouring: “liquid lifting” with botox\n• New trend: Mesobotox – microinjection approach for full-face rejuvenation\n• Safety precautions & management of common complications\n\n10:00 – 10:45: Filler Theory – Aesthetic Sculpting & Volume Restoration\n• Facial anatomy analysis & principle of “harmony and naturalness”\n• Regional techniques:\n• Lips: shaping, curvature, golden ratio\n• Cheeks: restoring volume, enhancing facial structure\n• Nasolabial folds & tear troughs: filling hollows\n• Common mistakes & corrective approaches in practice\n\n10:45 – 11:15: PLLA Theory – Rejuvenation & Acne Scar Improvement\n• Collagen stimulation mechanism\n• Indications for full-face rejuvenation and acne scar treatment\n• Comparison between PLLA and traditional HA fillers\n• Protocol: combining PLLA with Botox & Fillers in multi-layered rejuvenation\n\n11:15 – 12:30: Comprehensive Live Demonstration\n• Clinical case combining Botox – Filler – PLLA\n• Combined applications for:\n• Enhancing facial contour\n• Wrinkle correction & lifting\n• Full-face rejuvenation\n• Step-by-step demonstration with technique explanation\n\n12:30 – 13:00: Summary & Certificate Awarding"
+                  }
+                ],
+                "shortDescription": "The themed workshop “Combination of Botox – Filler – Thread – PLLA in Facial Contouring and Skin Rejuvenation” will take place on October 7, 2025, at Le Van Thinh Hospital. Led by Dr. Lee Jeong Hun (Korea), the program features in-depth lectures and Live Demos, offering participants both knowledge and hands-on experience.",
+                "image": "https://api.kbitassociation.com/uploads/events/file-1758132526849-154633253.png",
+                "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1758126602577-778144718.png",
+                "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1758132540603-900778664.png",
+                "fee": "999,000 VND",
+                "isShowFee": 1,
+                "isFeatured": 0,
+                "language": "Korean, Vietnamese",
+                "targetAudience": "Doctors, Aesthetic Nurse, Clinic Manager",
+                "isRegistrationOpen": 1
+              }
+            }
+          },
+          "12": {
+            "status": 200,
+            "data": {
+              "status": "SUCCESS",
+              "data": {
+                "id": 12,
+                "type": "conference",
+                "title": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025 ",
+                "date": "2025-11-01T08:00:00.000Z",
+                "endDate": "2025-11-01T17:30:00.000Z",
+                "date2": "2025-11-02T08:30:00.000Z",
+                "endDate2": "2025-11-02T16:00:00.000Z",
+                "date3": null,
+                "endDate3": null,
+                "location": "REX Hotel Saigon + Le Van Thinh Hospital",
+                "description": [
+                  {
+                    "image": "https://api.kbitassociation.com/uploads/events/file-1761368843798-986757686.jpg",
+                    "description": "Scientific Seminar, topic “The 1st Korean-Vietnamese K-Beauty Advanced Skills Training (KAT 2025)”\n1. Time: November 1-2, 2025 (Saturday, Sunday, Monday)\n2. Location\n- Day 1: REX Saigon Hotel, Ho Chi Minh City\nAddress: 141 Nguyen Hue Street, Saigon Ward, Ho Chi Minh City\n- Day 2: Le Van Thinh Hospital.\nAddress: 130 Le Van Thinh, Binh Trung Ward, Ho Chi Minh City.\n3. Host and Organised by\n- Ministry of Health & Welfare of Korea, Korea Health Industry Development Institute (KHIDI) and Seongnam City\n- Korean Medical Device Education and Training Support Center (SNIP, Seoul National University Bundang Hospital, the Korea Smart Medical Devices Foundation)\n- Korea Beauty International Technology Association (KBIT)\n- Le Van Thinh Hospital "
+                  },
+                  {
+                    "image": "https://api.kbitassociation.com/uploads/events/file-1761368898387-419780280.png",
+                    "description": "4. Program Schedule\nDay 1 – Rex Saigon Hotel – Jasmine Hall\n\n• 08:30 – 09:00: Registration\n• 09:00 – 09:10: Opening Speech\n by Mr. Kim Hong Cheol – Director, Korea Medical Device Education & Training Support Center\n• 09:10 – 09:20: Welcome Speech\n by Dr. Tran Van Khanh – Director, Le Van Thinh Hospital\n• 09:20 – 09:30: Signing Ceremony – Training Cooperation Agreement\n 1) Mr. Kim Hong Cheol – Director, Korea Medical Device Education & Training Support Center\n 2) Dr. Tran Van Khanh - Director, Le Van Thinh Hospital\n 3) Mr. Noh Huyn Taek – Vice President, KBIT Association\n• 09:30 – 09:45: The Past, Present & Future of K-Beauty\n Prof. Dr. Heo Chan Yeong\n• 09:45 – 10:05: Comprehensive Application of the 250-Picosecond Laser\n Prof. Dr. Park Eun Soo\n• 10:05 – 10:25: Minimal Dimpling Facial Thread Lifting\n Dr. Kim Byung Sun\n• 10:25 – 10:45: Coffee Break\n• 10:45 – 11:20: Panel Discussion\n 1) Mr. Kim Hong Cheol\n 2) Dr. Tran Van Khanh - Director, Le Van Thinh Hospital\n 3) Mr. Noh Huyn Taek – Vice President, KBIT Association\n 4) Prof. Dr. Heo Chan Yeong – Head of Plastic Surgery, Seoul National University Bundang Hospital\n 5) PhD. Dr. Kang Kyoung Jin – Founder of KCCS\n 6) Dr. Lee Jeong Hun – Co-founder & Medical Advisory Director, KBIT Association\n• 11:20 – 11:40: Optimizing Facial Aesthetic Outcomes with Combined Botulinum Toxin & Filler Techniques\n Dr. Lee Jeong Hun\n• 11:40 – 12:00: Vietnam Case: Skin Booster Application Supporting Hair Loss Treatment\n Dr. Nguyen Phan Anh Tuan\n• 12:00 – 13:00: Lunch\n• 13:00 – 13:25: Comparative Evaluation of Bio-Stimulatory Effects of HA, PN, and Microparticle Fillers in a Mouse Model\n PhD. Pham Ngoc Chien\n• 13:25 – 13:50: Facial Rejuvenation using Ultracol PDO Powder\n Prof. Dr. Heo Chan Yeong\n• 13:50 – 14:15: Comparison: Botulinum Toxin Monotherapy vs HA Filler Combination for Glabellar Frown Improvement\n Prof. Dr. Park Eun Soo\n• 14:15 – 14:40: Facial Volumizing, Contouring, and Lifting with HA Fillers\n PhD. Dr. Kang Kyoung Jin\n• 14:40 – 15:05: Refining Liquified PCL Injection: Techniques to Maximize Outcomes & Minimize Risks\n Dr. Park Young Jin\n• 15:05 – 15:35: Coffee Break\n• 15:35 – 16:00: Clinical Experiences in Korea: Filler, Skin Booster & Thread Lifting\n Prof. Dr. Kim Jong Ho\n• 16:00 – 16:25: Facial Lifting using the New Doublo 2.0\n Dr. Hong Won Kyu\n• 16:25 – 16:50: Maximizing Monopolar RF Effects with Limited Shots: Tips for Combination Approaches\n Dr. Kim So Eun\n• 16:50 – 17:15: D-Day Stem Cell Procedure Parameters: SVF, WJ-MSC, CBAC, PBAC, BMAC, Others\n Dr. Kim Byung Sun\n• 17:35 – 18:00: CO2 Fractional Laser + Glyceollins Skin Booster Combination for Whitening\n Dr. Kim Byung Sun\n• 18:00 – 18:10: Closing Ceremony & Group Photo\n\nDay 2 – Le Van Thinh Hospital\nRoom 1 – Hall C – Live Cosmetic Dermatology\n\n• 08:30 – 09:00: Registration\n• 09:00 – 09:15: Plaque of Appreciation Ceremony\n• 09:15 – 09:30: Group Photo Session\n• 09:30 – 11:00:\n – Minimal Dimpling Facial Thread Lifting – Tutor: Dr. Kim Byung Sun\n – CO2 Fractional Laser + Glyceollins Whitening Combination – Tutor: Dr. Kim Byung Sun\n• 11:00 – 12:00: Midface & Nasolabial Fold Filler – Tutor: PhD. Dr. Kang Kyoung Jin\n• 12:00 – 13:00: Lunch\n• 13:00 – 14:00: 250-Picosecond Laser Clinical Application – Tutor: Prof. Dr. Park Eun Soo\n• 14:00 – 15:00: Maximizing Monopolar RF Effects: Combination Treatment Tips – Tutor: Dr. Kim So Eun\n• 15:00 – 15:30: Coffee Break\n• 15:30 – 16:30: HIFU Doublo 2.0 Lifting – Tutor: Dr. Hong Won Kyu\n• 16:30 – 17:30: Liquified PCL Injection: Clinical Optimization & Risk Reduction – Tutor: Dr. Park Young Jin\n\nRoom 2 – Meeting Room – Live Surgery\n\n• 09:30 – 12:00: Rhinoplasty – Tutor: Prof. Dr. Kim Baek Kyu\n Moderator: PhD. Dr. Kang Kyoung Jin\n• 13:00 – 17:00: Facial Lipoplasty with Adipose Stem Cell Treatment\n Tutor: Dr. Kim Byung Sun\n Moderator: Prof. Dr. Heo Chan Yeong"
+                  }
+                ],
+                "shortDescription": "The 1st Korea- Vietnam K-Beauty Advanced Skill Training (K.A.T 2025) is an international academic conference jointly hosted by the Ministry of Health & Welfare of Korea, the Korea Health Industry Development Institute (KHIDI), and Seongnam City; organised by the Korean Medical Device Education and Training Support Center (SNIP, Seoul National University Bundang Hospital, the Korea Smart Medical Devices Foundation), the Korea Beauty International Technology Association (KBIT), and Le Van Thinh Hospital.",
+                "image": "https://api.kbitassociation.com/uploads/events/file-1761368833746-632590418.png",
+                "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1761371966411-37732198.png",
+                "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1760015572978-497927837.png",
+                "fee": null,
+                "isShowFee": 0,
+                "isFeatured": 0,
+                "language": "English, Korean, Vietnamese",
+                "targetAudience": "Doctors, Aesthetic Nurse",
+                "isRegistrationOpen": 0
+              }
+            }
+          }
+        }
+      },
+      "vi": {
+        "list_status": 200,
+        "list": {
+          "status": "SUCCESS",
+          "data": [
+            {
+              "id": 12,
+              "type": "conference",
+              "title": "KAT 2025 - Hội thảo Khoa học, chủ đề “Đào tạo Kỹ năng Nâng cao K-Beauty Hàn–Việt lần thứ nhất ",
+              "date": "2025-11-01T08:00:00.000Z",
+              "endDate": "2025-11-01T17:30:00.000Z",
+              "date2": "2025-11-02T08:30:00.000Z",
+              "endDate2": "2025-11-02T16:00:00.000Z",
+              "date3": null,
+              "endDate3": null,
+              "location": "Khách sạn REX Saigon + Bệnh viện Lê Văn Thịnh",
+              "description": [],
+              "shortDescription": "Hội nghị Đào tạo Kỹ năng Nâng cao K-Beauty Hàn – Việt lần thứ nhất (K.A.T 2025) là hội nghị học thuật quốc tế được đồng chủ trì bởi Bộ Y tế và Phúc lợi Hàn Quốc, Viện Phát triển Công nghiệp Y tế Hàn Quốc (KHIDI) và Thành phố Seongnam; được tổ chức bởi Trung tâm Hỗ trợ Đào tạo và Giáo dục Thiết bị Y tế Hàn Quốc (SNIP – Bệnh viện Đại học Quốc gia Seoul Bundang, Quỹ Thiết bị Y tế Thông minh Hàn Quốc), Hiệp hội Công nghệ Làm đẹp Quốc tế Hàn Quốc (KBIT) và Bệnh viện Lê Văn Thịnh.",
+              "image": "https://api.kbitassociation.com/uploads/events/file-1761368833746-632590418.png",
+              "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1761371966411-37732198.png",
+              "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1760015572978-497927837.png",
+              "isFeatured": 0,
+              "targetAudience": "Bác sĩ thẩm mỹ",
+              "isRegistrationOpen": 0,
+              "fee": null,
+              "isShowFee": 0
+            },
+            {
+              "id": 11,
+              "type": "workshop",
+              "title": "KBIT EXPERT MEETING Lần 1 - HỘI THẢO & DEMO CHUYÊN ĐỀ 2025",
+              "date": "2025-10-07T09:00:00.000Z",
+              "endDate": "2025-10-07T13:00:00.000Z",
+              "date2": null,
+              "endDate2": null,
+              "date3": null,
+              "endDate3": null,
+              "location": "Bệnh viện Lê Văn Thịnh, Quận 2, Thành phố Hồ Chí Minh, Việt Nam",
+              "description": [],
+              "shortDescription": "Hội thảo chuyên đề “Kết hợp Botox – Filler – Chỉ – PLLA trong tạo hình khuôn mặt và trẻ hoá da” diễn ra ngày 07/10/2025 tại Bệnh viện Lê Văn Thịnh. Chương trình do Dr. Lee Jeong Hun (Hàn Quốc) trực tiếp trình bày và thực hiện Live Demo chuyên sâu, mang đến kiến thức và trải nghiệm thực tiễn cho học viên.",
+              "image": "https://api.kbitassociation.com/uploads/events/file-1758132526849-154633253.png",
+              "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1758126602577-778144718.png",
+              "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1758132540603-900778664.png",
+              "isFeatured": 0,
+              "targetAudience": "Bác sĩ, Điều dưỡng, Quản lý phòng khám thẩm mỹ",
+              "isRegistrationOpen": 1,
+              "fee": "999,000 VND",
+              "isShowFee": 1
+            },
+            {
+              "id": 9,
+              "type": "conference",
+              "title": "KLA VIETNAM 2025 - Chuẩn hóa phác đồ trẻ hóa không xâm lấn bằng công nghệ cao",
+              "date": "2025-06-28T08:00:00.000Z",
+              "endDate": "2025-06-28T13:00:00.000Z",
+              "date2": null,
+              "endDate2": null,
+              "date3": null,
+              "endDate3": null,
+              "location": "Bệnh viện Lê Văn Thịnh - 130 Lê Văn Thịnh, P. Bình Trưng Tây, Tp. Thủ Đức, Tp. Hồ Chí Minh",
+              "description": [],
+              "shortDescription": "KLA SYMPOSIUM (Knowledge in Lifting & Aesthetics) là diễn đàn khoa học quốc tế do KBIT, KCCS và Bệnh viện Lê Văn Thịnh đồng sáng lập, nhằm chuẩn hóa phác đồ điều trị không xâm lấn và cập nhật công nghệ thẩm mỹ hiện đại.",
+              "image": "https://api.kbitassociation.com/uploads/events/file-1751047405486-752312374.png",
+              "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1751048403583-114085324.png",
+              "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1751047406317-234854348.png",
+              "isFeatured": 0,
+              "targetAudience": "Bác sĩ, Chuyên gia, Thẩm mỹ",
+              "isRegistrationOpen": 1,
+              "fee": "0",
+              "isShowFee": 0
+            },
+            {
+              "id": 8,
+              "type": "conference",
+              "title": "KLA KOREA 2025 - Kiến thức về nâng cơ và chống lão hóa",
+              "date": "2025-06-04T14:00:00.000Z",
+              "endDate": "2025-06-04T16:00:00.000Z",
+              "date2": null,
+              "endDate2": null,
+              "date3": null,
+              "endDate3": null,
+              "location": "Bệnh viện Đại Học Quốc Gia Seoul, Bundang, Hàn Quốc",
+              "description": [],
+              "shortDescription": "KLA – Knowledge in Lifting & Anti-Aging là chuỗi hội nghị khoa học được đồng sáng lập bởi:\n • Hiệp hội KCCS – Korean College of Cosmetic Surgery\n • Hiệp hội KBIT – Korea Beauty International Technology Association\n • Bệnh viện Lê Văn Thịnh – Việt Nam",
+              "image": "https://api.kbitassociation.com/uploads/events/file-1750068835957-343631202.png",
+              "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1750129138500-506887540.png",
+              "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1750085034250-32356809.png",
+              "isFeatured": 0,
+              "targetAudience": "Bác sĩ, Chuyên gia, Thẩm mỹ",
+              "isRegistrationOpen": 1,
+              "fee": "0",
+              "isShowFee": 0
+            }
+          ],
+          "meta": {
+            "total": 4,
+            "offset": 0,
+            "size": 100,
+            "lang": "vi"
+          }
+        },
+        "details": {
+          "8": {
+            "status": 200,
+            "data": {
+              "status": "SUCCESS",
+              "data": {
+                "id": 8,
+                "type": "conference",
+                "title": "KLA KOREA 2025 - Kiến thức về nâng cơ và chống lão hóa",
+                "date": "2025-06-04T14:00:00.000Z",
+                "endDate": "2025-06-04T16:00:00.000Z",
+                "date2": null,
+                "endDate2": null,
+                "date3": null,
+                "endDate3": null,
+                "location": "Bệnh viện Đại Học Quốc Gia Seoul, Bundang, Hàn Quốc",
+                "description": [
+                  {
+                    "image": "https://api.kbitassociation.com/uploads/events/file-1750066136571-159253807.png",
+                    "description": "KLA KOREA 2025 – CHƯƠNG TRÌNH HỘI NGHỊ\n\nThời gian: 04:00 – 06:00 PM (South Korea time)\nChủ đề: “Định nghĩa lại thẩm mỹ không phẫu thuật – Kỷ nguyên mới của nâng cơ và tái tạo”\nĐịa điểm: Cơ quan xúc tiến công nghiệp Seongnam, Hàn Quốc\nTổ chức bởi: KBIT – Hiệp hội công nghệ làm đẹp quốc tế Hàn Quốc và PASCAL KOREA\n\n⸻\n\n04:00 – 04:10 PM | Diễn văn khai mạc\n• Bài phát biểu chào mừng của Ban điều hành KBIT\n• Lời cảm ơn đến các vị khách quốc tế và đối tác từ Pascal Clinic, SNIP, KBIT Việt Nam\n\n⸻\n\n04:10 – 04:40 PM | Phiên thảo luận chính 1 – Đổi mới y khoa\n\nChủ đề:\n“Sự phát triển của trẻ hóa da: Tích hợp công nghệ ExoNano và nâng cơ chính xác”\nDiễn giả: Tiến sĩ Kang Kyoung Jin\n(Người sáng lập Phòng khám Pascal, Chủ tịch KCCS)\n\nĐiểm chính:\n• Cơ sở khoa học và kết quả lâm sàng của ExoNano trong tái tạo da\n• Kết hợp ExoNano với vi kim RF hoặc HIFU để nâng cơ thế hệ tiếp theo\n• Các giao thức điều trị theo lớp để tái tạo collagen lâu dài\n• Các nghiên cứu điển hình từ các phòng khám thẩm mỹ hàng đầu tại Hàn Quốc và Châu Á\n\n⸻\n\n04:40 – 05:10 PM | Phiên họp chính 2 – Lãnh đạo doanh nghiệp\n\nChủ đề:\n“Mở rộng quy mô các phòng khám thẩm mỹ với sự xuất sắc: Mô hình tăng trưởng và chuẩn hóa của Hàn Quốc”\nDiễn giả: Ông Noh Hyun Taek (Phó chủ tịch KBIT)\n\nĐiểm chính:\n• Lộ trình chiến lược để xây dựng các trung tâm thẩm mỹ hiệu suất cao\n• Cân bằng giữa kết quả y tế, trải nghiệm của khách hàng và lợi nhuận\n• Phòng khám như một thương hiệu: Từ nhà cung cấp dịch vụ điều trị đến trung tâm giáo dục và đổi mới\n• Bài học từ Hàn Quốc để mở rộng phòng khám quốc tế\n\n⸻\n\n05:10 – 05:40 PM | Thảo luận nhóm chuyên gia\n\nChủ đề:\n“Tương lai của thẩm mỹ không xâm lấn: Hợp tác, đào tạo và đổi mới”\nNhững người tham gia thảo luận:\n• Bác sĩ Kang Kyoung Jin (Người sáng lập Phòng khám Pascal, Chủ tịch KCCS)\n• Ông Noh Hyun Taek (Phó chủ tịch KBIT)\n• Bà Mint Vo (Giám đốc quan hệ quốc tế KBIT)\n• Bà Trang HT Nguyen (Đại diện Bệnh viện Lê Văn Thịnh)\n\nĐiểm thảo luận:\n• Cơ hội hợp tác toàn cầu trong các giải pháp thẩm mỹ không xâm lấn\n• Giáo dục và chia sẻ giao thức nâng cao tiêu chuẩn của bác sĩ như thế nào\n• Vai trò của chuyên gia Hàn Quốc trong việc định hình tương lai thẩm mỹ của Đông Nam Á\n\n⸻\n\n05:40 – 06:00 PM | Giao lưu & Bế mạc\n• Giấy chứng nhận ghi nhận những diễn giả khách mời\n• Ảnh nhóm và phiên giao lưu\n• Lời mời tham dự Gala buổi tối hoặc hội thảo đào tạo ngày hôm sau (nếu có)"
+                  }
+                ],
+                "shortDescription": "KLA – Knowledge in Lifting & Anti-Aging là chuỗi hội nghị khoa học được đồng sáng lập bởi:\n • Hiệp hội KCCS – Korean College of Cosmetic Surgery\n • Hiệp hội KBIT – Korea Beauty International Technology Association\n • Bệnh viện Lê Văn Thịnh – Việt Nam",
+                "image": "https://api.kbitassociation.com/uploads/events/file-1750068835957-343631202.png",
+                "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1750129138500-506887540.png",
+                "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1750085034250-32356809.png",
+                "fee": "0",
+                "isShowFee": 0,
+                "isFeatured": 0,
+                "language": "Tiếng Anh",
+                "targetAudience": "Bác sĩ, Chuyên gia, Thẩm mỹ",
+                "isRegistrationOpen": 1
+              }
+            }
+          },
+          "9": {
+            "status": 200,
+            "data": {
+              "status": "SUCCESS",
+              "data": {
+                "id": 9,
+                "type": "conference",
+                "title": "KLA VIETNAM 2025 - Chuẩn hóa phác đồ trẻ hóa không xâm lấn bằng công nghệ cao",
+                "date": "2025-06-28T08:00:00.000Z",
+                "endDate": "2025-06-28T13:00:00.000Z",
+                "date2": null,
+                "endDate2": null,
+                "date3": null,
+                "endDate3": null,
+                "location": "Bệnh viện Lê Văn Thịnh - 130 Lê Văn Thịnh, P. Bình Trưng Tây, Tp. Thủ Đức, Tp. Hồ Chí Minh",
+                "description": [
+                  {
+                    "image": "https://api.kbitassociation.com/uploads/events/file-1751047406919-667364048.png",
+                    "description": "CHI TIẾT CHƯƠNG TRÌNH\n\nPHẦN I – KHAI MẠC & HỢP TÁC CHIẾN LƯỢC\n08:00 – 08:30: Đón khách – Làm thủ tục check-in – Phát tài liệu\n08:30 – 08:40: Phát biểu khai mạc & Giới thiệu đại biểu\n08:40 – 08:50: Phát biểu chào mừng từ Bệnh viện Lê Văn Thịnh – BS. Trần Văn Khanh, Giám đốc Bệnh viện Lê Văn Thịnh\n08:50 – 09:00: Phát biểu của Hiệp hội KBIT – BS. Park Sung Yong, Chủ tịch danh dự Hiệp hội KBIT\n09:00 – 09:15: Lễ ký kết MOU chiến lược – KBIT, KCCS và Bệnh viện Lê Văn Thịnh. Ra mắt Diễn đàn Khoa học Thẩm mỹ Quốc tế KLA\n\nPHẦN II – ỨNG DỤNG KHOA HỌC ỨNG DỤNG CAO\n09:15 – 09:45: RF đa cực trong điều trị sẹo & tái tạo da – Kỹ thuật tối ưu, an toàn kết hợp phục hồi bằng Skinbooster (BS. Kang Kyoung Jin, Nhà sáng lập KCCS)\n09:45 – 10:15: HIFU thế hệ mới trong nâng cơ không xâm lấn – Kết hợp chỉ sinh học và Skinbooster (BS. Park Sung Young, Chủ tịch danh dự Hiệp hội KBIT)\n10:15 – 10:45: Chiến lược CO₂ Fractional & hoạt chất trong trẻ hóa toàn diện – Lộ trình cá nhân hóa theo độ tuổi và tình trạng da (BS. Nguyễn Phan Anh Tuấn, Bác sĩ Da liễu CKII)\n10:45 – 11:15: PicoLaser điều trị nám cho da nhạy cảm – Phác đồ kiểm soát tái phát & phục hồi với Skinbooster (BS. Trần Thị Phượng, Bác sĩ Da liễu CKI)\n\nPHẦN III – TỌA ĐÀM CÙNG CHUYÊN GIA\n11:15 – 11:30: Tọa đàm chuyên đề\n\nPHẦN IV – KẾT NỐI CHUYÊN MÔN & BẾ MẠC\n11:30 – 11:45: Trao chứng nhận CME\n11:45 – 12:00: Trao hoa & Tri ân diễn giả, đối tác\n12:00 – 13:00: Tiệc nhẹ & Giao lưu chuyên môn"
+                  }
+                ],
+                "shortDescription": "KLA SYMPOSIUM (Knowledge in Lifting & Aesthetics) là diễn đàn khoa học quốc tế do KBIT, KCCS và Bệnh viện Lê Văn Thịnh đồng sáng lập, nhằm chuẩn hóa phác đồ điều trị không xâm lấn và cập nhật công nghệ thẩm mỹ hiện đại.",
+                "image": "https://api.kbitassociation.com/uploads/events/file-1751047405486-752312374.png",
+                "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1751048403583-114085324.png",
+                "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1751047406317-234854348.png",
+                "fee": "0",
+                "isShowFee": 0,
+                "isFeatured": 0,
+                "language": "Tiếng Anh, Tiếng Việt",
+                "targetAudience": "Bác sĩ, Chuyên gia, Thẩm mỹ",
+                "isRegistrationOpen": 1
+              }
+            }
+          },
+          "11": {
+            "status": 200,
+            "data": {
+              "status": "SUCCESS",
+              "data": {
+                "id": 11,
+                "type": "workshop",
+                "title": "KBIT EXPERT MEETING Lần 1 - HỘI THẢO & DEMO CHUYÊN ĐỀ 2025",
+                "date": "2025-10-07T09:00:00.000Z",
+                "endDate": "2025-10-07T13:00:00.000Z",
+                "date2": null,
+                "endDate2": null,
+                "date3": null,
+                "endDate3": null,
+                "location": "Bệnh viện Lê Văn Thịnh, Quận 2, Thành phố Hồ Chí Minh, Việt Nam",
+                "description": [
+                  {
+                    "image": "https://api.kbitassociation.com/uploads/events/file-1758132545127-708210403.png",
+                    "description": "CHƯƠNG TRÌNH HỘI THẢO & DEMO CHUYÊN ĐỀ\n\nChủ đề: “Kết hợp Botox – Filler – Chỉ – PLLA – Exosome trong tạo hình khuôn mặt và trẻ hoá làn da”\n\nChuyên gia trình bày:\nDr. Lee Jeong Hun – Hàn Quốc\nHơn 15 năm kinh nghiệm chuyên sâu Botox, Filler, Căng chỉ\n\nĐịa điểm: Bệnh viện Lê Văn Thịnh\nThời gian: 07/10/2025 | 09:00 – 13:00\n\n⸻\n09:00 – 09:15: Khai mạc & giới thiệu chương trình\n\n09:15 – 10:00: Lý thuyết Botox – Toàn diện & nâng cao\n • Nguyên lý tác động tại khớp thần kinh – cơ.\n • Phân tích theo từng vùng:\n • Trán & cau mày: xử lý nếp nhăn động nhưng vẫn giữ biểu cảm tự nhiên.\n • Mắt: kỹ thuật xoá nhăn đuôi mắt, hạ mi dưới.\n • Hàm & V-line: ứng dụng trong làm thon gọn khuôn mặt.\n • Nâng cơ & contour: ứng dụng botox trong “liquid lifting”.\n • Xu hướng mới: Mesobotox – ứng dụng vi điểm trong trẻ hoá toàn mặt.\n • Lưu ý an toàn & xử lý biến chứng thường gặp.\n\n10:00 – 10:45: Lý thuyết Filler – Thẩm mỹ tạo hình & hồi phục thể tích\n • Phân tích cấu trúc khuôn mặt & nguyên tắc “hài hoà – tự nhiên”.\n • Kỹ thuật theo vùng:\n • Môi: tạo hình dáng, độ cong, tỉ lệ vàng.\n • Má: phục hồi thể tích, nâng cấu trúc khuôn mặt.\n • Rãnh mũi – má, rãnh lệ: làm đầy vùng lõm.\n • Sai sót thường gặp & cách xử trí trong thực hành.\n\n10:45 – 11:15: Lý thuyết PLLA – Trẻ hoá & cải thiện sẹo lõm\n • Cơ chế kích thích tăng sinh collagen.\n • Chỉ định trong trẻ hoá da toàn mặt và điều trị sẹo lõm.\n • So sánh PLLA với filler HA truyền thống.\n • Protocol kết hợp PLLA với Botox – Filler trong phác đồ trẻ hoá đa tầng.\n\n11:15 – 12:30: Live Demo tổng hợp\n • Ca lâm sàng kết hợp Botox – Filler – PLLA.\n • Ứng dụng phối hợp trong:\n • Cải thiện đường nét khuôn mặt.\n • Xoá nhăn, nâng cơ.\n • Trẻ hoá toàn diện khuôn mặt.\n • Phân tích trực tiếp từng thao tác & giải thích kỹ thuật.\n \n12:30 – 13:00: Tổng kết – trao chứng nhận tham dự"
+                  }
+                ],
+                "shortDescription": "Hội thảo chuyên đề “Kết hợp Botox – Filler – Chỉ – PLLA trong tạo hình khuôn mặt và trẻ hoá da” diễn ra ngày 07/10/2025 tại Bệnh viện Lê Văn Thịnh. Chương trình do Dr. Lee Jeong Hun (Hàn Quốc) trực tiếp trình bày và thực hiện Live Demo chuyên sâu, mang đến kiến thức và trải nghiệm thực tiễn cho học viên.",
+                "image": "https://api.kbitassociation.com/uploads/events/file-1758132526849-154633253.png",
+                "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1758126602577-778144718.png",
+                "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1758132540603-900778664.png",
+                "fee": "999,000 VND",
+                "isShowFee": 1,
+                "isFeatured": 0,
+                "language": "Tiếng Hàn, Tiếng Việt",
+                "targetAudience": "Bác sĩ, Điều dưỡng, Quản lý phòng khám thẩm mỹ",
+                "isRegistrationOpen": 1
+              }
+            }
+          },
+          "12": {
+            "status": 200,
+            "data": {
+              "status": "SUCCESS",
+              "data": {
+                "id": 12,
+                "type": "conference",
+                "title": "KAT 2025 - Hội thảo Khoa học, chủ đề “Đào tạo Kỹ năng Nâng cao K-Beauty Hàn–Việt lần thứ nhất ",
+                "date": "2025-11-01T08:00:00.000Z",
+                "endDate": "2025-11-01T17:30:00.000Z",
+                "date2": "2025-11-02T08:30:00.000Z",
+                "endDate2": "2025-11-02T16:00:00.000Z",
+                "date3": null,
+                "endDate3": null,
+                "location": "Khách sạn REX Saigon + Bệnh viện Lê Văn Thịnh",
+                "description": [
+                  {
+                    "image": "https://api.kbitassociation.com/uploads/events/file-1761368843798-986757686.jpg",
+                    "description": "Hội thảo Khoa học, chủ đề “Đào tạo Kỹ năng Nâng cao K-Beauty Hàn – Việt lần thứ nhất (KAT 2025)”\n1.\tThời gian: ngày 01 - 03 tháng 11 năm 2025 (thứ 7, chủ nhật, thứ 2)\n2.\tĐịa điểm\n-\tNgày 1: Khách sạn REX Saigon, TP.HCM\nĐịa chỉ: 141 đường Nguyễn Huệ, phường Sài Gòn, TP Hồ Chí Minh\n-\tNgày 2:  Bệnh viện Lê Văn Thịnh.\nĐịa chỉ: 130 Lê Văn Thịnh, phường Bình Trưng, TP HCM.\n3.\tĐăng cai và tổ chức bởi\n- Bộ Y tế và Phúc lợi Hàn Quốc, Viện Phát triển Công nghiệp Y tế Hàn Quốc (KHIDI) và Thành phố Seongnam\n- Trung tâm Hỗ trợ Đào tạo và Giáo dục Thiết bị Y tế Hàn Quốc (SNIP, Bệnh viện Bundang, Đại học Quốc gia Seoul, Quỹ Thiết bị Y tế Thông minh Hàn Quốc)\n- Hiệp hội Công nghệ Quốc tế về Làm đẹp Hàn Quốc (KBIT)\n- Bệnh viện Lê Văn Thịnh"
+                  },
+                  {
+                    "image": "https://api.kbitassociation.com/uploads/events/file-1761368898387-419780280.png",
+                    "description": "4. Lịch trình chương trình\nNgày 1 – Khách sạn Rex Sài Gòn – Sảnh Jasmine\n\n• 08:30 – 09:00: Đăng ký\n• 09:00 – 09:10: Phát biểu khai mạc – Ông Kim Hong Cheol – Giám đốc Trung tâm Hỗ trợ Đào tạo & Giáo dục Thiết bị Y tế Hàn Quốc\n• 09:10 – 09:20: Phát biểu chào mừng – BS. Trần Văn Khánh – Giám đốc Bệnh viện Lê Văn Thịnh\n• 09:20 – 09:30: Lễ ký kết Hợp tác Đào tạo\n 1) Ông Kim Hong Cheol – Giám đốc Trung tâm Hỗ trợ Đào tạo & Giáo dục Thiết bị Y tế Hàn Quốc\n 2) BS. Trần Văn Khánh – Giám đốc Bệnh viện Lê Văn Thịnh\n 3) Ông Noh Hyun Taek – Phó Chủ tịch Hiệp hội KBIT\n• 09:30 – 09:45: Quá khứ, Hiện tại và Tương lai của K-Beauty \n   GS.TS. Heo Chan Yeong\n• 09:45 – 10:05: Ứng dụng toàn diện Laser Picosecond 250\n   GS.TS. Park Eun Soo\n• 10:05 – 10:25: Kéo chỉ nâng cơ minimal dimpling\n   BS. Kim Byung Sun\n• 10:25 – 10:45: Nghỉ giải lao – Coffee Break\n• 10:45 – 11:20: Thảo luận chuyên môn (Panel Discussion)\n 1) Ông Kim Hong Cheol – Giám đốc Trung tâm Hỗ trợ Đào tạo & Giáo dục Thiết bị Y tế Hàn Quốc\n 2) BS. Trần Văn Khánh – Giám đốc Bệnh viện Lê Văn Thịnh\n 3) Ông Noh Hyun Taek – Phó Chủ tịch Hiệp hội KBIT\n 4) GS.TS. Heo Chan Yeong – Trưởng khoa PTTM, BV Đại học Quốc gia Seoul – Bundang\n 5) TS.BS. Kang Kyoung Jin – Nhà sáng lập KCCS\n 6) BS. Lee Jeong Hun – Đồng sáng lập KBIT, Giám đốc Cố vấn Y khoa\n• 11:20 – 11:40: Tối ưu kết quả thẩm mỹ bằng kỹ thuật kết hợp Botulinum Toxin & Filler\n   BS. Lee Jeong Hun\n• 11:40 – 12:00: Ca lâm sàng Việt Nam: Skin Booster hỗ trợ điều trị rụng tóc\n   BS. Nguyễn Phan Anh Tuấn\n• 12:00 – 13:00: Ăn trưa\n• 13:00 – 13:25: Đánh giá so sánh hiệu quả kích thích sinh học của HA, Polynucleotide và Filler vi hạt trên mô hình chuột\n   TS. Phạm Ngọc Chiến\n• 13:25 – 13:50: Trẻ hoá da bằng Ultracol PDO Powder\n   GS.TS. Heo Chan Yeong\n• 13:50 – 14:15: So sánh hiệu quả Botulinum toxin đơn trị với kết hợp Filler HA trong điều trị nếp cau mày\n   GS.TS. Park Eun Soo\n• 14:15 – 14:40: Làm đầy – tạo đường nét – nâng cơ khuôn mặt bằng Filler HA\n   TS.BS. Kang Kyoung Jin\n• 14:40 – 15:05: Tiêm PCL dạng lỏng: Kỹ thuật lâm sàng tối ưu hiệu quả – giảm rủi ro\n   BS. Park Young Jin\n• 15:05 – 15:35: Nghỉ giải lao – Coffee Break\n• 15:35 – 16:00: Từ thử nghiệm đến thực tiễn: Kinh nghiệm lâm sàng với Filler, Skin Booster & chỉ nâng tại Hàn Quốc\n   GS.TS. Kim Jong Ho\n• 16:00 – 16:25: Nâng cơ bằng HIFU Doublo 2.0 mới\n   BS. Hong Won Kyu\n• 16:25 – 16:50: Tối đa hóa hiệu quả RF đơn cực trong giới hạn số shot\n   BS. Kim So Eun\n• 16:50 – 17:15: Thẩm mỹ mũi bằng nhiều chất liệu\n   GS.TS. Kim Baek Kyu\n• 17:15 – 17:35: Thông số quy trình tế bào gốc trong ngày thực hiện: SVF, WJ-MSC, CBAC, PBAC, BMAC, StemEX-combi\n   BS. Kim Byung Sun\n• 17:35 – 18:00: Laser CO2 Fractional + Skinbooster Glyceollins cho làm trắng da\n   BS. Kim Byung Sun\n• 18:00 – 18:10: Bế mạc & Chụp ảnh lưu niệm\n\nNgày 2 – Bệnh viện Lê Văn Thịnh\nPhòng 1 – Hội trường C – Trình diễn Da liễu Thẩm mỹ\n\n• 08:30 – 09:00: Đăng ký\n• 09:00 – 09:15: Trao kỷ niệm chương cho Báo cáo viên & BTC\n• 09:15 – 09:30: Chụp ảnh lưu niệm\n• 09:30 – 11:00:\n – Kéo chỉ nâng cơ minimal dimpling – Hướng dẫn\n   Hướng dẫn: BS. Kim Byung Sun\n – CO2 Fractional Laser + Skinbooster Glyceollins làm trắng\n   Hướng dẫn: Kim Byung Sun\n• 11:00 – 12:00: Filler vùng má giữa & rãnh mũi má\n   Hướng dẫn: TS.BS. Kang Kyoung Jin\n• 12:00 – 13:00: Ăn trưa\n• 13:00 – 14:00: Laser Picosecond 250\n   Hướng dẫn: GS.TS. Park Eun Soo\n• 14:00 – 15:00: Tối ưu hiệu quả RF đơn cực trong giới hạn shot\n   Hướng dẫn: BS. Kim So Eun\n• 15:00 – 15:30: Nghỉ giải lao\n• 15:30 – 16:30: Nâng cơ bằng HIFU Doublo 2.0\n   Hướng dẫn: BS. Hong Won Kyu\n• 16:30 – 17:30: Tiêm PCL lỏng: tối đa hiệu quả – giảm rủi ro \n   Hướng dẫn: BS. Park Young Jin\n\nPhòng 2 – Phòng họp – Trình diễn phẫu thuật\n\n• 09:30 – 12:00: Phẫu thuật nâng mũi \nGiảng viên: GS.TS. Kim Baek Kyu \nĐiều phối: TS.BS. Kang Kyoung Jin\n• 13:00 – 17:00: Tạo hình khuôn mặt bằng mỡ và điều trị tế bào gốc \nGiảng viên: BS. Kim Byung Sun\nĐiều phối: GS.TS. Heo Chan Yeong"
+                  }
+                ],
+                "shortDescription": "Hội nghị Đào tạo Kỹ năng Nâng cao K-Beauty Hàn – Việt lần thứ nhất (K.A.T 2025) là hội nghị học thuật quốc tế được đồng chủ trì bởi Bộ Y tế và Phúc lợi Hàn Quốc, Viện Phát triển Công nghiệp Y tế Hàn Quốc (KHIDI) và Thành phố Seongnam; được tổ chức bởi Trung tâm Hỗ trợ Đào tạo và Giáo dục Thiết bị Y tế Hàn Quốc (SNIP – Bệnh viện Đại học Quốc gia Seoul Bundang, Quỹ Thiết bị Y tế Thông minh Hàn Quốc), Hiệp hội Công nghệ Làm đẹp Quốc tế Hàn Quốc (KBIT) và Bệnh viện Lê Văn Thịnh.",
+                "image": "https://api.kbitassociation.com/uploads/events/file-1761368833746-632590418.png",
+                "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1761371966411-37732198.png",
+                "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1760015572978-497927837.png",
+                "fee": null,
+                "isShowFee": 0,
+                "isFeatured": 0,
+                "language": "Tiếng Anh, Tiếng Hàn, Tiếng Việt",
+                "targetAudience": "Bác sĩ thẩm mỹ",
+                "isRegistrationOpen": 0
+              }
+            }
+          }
+        }
+      },
+      "ko": {
+        "list_status": 200,
+        "list": {
+          "status": "SUCCESS",
+          "data": [
+            {
+              "id": 12,
+              "type": "conference",
+              "title": "KAT 2025 - 과학 세미나, 주제: \"제1회 한-베트남 K-뷰티 고급 기술 교육",
+              "date": "2025-11-01T08:00:00.000Z",
+              "endDate": "2025-11-01T17:30:00.000Z",
+              "date2": "2025-11-02T08:30:00.000Z",
+              "endDate2": "2025-11-02T16:00:00.000Z",
+              "date3": null,
+              "endDate3": null,
+              "location": "REX Hotel Saigon + Le Van Thinh Hospital",
+              "description": [],
+              "shortDescription": "K.A.T 2025 – 제1회 한–베 K-Beauty 고급기술 트레이닝 학술대회는 한국 보건복지부, 한국보건산업진흥원(KHIDI), 성남시가 공동 주최하고 서울대학교분당병원 SNIP(의료기기교육지원센터), 한국스마트의료기기산업진흥재단, Korea Beauty International Technology Association(KBIT), 레반틴 병원이 공동 주관하는 국제 학술대회입니다.",
+              "image": "https://api.kbitassociation.com/uploads/events/file-1761368833746-632590418.png",
+              "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1761371966411-37732198.png",
+              "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1760015572978-497927837.png",
+              "isFeatured": 0,
+              "targetAudience": "의사, 미용 간호사",
+              "isRegistrationOpen": 0,
+              "fee": null,
+              "isShowFee": 0
+            },
+            {
+              "id": 11,
+              "type": "workshop",
+              "title": "KBIT EXPERT MEETING #1 - 세미나 & 전문 데모 프로그램 2025",
+              "date": "2025-10-07T09:00:00.000Z",
+              "endDate": "2025-10-07T13:00:00.000Z",
+              "date2": null,
+              "endDate2": null,
+              "date3": null,
+              "endDate3": null,
+              "location": "베트남 호치민시 2군 레반틴 병원",
+              "description": [],
+              "shortDescription": "보톡스 – 필러 – 실리프팅 – PLLA을 활용한 안면 조형 및 피부 재생”*을 주제로 한 워크숍이 2025년 10월 7일, 레반틴 병원에서 개최됩니다. **이정훈 박사(한국)**가 직접 강의와 라이브 데모를 진행하며, 참가자들에게 심화 지식과 실제 임상 경험을 제공합니다.",
+              "image": "https://api.kbitassociation.com/uploads/events/file-1758132526849-154633253.png",
+              "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1758126602577-778144718.png",
+              "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1758132540603-900778664.png",
+              "isFeatured": 0,
+              "targetAudience": "의사, 미용 간호사, 클리닉 매니저",
+              "isRegistrationOpen": 1,
+              "fee": "999,000 VND",
+              "isShowFee": 1
+            },
+            {
+              "id": 9,
+              "type": "conference",
+              "title": "KLA VIETNAM 2025 – 비침습적 피부 재생을 위한 과학 기반 프로토콜",
+              "date": "2025-06-28T08:00:00.000Z",
+              "endDate": "2025-06-28T13:00:00.000Z",
+              "date2": null,
+              "endDate2": null,
+              "date3": null,
+              "endDate3": null,
+              "location": "베트남 호치민시 2군 레 번 틴 병원",
+              "description": [],
+              "shortDescription": "KLA SYMPOSIUM (Knowledge in Lifting & Aesthetics)는 KBIT, KCCS 및 레 번 틴 병원이 공동 설립한 국제 과학 포럼으로, 비침습적 치료 프로토콜 표준화 및 최신 미용 기술 업데이트를 목표로 합니다.",
+              "image": "https://api.kbitassociation.com/uploads/events/file-1751047405486-752312374.png",
+              "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1751048403583-114085324.png",
+              "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1751047406317-234854348.png",
+              "isFeatured": 0,
+              "targetAudience": "의사, 전문가, 미용사",
+              "isRegistrationOpen": 1,
+              "fee": "0",
+              "isShowFee": 0
+            },
+            {
+              "id": 8,
+              "type": "conference",
+              "title": "KLA KOREA 2025 - 리프팅과 안티에이징에 대한 지식",
+              "date": "2025-06-04T14:00:00.000Z",
+              "endDate": "2025-06-04T16:00:00.000Z",
+              "date2": null,
+              "endDate2": null,
+              "date3": null,
+              "endDate3": null,
+              "location": "서울대학교병원, 분당, 한국",
+              "description": [],
+              "shortDescription": "KLA – Knowledge in Lifting & Anti-Aging는 공동 설립되었습니다:\n• 한국미용성형외과대학 (KCCS)\n• 한국뷰티국제기술협회 (KBIT)\n• 레반틴병원 (베트남)",
+              "image": "https://api.kbitassociation.com/uploads/events/file-1750068835957-343631202.png",
+              "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1750129138500-506887540.png",
+              "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1750085034250-32356809.png",
+              "isFeatured": 0,
+              "targetAudience": "의사, 전문의, 미용사",
+              "isRegistrationOpen": 1,
+              "fee": "0",
+              "isShowFee": 0
+            }
+          ],
+          "meta": {
+            "total": 4,
+            "offset": 0,
+            "size": 100,
+            "lang": "ko"
+          }
+        },
+        "details": {
+          "8": {
+            "status": 200,
+            "data": {
+              "status": "SUCCESS",
+              "data": {
+                "id": 8,
+                "type": "conference",
+                "title": "KLA KOREA 2025 - 리프팅과 안티에이징에 대한 지식",
+                "date": "2025-06-04T14:00:00.000Z",
+                "endDate": "2025-06-04T16:00:00.000Z",
+                "date2": null,
+                "endDate2": null,
+                "date3": null,
+                "endDate3": null,
+                "location": "서울대학교병원, 분당, 한국",
+                "description": [
+                  {
+                    "image": "https://api.kbitassociation.com/uploads/events/file-1750066136571-159253807.png",
+                    "description": "KLA KOREA 2025 – 컨퍼런스 프로그램\n\n일시: 오후 4시 - 오후 6시\n주제: “비수술적 미용의 재정의 – 리프팅과 재생의 새로운 시대”\n장소: 성남산업진흥원, 대한민국\n주관: KBIT – 한뷰티기술협회, PASCAL KOREA\n\n⸻\n\n04:00 - 04:10 PM | 개회사\nKBIT 집행부의 환영사\nPascal Clinic, SNIP, KBIT Vietnam의 해외 귀빈과 파트너에게 감사 인사\n\n⸻\n\n04:10 - 04:40 PM | 세션 1 – 의료 Innovation\n주제:\n“피부 리주버네이션의 발전: ExoNano 기술과 리프팅의 결합”\n연사: Kang Kyoung Jin 박사\n(Pascal Clinic 설립자, KCCS 협회장)\n\n주내용:\n• ExoNano의 과학적 근거 및 임상 결과\n• ExoNano + Micro RF 또는 HIFU의 차세대 리프팅\n• 계층별 콜라겐 재생을 위한 치료 프로토콜\n• 국내 및 아시아 주요 클리닉들의 임상 사례\n\n⸻\n\n04:40 - 05:10 PM | 세션 2 – 의료 기관 리더\n주제:\n“우수성을 기반으로 한 미용클리닉의 성장과 표준화: 한국의 모델”\n연사: Noh Hyun Taek (한국뷰티협회 KBIT 부회장)\n\n주내용:\n• 고성과 의료 센터로 발전하기 위해 전략 수립\n• 의료 성과, 환자의 만족, 이익의 균형\n• 의료 공급에서 브랜드로 발전: 교육 및 혁신 센터로서의 역할\n• 한국의 모델을 활용한 글로벌 클리닉의 성장\n\n⸻\n\n05:10 - 05:40 PM | 전문가 패널 토론\n주제:\n“비침습 미용의 미래: 협력, 교육, 그리고 혁신”\n참여 전문가:\n• Kang Kyoung Jin 박사 (Pascal Clinic 설립자, KCCS 협회장)\n• Noh Hyun Taek (한국뷰티협회 KBIT 부회장)\n• Mint Vo (한국뷰티협회 KBIT 해외협력 이사)\n• Trang HT Nguyen (레반틴병원 대표)\n\n주내용:\n• 비침습 미용에서 글로벌 협력의 기회\n• 의료진의 기술 표준 향상을 위해 교육과 정보의 교류\n• 동남아시아 미용의 미래 형성에서 한국 전문가들의 역할\n\n⸻ \n\n05:40 - 06:00 PM | 교류 & 행사 closing\n• 초청 연사에게 감사장 전달\n• 단체 사진 및 친교\n• 심포지엄 후 갈라디너 또는 교육 세션 초대 (선택)\n\n"
+                  }
+                ],
+                "shortDescription": "KLA – Knowledge in Lifting & Anti-Aging는 공동 설립되었습니다:\n• 한국미용성형외과대학 (KCCS)\n• 한국뷰티국제기술협회 (KBIT)\n• 레반틴병원 (베트남)",
+                "image": "https://api.kbitassociation.com/uploads/events/file-1750068835957-343631202.png",
+                "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1750129138500-506887540.png",
+                "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1750085034250-32356809.png",
+                "fee": "0",
+                "isShowFee": 0,
+                "isFeatured": 0,
+                "language": "영어",
+                "targetAudience": "의사, 전문의, 미용사",
+                "isRegistrationOpen": 1
+              }
+            }
+          },
+          "9": {
+            "status": 200,
+            "data": {
+              "status": "SUCCESS",
+              "data": {
+                "id": 9,
+                "type": "conference",
+                "title": "KLA VIETNAM 2025 – 비침습적 피부 재생을 위한 과학 기반 프로토콜",
+                "date": "2025-06-28T08:00:00.000Z",
+                "endDate": "2025-06-28T13:00:00.000Z",
+                "date2": null,
+                "endDate2": null,
+                "date3": null,
+                "endDate3": null,
+                "location": "베트남 호치민시 2군 레 번 틴 병원",
+                "description": [
+                  {
+                    "image": "https://api.kbitassociation.com/uploads/events/file-1751047406919-667364048.png",
+                    "description": "프로그램 세부 일정\n\nⅠ부 – 개회식 및 전략적 협력\n08:00 – 08:30: 등록 및 안내, 체크인, 자료 배부\n08:30 – 08:40: 개회사 및 내빈 소개\n08:40 – 08:50: 레 번 틴 병원 개회사 – Trần Văn Khanh 박사, 레 번 틴 병원 원장\n08:50 – 09:00: KBIT 협회 인사말 – Park Sung Yong 박사, KBIT 명예 회장\n09:00 – 09:15: 전략적 MOU 체결식 – KBIT, KCCS, 레 번 틴 병원. KLA 국제 미용 과학 포럼 출범식\n\nⅡ부 – 첨단 과학 응용 세션\n09:15 – 09:45: 흉터 치료 및 피부 재생을 위한 다극 RF – 최적화·안전 기술과 스킨부스터 회복 (Kang Kyoung Jin 박사, KCCS 설립자)\n09:45 – 10:15: 비침습 리프팅을 위한 차세대 HIFU – 생체 실 및 스킨부스터 병용 (Park Sung Young 박사, KBIT 명예 회장)\n10:15 – 10:45: CO₂ 프랙셔널 레이저 전략 및 활성 성분을 통한 종합 리쥬버네이션 – 연령 및 피부 상태별 맞춤 치료 로드맵 (Nguyễn Phan Anh Tuấn 박사, 피부과 전문의(2급))\n10:45 – 11:15: 민감성 피부용 멜라스마 치료 피코레이저 – 재발 억제 및 스킨부스터 회복 프로토콜 (Trần Thị Phượng 박사, 피부과 전문의(1급))\n\nⅢ부 – 전문가 패널 토론\n11:15 – 11:30: 패널 토론\n\nⅣ부 – 네트워킹 및 폐회\n11:30 – 11:45: CME 수료증 수여\n11:45 – 12:00: 감사 꽃다발 증정 및 연사·파트너 감사 인사\n12:00 – 13:00: 리셉션 및 전문 네트워킹"
+                  }
+                ],
+                "shortDescription": "KLA SYMPOSIUM (Knowledge in Lifting & Aesthetics)는 KBIT, KCCS 및 레 번 틴 병원이 공동 설립한 국제 과학 포럼으로, 비침습적 치료 프로토콜 표준화 및 최신 미용 기술 업데이트를 목표로 합니다.",
+                "image": "https://api.kbitassociation.com/uploads/events/file-1751047405486-752312374.png",
+                "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1751048403583-114085324.png",
+                "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1751047406317-234854348.png",
+                "fee": "0",
+                "isShowFee": 0,
+                "isFeatured": 0,
+                "language": "영어, 베트남어",
+                "targetAudience": "의사, 전문가, 미용사",
+                "isRegistrationOpen": 1
+              }
+            }
+          },
+          "11": {
+            "status": 200,
+            "data": {
+              "status": "SUCCESS",
+              "data": {
+                "id": 11,
+                "type": "workshop",
+                "title": "KBIT EXPERT MEETING #1 - 세미나 & 전문 데모 프로그램 2025",
+                "date": "2025-10-07T09:00:00.000Z",
+                "endDate": "2025-10-07T13:00:00.000Z",
+                "date2": null,
+                "endDate2": null,
+                "date3": null,
+                "endDate3": null,
+                "location": "베트남 호치민시 2군 레반틴 병원",
+                "description": [
+                  {
+                    "image": "https://api.kbitassociation.com/uploads/events/file-1758132545127-708210403.png",
+                    "description": "세미나 & 전문 데모 프로그램\n\n주제: “보톡스 – 필러 – 실리프팅 – PLLA – 엑소좀을 활용한 안면 조형 및 피부 재생”\n\n연자:\n이정훈 박사 – 한국\n보톡스, 필러, 실리프팅 분야 15년 이상 전문 경력\n\n장소: 레반틴 병원\n일시: 2025년 10월 7일 | 09:00 – 13:00\n\n⸻\n09:00 – 09:15: 개회 & 프로그램 소개\n\n09:15 – 10:00: 보톡스 이론 – 종합 & 심화\n• 신경근 접합부 작용 원리\n• 부위별 분석:\n• 이마 & 미간: 자연스러운 표정을 유지하며 동적 주름 개선\n• 눈: 눈가 주름 제거, 하안검 리프팅\n• 턱 & V라인: 안면 윤곽 슬리밍 적용\n• 리프팅 & 윤곽: “리퀴드 리프팅” 보톡스 활용\n• 최신 트렌드: 메조보톡스 – 전안면 회춘을 위한 미세주입 기법\n• 안전 수칙 & 흔한 부작용 관리\n\n10:00 – 10:45: 필러 이론 – 미용 조형 & 볼륨 회복\n• 안면 구조 분석 & “조화 – 자연스러움” 원칙\n• 부위별 기법:\n• 입술: 형태 조정, 곡선, 황금비율\n• 볼: 볼륨 회복 및 얼굴 구조 강화\n• 팔자주름 & 눈물고랑: 함몰 부위 채움\n• 임상에서 흔히 발생하는 오류 & 교정 방법\n\n10:45 – 11:15: PLLA 이론 – 회춘 & 함몰 흉터 개선\n• 콜라겐 증식을 유도하는 기전\n• 전안면 회춘 및 여드름 흉터 치료 적응증\n• PLLA vs 기존 HA 필러 비교\n• 프로토콜: PLLA + 보톡스 + 필러 병합 다층 회춘 요법\n\n11:15 – 12:30: 종합 라이브 데모\n• 보톡스 – 필러 – PLLA 복합 시술 케이스\n• 병합 적용 사례:\n• 안면 윤곽 개선\n• 주름 제거 & 리프팅\n• 전안면 회춘\n• 단계별 시술 과정 시연 및 기술 설명\n\n12:30 – 13:00: 종합 정리 & 수료증 수여"
+                  }
+                ],
+                "shortDescription": "보톡스 – 필러 – 실리프팅 – PLLA을 활용한 안면 조형 및 피부 재생”*을 주제로 한 워크숍이 2025년 10월 7일, 레반틴 병원에서 개최됩니다. **이정훈 박사(한국)**가 직접 강의와 라이브 데모를 진행하며, 참가자들에게 심화 지식과 실제 임상 경험을 제공합니다.",
+                "image": "https://api.kbitassociation.com/uploads/events/file-1758132526849-154633253.png",
+                "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1758126602577-778144718.png",
+                "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1758132540603-900778664.png",
+                "fee": "999,000 VND",
+                "isShowFee": 1,
+                "isFeatured": 0,
+                "language": "한국인, 베트남어",
+                "targetAudience": "의사, 미용 간호사, 클리닉 매니저",
+                "isRegistrationOpen": 1
+              }
+            }
+          },
+          "12": {
+            "status": 200,
+            "data": {
+              "status": "SUCCESS",
+              "data": {
+                "id": 12,
+                "type": "conference",
+                "title": "KAT 2025 - 과학 세미나, 주제: \"제1회 한-베트남 K-뷰티 고급 기술 교육",
+                "date": "2025-11-01T08:00:00.000Z",
+                "endDate": "2025-11-01T17:30:00.000Z",
+                "date2": "2025-11-02T08:30:00.000Z",
+                "endDate2": "2025-11-02T16:00:00.000Z",
+                "date3": null,
+                "endDate3": null,
+                "location": "REX Hotel Saigon + Le Van Thinh Hospital",
+                "description": [
+                  {
+                    "image": "https://api.kbitassociation.com/uploads/events/file-1761368843798-986757686.jpg",
+                    "description": "과학 세미나, 주제: \"제1회 한-베트남 K-뷰티 고급 기술 교육(KAT 2025)\"\n1. 기간: 2025년 11월 1일~3일 (토, 일, 월요일)\n2. 장소\n- 1일차: 호치민시 REX 사이공 호텔\n주소: 호치민시 사이공구 응우옌 후에 거리 141\n- 2일차: 레반틴 병원\n주소: 호치민시 빈쭝구 레반틴 130\n3. 호스트 및 주최자\n- 보건복지부, 한국보건산업진흥원(KHIDI), 성남시\n- 한국 의료기기 교육훈련지원센터(SNIP), 분당서울대학교병원, 한국스마트의료기기재단\n- 한국미용국제기술협회(KBIT)\n- 레반틴병원"
+                  },
+                  {
+                    "image": "https://api.kbitassociation.com/uploads/events/file-1761368898387-419780280.png",
+                    "description": "4. 프로그램 일정\nDay 1 – 렉스 사이공 호텔 – 자스민 홀\n\n• 08:30 – 09:00: 등록\n• 09:00 – 09:10: 개회사 – 김홍철 센터장 (한국의료기기교육지원센터)\n• 09:10 – 09:20: 환영사 – 쩐 반 칸 병원장 (레 반 틴 병원)\n• 09:20 – 09:30: 교육 협력 MOU 체결식\n 1) 김홍철 센터장 – 한국의료기기교육지원센터\n 2) 쩐 반 칸 병원장 – 레 반 틴 병원\n 3) 노현택 부회장 – KBIT 협회\n• 09:30 – 09:45: K-Beauty의 과거, 현재 그리고 미래\n   허찬영 교수\n• 09:45 – 10:05: 250 피코 레이저의 종합적 활용\n   박은수 교수\n• 10:05 – 10:25: Minimal Dimpling 안면 실리프팅\n   김병선 원장\n• 10:25 – 10:45: 휴식 – 커피 브레이크\n• 10:45 – 11:20: 패널 토론\n 1) 김홍철 센터장 - 한국의료기기교육지원센터\n 2) 쩐 반 칸 병원장 - 레 반 틴 병원\n 3) 노현택 부회장 - KBIT 협회\n 4) 허찬영 교수 – 분당서울대병원 성형외과 과장\n 5) 강경진 박사 – KCCS 창립자\n 6) 이정훈 원장 – KBIT 협회 공동창립자, 의료자문이사\n• 11:20 – 11:40: 보툴리눔 톡신과 필러 병합 기법을 통한 안면 미용 효과 최적화\n   이정훈 원장\n• 11:40 – 12:00: 베트남 케이스: 탈모 치료 보조를 위한 스킨부스터 적용\n   응우옌 판 아인 뚜안 의사\n• 12:00 – 13:00: 점심식사\n• 13:00 – 13:25: HA, 폴리뉴클레오타이드 및 미세입자 필러의 생체자극 효과 비교 연구\n   팜 응옥 찐 박사\n• 13:25 – 13:50: Ultracol PDO Powder를 이용한 안면 리주버네이션\n   허찬영 교수\n• 13:50 – 14:15: 미간 주름 개선: 보툴리눔 톡신 단독 vs. HA 필러 병합 요법 비교\n   박은수 교수\n• 14:15 – 14:40: HA 필러를 이용한 볼륨 형성, 윤곽 개선 및 리프팅\n   강경진 박사\n• 14:40 – 15:05: 액상 PCL 주입: 위험 최소화 및 결과 극대화를 위한 임상 기법\n   박영진 원장\n• 15:05 – 15:35: 휴식 – 커피 브레이크\n• 15:35 – 16:00: 한국에서의 필러, 스킨부스터, 실리프팅 임상 경험\n   김종호 교수\n• 16:00 – 16:25: 신규 Doublo 2.0을 이용한 안면 리프팅\n   홍원규 원장\n• 16:25 – 16:50: 제한된 샷 내에서 모노폴라 RF 효과 극대화: 복합치료 팁\n   김소은 원장\n• 16:50 – 17:15: 당일 줄기세포 시술 파라미터: SVF, WJ-MSC, CBAC, PBAC, BMAC 등\n   김병선 원장\n• 17:35 – 18:00: CO2 프랙셔널 레이저 + 글리세올린 스킨부스터 미백 치료\n   김병선 원장\n• 18:00 – 18:10: 폐회사 & 단체 사진 촬영\n\nDay 2 – 레 반 틴 병원\nRoom 1 – C홀 – 라이브 코스메틱 피부과 시연\n\n• 08:30 – 09:00: 등록\n• 09:00 – 09:15: 연자 및 조직위원 감사패 수여식\n• 09:15 – 09:30: 기념 단체 사진 촬영\n• 09:30 – 11:00:\n – Minimal Dimpling 안면 실리프팅 – 튜터: 김병선 원장\n – CO2 프랙셔널 레이저 + 글리세올린 스킨부스터 미백 – 튜터: 김병선 원장\n• 11:00 – 12:00: 필러 시술 – 중안면부 & 팔자주름 – 튜터: 강경진 박사\n• 12:00 – 13:00: 점심식사\n• 13:00 – 14:00: 250 피코 레이저 시술 – 튜터: 박은수 교수\n• 14:00 – 15:00: 모노폴라 RF 복합치료 팁 – 튜터: 김소은 원장\n• 15:00 – 15:30: 휴식\n• 15:30 – 16:30: Doublo 2.0 HIFU를 이용한 리프팅 – 튜터: 홍원규 원장\n• 16:30 – 17:30: 액상 PCL 주입 – 임상 결과 극대화/위험 최소화 – 튜터: 박영진 원장\n\nRoom 2 – 회의실 – 라이브 서저리\n\n• 09:30 – 12:00: 코 성형 – 튜터: 김백규 교수 | 모듈레이터: 강경진 박사\n• 13:00 – 17:00: 안면 지방성형 & 지방줄기세포 치료 – 튜터: 김병선 원장 | 모듈레이터: 허찬영 교수"
+                  }
+                ],
+                "shortDescription": "K.A.T 2025 – 제1회 한–베 K-Beauty 고급기술 트레이닝 학술대회는 한국 보건복지부, 한국보건산업진흥원(KHIDI), 성남시가 공동 주최하고 서울대학교분당병원 SNIP(의료기기교육지원센터), 한국스마트의료기기산업진흥재단, Korea Beauty International Technology Association(KBIT), 레반틴 병원이 공동 주관하는 국제 학술대회입니다.",
+                "image": "https://api.kbitassociation.com/uploads/events/file-1761368833746-632590418.png",
+                "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1761371966411-37732198.png",
+                "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1760015572978-497927837.png",
+                "fee": null,
+                "isShowFee": 0,
+                "isFeatured": 0,
+                "language": "영어, 한국인, 베트남어",
+                "targetAudience": "의사, 미용 간호사",
+                "isRegistrationOpen": 0
+              }
+            }
+          }
+        }
+      },
+      "zh": {
+        "list_status": 200,
+        "list": {
+          "status": "SUCCESS",
+          "data": [
+            {
+              "id": 12,
+              "type": "conference",
+              "title": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025 ",
+              "date": "2025-11-01T08:00:00.000Z",
+              "endDate": "2025-11-01T17:30:00.000Z",
+              "date2": "2025-11-02T08:30:00.000Z",
+              "endDate2": "2025-11-02T16:00:00.000Z",
+              "date3": null,
+              "endDate3": null,
+              "location": "REX Hotel Saigon + Le Van Thinh Hospital",
+              "description": [],
+              "shortDescription": "The 1st Korea- Vietnam K-Beauty Advanced Skill Training (K.A.T 2025) is an international academic conference jointly hosted by the Ministry of Health & Welfare of Korea, the Korea Health Industry Development Institute (KHIDI), and Seongnam City; organised by the Korean Medical Device Education and Training Support Center (SNIP, Seoul National University Bundang Hospital, the Korea Smart Medical Devices Foundation), the Korea Beauty International Technology Association (KBIT), and Le Van Thinh Hospital.",
+              "image": "https://api.kbitassociation.com/uploads/events/file-1761368833746-632590418.png",
+              "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1761371966411-37732198.png",
+              "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1760015572978-497927837.png",
+              "isFeatured": 0,
+              "targetAudience": "Doctors, Aesthetic Nurse",
+              "isRegistrationOpen": 0,
+              "fee": null,
+              "isShowFee": 0
+            },
+            {
+              "id": 11,
+              "type": "workshop",
+              "title": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025",
+              "date": "2025-10-07T09:00:00.000Z",
+              "endDate": "2025-10-07T13:00:00.000Z",
+              "date2": null,
+              "endDate2": null,
+              "date3": null,
+              "endDate3": null,
+              "location": "Le Van Thinh Hospital, District 2, HCMC, Vietnam",
+              "description": [],
+              "shortDescription": "The themed workshop “Combination of Botox – Filler – Thread – PLLA in Facial Contouring and Skin Rejuvenation” will take place on October 7, 2025, at Le Van Thinh Hospital. Led by Dr. Lee Jeong Hun (Korea), the program features in-depth lectures and Live Demos, offering participants both knowledge and hands-on experience.",
+              "image": "https://api.kbitassociation.com/uploads/events/file-1758132526849-154633253.png",
+              "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1758126602577-778144718.png",
+              "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1758132540603-900778664.png",
+              "isFeatured": 0,
+              "targetAudience": "Doctors, Aesthetic Nurse, Clinic Manager",
+              "isRegistrationOpen": 1,
+              "fee": "999,000 VND",
+              "isShowFee": 1
+            },
+            {
+              "id": 9,
+              "type": "conference",
+              "title": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation",
+              "date": "2025-06-28T08:00:00.000Z",
+              "endDate": "2025-06-28T13:00:00.000Z",
+              "date2": null,
+              "endDate2": null,
+              "date3": null,
+              "endDate3": null,
+              "location": "Le Van Thinh Hospital, District 2, HCMC, Vietnam",
+              "description": [],
+              "shortDescription": "KLA SYMPOSIUM (Knowledge in Lifting & Aesthetics) is an international scientific forum co-founded by KBIT, KCCS, and Le Van Thinh Hospital, aimed at standardizing non-invasive treatment protocols and updating modern aesthetic technologies.",
+              "image": "https://api.kbitassociation.com/uploads/events/file-1751047405486-752312374.png",
+              "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1751048403583-114085324.png",
+              "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1751047406317-234854348.png",
+              "isFeatured": 0,
+              "targetAudience": "Doctors, Specialists, Beautician",
+              "isRegistrationOpen": 1,
+              "fee": "0",
+              "isShowFee": 0
+            },
+            {
+              "id": 8,
+              "type": "conference",
+              "title": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging",
+              "date": "2025-06-04T14:00:00.000Z",
+              "endDate": "2025-06-04T16:00:00.000Z",
+              "date2": null,
+              "endDate2": null,
+              "date3": null,
+              "endDate3": null,
+              "location": "Seoul National University Hospital, Bundang, South Korea",
+              "description": [],
+              "shortDescription": "KLA – Knowledge in Lifting & Anti-Aging is co-founded by:\n • KCCS – Korean College of Cosmetic Surgery\n • KBIT – Korean Beauty International Technology\n • Le Van Thinh Hospital (Vietnam)",
+              "image": "https://api.kbitassociation.com/uploads/events/file-1750068835957-343631202.png",
+              "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1750129138500-506887540.png",
+              "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1750085034250-32356809.png",
+              "isFeatured": 0,
+              "targetAudience": "Doctors, Specialists, Beautician",
+              "isRegistrationOpen": 1,
+              "fee": "0",
+              "isShowFee": 0
+            }
+          ],
+          "meta": {
+            "total": 4,
+            "offset": 0,
+            "size": 100,
+            "lang": "zh"
+          }
+        },
+        "details": {
+          "8": {
+            "status": 200,
+            "data": {
+              "status": "SUCCESS",
+              "data": {
+                "id": 8,
+                "type": "conference",
+                "title": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging",
+                "date": "2025-06-04T14:00:00.000Z",
+                "endDate": "2025-06-04T16:00:00.000Z",
+                "date2": null,
+                "endDate2": null,
+                "date3": null,
+                "endDate3": null,
+                "location": "Seoul National University Hospital, Bundang, South Korea",
+                "description": [
+                  {
+                    "image": "https://api.kbitassociation.com/uploads/events/file-1750066136571-159253807.png",
+                    "description": "KLA KOREA 2025 – CONFERENCE PROGRAM\n\nTime: 04:00 – 06:00 PM (South Korea time)\nTheme: “Redefining Non-Surgical Aesthetics – The New Era of Lifting & Regeneration”\nVenue: Seongnam Industry Promotion Agency, Korea\nOrganized by: KBIT – Korea Beauty International Technology Association and PASCAL KOREA\n\n⸻\n\n04:00 – 04:10 PM | Opening Remarks\n • Welcome speech by KBIT Executive Board\n • Acknowledgment of international guests and partners from Pascal Clinic, SNIP, KBIT Vietnam\n\n⸻\n\n04:10 – 04:40 PM | Keynote Session 1 – Medical Innovation\n\nTopic:\n“The Evolution of Skin Rejuvenation: Integrating ExoNano Technology and Precision Lifting”\nSpeaker: Dr. Kang Kyoung Jin\n(Founder of Pascal Clinic, President of KCCS)\n\nKey Points:\n • Scientific basis and clinical results of ExoNano in skin regeneration\n • Combining ExoNano with RF microneedling or HIFU for next-gen lifting\n • Layered treatment protocols for long-lasting collagen remodeling\n • Case studies from leading aesthetic clinics in Korea and Asia\n\n⸻\n\n04:40 – 05:10 PM | Keynote Session 2 – Business Leadership\n\nTopic:\n“Scaling Aesthetic Clinics with Excellence: The Korean Model of Growth and Standardization”\nSpeaker: Mr. Noh Hyun Taek (Vice President of KBIT)\n\nKey Points:\n • Strategic roadmap for building high-performing aesthetic centers\n • Balancing medical results, customer experience, and profitability\n • Clinic-as-a-brand: From treatment provider to education & innovation hub\n • Lessons from Korea for international clinic expansion\n\n⸻\n\n05:10 – 05:40 PM | Expert Panel Discussion\n\nTopic:\n“The Future of Non-Invasive Aesthetics: Collaboration, Training, and Innovation”\nPanelists:\n • Dr. Kang Kyoung Jin (Founder of Pascal Clinic, President of KCCS)\n • Mr. Noh Hyun Taek (Vice President of KBIT)\n • Mrs. Mint Vo (International Relations Director of KBIT)\n • Ms. Trang HT Nguyen (Representative of Le Van Thinh Hospital)\n\nDiscussion Points:\n • Global opportunities for collaboration in non-invasive aesthetic solutions\n • How education & protocol sharing enhance practitioner standards\n • The role of Korean expertise in shaping Southeast Asia’s aesthetic future\n\n⸻\n\n05:40 – 06:00 PM | Networking & Closing\n • Certificate of appreciation to guest speakers\n • Group photos and networking session\n • Invitation to evening Gala or next-day training workshops (if applicable)"
+                  }
+                ],
+                "shortDescription": "KLA – Knowledge in Lifting & Anti-Aging is co-founded by:\n • KCCS – Korean College of Cosmetic Surgery\n • KBIT – Korean Beauty International Technology\n • Le Van Thinh Hospital (Vietnam)",
+                "image": "https://api.kbitassociation.com/uploads/events/file-1750068835957-343631202.png",
+                "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1750129138500-506887540.png",
+                "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1750085034250-32356809.png",
+                "fee": "0",
+                "isShowFee": 0,
+                "isFeatured": 0,
+                "language": "English",
+                "targetAudience": "Doctors, Specialists, Beautician",
+                "isRegistrationOpen": 1
+              }
+            }
+          },
+          "9": {
+            "status": 200,
+            "data": {
+              "status": "SUCCESS",
+              "data": {
+                "id": 9,
+                "type": "conference",
+                "title": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation",
+                "date": "2025-06-28T08:00:00.000Z",
+                "endDate": "2025-06-28T13:00:00.000Z",
+                "date2": null,
+                "endDate2": null,
+                "date3": null,
+                "endDate3": null,
+                "location": "Le Van Thinh Hospital, District 2, HCMC, Vietnam",
+                "description": [
+                  {
+                    "image": "https://api.kbitassociation.com/uploads/events/file-1751047406919-667364048.png",
+                    "description": "PROGRAM DETAILS\n\nPART I – OPENING & STRATEGIC COLLABORATION\n08:00 – 08:30: Guest Reception – Check-in – Distribution of Materials\n08:30 – 08:40: Opening Remarks & Introduction of Distinguished Guests\n08:40 – 08:50: Welcome Address by Le Van Thinh Hospital – Dr. Trần Văn Khanh, Director, Le Van Thinh Hospital\n08:50 – 09:00: Remarks by KBIT Association – Dr. Park Sung Yong, President, KBIT Association\n09:00 – 09:15: Strategic MOU Signing Ceremony – KBIT – KCCS – Le Van Thinh Hospital. Launch of the KLA International Aesthetic Science Forum\n\nPART II – ADVANCED SCIENTIFIC APPLICATIONS\n09:15 – 09:45: Multipolar RF for Scar Treatment & Skin Rejuvenation – Optimized, Safe Technique with Skinbooster Recovery (Dr. Kang Kyoung Jin, Founder of KCCS)\n09:45 – 10:15: Next-Generation HIFU for Non-Invasive Lifting – Combined with Bio-threads and Skinbooster (Dr. Park Sung Young, Honorary President of KBIT Association)\n10:15 – 10:45: CO₂ Fractional Strategy & Actives for Comprehensive Rejuvenation – Personalized Treatment Pathways by Age & Skin Condition (Dr. Nguyễn Phan Anh Tuấn, Dermatologist, Specialist II)\n10:45 – 11:15: PicoLaser for Melasma in Sensitive Skin – Protocols for Recurrence Control & Recovery with Skinbooster (Dr. Trần Thị Phượng, Dermatologist, Specialist I)\n\nPART III – PANEL DISCUSSION WITH EXPERTS\n11:15 – 11:30 : Panel Discussion\n\nPART IV – PROFESSIONAL NETWORKING & CLOSING\n11:30 – 11:45: CME Certificate Presentation\n11:45 – 12:00: Flower Presentation & Appreciation of Speakers and Partners\n12:00 – 13:00: Light Refreshments & Professional Networking"
+                  }
+                ],
+                "shortDescription": "KLA SYMPOSIUM (Knowledge in Lifting & Aesthetics) is an international scientific forum co-founded by KBIT, KCCS, and Le Van Thinh Hospital, aimed at standardizing non-invasive treatment protocols and updating modern aesthetic technologies.",
+                "image": "https://api.kbitassociation.com/uploads/events/file-1751047405486-752312374.png",
+                "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1751048403583-114085324.png",
+                "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1751047406317-234854348.png",
+                "fee": "0",
+                "isShowFee": 0,
+                "isFeatured": 0,
+                "language": "English, Vietnam",
+                "targetAudience": "Doctors, Specialists, Beautician",
+                "isRegistrationOpen": 1
+              }
+            }
+          },
+          "11": {
+            "status": 200,
+            "data": {
+              "status": "SUCCESS",
+              "data": {
+                "id": 11,
+                "type": "workshop",
+                "title": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025",
+                "date": "2025-10-07T09:00:00.000Z",
+                "endDate": "2025-10-07T13:00:00.000Z",
+                "date2": null,
+                "endDate2": null,
+                "date3": null,
+                "endDate3": null,
+                "location": "Le Van Thinh Hospital, District 2, HCMC, Vietnam",
+                "description": [
+                  {
+                    "image": "https://api.kbitassociation.com/uploads/events/file-1758132545127-708210403.png",
+                    "description": "SEMINAR PROGRAM & SPECIALIZED DEMO \n\nTheme: “Combination of Botox – Filler – Thread – PLLA in Facial Contouring and Skin Rejuvenation”\n\nSpeaker:\nDr. Lee Jeong Hun – Korea\nOver 15 years of expertise in Botox, Filler, and Thread lifting\n\nVenue: Le Van Thinh Hospital\nDate & Time: October 7, 2025 | 09:00 – 13:00\n\n⸻\n09:00 – 09:15: Opening & Program Introduction\n\n09:15 – 10:00: Botox Theory – Comprehensive & Advanced\n• Mechanism of action at the neuromuscular junction\n• Regional analysis:\n• Forehead & glabella: treating dynamic wrinkles while maintaining natural expression\n• Eyes: crow’s feet correction, lower eyelid lifting\n• Jaw & V-line: facial slimming applications\n• Lifting & contouring: “liquid lifting” with botox\n• New trend: Mesobotox – microinjection approach for full-face rejuvenation\n• Safety precautions & management of common complications\n\n10:00 – 10:45: Filler Theory – Aesthetic Sculpting & Volume Restoration\n• Facial anatomy analysis & principle of “harmony and naturalness”\n• Regional techniques:\n• Lips: shaping, curvature, golden ratio\n• Cheeks: restoring volume, enhancing facial structure\n• Nasolabial folds & tear troughs: filling hollows\n• Common mistakes & corrective approaches in practice\n\n10:45 – 11:15: PLLA Theory – Rejuvenation & Acne Scar Improvement\n• Collagen stimulation mechanism\n• Indications for full-face rejuvenation and acne scar treatment\n• Comparison between PLLA and traditional HA fillers\n• Protocol: combining PLLA with Botox & Fillers in multi-layered rejuvenation\n\n11:15 – 12:30: Comprehensive Live Demonstration\n• Clinical case combining Botox – Filler – PLLA\n• Combined applications for:\n• Enhancing facial contour\n• Wrinkle correction & lifting\n• Full-face rejuvenation\n• Step-by-step demonstration with technique explanation\n\n12:30 – 13:00: Summary & Certificate Awarding"
+                  }
+                ],
+                "shortDescription": "The themed workshop “Combination of Botox – Filler – Thread – PLLA in Facial Contouring and Skin Rejuvenation” will take place on October 7, 2025, at Le Van Thinh Hospital. Led by Dr. Lee Jeong Hun (Korea), the program features in-depth lectures and Live Demos, offering participants both knowledge and hands-on experience.",
+                "image": "https://api.kbitassociation.com/uploads/events/file-1758132526849-154633253.png",
+                "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1758126602577-778144718.png",
+                "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1758132540603-900778664.png",
+                "fee": "999,000 VND",
+                "isShowFee": 1,
+                "isFeatured": 0,
+                "language": "Korean, Vietnamese",
+                "targetAudience": "Doctors, Aesthetic Nurse, Clinic Manager",
+                "isRegistrationOpen": 1
+              }
+            }
+          },
+          "12": {
+            "status": 200,
+            "data": {
+              "status": "SUCCESS",
+              "data": {
+                "id": 12,
+                "type": "conference",
+                "title": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025 ",
+                "date": "2025-11-01T08:00:00.000Z",
+                "endDate": "2025-11-01T17:30:00.000Z",
+                "date2": "2025-11-02T08:30:00.000Z",
+                "endDate2": "2025-11-02T16:00:00.000Z",
+                "date3": null,
+                "endDate3": null,
+                "location": "REX Hotel Saigon + Le Van Thinh Hospital",
+                "description": [
+                  {
+                    "image": "https://api.kbitassociation.com/uploads/events/file-1761368843798-986757686.jpg",
+                    "description": "Scientific Seminar, topic “The 1st Korean-Vietnamese K-Beauty Advanced Skills Training (KAT 2025)”\n1. Time: November 1-2, 2025 (Saturday, Sunday, Monday)\n2. Location\n- Day 1: REX Saigon Hotel, Ho Chi Minh City\nAddress: 141 Nguyen Hue Street, Saigon Ward, Ho Chi Minh City\n- Day 2: Le Van Thinh Hospital.\nAddress: 130 Le Van Thinh, Binh Trung Ward, Ho Chi Minh City.\n3. Host and Organised by\n- Ministry of Health & Welfare of Korea, Korea Health Industry Development Institute (KHIDI) and Seongnam City\n- Korean Medical Device Education and Training Support Center (SNIP, Seoul National University Bundang Hospital, the Korea Smart Medical Devices Foundation)\n- Korea Beauty International Technology Association (KBIT)\n- Le Van Thinh Hospital "
+                  },
+                  {
+                    "image": "https://api.kbitassociation.com/uploads/events/file-1761368898387-419780280.png",
+                    "description": "4. Program Schedule\nDay 1 – Rex Saigon Hotel – Jasmine Hall\n\n• 08:30 – 09:00: Registration\n• 09:00 – 09:10: Opening Speech\n by Mr. Kim Hong Cheol – Director, Korea Medical Device Education & Training Support Center\n• 09:10 – 09:20: Welcome Speech\n by Dr. Tran Van Khanh – Director, Le Van Thinh Hospital\n• 09:20 – 09:30: Signing Ceremony – Training Cooperation Agreement\n 1) Mr. Kim Hong Cheol – Director, Korea Medical Device Education & Training Support Center\n 2) Dr. Tran Van Khanh - Director, Le Van Thinh Hospital\n 3) Mr. Noh Huyn Taek – Vice President, KBIT Association\n• 09:30 – 09:45: The Past, Present & Future of K-Beauty\n Prof. Dr. Heo Chan Yeong\n• 09:45 – 10:05: Comprehensive Application of the 250-Picosecond Laser\n Prof. Dr. Park Eun Soo\n• 10:05 – 10:25: Minimal Dimpling Facial Thread Lifting\n Dr. Kim Byung Sun\n• 10:25 – 10:45: Coffee Break\n• 10:45 – 11:20: Panel Discussion\n 1) Mr. Kim Hong Cheol\n 2) Dr. Tran Van Khanh - Director, Le Van Thinh Hospital\n 3) Mr. Noh Huyn Taek – Vice President, KBIT Association\n 4) Prof. Dr. Heo Chan Yeong – Head of Plastic Surgery, Seoul National University Bundang Hospital\n 5) PhD. Dr. Kang Kyoung Jin – Founder of KCCS\n 6) Dr. Lee Jeong Hun – Co-founder & Medical Advisory Director, KBIT Association\n• 11:20 – 11:40: Optimizing Facial Aesthetic Outcomes with Combined Botulinum Toxin & Filler Techniques\n Dr. Lee Jeong Hun\n• 11:40 – 12:00: Vietnam Case: Skin Booster Application Supporting Hair Loss Treatment\n Dr. Nguyen Phan Anh Tuan\n• 12:00 – 13:00: Lunch\n• 13:00 – 13:25: Comparative Evaluation of Bio-Stimulatory Effects of HA, PN, and Microparticle Fillers in a Mouse Model\n PhD. Pham Ngoc Chien\n• 13:25 – 13:50: Facial Rejuvenation using Ultracol PDO Powder\n Prof. Dr. Heo Chan Yeong\n• 13:50 – 14:15: Comparison: Botulinum Toxin Monotherapy vs HA Filler Combination for Glabellar Frown Improvement\n Prof. Dr. Park Eun Soo\n• 14:15 – 14:40: Facial Volumizing, Contouring, and Lifting with HA Fillers\n PhD. Dr. Kang Kyoung Jin\n• 14:40 – 15:05: Refining Liquified PCL Injection: Techniques to Maximize Outcomes & Minimize Risks\n Dr. Park Young Jin\n• 15:05 – 15:35: Coffee Break\n• 15:35 – 16:00: Clinical Experiences in Korea: Filler, Skin Booster & Thread Lifting\n Prof. Dr. Kim Jong Ho\n• 16:00 – 16:25: Facial Lifting using the New Doublo 2.0\n Dr. Hong Won Kyu\n• 16:25 – 16:50: Maximizing Monopolar RF Effects with Limited Shots: Tips for Combination Approaches\n Dr. Kim So Eun\n• 16:50 – 17:15: D-Day Stem Cell Procedure Parameters: SVF, WJ-MSC, CBAC, PBAC, BMAC, Others\n Dr. Kim Byung Sun\n• 17:35 – 18:00: CO2 Fractional Laser + Glyceollins Skin Booster Combination for Whitening\n Dr. Kim Byung Sun\n• 18:00 – 18:10: Closing Ceremony & Group Photo\n\nDay 2 – Le Van Thinh Hospital\nRoom 1 – Hall C – Live Cosmetic Dermatology\n\n• 08:30 – 09:00: Registration\n• 09:00 – 09:15: Plaque of Appreciation Ceremony\n• 09:15 – 09:30: Group Photo Session\n• 09:30 – 11:00:\n – Minimal Dimpling Facial Thread Lifting – Tutor: Dr. Kim Byung Sun\n – CO2 Fractional Laser + Glyceollins Whitening Combination – Tutor: Dr. Kim Byung Sun\n• 11:00 – 12:00: Midface & Nasolabial Fold Filler – Tutor: PhD. Dr. Kang Kyoung Jin\n• 12:00 – 13:00: Lunch\n• 13:00 – 14:00: 250-Picosecond Laser Clinical Application – Tutor: Prof. Dr. Park Eun Soo\n• 14:00 – 15:00: Maximizing Monopolar RF Effects: Combination Treatment Tips – Tutor: Dr. Kim So Eun\n• 15:00 – 15:30: Coffee Break\n• 15:30 – 16:30: HIFU Doublo 2.0 Lifting – Tutor: Dr. Hong Won Kyu\n• 16:30 – 17:30: Liquified PCL Injection: Clinical Optimization & Risk Reduction – Tutor: Dr. Park Young Jin\n\nRoom 2 – Meeting Room – Live Surgery\n\n• 09:30 – 12:00: Rhinoplasty – Tutor: Prof. Dr. Kim Baek Kyu\n Moderator: PhD. Dr. Kang Kyoung Jin\n• 13:00 – 17:00: Facial Lipoplasty with Adipose Stem Cell Treatment\n Tutor: Dr. Kim Byung Sun\n Moderator: Prof. Dr. Heo Chan Yeong"
+                  }
+                ],
+                "shortDescription": "The 1st Korea- Vietnam K-Beauty Advanced Skill Training (K.A.T 2025) is an international academic conference jointly hosted by the Ministry of Health & Welfare of Korea, the Korea Health Industry Development Institute (KHIDI), and Seongnam City; organised by the Korean Medical Device Education and Training Support Center (SNIP, Seoul National University Bundang Hospital, the Korea Smart Medical Devices Foundation), the Korea Beauty International Technology Association (KBIT), and Le Van Thinh Hospital.",
+                "image": "https://api.kbitassociation.com/uploads/events/file-1761368833746-632590418.png",
+                "imageUrl2": "https://api.kbitassociation.com/uploads/events/file-1761371966411-37732198.png",
+                "bannerImageUrl": "https://api.kbitassociation.com/uploads/events/file-1760015572978-497927837.png",
+                "fee": null,
+                "isShowFee": 0,
+                "isFeatured": 0,
+                "language": "English, Korean, Vietnamese",
+                "targetAudience": "Doctors, Aesthetic Nurse",
+                "isRegistrationOpen": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "news": {
+      "en": {
+        "list_status": 200,
+        "list": {
+          "status": "SUCCESS",
+          "data": [
+            {
+              "id": 15,
+              "language_code": "en",
+              "slug": "kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration",
+              "title": "K.A.T 2025: Elevating Korea – Vietnam Medical Aesthetic Collaboration",
+              "short_description": "<p>K.A.T 2025 marks a significant step in standardizing training and transferring advanced aesthetic technology between the Korean Medical Device Education and Training Support Center, the Korean Beauty International Technology Association (KBIT), an",
+              "thumbnail_url": "https://api.kbitassociation.com/uploads/news/file-1764816595193-844776946.png",
+              "author_id": null,
+              "author_firstName": null,
+              "author_lastName": null,
+              "status": "published",
+              "published_at": "2025-12-04T02:49:44.000Z",
+              "is_featured": false,
+              "view_count": 14,
+              "created_at": "2025-12-04T09:49:55.000Z",
+              "updated_at": "2026-06-05T15:21:09.000Z",
+              "author_name": null
+            },
+            {
+              "id": 12,
+              "language_code": "en",
+              "slug": "le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation",
+              "title": "The MOU Signing Ceremony Between Le Van Thinh Hospital and the KBIT Association Concludes Successfully in Korea",
+              "short_description": "<p><span style=\"color: rgb(0, 0, 0);\">On </span><strong style=\"color: rgb(0, 0, 0);\">October 7, 2024</strong><span style=\"color: rgb(0, 0, 0);\">, </span><strong style=\"color: rgb(0, 0, 0);\">Le Van Thinh Hospital (Ho Chi Minh City)</strong><span style",
+              "thumbnail_url": "https://api.kbitassociation.com/uploads/news/file-1764313095573-49659520.png",
+              "author_id": null,
+              "author_firstName": null,
+              "author_lastName": null,
+              "status": "published",
+              "published_at": "2025-11-25T04:53:04.000Z",
+              "is_featured": false,
+              "view_count": 26,
+              "created_at": "2025-06-04T19:14:36.000Z",
+              "updated_at": "2026-05-14T06:00:33.000Z",
+              "author_name": null
+            }
+          ],
+          "meta": {
+            "total": 2,
+            "offset": 0,
+            "size": 100,
+            "lang": "en"
+          }
+        },
+        "details": {
+          "kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration": {
+            "status": 200,
+            "data": {
+              "status": "SUCCESS",
+              "data": {
+                "id": 15,
+                "language_code": "en",
+                "slug": "kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration",
+                "title": "K.A.T 2025: Elevating Korea – Vietnam Medical Aesthetic Collaboration",
+                "content": "<p>K.A.T 2025 marks a significant step in standardizing training and transferring advanced aesthetic technology between the Korean Medical Device Education and Training Support Center, the Korean Beauty International Technology Association (KBIT), and Le Van Thinh Hospital along with its partners.</p><p><span style=\"color: rgb(0, 0, 0);\">K.A.T 2025 ushers in a new era of deep medical collaboration between Vietnam’s aesthetic medicine sector—led by Le Van Thinh Hospital—and K</span>orean Medical Device Education and Training Support Center<span style=\"color: rgb(0, 0, 0);\"> in Seongnam, together with the </span>Korean Beauty International Technology Association<span style=\"color: rgb(0, 0, 0);\"> (KBIT).</span></p><p><img src=\"https://api.kbitassociation.com/uploads/news/file-1764815134498-829414053.jpg\"></p><p class=\"ql-align-center\"><em>Speech by Mr. Kim Hong Cheol – Director of the </em><em style=\"color: rgb(0, 0, 0);\">K</em><em>orean Medical Device Education and Training Support Center, organizer of the K.A.T 2025 Symposium</em></p><p><br></p><p>The program is co-chaired by the Ministry of Health and Welfare, Seongnam - si, the Korea Health Industry Development Institute (KHIDI). It is jointly organized by the <span style=\"color: rgb(0, 0, 0);\">K</span>orean Medical Device Education and Training Support Center, the Korean Beauty International Technology Association (KBIT), and Le Van Thinh Hospital (Ho Chi Minh City).</p><p><span style=\"color: rgb(0, 0, 0);\">Participation from authorities on both sides underscores the program’s significance and reliability, providing a strong foundation for long-term cooperation. </span></p><p><br></p><p><img src=\"https://api.kbitassociation.com/uploads/news/file-1764815154038-517680685.jpg\"></p><p class=\"ql-align-center\"><em style=\"color: rgb(0, 0, 0);\">Prof. Dr. Heo Chan Yeong – Head of Plastic Surgery Department, Seoul National University Hospital, Bundang.</em></p><p><br></p><p><span style=\"color: rgb(0, 0, 0);\">Key initiatives include close collaboration with leading medical centers such as Seoul National University Bundang Hospital, bringing top professors as keynote speakers for K.A.T 2025. KBIT-led training programs cover dermatologic aesthetics, plastic surgery, and a new frontier in medical technology: device operation, maintenance, and application. Coordination with the </span>Korean Medical Device Education and Training Support Center<span style=\"color: rgb(0, 0, 0);\"> and the Korea Smart Medical Devices Foundation ensures practical, high-quality training.</span></p><p><br></p><p><img src=\"https://api.kbitassociation.com/uploads/news/file-1764815183456-408682849.jpg\"></p><p class=\"ql-align-center\"><em style=\"color: rgb(0, 0, 0);\">(From left) Mr. Kim Hong Cheol – Director of the </em><em>Korean Medical Device Education and Training Support Center</em><em style=\"color: rgb(0, 0, 0);\">; Mr. Noh Hyung Taek – Vice President of the </em><em>Korean Beauty International Technology Association</em><em style=\"color: rgb(0, 0, 0);\"> (KBIT), organizer of the K.A.T 2025 Conference (center); and Mr. Huh Young – Vice President of the Korea Smart Medical Devices Foundation.</em></p><p><br></p><p><span style=\"color: rgb(0, 0, 0);\">As a member of the Medical Device Training Alliance (MD-TAP) in Korea, KBIT serves as a bridge, delivering not only aesthetic techniques but also a full ecosystem of technology—from equipment and materials to operational protocols—through strategic partner Le Van Thinh Hospital. The combination of KBIT’s expertise, Le Van Thinh’s facilities and international orientation, along with support from the Korean government and tech corporations, promises the first comprehensive, sustainable medical aesthetic training model in Vietnam.</span></p><p><br></p><p><img src=\"https://api.kbitassociation.com/uploads/news/file-1764815206107-88290450.jpg\"></p><p class=\"ql-align-center\"><em>The first K.A.T 2025 Conference attracted the participation of 300 doctors and distinguished guests.</em></p><p><span style=\"color: rgb(0, 0, 0);\">With its scale and professional quality, K.A.T 2025 is not only a scientific forum but also a clear demonstration of strategic cooperation between the two countries in medical aesthetics, healthcare, and beauty, helping elevate Vietnam’s position in the region.</span></p>",
+                "thumbnail_url": "https://api.kbitassociation.com/uploads/news/file-1764816595193-844776946.png",
+                "author_id": null,
+                "status": "published",
+                "published_at": "2025-12-04T02:49:44.000Z",
+                "is_featured": false,
+                "meta_title": null,
+                "meta_description": null,
+                "meta_keywords": null,
+                "view_count": 15,
+                "created_at": "2025-12-04T09:49:55.000Z",
+                "updated_at": "2026-06-05T15:21:09.000Z",
+                "author_firstName": null,
+                "author_lastName": null,
+                "author_name": null
+              }
+            },
+            "href": "https://kbitassociation.com/en/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration"
+          },
+          "le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation": {
+            "status": 200,
+            "data": {
+              "status": "SUCCESS",
+              "data": {
+                "id": 12,
+                "language_code": "en",
+                "slug": "le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation",
+                "title": "The MOU Signing Ceremony Between Le Van Thinh Hospital and the KBIT Association Concludes Successfully in Korea",
+                "content": "<p><span style=\"color: rgb(0, 0, 0);\">On </span><strong style=\"color: rgb(0, 0, 0);\">October 7, 2024</strong><span style=\"color: rgb(0, 0, 0);\">, </span><strong style=\"color: rgb(0, 0, 0);\">Le Van Thinh Hospital (Ho Chi Minh City)</strong><span style=\"color: rgb(0, 0, 0);\"> and the </span><strong style=\"color: rgb(0, 0, 0);\">Korea Beauty International Technology Association (KBIT)</strong><span style=\"color: rgb(0, 0, 0);\"> officially signed a Memorandum of Understanding (MOU), marking a significant milestone in the collaboration between the two parties in the field of aesthetic technology. The signing ceremony took place solemnly at the Embassy of Vietnam in Seoul, with the attendance of Mr. Nguyen Huu Hiep – Secretary of Thu Duc City Party Committee, and Mr. Nguyen Bach Hoang Phung – Vice Chairman of Thu Duc City People’s Committee. Both leaders expressed strong expectations for deeper cooperation in the aesthetic and beauty sectors between Vietnam and South Korea.</span></p><p class=\"ql-align-justify\"><span style=\"background-color: rgba(0, 0, 0, 0); color: rgb(0, 0, 0);\"> </span><img src=\"https://api.kbitassociation.com/uploads/news/file-1764312451605-280856066.jpg\"></p><p class=\"ql-align-center\"><em style=\"color: rgb(0, 0, 0);\">From left: Mr. Tran Van Khanh – Director of Le Van Thinh Hospital, and Mr. Noh Hyung Taek – Vice President of the Korean Beauty International Technology Association (KBIT), during the MOU signing ceremony at the Vietnamese Embassy in South Korea.</em></p><p class=\"ql-align-center\"><br></p><p><span style=\"color: rgb(0, 0, 0);\">The MOU was signed by Mr. Tran Van Khanh – Director of Le Van Thinh Hospital, and Mr. Noh Hyun Taek – Vice President of KBIT, officially strengthening the partnership. Through this agreement, both sides commit to jointly developing advanced aesthetic technologies, implementing intensive training programs, and enhancing cooperation in dermatological and modern aesthetic surgery.</span></p><p><br></p><p><span style=\"color: rgb(0, 0, 0);\">Le Van Thinh Hospital, under the management of the Ho Chi Minh City Department of Health, is renowned for its strengths in surgery, cardiology, and particularly dermatology. With the goal of establishing a specialized medical center in Thu Duc City, the hospital aims to elevate the quality of healthcare services. The MOU is expected to be an essential stepping stone for introducing advanced aesthetic technologies and reinforcing a modern medical infrastructure.</span></p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\"><img src=\"https://api.kbitassociation.com/uploads/news/file-1764312486686-742090163.jpg\"></p><p class=\"ql-align-center\"><em>Le Van Thinh Hospital – Class I Public General Hospital, Ho Chi Minh City</em></p><p class=\"ql-align-center\"><br></p><p><span style=\"color: rgb(0, 0, 0);\">KBIT is a pioneering organization in the research and development of innovative beauty technologies, with networks across leading hospitals in South Korea. KBIT currently operates high-quality training programs involving 18 specialized physicians and 18 certified training centers at top aesthetic hospitals. Through this agreement, KBIT will support Le Van Thinh Hospital in developing cutting-edge aesthetic surgical technologies and leading technological exchanges between Vietnam and South Korea.</span></p><p><br></p><p><img src=\"https://api.kbitassociation.com/uploads/news/file-1764312517531-561973865.jpg\"></p><p class=\"ql-align-center\"><em style=\"color: rgb(0, 0, 0);\">MOU signing marks a key step in the partnership.</em></p><p><br></p><p><span style=\"color: rgb(0, 0, 0);\">In addition, both sides are committed to developing Le Van Thinh Hospital into a leading specialized medical center in Thu Duc City, contributing to a more modern, standardized, and safe healthcare system.</span></p><p><br></p><p><span style=\"color: rgb(0, 0, 0);\">The signing of this MOU is not only a strategic step toward introducing advanced Korean beauty technologies into Vietnam but also a gateway for long-term collaboration and knowledge exchange in medical aesthetics between the two countries. This milestone affirms the shared vision of KBIT and Le Van Thinh Hospital—uniting expertise, technology, and education to bring safe, modern, and human-centered aesthetic services to the community.</span></p>",
+                "thumbnail_url": "https://api.kbitassociation.com/uploads/news/file-1764313095573-49659520.png",
+                "author_id": null,
+                "status": "published",
+                "published_at": "2025-11-25T04:53:04.000Z",
+                "is_featured": false,
+                "meta_title": null,
+                "meta_description": null,
+                "meta_keywords": null,
+                "view_count": 27,
+                "created_at": "2025-06-04T19:14:36.000Z",
+                "updated_at": "2026-05-14T06:00:33.000Z",
+                "author_firstName": null,
+                "author_lastName": null,
+                "author_name": null
+              }
+            },
+            "href": "https://kbitassociation.com/en/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation"
+          },
+          "kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet": {
+            "status": 200,
+            "data": {
+              "status": "ERROR",
+              "message": "News article not found for the specified slug and language.",
+              "errorCode": 604
+            },
+            "href": "https://kbitassociation.com/en/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet"
+          },
+          "le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024": {
+            "status": 200,
+            "data": {
+              "status": "ERROR",
+              "message": "News article not found for the specified slug and language.",
+              "errorCode": 604
+            },
+            "href": "https://kbitassociation.com/en/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024"
+          },
+          "kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag": {
+            "status": 200,
+            "data": {
+              "status": "ERROR",
+              "message": "News article not found for the specified slug and language.",
+              "errorCode": 604
+            },
+            "href": "https://kbitassociation.com/en/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag"
+          },
+          "rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng": {
+            "status": 200,
+            "data": {
+              "status": "ERROR",
+              "message": "News article not found for the specified slug and language.",
+              "errorCode": 604
+            },
+            "href": "https://kbitassociation.com/en/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng"
+          }
+        }
+      },
+      "vi": {
+        "list_status": 200,
+        "list": {
+          "status": "SUCCESS",
+          "data": [
+            {
+              "id": 13,
+              "language_code": "vi",
+              "slug": "kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet",
+              "title": "K.A.T 2025: Nâng tầm hợp tác y học thẩm mỹ Hàn - Việt ",
+              "short_description": "<p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0);\">Sự kiện đánh dấu bước tiến quan trọng trong việc chuẩn hóa đào tạo, chuyển giao công nghệ thẩm mỹ tiên tiến giữa Trung tâm hỗ trợ đào tạo và giáo dục thiết bị y tế Hàn Quốc và Hiệp hội Cô",
+              "thumbnail_url": "https://api.kbitassociation.com/uploads/news/file-1763978823863-146635467.png",
+              "author_id": null,
+              "author_firstName": null,
+              "author_lastName": null,
+              "status": "published",
+              "published_at": "2025-11-25T02:08:18.000Z",
+              "is_featured": false,
+              "view_count": 14,
+              "created_at": "2025-11-24T17:07:04.000Z",
+              "updated_at": "2026-05-14T08:11:34.000Z",
+              "author_name": null
+            },
+            {
+              "id": 11,
+              "language_code": "vi",
+              "slug": "le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024",
+              "title": "Lễ ký kết MOU giữa Bệnh viện Lê Văn Thịnh và Hiệp hội KBIT diễn ra tốt đẹp tại Hàn Quốc",
+              "short_description": "<p><span style=\"color: rgb(0, 0, 0);\">Vào ngày </span><strong style=\"color: rgb(0, 0, 0);\">07/10/2024</strong><span style=\"color: rgb(0, 0, 0);\">, </span><strong style=\"color: rgb(0, 0, 0);\">Bệnh viện Lê Văn Thịnh (TP.HCM)</strong><span style=\"color:",
+              "thumbnail_url": "https://api.kbitassociation.com/uploads/news/file-1763982851458-515191940.png",
+              "author_id": null,
+              "author_firstName": null,
+              "author_lastName": null,
+              "status": "published",
+              "published_at": "2025-06-04T09:49:26.000Z",
+              "is_featured": false,
+              "view_count": 20,
+              "created_at": "2025-06-04T16:50:12.000Z",
+              "updated_at": "2026-06-05T13:52:57.000Z",
+              "author_name": null
+            }
+          ],
+          "meta": {
+            "total": 2,
+            "offset": 0,
+            "size": 100,
+            "lang": "vi"
+          }
+        },
+        "details": {
+          "kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration": {
+            "status": 200,
+            "data": {
+              "status": "ERROR",
+              "message": "News article not found for the specified slug and language.",
+              "errorCode": 604
+            },
+            "href": "https://kbitassociation.com/vi/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration"
+          },
+          "le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation": {
+            "status": 200,
+            "data": {
+              "status": "ERROR",
+              "message": "News article not found for the specified slug and language.",
+              "errorCode": 604
+            },
+            "href": "https://kbitassociation.com/vi/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation"
+          },
+          "kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet": {
+            "status": 200,
+            "data": {
+              "status": "SUCCESS",
+              "data": {
+                "id": 13,
+                "language_code": "vi",
+                "slug": "kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet",
+                "title": "K.A.T 2025: Nâng tầm hợp tác y học thẩm mỹ Hàn - Việt ",
+                "content": "<p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0);\">Sự kiện đánh dấu bước tiến quan trọng trong việc chuẩn hóa đào tạo, chuyển giao công nghệ thẩm mỹ tiên tiến giữa Trung tâm hỗ trợ đào tạo và giáo dục thiết bị y tế Hàn Quốc và Hiệp hội Công nghệ Thẩm mỹ Quốc tế Hàn Quốc với Bệnh viện Lê Văn Thịnh và các đối tác.</span></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0);\">K.A.T 2025 mở ra kỷ nguyên hợp tác y tế chuyên sâu giữa ngành y học thẩm mỹ Việt Nam mà chủ đạo là Bệnh viện Lê Văn Thịnh với Trung tâm hỗ trợ đào tạo và giáo dục thiết bị y tế Hàn Quốc tại thành phố Seongnam và Hiệp hội Công nghệ Thẩm mỹ Quốc tế Hàn Quốc – KBIT.</span></p><p><img src=\"https://api.kbitassociation.com/uploads/news/file-1763977236274-77765296.jpg\"></p><p><em>Bài phát biểu của ông Kim Hong Cheol - Giám đốc Trung tâm Hỗ trợ Đào tạo và Giáo Dục Thiết bị Y tế Hàn Quốc là đơn vị tổ chức của Hội thảo K.A.T 2025</em></p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0);\">Chương trình có sự đồng chủ trì của Bộ Y tế và Phúc lợi Hàn Quốc, Viện Phát triển Công nghiệp Y tế Hàn Quốc (KHIDI) và chính quyền thành phố Seongnam. Ba đơn vị tổ chức chính gồm Trung tâm Hỗ trợ Đào tạo và Giáo dục Thiết bị Y tế Hàn Quốc, Hiệp hội Công nghệ Thẩm mỹ Quốc tế Hàn Quốc (KBIT) và Bệnh viện Lê Văn Thịnh (TP.HCM).</span></p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0);\">Sự tham gia của các cấp chính quyền 2 bên đã khẳng định tầm quan trọng và sự tin cậy của chương trình, tạo nền tảng vững chắc cho các hoạt động hợp tác lâu dài.</span></p><p class=\"ql-align-justify\"><img src=\"https://api.kbitassociation.com/uploads/news/file-1763977731933-993410620.jpg\"></p><p><em>GS.,BS. Heo Chan Yeong - Trưởng khoa Phẫu thuật Tạo hình, Bệnh viện Đại học Quốc gia Seoul - Bundang.</em></p><p><br></p><p><span style=\"color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);\">Trọng tâm của kế hoạch này là sự phối hợp chặt chẽ với các trung tâm y khoa hàng đầu như Bệnh viện Đại học Quốc gia Seoul, nơi quy tụ những giáo sư đầu ngành và cũng là các diễn giả chính tại K.A.T 2025. Các chương trình đào tạo do KBIT chủ trì sẽ bao quát từ thẩm mỹ da liễu, phẫu thuật tạo hình cho đến một lĩnh vực hoàn toàn mới và đầy tiềm năng: đào tạo về vận hành, bảo trì và ứng dụng trang thiết bị y tế công nghệ cao. Sự kết nối với Trung tâm Hỗ trợ Đào tạo và Giáo dục Thiết bị Y tế Hàn Quốc và Quỹ Phát triển Công nghiệp Thiết bị Y tế Thông minh sẽ đảm bảo chất lượng và tính thực tiễn cho mảng đào tạo này.</span></p><p><br></p><p><img src=\"https://api.kbitassociation.com/uploads/news/file-1763978340870-577260672.jpg\"></p><p><em>(Từ trái qua) ông Kim Hong Cheol - Giám đốc Trung tâm Hỗ trợ Đào tạo và Giáo dục Thiết bị Y tế Hàn Quốc - ông Noh Hyung Taek - Phó chủ tịch Hiệp hội Công nghệ thẩm mỹ Hàn Quốc KBIT (ở giữa) - đơn vị tổ chức Hội thảo K.A.T 2025 - ông Huh Young - Phó chủ tịch Quỹ Phát triển Công nghiệp Thiết bị Y tế Thông minh Hàn Quốc.</em></p><p><br></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(51, 51, 51);\">Đặc biệt, việc KBIT trở thành thành viên của Liên minh Đào tạo Thiết bị Y tế (MD-TAP) tại Hàn Quốc càng củng cố thêm vai trò cầu nối của hiệp hội. KBIT không chỉ chuyển giao kỹ thuật làm đẹp mà còn mang cả hệ sinh thái công nghệ, từ thiết bị, vật tư đến quy trình vận hành, đến với Việt Nam thông qua đối tác chiến lược là Bệnh viện Lê Văn Thịnh. Sự kết hợp giữa chuyên môn của KBIT, cơ sở vật chất và định hướng quốc tế của Bệnh viện Lê Văn Thịnh, cùng sự hậu thuẫn từ chính phủ và các tập đoàn công nghệ Hàn Quốc, hứa hẹn sẽ tạo ra một mô hình đào tạo y khoa thẩm mỹ toàn diện, bền vững và lần đầu tiên có mặt tại Việt Nam.</span></p><p><img src=\"https://api.kbitassociation.com/uploads/news/file-1763978680777-761318885.jpg\"></p><p><em style=\"color: rgb(0, 0, 0);\">Hội thảo K.A.T 2025 lần thứ I thu hút sự tham gia của 300 bác sĩ và khách mời.</em></p><p><br></p><p><span style=\"color: rgb(0, 0, 0);\">Với quy mô và chất lượng chuyên môn, K.A.T 2025</span><strong style=\"color: rgb(0, 0, 0);\"> </strong><span style=\"color: rgb(0, 0, 0);\">không chỉ là một diễn đàn khoa học mà còn là minh chứng rõ nét cho mối quan hệ hợp tác chiến lược giữa hai quốc gia trong lĩnh vực y học thẩm mỹ – chăm sóc sức khỏe và sắc đẹp, góp phần nâng tầm vị thế Việt Nam trong khu vực.</span></p>",
+                "thumbnail_url": "https://api.kbitassociation.com/uploads/news/file-1763978823863-146635467.png",
+                "author_id": null,
+                "status": "published",
+                "published_at": "2025-11-25T02:08:18.000Z",
+                "is_featured": false,
+                "meta_title": null,
+                "meta_description": "Hội thảo Khoa học Đào tạo Kỹ năng Nâng cao K-Beauty Hàn – Việt lần thứ nhất (K.A.T 2025) vừa diễn ra tại TP. Hồ Chí Minh, quy tụ hơn 300 chuyên gia, bác sĩ, nhà quản lý và doanh nghiệp trong lĩnh vực y học thẩm mỹ đến từ hai quốc gia.",
+                "meta_keywords": null,
+                "view_count": 15,
+                "created_at": "2025-11-24T17:07:04.000Z",
+                "updated_at": "2026-05-14T08:11:34.000Z",
+                "author_firstName": null,
+                "author_lastName": null,
+                "author_name": null
+              }
+            },
+            "href": "https://kbitassociation.com/vi/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet"
+          },
+          "le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024": {
+            "status": 200,
+            "data": {
+              "status": "SUCCESS",
+              "data": {
+                "id": 11,
+                "language_code": "vi",
+                "slug": "le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024",
+                "title": "Lễ ký kết MOU giữa Bệnh viện Lê Văn Thịnh và Hiệp hội KBIT diễn ra tốt đẹp tại Hàn Quốc",
+                "content": "<p><span style=\"color: rgb(0, 0, 0);\">Vào ngày </span><strong style=\"color: rgb(0, 0, 0);\">07/10/2024</strong><span style=\"color: rgb(0, 0, 0);\">, </span><strong style=\"color: rgb(0, 0, 0);\">Bệnh viện Lê Văn Thịnh (TP.HCM)</strong><span style=\"color: rgb(0, 0, 0);\"> và </span><strong style=\"color: rgb(0, 0, 0);\">Hiệp hội Công nghệ Thẩm mỹ Hàn Quốc (KBIT)</strong><span style=\"color: rgb(0, 0, 0);\"> đã chính thức ký kết </span><strong style=\"color: rgb(0, 0, 0);\">Biên bản Ghi nhớ (MOU)</strong><span style=\"color: rgb(0, 0, 0);\">, đánh dấu bước tiến quan trọng trong hợp tác về </span><strong style=\"color: rgb(0, 0, 0);\">công nghệ làm đẹp</strong><span style=\"color: rgb(0, 0, 0);\"> giữa hai bên. Lễ ký kết được tổ chức trang trọng tại </span><strong style=\"color: rgb(0, 0, 0);\">Đại sứ quán Việt Nam tại Seoul</strong><span style=\"color: rgb(0, 0, 0);\">, với sự tham dự của </span><strong style=\"color: rgb(0, 0, 0);\">Bí thư Thành ủy Thủ Đức Nguyễn Hữu Hiệp</strong><span style=\"color: rgb(0, 0, 0);\"> và </span><strong style=\"color: rgb(0, 0, 0);\">Phó Chủ tịch UBND Nguyễn Bạch Hoàng Phụng</strong><span style=\"color: rgb(0, 0, 0);\">, những người bày tỏ kỳ vọng về việc thúc đẩy hợp tác sâu rộng trong lĩnh vực thẩm mỹ và làm đẹp giữa Việt Nam và Hàn Quốc.</span></p><p><br></p><p><img src=\"https://api.kbitassociation.com/uploads/news/file-1763981019849-63470392.jpg\"></p><p class=\"ql-align-center\"><em>(Từ trái sang) Ông Trần Văn Khanh - Giám đốc Bệnh viện Lê Văn Thịnh và ông Noh Hyung Taek - Phó chủ tịch Hiệp hội Công nghệ thẩm mỹ Hàn Quốc cùng thực hiện lễ ký kết MOU diễn ra tại Đại sứ quán Việt Nam ở Hàn Quốc </em></p><p class=\"ql-align-center\"><br></p><p><span style=\"color: rgb(0, 0, 0);\">Ông Trần Văn Khanh - Giám đốc Bệnh viện Lê Văn Thịnh và ông Noh Hyun Taek - Phó chủ tịch Hiệp hội Công nghệ thẩm mỹ Hàn Quốc KBIT, đã đại diện hai bên ký kết Biên bản Ghi nhớ này. Thông qua thỏa thuận, hai bên cam kết cùng phát triển các công nghệ làm đẹp tiên tiến, triển khai các chương trình đào tạo chuyên sâu và tăng cường hợp tác trong các lĩnh vực phẫu thuật da liễu và thẩm mỹ hiện đại.</span></p><p><br></p><p><span style=\"color: rgb(0, 0, 0);\">Bệnh viện Lê Văn Thịnh, trực thuộc Sở Y tế TP.HCM, nổi bật với thế mạnh về phẫu thuật, tim mạch và đặc biệt là da liễu. Với mục tiêu thành lập một trung tâm y tế chuyên ngành tại Thủ Đức, bệnh viện hướng tới nâng cao chất lượng dịch vụ y tế. Việc ký kết Biên bản Ghi nhớ này được kỳ vọng sẽ là bước đệm quan trọng giúp bệnh viện giới thiệu các công nghệ thẩm mỹ tiên tiến và củng cố hệ thống y tế hiện đại.</span></p><p><br></p><p><img src=\"https://api.kbitassociation.com/uploads/news/file-1763981812728-850598737.jpg\"></p><p class=\"ql-align-center\"><em>Bệnh viện Lê Văn Thịnh - Bệnh viện công đa khoa hạng I TP. HCM</em></p><p class=\"ql-align-center\"><br></p><p><span style=\"color: rgb(0, 0, 0);\">Hiệp hội Công nghệ Thẩm mỹ Hàn Quốc KBIT là một tổ chức tiên phong trong nghiên cứu và phát triển các công nghệ làm đẹp, với trụ sở đặt tại một số bệnh viện hàng đầu tại Hàn Quốc. Hiện KBIT hợp tác triển khai các chương trình đào tạo chất lượng cao, với sự tham gia của 18 bác sĩ chuyên môn và 18 trung tâm đào tạo tại các bệnh viện thẩm mỹ. Thông qua thỏa thuận với Bệnh viện Lê Văn Thịnh, KBIT sẽ hỗ trợ phát triển các công nghệ phẫu thuật thẩm mỹ tiên tiến và dẫn đầu trong việc thúc đẩy trao đổi công nghệ làm đẹp giữa Việt Nam và Hàn Quốc.</span></p><p><br></p><p><img src=\"https://api.kbitassociation.com/uploads/news/file-1763981853302-126384548.jpg\"></p><p class=\"ql-align-center\"><em>Buổi lễ ký kết MOU đánh dấu bước tiến quan trong việc hợp tác giữa hai bên.</em></p><p class=\"ql-align-center\"><br></p><p><span style=\"color: rgb(0, 0, 0);\">Thông qua thỏa thuận, KBIT sẽ hỗ trợ Bệnh viện Lê Văn Thịnh trong việc ứng dụng và chuyển giao công nghệ, đồng thời thúc đẩy hợp tác trong các lĩnh vực phẫu thuật da liễu, thẩm mỹ tiên tiến và nghiên cứu phát triển. Bên cạnh đó, cả hai bên cam kết phát triển Bệnh viện Lê Văn Thịnh trở thành trung tâm y tế chuyên ngành hàng đầu tại TP. Thủ Đức, góp phần xây dựng hệ thống y tế hiện đại, chuẩn mực và an toàn.</span></p><p><br></p><p><span style=\"color: rgb(0, 0, 0);\">Việc ký kết MOU không chỉ là một bước đi chiến lược nhằm giới thiệu các công nghệ làm đẹp tiên tiến tại Việt Nam mà còn mở ra cơ hội tăng cường trao đổi, hợp tác dài hạn giữa hai nước trong lĩnh vực thẩm mỹ y khoa. Đây là một cột mốc quan trọng, khẳng định tầm nhìn chung của KBIT và Bệnh viện Lê Văn Thịnh trong việc kết hợp tri thức, công nghệ và đào tạo để mang đến các dịch vụ thẩm mỹ an toàn, hiện đại và nhân văn cho cộng đồng.</span></p>",
+                "thumbnail_url": "https://api.kbitassociation.com/uploads/news/file-1763982851458-515191940.png",
+                "author_id": null,
+                "status": "published",
+                "published_at": "2025-06-04T09:49:26.000Z",
+                "is_featured": false,
+                "meta_title": null,
+                "meta_description": null,
+                "meta_keywords": null,
+                "view_count": 21,
+                "created_at": "2025-06-04T16:50:12.000Z",
+                "updated_at": "2026-06-05T13:52:57.000Z",
+                "author_firstName": null,
+                "author_lastName": null,
+                "author_name": null
+              }
+            },
+            "href": "https://kbitassociation.com/vi/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024"
+          },
+          "kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag": {
+            "status": 200,
+            "data": {
+              "status": "ERROR",
+              "message": "News article not found for the specified slug and language.",
+              "errorCode": 604
+            },
+            "href": "https://kbitassociation.com/vi/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag"
+          },
+          "rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng": {
+            "status": 200,
+            "data": {
+              "status": "ERROR",
+              "message": "News article not found for the specified slug and language.",
+              "errorCode": 604
+            },
+            "href": "https://kbitassociation.com/vi/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng"
+          }
+        }
+      },
+      "ko": {
+        "list_status": 200,
+        "list": {
+          "status": "SUCCESS",
+          "data": [
+            {
+              "id": 16,
+              "language_code": "ko",
+              "slug": "kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag",
+              "title": "K.A.T 2025: 한–베 미용의학 협력의 새로운 도약",
+              "short_description": "<p><span style=\"color: rgb(0, 0, 0);\">K.A.T 2025는 한국 의료기기 교육지원센터와 한국 국제미용기술협회(KBIT)가 베트남 레반틴 병원 및 여러 파트너 기관과 함께 첨단 미용기술 교육 표준화와 기술 이전을 본격화하는 중요한 전환점을 마련한 행사이다.</span></p><p><span style=\"color: rgb(0, 0, 0);\">이번 프로그램은 성남시에 위치한 한국 의료기기 교육지원센터와 한국 국제미용기",
+              "thumbnail_url": "https://api.kbitassociation.com/uploads/news/file-1764817564002-642832289.png",
+              "author_id": null,
+              "author_firstName": null,
+              "author_lastName": null,
+              "status": "published",
+              "published_at": "2025-12-04T03:05:39.000Z",
+              "is_featured": false,
+              "view_count": 3,
+              "created_at": "2025-12-04T10:05:43.000Z",
+              "updated_at": "2026-02-23T13:37:44.000Z",
+              "author_name": null
+            },
+            {
+              "id": 14,
+              "language_code": "ko",
+              "slug": "rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng",
+              "title": "레반틴 병원과 KBIT 간 MOU 체결식, 한국에서 성황리에 진행",
+              "short_description": "<p><strong style=\"color: rgb(0, 0, 0);\">2024년 10월 7일</strong><span style=\"color: rgb(0, 0, 0);\">, </span><strong style=\"color: rgb(0, 0, 0);\">베트남 호치민시 소재 레반틴 병원(Bệnh viện Lê Văn Thịnh)과 한국미용기술협회(KBIT, Korea Beauty International Technology Association",
+              "thumbnail_url": "https://api.kbitassociation.com/uploads/news/file-1764313579220-24179512.png",
+              "author_id": null,
+              "author_firstName": null,
+              "author_lastName": null,
+              "status": "published",
+              "published_at": "2025-11-28T07:06:13.000Z",
+              "is_featured": false,
+              "view_count": 4,
+              "created_at": "2025-11-28T14:06:19.000Z",
+              "updated_at": "2025-12-15T06:56:42.000Z",
+              "author_name": null
+            }
+          ],
+          "meta": {
+            "total": 2,
+            "offset": 0,
+            "size": 100,
+            "lang": "ko"
+          }
+        },
+        "details": {
+          "kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration": {
+            "status": 200,
+            "data": {
+              "status": "ERROR",
+              "message": "News article not found for the specified slug and language.",
+              "errorCode": 604
+            },
+            "href": "https://kbitassociation.com/ko/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration"
+          },
+          "le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation": {
+            "status": 200,
+            "data": {
+              "status": "ERROR",
+              "message": "News article not found for the specified slug and language.",
+              "errorCode": 604
+            },
+            "href": "https://kbitassociation.com/ko/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation"
+          },
+          "kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet": {
+            "status": 200,
+            "data": {
+              "status": "ERROR",
+              "message": "News article not found for the specified slug and language.",
+              "errorCode": 604
+            },
+            "href": "https://kbitassociation.com/ko/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet"
+          },
+          "le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024": {
+            "status": 200,
+            "data": {
+              "status": "ERROR",
+              "message": "News article not found for the specified slug and language.",
+              "errorCode": 604
+            },
+            "href": "https://kbitassociation.com/ko/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024"
+          },
+          "kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag": {
+            "status": 200,
+            "data": {
+              "status": "SUCCESS",
+              "data": {
+                "id": 16,
+                "language_code": "ko",
+                "slug": "kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag",
+                "title": "K.A.T 2025: 한–베 미용의학 협력의 새로운 도약",
+                "content": "<p><span style=\"color: rgb(0, 0, 0);\">K.A.T 2025는 한국 의료기기 교육지원센터와 한국 국제미용기술협회(KBIT)가 베트남 레반틴 병원 및 여러 파트너 기관과 함께 첨단 미용기술 교육 표준화와 기술 이전을 본격화하는 중요한 전환점을 마련한 행사이다.</span></p><p><span style=\"color: rgb(0, 0, 0);\">이번 프로그램은 성남시에 위치한 한국 의료기기 교육지원센터와 한국 국제미용기술협회(KBIT), 그리고 베트남 미용의학 분야의 중심인 레반틴 병원 간의 본격적인 전문의료 협력 시대를 여는 계기가 되었다.</span></p><p><img src=\"https://api.kbitassociation.com/uploads/news/file-1764816908642-941973954.jpg\"></p><p class=\"ql-align-center\"><em style=\"color: rgb(0, 0, 0);\">K.A.T 2025 세미나 주최 기관인 한국 의료기기 교육·훈련지원센터 김홍철 센터장의 기조연설</em></p><p><br></p><p>행사는 대한민국 보건복지부, 한국보건산업진흥원(KHIDI), 성남시가 공동 주최했으며, 한국 의료기기 교육지원센터, 한국 국제미용기술협회(KBIT), 베트남 호치민시 레반틴 병원이 공동 주관했다.</p><p><br></p><p>양국 정부 기관의 참여는 본 프로그램의 신뢰성과 중요성을 다시 한번 입증하며, 향후 장기 협력의 견고한 기반을 마련했다.</p><p><img src=\"https://api.kbitassociation.com/uploads/news/file-1764816988989-96110844.jpg\"></p><p class=\"ql-align-center\"><em style=\"color: rgb(0, 0, 0);\">서울대학교병원 분당 성형외과 학과장 허찬영 교수·의학박사</em></p><p class=\"ql-align-center\"><br></p><p><span style=\"color: rgb(0, 0, 0);\">이번 협력의 핵심은 서울대병원을 비롯한 한국의 대표 의료기관들과의 긴밀한 연계를 통해 이루어지는 전문 교육 프로그램이다. KBIT가 주도하는 교육은 피부미용, 성형외과 분야를 넘어 고도화된 의료기기의 운영, 유지보수, 임상 적용에 이르기까지 폭넓게 구성된다. 한국 의료기기 교육지원센터 및 스마트의료기기산업진흥재단과의 협력은 해당 교육이 현장 중심적이고 실질적인 내용으로 채워지도록 보장한다.</span></p><p><br></p><p><img src=\"https://api.kbitassociation.com/uploads/news/file-1764817089558-591871678.jpg\"></p><p class=\"ql-align-center\"><em style=\"color: rgb(0, 0, 0);\">(왼쪽부터) 김홍철(Kim Hong Cheol) 한국 의료기기 교육·훈련지원센터 센터장, 노형택(Noh Hyung Taek) 한국미용기술협회(KBIT) 부회장(가운데) – K.A.T 2025 세미나 주최 기관, 허영(Huh Young) 한국 스마트의료기기산업진흥재단 부회장.</em></p><p><br></p><p><span style=\"color: rgb(0, 0, 0);\">특히 KBIT가 한국 의료기기 교육연합(MD-TAP)의 정식 회원으로 참여하게 되면서 협력 구조는 더욱 공고해졌다. KBIT는 단순한 미용기술 이전을 넘어, 장비·소모품·운영 프로세스까지 포함한 기술 생태계를 전략적 파트너인 레반틴 병원을 통해 베트남에 전달할 계획이다. KBIT의 전문성, 레반틴 병원의 국제적 운영 체계 및 인프라, 그리고 한국 정부와 기술기업들의 지원이 결합되면서 베트남 최초의 종합 미용의학 교육 모델이 구축될 것으로 기대된다.</span></p><p><br></p><p><img src=\"https://api.kbitassociation.com/uploads/news/file-1764817118714-144550522.jpg\"></p><p class=\"ql-align-center\"><em style=\"color: rgb(0, 0, 0);\">제1회 K.A.T 2025 세미나에는 300명의 의사와 초청객이 참여했다.</em></p><p class=\"ql-align-center\"><br></p><p><span style=\"color: rgb(0, 0, 0);\">규모와 전문성을 갖춘 K.A.T 2025는 단순한 학술 포럼을 넘어, 미용의학·건강·뷰티 분야에서 양국 간 전략적 협력의 상징으로 자리매김하고 있다. 이는 베트남의 의료미용 경쟁력을 한층 강화하며, 동남아시아 지역에서의 위상 제고에도 중요한 역할을 할 것으로 전망된다.</span></p>",
+                "thumbnail_url": "https://api.kbitassociation.com/uploads/news/file-1764817564002-642832289.png",
+                "author_id": null,
+                "status": "published",
+                "published_at": "2025-12-04T03:05:39.000Z",
+                "is_featured": false,
+                "meta_title": null,
+                "meta_description": null,
+                "meta_keywords": null,
+                "view_count": 4,
+                "created_at": "2025-12-04T10:05:43.000Z",
+                "updated_at": "2026-02-23T13:37:44.000Z",
+                "author_firstName": null,
+                "author_lastName": null,
+                "author_name": null
+              }
+            },
+            "href": "https://kbitassociation.com/ko/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag"
+          },
+          "rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng": {
+            "status": 200,
+            "data": {
+              "status": "SUCCESS",
+              "data": {
+                "id": 14,
+                "language_code": "ko",
+                "slug": "rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng",
+                "title": "레반틴 병원과 KBIT 간 MOU 체결식, 한국에서 성황리에 진행",
+                "content": "<p><strong style=\"color: rgb(0, 0, 0);\">2024년 10월 7일</strong><span style=\"color: rgb(0, 0, 0);\">, </span><strong style=\"color: rgb(0, 0, 0);\">베트남 호치민시 소재 레반틴 병원(Bệnh viện Lê Văn Thịnh)과 한국미용기술협회(KBIT, Korea Beauty International Technology Association)</strong><span style=\"color: rgb(0, 0, 0);\">가 공식적으로 양해각서(MOU)를 체결하며 양측 간 미용 기술 협력의 중요한 진전을 알렸다.</span></p><p><span style=\"color: rgb(0, 0, 0);\">이번 MOU 체결식은 서울 주재 베트남 대사관에서 엄숙하게 진행되었으며, 응우옌 후이 힙(Secretary of the Thu Duc City Party Committee)과 응우옌 박 황 푸엉(Deputy Chairman of the People’s Committee)이 참석해 베트남과 한국 간 미용·뷰티 분야의 심화 협력에 대한 기대를 표명했다.</span></p><p class=\"ql-align-center\"><img src=\"https://api.kbitassociation.com/uploads/news/file-1764313237280-603786957.jpg\"></p><p class=\"ql-align-center\"><em style=\"color: rgb(0, 0, 0);\">(왼쪽부터) 트란 반 카잉(Trần Văn Khanh) 레반틴 병원장과 노형택(Noh Hyung Taek) 한국미용기술협회 부회장이 한국 주재 베트남 대사관에서 열린 MOU 체결식에 함께 참여했다.</em></p><p class=\"ql-align-center\"><br></p><p><span style=\"color: rgb(0, 0, 0);\">레반틴 병원 측을 대표해 트란 반 카잉(Trần Văn Khanh) 병원장이, KBIT 측에서는 노현택(Noh Hyun Taek) 부회장이 양측을 대신해 MOU에 서명했다. 이번 협약을 통해 양 기관은 첨단 미용 기술 개발, 전문 교육 프로그램 시행, 피부과 및 현대 미용 수술 분야에서의 협력 강화에 공동으로 힘쓸 것을 약속했다.</span></p><p><br></p><p><span style=\"color: rgb(0, 0, 0);\">호치민시 보건국 산하 레반틴 병원은 성형외과, 심혈관, 특히 피부과 분야에서 뛰어난 전문성을 갖추고 있으며, 이번 MOU를 통해 Thủ Đức 지역 내 전문 의료센터 설립과 의료 서비스 질 향상이라는 목표 달성에 한 발 더 다가설 전망이다. 이번 체결은 병원이 선진 미용 기술을 소개하고 현대적인 의료 시스템을 강화하는 중요한 발판이 될 것으로 기대된다.</span></p><p><img src=\"https://api.kbitassociation.com/uploads/news/file-1764313280893-977094105.jpg\"></p><p class=\"ql-align-center\"><em style=\"color: rgb(0, 0, 0);\">호치민시 1등급 종합병원, 레반틴 병원</em></p><p><span style=\"color: rgb(0, 0, 0);\">KBIT는 한국 내 주요 병원을 기반으로 한 미용 기술 연구·개발 선도 기관으로, 현재 18명의 전문 의사와 18개 교육 센터를 통해 고품질 교육 프로그램을 운영하고 있다. 레반틴 병원과의 협력을 통해 KBIT는 첨단 미용 수술 기술 개발을 지원하고, 베트남과 한국 간 미용 기술 교류를 선도할 계획이다.</span></p><p><br></p><p class=\"ql-align-center\"><img src=\"https://api.kbitassociation.com/uploads/news/file-1764313323175-560444824.jpg\"></p><p class=\"ql-align-center\"><em style=\"color: rgb(0, 0, 0);\">MOU 체결식은 양측 협력의 중요한 진전을 의미한다.</em></p><p class=\"ql-align-center\"><br></p><p><span style=\"color: rgb(0, 0, 0);\">또한 이번 협약은 레반틴 병원이 Thủ Đức 내 선도적인 전문 의료센터로 성장하도록 지원하며, 현대적이고 안전한 의료 체계 구축에 기여할 것으로 예상된다. MOU 체결은 단순히 베트남 내 첨단 미용 기술을 소개하는 전략적 행보를 넘어, 양국 간 장기적 교류 및 협력 기회를 확대하는 중요한 계기가 될 것으로 평가된다.</span></p><p><br></p><p><span style=\"color: rgb(0, 0, 0);\">이번 체결은 KBIT와 레반틴 병원이 지식, 기술, 교육을 결합하여 안전하고 현대적이며 인간 중심적인 미용 서비스를 지역 사회에 제공하겠다는 공동 비전을 확인하는 중요한 이정표로 기록될 것이다.</span></p><p><br></p>",
+                "thumbnail_url": "https://api.kbitassociation.com/uploads/news/file-1764313579220-24179512.png",
+                "author_id": null,
+                "status": "published",
+                "published_at": "2025-11-28T07:06:13.000Z",
+                "is_featured": false,
+                "meta_title": null,
+                "meta_description": null,
+                "meta_keywords": null,
+                "view_count": 5,
+                "created_at": "2025-11-28T14:06:19.000Z",
+                "updated_at": "2025-12-15T06:56:42.000Z",
+                "author_firstName": null,
+                "author_lastName": null,
+                "author_name": null
+              }
+            },
+            "href": "https://kbitassociation.com/ko/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng"
+          }
+        }
+      },
+      "zh": {
+        "list_status": 200,
+        "list": {
+          "status": "SUCCESS",
+          "data": [],
+          "meta": {
+            "total": 0,
+            "offset": 0,
+            "size": 100,
+            "lang": "zh"
+          }
+        },
+        "details": {
+          "kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration": {
+            "status": 200,
+            "data": {
+              "status": "ERROR",
+              "message": "News article not found for the specified slug and language.",
+              "errorCode": 604
+            },
+            "href": "https://kbitassociation.com/zh/news/kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration"
+          },
+          "le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation": {
+            "status": 200,
+            "data": {
+              "status": "ERROR",
+              "message": "News article not found for the specified slug and language.",
+              "errorCode": 604
+            },
+            "href": "https://kbitassociation.com/zh/news/le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-technology-cooperation"
+          },
+          "kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet": {
+            "status": 200,
+            "data": {
+              "status": "ERROR",
+              "message": "News article not found for the specified slug and language.",
+              "errorCode": 604
+            },
+            "href": "https://kbitassociation.com/zh/news/kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet"
+          },
+          "le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024": {
+            "status": 200,
+            "data": {
+              "status": "ERROR",
+              "message": "News article not found for the specified slug and language.",
+              "errorCode": 604
+            },
+            "href": "https://kbitassociation.com/zh/news/le-ky-ket-mou-giua-benh-vien-le-van-thinh-va-hiep-hoi-kbit-2024"
+          },
+          "kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag": {
+            "status": 200,
+            "data": {
+              "status": "ERROR",
+              "message": "News article not found for the specified slug and language.",
+              "errorCode": 604
+            },
+            "href": "https://kbitassociation.com/zh/news/kat-2025-hanbe-miyongyihag-hyeobryeogyi-saeroun-doyag"
+          },
+          "rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng": {
+            "status": 200,
+            "data": {
+              "status": "ERROR",
+              "message": "News article not found for the specified slug and language.",
+              "errorCode": 604
+            },
+            "href": "https://kbitassociation.com/zh/news/rebantin-byeongwongwa-kbit-gan-mou-chegyeolsig-hangugeseo-seonghwangrie-jinhaeng"
+          }
+        }
+      }
+    },
+    "experts": {
+      "en": {
+        "list_status": 200,
+        "list": {
+          "status": "SUCCESS",
+          "data": [],
+          "meta": {
+            "total": 0,
+            "offset": 0,
+            "size": 100
+          }
+        }
+      },
+      "vi": {
+        "list_status": 200,
+        "list": {
+          "status": "SUCCESS",
+          "data": [],
+          "meta": {
+            "total": 0,
+            "offset": 0,
+            "size": 100
+          }
+        }
+      },
+      "ko": {
+        "list_status": 200,
+        "list": {
+          "status": "SUCCESS",
+          "data": [],
+          "meta": {
+            "total": 0,
+            "offset": 0,
+            "size": 100
+          }
+        }
+      },
+      "zh": {
+        "list_status": 200,
+        "list": {
+          "status": "SUCCESS",
+          "data": [],
+          "meta": {
+            "total": 0,
+            "offset": 0,
+            "size": 100
+          }
+        }
+      }
+    },
+    "centers": {
+      "list_status": 200,
+      "list": {
+        "status": "SUCCESS",
+        "data": [
+          {
+            "id": 31,
+            "name": "KBIT 1",
+            "address": "46 Yen The",
+            "phone": "0377971011",
+            "hours": "8:00 AM - 9:00 PM",
+            "lat": null,
+            "lng": null,
+            "createdAt": "2025-06-04T16:25:18.000Z",
+            "updatedAt": "2025-06-04T16:25:18.000Z",
+            "image": [
+              {
+                "src": "https://api.kbitassociation.com/uploads/centers/file-1749029118870-252258256.jpg",
+                "alt": "_BMT2004.jpg"
+              }
+            ],
+            "facilities": []
+          }
+        ],
+        "meta": {
+          "total": 1,
+          "offset": 0,
+          "size": 100
+        }
+      }
+    }
+  }
+}

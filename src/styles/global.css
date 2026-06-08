@@ -1,0 +1,481 @@
+/* ============================================================
+   Global base styles — KBIT
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--type-body);
+  line-height: 1.65;
+  color: var(--clr-charcoal);
+  background-color: var(--clr-ivory);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Korean locale font override */
+:lang(ko) {
+  font-family: var(--font-ko);
+}
+
+img, video {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Container utility */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-px);
+}
+
+/* Section spacing */
+.section {
+  padding-block: var(--section-py);
+}
+
+/* Section overline label */
+.overline {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--type-xs);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--clr-gold-dark);
+  margin-bottom: var(--sp-3);
+}
+
+/* Gold hairline divider */
+.section-divider {
+  width: 40px;
+  height: 2px;
+  background: var(--clr-gold);
+  margin-bottom: var(--sp-4);
+}
+
+/* Display headline */
+.headline-display {
+  font-family: var(--font-display);
+  font-size: var(--type-d2);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--clr-navy);
+}
+
+.headline-display--light {
+  font-weight: 300;
+  color: var(--clr-white);
+}
+
+/* Page loading fallback */
+.page-loading {
+  min-height: 100vh;
+  background: var(--clr-ivory);
+}
+
+/* Reveal animation */
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes reveal-soft {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.985);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes reveal-clip {
+  from {
+    opacity: 0;
+    clip-path: inset(0 0 100% 0);
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ambient-drift {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -8px, 0);
+  }
+}
+
+@keyframes hairline-sweep {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes accent-breathe {
+  0%, 100% {
+    opacity: 0.42;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    opacity: 0.68;
+    transform: translate3d(0, -6px, 0) scale(1.015);
+  }
+}
+
+@keyframes button-glint {
+  from {
+    transform: translateX(-120%) skewX(-18deg);
+  }
+  to {
+    transform: translateX(220%) skewX(-18deg);
+  }
+}
+
+.page-transition {
+  animation: page-enter var(--duration-page) var(--ease-out-expo) both;
+}
+
+.motion-enhanced [data-motion='pending'] {
+  opacity: 0;
+  transform: translate3d(0, 26px, 0);
+  filter: blur(8px);
+  transition:
+    opacity var(--duration-page) var(--ease-out-expo),
+    transform var(--duration-page) var(--ease-out-expo),
+    filter var(--duration-slow) var(--ease-soft);
+  transition-delay: calc(var(--motion-index, 0) * 55ms);
+  will-change: opacity, transform, filter;
+}
+
+.motion-enhanced [data-motion-kind='surface'][data-motion='pending'] {
+  transform: translate3d(0, 22px, 0) scale(0.985);
+}
+
+.motion-enhanced [data-motion-kind='feature'][data-motion='pending'] {
+  transform: translate3d(0, 18px, 0) scale(0.992);
+}
+
+.motion-enhanced [data-motion='visible'] {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+  filter: blur(0);
+}
+
+.reveal {
+  animation: reveal-up var(--transition-reveal) both;
+}
+
+.reveal-soft {
+  animation: reveal-soft var(--duration-page) var(--ease-out-expo) both;
+}
+
+.reveal-clip {
+  animation: reveal-clip var(--duration-page) var(--ease-out-expo) both;
+}
+
+.reveal--delay-1 { animation-delay: 80ms; }
+.reveal--delay-2 { animation-delay: 160ms; }
+.reveal--delay-3 { animation-delay: 240ms; }
+.reveal--delay-4 { animation-delay: 320ms; }
+.reveal--delay-5 { animation-delay: 400ms; }
+.reveal--delay-6 { animation-delay: 480ms; }
+
+.motion-surface {
+  transition:
+    border-color var(--duration-slow) var(--ease-soft),
+    box-shadow var(--duration-slow) var(--ease-soft),
+    transform var(--duration-slow) var(--ease-soft);
+}
+
+.motion-surface:hover {
+  border-color: var(--clr-gold);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.motion-underline {
+  position: relative;
+}
+
+.motion-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 1px;
+  background: var(--clr-gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--duration-base) var(--ease-gold);
+}
+
+.motion-underline:hover::after,
+.motion-underline:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.motion-hairline {
+  transform-origin: left;
+  animation: hairline-sweep var(--duration-page) var(--ease-out-expo) both;
+}
+
+.ambient-drift {
+  animation: ambient-drift 9s ease-in-out infinite;
+}
+
+.page-transition :is(
+  [class*='Card'],
+  [class*='card'],
+  [class*='Panel'],
+  [class*='panel'],
+  [class*='Item'],
+  [class*='item']
+) {
+  transition:
+    border-color var(--duration-base) var(--ease-soft),
+    box-shadow var(--duration-slow) var(--ease-soft),
+    transform var(--duration-slow) var(--ease-out-expo),
+    background-color var(--duration-base) var(--ease-soft);
+}
+
+.page-transition :is(
+  [class*='ImageWrap'],
+  [class*='ImgWrap'],
+  [class*='Visual'],
+  [class*='visual'],
+  [class*='Media'],
+  [class*='media']
+) {
+  isolation: isolate;
+}
+
+.page-transition :is(
+  [class*='ImageWrap'],
+  [class*='ImgWrap'],
+  [class*='Visual'],
+  [class*='visual'],
+  [class*='Media'],
+  [class*='media']
+) img {
+  transition:
+    transform 900ms var(--ease-out-expo),
+    filter 900ms var(--ease-soft);
+}
+
+.page-transition :is(
+  a[class*='btn'],
+  a[class*='Btn'],
+  a[class*='Link'],
+  a[class*='link'],
+  a[class*='Action'],
+  a[class*='Ghost'],
+  button[class*='btn'],
+  button[class*='Btn']
+) {
+  position: relative;
+  overflow: hidden;
+  transform: translateZ(0);
+  transition:
+    color var(--duration-base) var(--ease-soft),
+    background-color var(--duration-base) var(--ease-soft),
+    border-color var(--duration-base) var(--ease-soft),
+    box-shadow var(--duration-base) var(--ease-soft),
+    transform var(--duration-base) var(--ease-out-expo);
+}
+
+.page-transition :is(
+  a[class*='btn'],
+  a[class*='Btn'],
+  a[class*='Link'],
+  a[class*='link'],
+  a[class*='Action'],
+  a[class*='Ghost'],
+  button[class*='btn'],
+  button[class*='Btn']
+)::before {
+  content: '';
+  position: absolute;
+  inset: -30% auto -30% -48%;
+  width: 42%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.28), transparent);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.page-transition :is(
+  [class*='Watermark'],
+  [class*='watermark'],
+  [class*='Seal'],
+  [class*='seal']
+) {
+  animation: accent-breathe 10s ease-in-out infinite;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .page-transition :is(
+    [class*='Card'],
+    [class*='card'],
+    [class*='Panel'],
+    [class*='panel'],
+    [class*='Item'],
+    [class*='item']
+  ):hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+  }
+
+  .page-transition :is(
+    [class*='ImageWrap'],
+    [class*='ImgWrap'],
+    [class*='Visual'],
+    [class*='visual'],
+    [class*='Media'],
+    [class*='media']
+  ):hover img {
+    transform: scale(1.035);
+    filter: saturate(1.06) contrast(1.03);
+  }
+
+  .page-transition :is(
+    a[class*='btn'],
+    a[class*='Btn'],
+    a[class*='Link'],
+    a[class*='link'],
+    a[class*='Action'],
+    a[class*='Ghost'],
+    button[class*='btn'],
+    button[class*='Btn']
+  ):hover {
+    transform: translateY(-2px);
+  }
+
+  .page-transition :is(
+    a[class*='btn'],
+    a[class*='Btn'],
+    a[class*='Link'],
+    a[class*='link'],
+    a[class*='Action'],
+    a[class*='Ghost'],
+    button[class*='btn'],
+    button[class*='Btn']
+  ):hover::before {
+    opacity: 1;
+    animation: button-glint 760ms var(--ease-gold) both;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+
+  .page-transition,
+  .reveal,
+  .reveal-soft,
+  .reveal-clip,
+  .motion-hairline,
+  .ambient-drift,
+  .page-transition :is(
+    [class*='Watermark'],
+    [class*='watermark'],
+    [class*='Seal'],
+    [class*='seal']
+  ) {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    filter: none;
+    clip-path: none;
+  }
+
+  .motion-surface,
+  .motion-underline::after,
+  .motion-enhanced [data-motion],
+  .page-transition :is(
+    [class*='Card'],
+    [class*='card'],
+    [class*='Panel'],
+    [class*='panel'],
+    [class*='Item'],
+    [class*='item'],
+    [class*='ImageWrap'],
+    [class*='ImgWrap'],
+    [class*='Visual'],
+    [class*='visual'],
+    [class*='Media'],
+    [class*='media']
+  ) {
+    transition: none;
+  }
+
+  .motion-enhanced [data-motion] {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}

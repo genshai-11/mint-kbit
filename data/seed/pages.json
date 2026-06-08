@@ -1,0 +1,365 @@
+{
+  "_note": "UPDATED 2026-06-05 by Craft Agent. Static page copy preserved; added live sitemap/API page references for later frontend mapping.",
+  "membership": {
+    "title": {
+      "en": "KBIT Official Membership Program",
+      "vi": "[NEEDS_TRANSLATION:vi]",
+      "ko": "[NEEDS_TRANSLATION:ko]"
+    },
+    "intro": {
+      "en": "Join KBIT to enhance expertise, access exclusive benefits, and contribute to the growth of Vietnam's aesthetic medical industry.",
+      "vi": "[NEEDS_TRANSLATION:vi]",
+      "ko": "[NEEDS_TRANSLATION:ko]"
+    },
+    "heroImage": "https://kbitassociation.com/images/memer_banner/banner1.jpg",
+    "pillars": [
+      {
+        "icon": "heart",
+        "title": {
+          "en": "Exclusive Benefits",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        },
+        "desc": {
+          "en": "Access discounts, training, resources, and networking opportunities.",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        }
+      },
+      {
+        "icon": "users",
+        "title": {
+          "en": "Professional Network",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        },
+        "desc": {
+          "en": "Connect with leading experts, clinics, and suppliers in the industry.",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        }
+      },
+      {
+        "icon": "trending-up",
+        "title": {
+          "en": "Industry Growth",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        },
+        "desc": {
+          "en": "Contribute to and benefit from the advancement of aesthetic medicine in Vietnam.",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        }
+      }
+    ],
+    "faq": "[GAP] cần khách cấp 6-8 câu hỏi thường gặp"
+  },
+  "events": {
+    "title": {
+      "en": "Upcoming Events & Workshops",
+      "vi": "[NEEDS_TRANSLATION:vi]",
+      "ko": "[NEEDS_TRANSLATION:ko]"
+    },
+    "intro": {
+      "en": "Explore our curated list of events designed to enhance your skills and knowledge.",
+      "vi": "[NEEDS_TRANSLATION:vi]",
+      "ko": "[NEEDS_TRANSLATION:ko]"
+    },
+    "cta": {
+      "en": "Ready to Elevate Your Expertise?",
+      "vi": "[NEEDS_TRANSLATION:vi]",
+      "ko": "[NEEDS_TRANSLATION:ko]"
+    },
+    "ctaBody": {
+      "en": "Register for our upcoming events and workshops to gain invaluable insights, hands-on experience, and network with industry leaders. Secure your spot today!",
+      "vi": "[NEEDS_TRANSLATION:vi]",
+      "ko": "[NEEDS_TRANSLATION:ko]"
+    },
+    "ctaNote": {
+      "en": "Seats are limited. Early registration is recommended.",
+      "vi": "[NEEDS_TRANSLATION:vi]",
+      "ko": "[NEEDS_TRANSLATION:ko]"
+    }
+  },
+  "news": {
+    "title": {
+      "en": "News & Updates",
+      "vi": "[NEEDS_TRANSLATION:vi]",
+      "ko": "[NEEDS_TRANSLATION:ko]"
+    },
+    "intro": {
+      "en": "Stay informed with our latest articles, announcements, and insights.",
+      "vi": "[NEEDS_TRANSLATION:vi]",
+      "ko": "[NEEDS_TRANSLATION:ko]"
+    }
+  },
+  "experts": {
+    "title": {
+      "en": "Our Key Doctors",
+      "vi": "[NEEDS_TRANSLATION:vi]",
+      "ko": "[NEEDS_TRANSLATION:ko]"
+    },
+    "intro": {
+      "en": "Connect with a network of leading aesthetic experts and doctors from Korea.",
+      "vi": "[NEEDS_TRANSLATION:vi]",
+      "ko": "[NEEDS_TRANSLATION:ko]"
+    },
+    "heroImage": "[GAP] thay placeholder-experts-hero.png bằng ảnh thật",
+    "stats": [
+      {
+        "value": "50+",
+        "label": {
+          "en": "Experts",
+          "vi": "Chuyên gia",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        },
+        "desc": {
+          "en": "Experienced team of specialists and doctors",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        }
+      },
+      {
+        "value": null,
+        "label": {
+          "en": "International Certification",
+          "vi": "Chứng nhận quốc tế",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        },
+        "desc": {
+          "en": "Meeting standards and recognized globally",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        }
+      },
+      {
+        "value": null,
+        "label": {
+          "en": "Global Collaboration",
+          "vi": "Hợp tác toàn cầu",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        },
+        "desc": {
+          "en": "Extensive partner network across Asia",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        }
+      }
+    ],
+    "collaborate": [
+      {
+        "title": {
+          "en": "Training Opportunities",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        },
+        "desc": {
+          "en": "Participate in teaching intensive training programs and international workshops.",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        }
+      },
+      {
+        "title": {
+          "en": "Global Network",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        },
+        "desc": {
+          "en": "Connect with leading experts and expand international collaboration opportunities.",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        }
+      },
+      {
+        "title": {
+          "en": "Prestigious Certification",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        },
+        "desc": {
+          "en": "Receive certification from KBIT and enhance personal brand value.",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        }
+      },
+      {
+        "title": {
+          "en": "Professional Development",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        },
+        "desc": {
+          "en": "Access new technologies and participate in pioneering research projects.",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        }
+      }
+    ]
+  },
+  "contact": {
+    "title": {
+      "en": "Contact KBIT",
+      "vi": "Liên hệ KBIT",
+      "ko": "[NEEDS_TRANSLATION:ko]"
+    },
+    "intro": {
+      "en": "We are always ready to listen and support you.",
+      "vi": "[NEEDS_TRANSLATION:vi]",
+      "ko": "[NEEDS_TRANSLATION:ko]"
+    },
+    "heroImage": "[GAP] thay placeholder-contact-hero.png bằng ảnh thật",
+    "highlights": [
+      {
+        "icon": "message-circle",
+        "title": {
+          "en": "Online Consultation",
+          "vi": "Tư vấn trực tuyến",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        },
+        "desc": {
+          "en": "Get free advice from our experts",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        }
+      },
+      {
+        "icon": "clock",
+        "title": {
+          "en": "Working Hours",
+          "vi": "Giờ làm việc",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        },
+        "desc": {
+          "en": "Monday - Sunday: 08:00 - 20:00",
+          "vi": "Thứ 2 - Chủ nhật: 08:00 - 20:00",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        }
+      },
+      {
+        "icon": "building",
+        "title": {
+          "en": "Center System",
+          "vi": "Hệ thống trung tâm",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        },
+        "desc": {
+          "en": "Present in major cities nationwide",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        }
+      }
+    ],
+    "subjects": [
+      "General Inquiry",
+      "Membership",
+      "Event Registration",
+      "Collaboration",
+      "Other"
+    ]
+  },
+  "about": {
+    "_note": "Trang mới hoàn toàn — toàn bộ là [GAP] [CLIENT_PROVIDE].",
+    "title": {
+      "en": "About KBIT",
+      "vi": "Về KBIT",
+      "ko": "[NEEDS_TRANSLATION:ko]"
+    },
+    "mission": "[GAP] cần khách cấp sứ mệnh",
+    "vision": "[GAP] cần khách cấp tầm nhìn",
+    "history": "[GAP] cần khách cấp lịch sử",
+    "leadership": [
+      {
+        "name": "Noh Hyun Taek",
+        "role": {
+          "en": "Vice President",
+          "vi": "Phó Chủ tịch",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        },
+        "avatar": "[GAP]"
+      }
+    ],
+    "timeline": "[GAP] cần khách cấp các mốc thời gian",
+    "educationCenters": "[GAP] cần danh sách 16 trung tâm + địa điểm"
+  },
+  "centers": {
+    "title": {
+      "en": "Our Center System",
+      "vi": "[NEEDS_TRANSLATION:vi]",
+      "ko": "[NEEDS_TRANSLATION:ko]"
+    },
+    "intro": {
+      "en": "A nationwide network of Korean-standard aesthetic centers",
+      "vi": "[NEEDS_TRANSLATION:vi]",
+      "ko": "[NEEDS_TRANSLATION:ko]"
+    },
+    "heroImage": "data/assets/placeholders/placeholder-centers-hero-c6f7937e.png",
+    "highlights": [
+      {
+        "icon": "building",
+        "title": {
+          "en": "Modern Facilities",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        },
+        "desc": {
+          "en": "Equipment and technology meeting international standards",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        }
+      },
+      {
+        "icon": "users",
+        "title": {
+          "en": "Professional Team",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        },
+        "desc": {
+          "en": "Doctors and specialists thoroughly trained in Korea",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        }
+      },
+      {
+        "icon": "shield",
+        "title": {
+          "en": "Safety Commitment",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        },
+        "desc": {
+          "en": "Strict adherence to international medical standards",
+          "vi": "[NEEDS_TRANSLATION:vi]",
+          "ko": "[NEEDS_TRANSLATION:ko]"
+        }
+      }
+    ],
+    "sourceUrl": "https://kbitassociation.com/en/centers"
+  },
+  "liveSitemap": {
+    "locales": [
+      "en",
+      "vi",
+      "ko",
+      "zh"
+    ],
+    "urlCount": 80,
+    "types": [
+      "centers",
+      "co-founder",
+      "contact",
+      "event-detail",
+      "events-workshops",
+      "experts",
+      "home",
+      "membership",
+      "news",
+      "news-detail",
+      "programs",
+      "welcome-speech"
+    ],
+    "sourceFile": "data/seed/url-inventory.json"
+  }
+}

@@ -1,0 +1,229 @@
+/* local alpha aliases to avoid repeating raw rgba values */
+.highlightIconWrap,
+.centerTag {
+  --_gold-a12: rgba(201, 169, 110, 0.12);
+  --_gold-a24: rgba(201, 169, 110, 0.24);
+}
+
+.sectionHeader {
+  margin-bottom: var(--sp-8);
+}
+
+/* ── Highlights ── */
+.highlightsSection {
+  background: var(--clr-ivory);
+}
+
+.highlightsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-5);
+}
+
+.highlightCard {
+  background: var(--clr-cream);
+  border: 1px solid var(--clr-ash);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-6);
+  box-shadow: var(--shadow-card);
+}
+
+.highlightIconWrap {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: var(--radius-md);
+  background: var(--_gold-a12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--sp-5);
+}
+
+.highlightIcon {
+  color: var(--clr-gold-dark);
+}
+
+.highlightCard h3 {
+  font-family: var(--font-display);
+  font-size: var(--type-d3);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--clr-navy);
+  margin-bottom: var(--sp-3);
+}
+
+.highlightCard p {
+  font-size: var(--type-body);
+  color: var(--clr-stone);
+  line-height: 1.75;
+}
+
+/* ── Centers ── */
+.centersSection {
+  background: var(--clr-section-alt);
+}
+
+.centersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: var(--sp-6);
+}
+
+.centerCard {
+  background: var(--clr-cream);
+  border: 1px solid var(--clr-ash);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  transition: box-shadow var(--transition-slow), border-color var(--transition-slow);
+}
+
+.centerCard:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--clr-gold);
+}
+
+.centerCard:hover .centerImage {
+  transform: scale(1.04);
+}
+
+.centerImageWrap {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  background: var(--clr-midnight);
+  overflow: hidden;
+}
+
+.centerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 700ms var(--ease-out-expo);
+}
+
+.centerImageFallback {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-size: clamp(40px, 7vw, 72px);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: rgba(255, 255, 255, 0.12);
+}
+
+.centerBody {
+  padding: var(--sp-5) var(--sp-6) var(--sp-6);
+}
+
+.centerTag {
+  display: inline-flex;
+  padding: var(--sp-1) var(--sp-3);
+  border-radius: var(--radius-pill);
+  background: var(--_gold-a12);
+  border: 1px solid var(--_gold-a24);
+  color: var(--clr-gold-dark);
+  font-size: var(--type-xs);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: var(--sp-3);
+}
+
+.centerBody h3 {
+  font-family: var(--font-display);
+  font-size: var(--type-h1);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--clr-navy);
+  margin-bottom: var(--sp-4);
+}
+
+.centerMeta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.centerMeta li {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: var(--type-sm);
+  color: var(--clr-stone);
+}
+
+/* ── CTA ── */
+.ctaBand {
+  background: var(--clr-midnight);
+  padding-block: var(--section-py);
+}
+
+.ctaInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--sp-8);
+}
+
+.ctaBand h2 {
+  font-family: var(--font-display);
+  font-size: var(--type-d2);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  color: var(--clr-white);
+  margin-block: var(--sp-4);
+}
+
+.ctaBand p {
+  font-size: var(--type-body);
+  color: var(--clr-mist);
+  max-width: 520px;
+  line-height: 1.75;
+}
+
+.ctaPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  flex-shrink: 0;
+  background: var(--clr-gold);
+  color: var(--clr-navy);
+  font-size: var(--type-sm);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: var(--sp-3) var(--sp-5);
+  border-radius: var(--radius-md);
+  transition: var(--transition-base);
+}
+
+.ctaPrimary:hover {
+  background: var(--clr-gold-light);
+}
+
+.ctaPrimary:focus-visible {
+  outline: 2px solid var(--clr-gold);
+  outline-offset: 3px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .highlightsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ctaInner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .highlightsGrid,
+  .centersGrid {
+    grid-template-columns: 1fr;
+  }
+}
