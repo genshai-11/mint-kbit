@@ -134,8 +134,126 @@ After all pages render (including Event Detail):
 - Font audit: confirm `font-display: swap` active, no render-blocking
 - Core Web Vitals baseline recorded (LCP, CLS, FID targets)
 
-### Phase 6 — Admin/content path
-Design after public content baseline is stable. Out of scope for current build.
+### Phase 6 — Sanity CMS + Content Management
+**Status: planned — begins after Phase 5 performance pass.**
+
+#### 6a — Sanity project setup
+
+1. Tạo Sanity project:
+   ```bash
+   npm create sanity@latest -- --project kbit --dataset production --template clean
+   ```
+2. Cài dependencies frontend:
+   ```bash
+   npm install @sanity/client @sanity/image-url
+   ```
+3. Cấu hình `.env`:
+   ```
+   VITE_SANITY_PROJECT_ID=xxx
+   VITE_SANITY_DATASET=production
+   ```
+
+#### 6b — Schema definitions
+
+Định nghĩa schema trong `studio/schemas/` cho từng content type:
+
+| Schema | Fields chính |
+|---|---|
+| `event` | title(i18n), slug, description(i18n), coverImage, startAt, endAt, location(i18n), status, fee, speakerSlugs, images[] |
+| `news` | title(i18n), slug, excerpt(i18n), content(i18n, PortableText), coverImage, tags, publishedAt, status |
+| `homeHero` | slides[]: {image, heading(i18n), sub(i18n)} |
+| `settings` | stats, contact, offices[], social, brand |
+| `page` | key (membership/about/…), sections[] (i18n blocks) |
+| `expert` | name, slug, bio(i18n), avatar, role(i18n) |
+| `partner` | name, logo, url, tier |
+| `center` | name(i18n), slug, address(i18n), image |
+
+Tất cả `i18n` fields dùng pattern:
+```js
+{ en: string, vi: string, ko: string }
+```
+
+#### 6c — Image migration (assets → Sanity CDN)
+
+- Upload toàn bộ `data/assets-opt/` lên Sanity Asset API bằng migration script
+- Sau khi upload: mọi image reference dùng `@sanity/image-url` builder
+- Frontend `<Img>` component tạo `srcset` từ Sanity CDN URL:
+  ```
+  cdn.sanity.io/images/{projectId}/{dataset}/{ref}?w=400&fm=webp
+  cdn.sanity.io/images/{projectId}/{dataset}/{ref}?w=800&fm=webp
+  cdn.sanity.io/images/{projectId}/{dataset}/{ref}?w=1200&fm=webp
+  ```
+- **Bỏ** `data/assets-opt/`, `data/assets/`, script `optimize-images.mjs` sau khi xác nhận CDN hoạt động
+
+#### 6d — Data migration (seed JSON → Sanity)
+
+Tạo script `scripts/migrate-to-sanity.mjs`:
+1. Đọc `data/seed/events.json`, `news.json`, `settings.json`, v.v.
+2. Map sang Sanity document format
+3. Upload qua Sanity client `.createOrReplace()`
+4. Log kết quả, report lỗi
+
+Thứ tự migration:
+```
+experts → partners → centers → events → news → pages → settings → homeHero
+```
+
+#### 6e — Frontend wiring
+
+- Thay tất cả `import * from 'data/seed/*.json'` → GROQ query qua `@sanity/client`
+- Tạo `src/lib/sanity.ts` — centralized client + typed queries
+- Giữ nguyên route structure, chỉ thay data source
+- Fetch strategy: `useSWR` hoặc `useEffect` + cache headers từ Sanity CDN
+
+---
+
+### Phase 7 — Content Translation
+
+**Mục tiêu:** Điền đầy đủ `vi` và `ko` cho toàn bộ content đang có `[NEEDS_TRANSLATION:xx]` hoặc trống.
+
+#### Tình trạng hiện tại
+
+| Content type | EN | VI | KO |
+|---|---|---|---|
+| Events (title, desc, location) | ✅ đầy đủ | ⚠️ thiếu một số | ❌ phần lớn trống |
+| News (title, excerpt, content) | ✅ đầy đủ | ⚠️ thiếu | ❌ trống |
+| Settings (offices, org info) | ✅ | ⚠️ | ❌ |
+| Pages (membership, about) | ✅ | ⚠️ | ❌ |
+| homeHero (heading, sub) | ✅ | ⚠️ | ❌ |
+
+#### Workflow dịch thuật
+
+**Bước 1 — Export strings cần dịch**
+```
+scripts/export-missing-translations.mjs
+→ output: translations-needed.csv (locale, content_type, field, key, source_en)
+```
+
+**Bước 2 — Dịch theo 2 kênh song song:**
+
+| Kênh | Nội dung | Ưu tiên |
+|---|---|---|
+| Dịch máy (DeepL/GPT) | Body text, descriptions, page sections | Nhanh, review sau |
+| Dịch người | Title, headline, CTA, SEO meta | Chính xác, brand voice |
+
+**Bước 3 — Import lại Sanity**
+- Upload translations đã dịch qua Sanity Studio (thủ công) hoặc import script
+- Sanity Studio hỗ trợ editor edit trực tiếp từng locale field
+
+**Bước 4 — QA**
+- Check từng trang ở `/vi/` và `/ko/`
+- Flag các field vẫn còn `[NEEDS_TRANSLATION]` bằng visual indicator (chỉ trong dev mode)
+
+#### Ưu tiên dịch
+
+```
+1. homeHero (visible ngay trang chủ)
+2. Events title + location (listing page)
+3. News title + excerpt (listing page)
+4. Settings: contact + offices
+5. Pages: membership CTA, about mission
+6. Long-form: event description, news body content
+```
 
 ---
 
