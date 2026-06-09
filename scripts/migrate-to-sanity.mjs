@@ -19,10 +19,24 @@ import { createHash, randomUUID } from 'crypto'
 const __dir = fileURLToPath(new URL('.', import.meta.url))
 const ROOT = resolve(__dir, '..')
 
+const projectId = process.env.SANITY_PROJECT_ID
+const dataset = process.env.SANITY_DATASET ?? 'production'
+const token = process.env.SANITY_TOKEN
+
+if (!projectId || !token) {
+  console.error('❌ Missing Sanity credentials. Set SANITY_PROJECT_ID and SANITY_TOKEN in .env.local.')
+  console.error('   Example: cp .env.example .env.local && npm run migrate-sanity')
+  process.exit(1)
+}
+
+const assetManifestRaw = JSON.parse(await readFile(resolve(ROOT, 'data/seed/asset-manifest.json'), 'utf8'))
+const assetByOriginalUrl = new Map((assetManifestRaw.assets ?? []).map((a) => [a.originalUrl, a.localPath]))
+const uploadedImages = new Map()
+
 const client = createClient({
-  projectId: process.env.SANITY_PROJECT_ID,
-  dataset: process.env.SANITY_DATASET ?? 'production',
-  token: process.env.SANITY_TOKEN,
+  projectId,
+  dataset,
+  token,
   useCdn: false,
   apiVersion: '2024-01-01',
 })
@@ -34,19 +48,40 @@ async function readSeed(name) {
   return JSON.parse(raw)
 }
 
+function resolveLocalImagePath(input) {
+  if (!input || typeof input !== 'string' || input.startsWith('[')) return null
+  if (/^https?:\/\//.test(input)) return assetByOriginalUrl.get(input) ?? null
+  return input
+}
+
+function numberOrNull(value) {
+  return typeof value === 'number' && Number.isFinite(value) ? value : null
+}
+
+function stringOrEmpty(value) {
+  if (typeof value === 'string') return value.startsWith('[') ? '' : value
+  if (value && typeof value === 'object') return value.en ?? value.vi ?? value.ko ?? ''
+  return ''
+}
+
 async function uploadImage(localPath) {
-  if (!localPath) return null
-  const fullPath = resolve(ROOT, localPath)
+  const resolvedPath = resolveLocalImagePath(localPath)
+  if (!resolvedPath) return null
+  if (uploadedImages.has(resolvedPath)) return uploadedImages.get(resolvedPath)
+
+  const fullPath = resolve(ROOT, resolvedPath)
   if (!existsSync(fullPath)) {
-    console.warn(`  ⚠ Image not found: ${localPath}`)
+    console.warn(`  ⚠ Image not found: ${localPath} → ${resolvedPath}`)
     return null
   }
   try {
     const asset = await client.assets.upload('image', createReadStream(fullPath), {
       filename: basename(fullPath),
     })
+    const image = { _type: 'image', asset: { _type: 'reference', _ref: asset._id } }
+    uploadedImages.set(resolvedPath, image)
     console.log(`  ✓ Uploaded: ${basename(fullPath)}`)
-    return { _type: 'image', asset: { _type: 'reference', _ref: asset._id } }
+    return image
   } catch (err) {
     console.error(`  ✗ Upload failed: ${localPath}`, err.message)
     return null
@@ -109,7 +144,7 @@ async function migrateCenters() {
     const images = []
     for (const img of (c.images ?? [])) {
       const uploaded = await uploadImage(img.imageUrl || img.localPath)
-      if (uploaded) images.push({ _key: randomUUID(), ...uploaded, altText: img.altText, sortOrder: img.sortOrder })
+      if (uploaded) images.push({ _key: randomUUID(), _type: 'centerImage', image: uploaded, altText: img.altText, sortOrder: img.sortOrder })
     }
     await upsert({
       _id: `center-${c.sourceId}`,
@@ -142,7 +177,8 @@ async function migrateEvents() {
       if (uploaded) {
         images.push({
           _key: randomUUID(),
-          ...uploaded,
+          _type: 'eventImage',
+          image: uploaded,
           caption: cleanI18n(img.caption),
           altText: img.altText,
           sortOrder: img.sortOrder,
@@ -189,7 +225,8 @@ async function migrateNews() {
       if (uploaded) {
         images.push({
           _key: randomUUID(),
-          ...uploaded,
+          _type: 'newsImage',
+          image: uploaded,
           role: img.role,
           isCover: img.isCover ?? false,
           sortOrder: img.sortOrder,
@@ -223,12 +260,21 @@ async function migrateNews() {
 async function migrateSettings() {
   console.log('\n── Settings ──')
   const s = await readSeed('settings')
+  const logoLight = await uploadImage(s.brand?.logoLight)
+  const logoDark = await uploadImage(s.brand?.logoDark)
+  const favicon = await uploadImage(s.brand?.favicon)
+  const ogImage = await uploadImage(s.siteMeta?.ogImage)
+
   await upsert({
     _id: 'siteSettings',
     _type: 'settings',
+    logoLight: logoLight ?? undefined,
+    logoDark: logoDark ?? undefined,
+    favicon: favicon ?? undefined,
     siteMeta: {
       title: cleanI18n(s.siteMeta?.title),
       description: cleanI18n(s.siteMeta?.description),
+      ogImage: ogImage ?? undefined,
     },
     stats: {
       educationCenters: typeof s.stats?.educationCenters === 'number' ? s.stats.educationCenters : 16,
@@ -245,14 +291,15 @@ async function migrateSettings() {
     },
     offices: (s.offices ?? []).map((o) => ({
       _key: officeKey(o),
+      _type: 'office',
       label: cleanI18n(o.label),
       address: cleanI18n(o.address),
       hours: cleanI18n(o.hours),
       phone: o.phone ?? '',
       email: o.email ?? '',
-      mapLat: o.mapLat ?? null,
-      mapLng: o.mapLng ?? null,
-      contactPerson: o.contactPerson ?? '',
+      mapLat: numberOrNull(o.mapLat),
+      mapLng: numberOrNull(o.mapLng),
+      contactPerson: stringOrEmpty(o.contactPerson),
     })),
   })
   console.log('  ✓ Settings')
@@ -267,6 +314,7 @@ async function migrateHomeHero() {
     const image = await uploadImage(slide.image)
     slides.push({
       _key: `slide-${i}`,
+      _type: 'heroSlide',
       image: image ?? undefined,
       heading: cleanI18n(slide.heading),
       sub: cleanI18n(slide.sub),
@@ -296,12 +344,14 @@ async function migratePages() {
       intro: cleanI18n(data.intro),
       pillars: (data.pillars ?? []).map((p, i) => ({
         _key: `pillar-${i}`,
+        _type: 'pagePillar',
         icon: p.icon,
         title: cleanI18n(p.title),
         desc: cleanI18n(p.desc),
       })),
       faq: (data.faq ?? []).map((f, i) => ({
         _key: `faq-${i}`,
+        _type: 'pageFaq',
         question: cleanI18n(f.question),
         answer: cleanI18n(f.answer),
       })),
@@ -314,8 +364,8 @@ async function migratePages() {
 
 async function main() {
   console.log('🚀 KBIT → Sanity Migration')
-  console.log(`   Project: ${process.env.SANITY_PROJECT_ID}`)
-  console.log(`   Dataset: ${process.env.SANITY_DATASET ?? 'production'}`)
+  console.log(`   Project: ${projectId}`)
+  console.log(`   Dataset: ${dataset}`)
 
   await migrateExperts()
   await migratePartners()

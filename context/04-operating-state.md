@@ -24,7 +24,7 @@ Checked evidence is in:
 2. Image optimization script must run before any image component is built.
 3. ~~Experts content remains missing (gap — render explicit gap state, do not invent).~~ **Done — gap state page live.**
 4. Testimonials remain missing (gap).
-5. Production asset hosting not finalized (use local `data/assets-opt/` until hosting decision).
+5. Production asset hosting not finalized (use local `data/assets-opt/` until Sanity CDN migration is run and verified).
 
 ## Hermes board
 
@@ -51,9 +51,9 @@ Checked evidence is in:
 | `t_4a_gate` | done | [Gate] Lucy confirms Phase 4a design direction |
 | `t_4b_pages` | done | [Phase 4b] Build remaining pages after gate |
 | `t_0bed4a30` | todo | Performance pass: lazy routes, split JSON, bundle report |
-| `t_314397dd` | todo | Plan future admin/content operations path |
+| `t_314397dd` | in_progress | Plan future admin/content operations path — Sanity Studio/schema/migration tooling verified 2026-06-09 |
 | `t_eb42c8dd` | todo | Add verification and release controls |
 
 ## Next task
 
-Phase 5 — Performance pass: lazy routes, JSON splitting, bundle analysis, Core Web Vitals baseline.
+Phase 5 — Performance pass remains the canonical next build task. Sanity Phase 6 setup tooling is now partially implemented; remaining Sanity work requires real project credentials/CORS, live migration, content QA, and frontend wiring.

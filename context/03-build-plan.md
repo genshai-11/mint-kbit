@@ -135,23 +135,14 @@ After all pages render (including Event Detail):
 - Core Web Vitals baseline recorded (LCP, CLS, FID targets)
 
 ### Phase 6 — Sanity CMS + Content Management
-**Status: planned — begins after Phase 5 performance pass.**
+**Status: partially implemented — Studio/schema/client/migration tooling verified locally 2026-06-09; requires real Sanity project credentials, CORS setup, migration run, content QA, then frontend wiring.**
 
 #### 6a — Sanity project setup
 
-1. Tạo Sanity project:
-   ```bash
-   npm create sanity@latest -- --project kbit --dataset production --template clean
-   ```
-2. Cài dependencies frontend:
-   ```bash
-   npm install @sanity/client @sanity/image-url
-   ```
-3. Cấu hình `.env`:
-   ```
-   VITE_SANITY_PROJECT_ID=xxx
-   VITE_SANITY_DATASET=production
-   ```
+- ✅ Frontend Sanity dependencies installed: `@sanity/client`, `@sanity/image-url`.
+- ✅ Sanity Studio scaffold exists in `studio/` and builds locally.
+- ✅ Env examples added at `.env.example` and `studio/.env.example`.
+- ⏳ Lucy/project owner must create or confirm the real Sanity project, dataset, API token, and CORS origins in Sanity Manage.
 
 #### 6b — Schema definitions
 
@@ -187,15 +178,14 @@ Tất cả `i18n` fields dùng pattern:
 
 #### 6d — Data migration (seed JSON → Sanity)
 
-Tạo script `scripts/migrate-to-sanity.mjs`:
-1. Đọc `data/seed/events.json`, `news.json`, `settings.json`, v.v.
-2. Map sang Sanity document format
-3. Upload qua Sanity client `.createOrReplace()`
-4. Log kết quả, report lỗi
+- ✅ `scripts/migrate-to-sanity.mjs` reads `data/seed/*.json`, resolves legacy asset URLs through `data/seed/asset-manifest.json`, uploads local images, and upserts schema-valid documents with `.createOrReplace()`.
+- ✅ `scripts/export-sanity-ndjson.mjs` generates `kbit-migration.ndjson` for manual dataset import without assets.
+- ✅ `docs/sanity-setup.md` documents the remaining manual setup and migration flow.
+- ⏳ Run the live migration after `.env.local` contains the real `SANITY_PROJECT_ID`, `SANITY_DATASET`, and `SANITY_TOKEN`.
 
-Thứ tự migration:
+Migration order:
 ```
-experts → partners → centers → events → news → pages → settings → homeHero
+experts → partners → centers → events → news → settings → homeHero → pages
 ```
 
 #### 6e — Frontend wiring

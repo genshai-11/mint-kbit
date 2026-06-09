@@ -164,14 +164,15 @@ async function exportSettings() {
     },
     offices: (s.offices ?? []).map((o) => ({
       _key: createHash('md5').update(o.phone ?? o.label?.en ?? o.email ?? String(Math.random())).digest('hex').slice(0, 8),
+      _type: 'office',
       label: cleanI18n(o.label),
       address: cleanI18n(o.address),
       hours: cleanI18n(o.hours),
       phone: o.phone ?? '',
       email: o.email ?? '',
-      mapLat: o.mapLat ?? null,
-      mapLng: o.mapLng ?? null,
-      contactPerson: o.contactPerson ?? '',
+      mapLat: typeof o.mapLat === 'number' ? o.mapLat : null,
+      mapLng: typeof o.mapLng === 'number' ? o.mapLng : null,
+      contactPerson: typeof o.contactPerson === 'string' ? o.contactPerson : (o.contactPerson?.en ?? ''),
     })),
   })
   console.log('  ✓ Settings')
@@ -182,6 +183,7 @@ async function exportHomeHero() {
   const s = await readSeed('settings')
   const slides = (s.homeHero ?? []).map((slide, i) => ({
     _key: `slide-${i}`,
+    _type: 'heroSlide',
     heading: cleanI18n(slide.heading),
     sub: cleanI18n(slide.sub),
     sortOrder: i,
@@ -208,12 +210,14 @@ async function exportPages() {
       intro: cleanI18n(data.intro),
       pillars: Array.isArray(data.pillars) ? data.pillars.map((p, i) => ({
         _key: `pillar-${i}`,
+        _type: 'pagePillar',
         icon: p.icon ?? '',
         title: cleanI18n(p.title),
         desc: cleanI18n(p.desc),
       })) : [],
       faq: Array.isArray(data.faq) ? data.faq.map((f, i) => ({
         _key: `faq-${i}`,
+        _type: 'pageFaq',
         question: cleanI18n(f.question),
         answer: cleanI18n(f.answer),
       })) : [],
