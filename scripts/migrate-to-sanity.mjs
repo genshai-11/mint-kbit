@@ -342,19 +342,19 @@ async function migratePages() {
       heroImage: heroImage ?? undefined,
       title: cleanI18n(data.title),
       intro: cleanI18n(data.intro),
-      pillars: (data.pillars ?? []).map((p, i) => ({
+      pillars: Array.isArray(data.pillars) ? data.pillars.map((p, i) => ({
         _key: `pillar-${i}`,
         _type: 'pagePillar',
         icon: p.icon,
         title: cleanI18n(p.title),
         desc: cleanI18n(p.desc),
-      })),
-      faq: (data.faq ?? []).map((f, i) => ({
+      })) : [],
+      faq: Array.isArray(data.faq) ? data.faq.map((f, i) => ({
         _key: `faq-${i}`,
         _type: 'pageFaq',
         question: cleanI18n(f.question),
         answer: cleanI18n(f.answer),
-      })),
+      })) : [],
     })
     console.log(`  ✓ Page: ${key}`)
   }
@@ -362,19 +362,34 @@ async function migratePages() {
 
 // ─── Run ─────────────────────────────────────────────────────────────────────
 
+const migrations = {
+  experts: migrateExperts,
+  partners: migratePartners,
+  centers: migrateCenters,
+  events: migrateEvents,
+  news: migrateNews,
+  settings: migrateSettings,
+  homeHero: migrateHomeHero,
+  pages: migratePages,
+}
+
 async function main() {
   console.log('🚀 KBIT → Sanity Migration')
   console.log(`   Project: ${projectId}`)
   console.log(`   Dataset: ${dataset}`)
 
-  await migrateExperts()
-  await migratePartners()
-  await migrateCenters()
-  await migrateEvents()
-  await migrateNews()
-  await migrateSettings()
-  await migrateHomeHero()
-  await migratePages()
+  const selected = (process.env.SANITY_MIGRATE_ONLY ?? '')
+    .split(',')
+    .map((name) => name.trim())
+    .filter(Boolean)
+
+  const steps = selected.length ? selected : ['experts', 'partners', 'centers', 'events', 'news', 'settings', 'homeHero', 'pages']
+
+  for (const step of steps) {
+    const run = migrations[step]
+    if (!run) throw new Error(`Unknown migration step: ${step}`)
+    await run()
+  }
 
   console.log('\n✅ Migration complete.')
 }

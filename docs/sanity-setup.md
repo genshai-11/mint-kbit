@@ -9,6 +9,8 @@ This project has a Sanity Studio in `studio/`, frontend Sanity helpers in `src/l
 
 In Sanity Manage, create or select the KBIT project and dataset:
 
+- Project: `Kbit`
+- Project ID: `q9mwbl6e`
 - Dataset: `production`
 - API token: Editor/write token for migration only
 
@@ -63,6 +65,14 @@ npm run migrate-sanity
 ```
 
 This reads `data/seed/*.json`, resolves legacy KBIT image URLs through `data/seed/asset-manifest.json`, uploads images to Sanity assets, and upserts documents.
+
+To retry only selected steps without re-uploading everything, set `SANITY_MIGRATE_ONLY` to a comma-separated list:
+
+```bash
+SANITY_MIGRATE_ONLY=pages npm run migrate-sanity
+```
+
+Available steps: `experts`, `partners`, `centers`, `events`, `news`, `settings`, `homeHero`, `pages`.
 
 Alternative local NDJSON import without image uploads:
 
