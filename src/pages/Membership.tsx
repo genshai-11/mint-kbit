@@ -1,8 +1,9 @@
 import { Link, useLocation } from 'react-router-dom'
-import { ArrowRight, ClipboardText, DownloadSimple, Heart, SealCheck, TrendUp, UsersThree } from '@phosphor-icons/react'
+import { ArrowRight, ClipboardText, Heart, SealCheck, TrendUp, UsersThree } from '@phosphor-icons/react'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import PageHero from '@/components/PageHero'
+import RegistrationForm from '@/components/RegistrationForm'
 import { membership, pages, settings } from '@/lib/data'
 import { isLocale, type Locale } from '@/lib/locale'
 import { localize } from '@/lib/news'
@@ -184,24 +185,17 @@ export default function Membership() {
             <div className={s.formsFrame}>
               <div>
                 <div className="section-divider" />
-                <span className="overline">{content.registrationForms?.tab}</span>
-                <h2>{content.registrationForms?.title}</h2>
-                <p>{content.registrationForms?.description}</p>
+                <span className="overline">Register</span>
+                <h2>Apply for Membership</h2>
+                <p>Fill in the form below. Our team will review your application and send payment instructions within 2–3 business days.</p>
               </div>
-              <div className={s.formGrid}>
-                {forms.map((form: any, index: number) => (
-                  <a key={form.id} href={form.filePath} download className={`${s.formDownload} motion-surface reveal`} style={{ animationDelay: `${index * 120}ms` }}>
-                    <DownloadSimple size={26} weight="bold" aria-hidden="true" />
-                    <span>{form.title}</span>
-                  </a>
-                ))}
-              </div>
+              <RegistrationForm locale={locale} />
               <div className={s.ctaActions}>
-                <a href={`mailto:${settings.contact.email}?subject=Membership Inquiry`} className={s.ctaPrimary}>
-                  Email KBIT <ArrowRight size={16} weight="bold" aria-hidden="true" />
+                <a href={`mailto:${settings.contact.email}?subject=Membership Inquiry`} className={s.ctaSecondary}>
+                  Questions? Email us <ArrowRight size={16} weight="bold" aria-hidden="true" />
                 </a>
-                <Link to={`/${locale}/contact`} className={s.ctaSecondary}>
-                  Contact page
+                <Link to={`/${locale}/portal/login`} className={s.ctaSecondary}>
+                  Already a member? Sign in →
                 </Link>
               </div>
             </div>

@@ -120,3 +120,37 @@ export async function fetchPage(key: string) {
     }
   `, { key })
 }
+
+export async function fetchCourses(tier: string) {
+  return client.fetch(`
+    *[_type == "course" && isPublished == true && $tier in accessTiers] | order(sortOrder asc) {
+      _id, slug, title, description, coverImage, accessTiers,
+      "lessonCount": count(lessons),
+      "lessons": lessons[] | order(sortOrder asc) {
+        slug, title, type, videoUrl, duration, sortOrder
+      }
+    }
+  `, { tier })
+}
+
+export async function fetchCourse(slug: string) {
+  return client.fetch(`
+    *[_type == "course" && slug.current == $slug && isPublished == true][0] {
+      _id, slug, title, description, coverImage, accessTiers,
+      "lessons": lessons[] | order(sortOrder asc) {
+        slug, title, type, videoUrl, "fileUrl": file.asset->url,
+        content, duration, sortOrder
+      }
+    }
+  `, { slug })
+}
+
+export async function fetchResources(tier: string) {
+  return client.fetch(`
+    *[_type == "resource" && isPublished == true && $tier in accessTiers] | order(sortOrder asc) {
+      _id, title, description, category, accessTiers,
+      "fileUrl": file.asset->url,
+      thumbnail
+    }
+  `, { tier })
+}

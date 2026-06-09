@@ -19,9 +19,15 @@ const Membership = lazy(() => import('./pages/Membership'))
 const About = lazy(() => import('./pages/About'))
 const Partners = lazy(() => import('./pages/Partners'))
 const Contact = lazy(() => import('./pages/Contact'))
-const Experts = lazy(() => import('./pages/Experts'))
-const Centers = lazy(() => import('./pages/Centers'))
-const NotFound = lazy(() => import('./pages/NotFound'))
+const Experts       = lazy(() => import('./pages/Experts'))
+const Centers       = lazy(() => import('./pages/Centers'))
+const NotFound      = lazy(() => import('./pages/NotFound'))
+const PortalLogin   = lazy(() => import('./pages/portal/Login'))
+const Dashboard     = lazy(() => import('./pages/portal/Dashboard'))
+const Courses       = lazy(() => import('./pages/portal/Courses'))
+const CourseDetail  = lazy(() => import('./pages/portal/CourseDetail'))
+const Resources     = lazy(() => import('./pages/portal/Resources'))
+const PortalProfile = lazy(() => import('./pages/portal/Profile'))
 
 function LocaleRoutes() {
   return (
@@ -37,6 +43,13 @@ function LocaleRoutes() {
       <Route path="contact" element={<Contact />} />
       <Route path="experts" element={<Experts />} />
       <Route path="centers" element={<Centers />} />
+      {/* ── Member portal ── */}
+      <Route path="portal/login"    element={<PortalLogin />} />
+      <Route path="portal/dashboard" element={<Dashboard />} />
+      <Route path="portal/courses"  element={<Courses />} />
+      <Route path="portal/courses/:slug" element={<CourseDetail />} />
+      <Route path="portal/resources" element={<Resources />} />
+      <Route path="portal/profile"  element={<PortalProfile />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   )
