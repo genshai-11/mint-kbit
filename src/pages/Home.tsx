@@ -4,17 +4,11 @@ import { GlobeHemisphereEast, GraduationCap, SealCheck, Stethoscope, UsersThree 
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import Img from '@/components/Img'
-import { settings, events, partners } from '@/lib/data'
+import { settings, events, partners, t } from '@/lib/data'
 import { assetSrc, assetSrcSet } from '@/lib/assets'
 import { isLocale, type Locale } from '@/lib/locale'
+import { formatDate } from '@/lib/news'
 import s from './Home.module.css'
-
-function t(val: Record<string, string> | string, locale: Locale): string {
-  if (typeof val === 'string') return val
-  const raw = val[locale] ?? val['en'] ?? ''
-  if (raw.startsWith('[')) return val['en'] ?? ''
-  return raw
-}
 
 const HERO_ASSET_KEYS = [
   'home/banner1-8900b3d5.jpg',
@@ -29,16 +23,6 @@ const STAT_ITEMS = [
   { label: 'Countries', shortLabel: 'Countries', Icon: GlobeHemisphereEast, suffix: '+' },
   { label: 'Members', shortLabel: 'Members', Icon: UsersThree, suffix: '+' },
 ]
-
-function formatDate(iso: string, locale: Locale): string {
-  try {
-    return new Intl.DateTimeFormat(locale === 'ko' ? 'ko-KR' : locale === 'vi' ? 'vi-VN' : 'en-US', {
-      year: 'numeric', month: 'short', day: 'numeric'
-    }).format(new Date(iso))
-  } catch {
-    return iso.slice(0, 10)
-  }
-}
 
 function getEventImageKey(coverImage: string): string {
   return coverImage.replace(/^(\.\/)?data\/assets\//, '')
@@ -75,7 +59,7 @@ export default function Home() {
   const locale: Locale = isLocale(segments[1]) ? segments[1] : 'en'
 
   const [slide, setSlide] = useState(0)
-  const statsActive = true
+  const [statsRef, statsVisible] = useOnceVisible<HTMLElement>(0.2)
   const [statsVals, setStatsVals] = useState([0, 0, 0, 0])
   const [aboutRef, aboutVisible] = useOnceVisible<HTMLElement>(0.25)
   const [eventsRef, eventsVisible] = useOnceVisible<HTMLElement>(0.25)
@@ -90,17 +74,17 @@ export default function Home() {
   }, [advance])
 
   useEffect(() => {
-    if (!statsActive) return
+    if (!statsVisible) return
     const start = Date.now()
     const tick = () => {
       const elapsed = Date.now() - start
       const p = Math.min(elapsed / 1800, 1)
       const eased = 1 - Math.pow(1 - p, 3)
-      setStatsVals(STAT_TARGETS.map(t => Math.round(eased * t)))
+      setStatsVals(STAT_TARGETS.map(target => Math.round(eased * target)))
       if (p < 1) requestAnimationFrame(tick)
     }
     requestAnimationFrame(tick)
-  }, [statsActive])
+  }, [statsVisible])
 
   const heroSlides = settings.homeHero.map((h, i) => ({
     key: HERO_ASSET_KEYS[i],
@@ -155,7 +139,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <section className={`${s.stats} ${statsActive ? s.statsActive : ''}`} aria-label="Association statistics">
+        <section ref={statsRef} className={`${s.stats} ${statsVisible ? s.statsActive : ''}`} aria-label="Association statistics">
           <div className="container">
             <div className={s.statsGrid}>
               {STAT_ITEMS.map(({ label, shortLabel, Icon, suffix = '' }, i) => (

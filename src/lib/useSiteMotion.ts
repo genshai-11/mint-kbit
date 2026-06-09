@@ -53,7 +53,6 @@ export function useSiteMotion(routeKey: string) {
       return
     }
 
-    const animated = new Set<HTMLElement>()
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -69,14 +68,12 @@ export function useSiteMotion(routeKey: string) {
       },
     )
 
-    candidates.forEach((el) => {
-      animated.add(el)
-      observer.observe(el)
-    })
+    candidates.forEach((el) => observer.observe(el))
 
     return () => {
       observer.disconnect()
-      animated.forEach((el) => {
+      document.documentElement.classList.remove('motion-enhanced')
+      candidates.forEach((el) => {
         el.removeAttribute('data-motion')
         el.removeAttribute('data-motion-kind')
         el.style.removeProperty('--motion-index')

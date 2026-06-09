@@ -5,15 +5,8 @@ import Footer from '@/components/Footer'
 import PageHero from '@/components/PageHero'
 import { membership, pages, settings } from '@/lib/data'
 import { isLocale, type Locale } from '@/lib/locale'
+import { localize } from '@/lib/news'
 import s from './Membership.module.css'
-
-function localize(val: any, locale: Locale): string {
-  if (!val) return ''
-  if (typeof val === 'string') return val
-  const raw = val[locale] ?? val.en ?? ''
-  if (typeof raw === 'string' && raw.startsWith('[')) return val.en ?? ''
-  return raw
-}
 
 const TYPE_ICONS = [Heart, UsersThree, TrendUp]
 

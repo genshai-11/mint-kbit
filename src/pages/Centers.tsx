@@ -6,19 +6,8 @@ import Img from '@/components/Img'
 import PageHero from '@/components/PageHero'
 import { centers, pages } from '@/lib/data'
 import { isLocale, type Locale } from '@/lib/locale'
+import { getImgKey, localize } from '@/lib/news'
 import s from './Centers.module.css'
-
-function localize(val: any, locale: Locale): string {
-  if (!val) return ''
-  if (typeof val === 'string') return val
-  const raw = val[locale] ?? val.en ?? ''
-  if (typeof raw === 'string' && raw.startsWith('[')) return val.en ?? ''
-  return raw
-}
-
-function getImgKey(path: string): string {
-  return path.replace(/^(\.\/)?data\/assets\//, '')
-}
 
 function getHighlightIcon(name: string) {
   switch (name) {

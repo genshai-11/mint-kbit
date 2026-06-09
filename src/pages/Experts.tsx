@@ -5,17 +5,10 @@ import Footer from '@/components/Footer'
 import PageHero from '@/components/PageHero'
 import { pages, settings } from '@/lib/data'
 import { isLocale, type Locale } from '@/lib/locale'
+import { localize } from '@/lib/news'
 import s from './Experts.module.css'
 
 const COLLABORATE_ICONS = [Stethoscope, GlobeHemisphereEast, Certificate, UsersThree]
-
-function localize(val: any, locale: Locale): string {
-  if (!val) return ''
-  if (typeof val === 'string') return val
-  const raw = val[locale] ?? val.en ?? ''
-  if (typeof raw === 'string' && raw.startsWith('[')) return val.en ?? ''
-  return raw
-}
 
 export default function Experts() {
   const location = useLocation()

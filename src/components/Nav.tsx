@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { LOCALES, type Locale, isLocale } from '@/lib/locale'
 import { assetSrc } from '@/lib/assets'
@@ -17,6 +17,15 @@ export default function Nav() {
   const [open, setOpen] = useState(false)
   const location = useLocation()
   const navigate = useNavigate()
+  const drawerCloseRef = useRef<HTMLButtonElement>(null)
+
+  useEffect(() => {
+    if (!open) return
+    drawerCloseRef.current?.focus()
+    const handler = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false) }
+    document.addEventListener('keydown', handler)
+    return () => document.removeEventListener('keydown', handler)
+  }, [open])
 
   const segments = location.pathname.split('/')
   const currentLocale: Locale = isLocale(segments[1]) ? segments[1] : 'en'
@@ -73,7 +82,7 @@ export default function Nav() {
         <div className={s.drawer} aria-modal="true" role="dialog">
           <div className={s.drawerBackdrop} onClick={() => setOpen(false)} />
           <div className={s.drawerPanel}>
-            <button className={s.drawerClose} onClick={() => setOpen(false)} aria-label="Close menu">×</button>
+            <button ref={drawerCloseRef} className={s.drawerClose} onClick={() => setOpen(false)} aria-label="Close menu">×</button>
             <div className={s.drawerLinks}>
               {NAV_LINKS.map(({ label, path }) => (
                 <NavLink

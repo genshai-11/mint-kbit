@@ -1,15 +1,11 @@
 import { assetSrc } from './assets'
-import { news } from './data'
+import { news, t } from './data'
 import type { Locale } from './locale'
 
 export type NewsItem = (typeof news.data)[number]
 
 export function localize(val: any, locale: Locale): string {
-  if (!val) return ''
-  if (typeof val === 'string') return val
-  const raw = val[locale] ?? val.en ?? ''
-  if (typeof raw === 'string' && raw.startsWith('[')) return val.en ?? ''
-  return raw
+  return t(val, locale)
 }
 
 export function getImgKey(path: string): string {
@@ -96,9 +92,7 @@ export function rewriteNewsHtml(item: NewsItem, locale: Locale): string {
     output = output.split(originalUrl).join(src)
   })
 
-  output = output
-    .replace(/\sstyle="[^"]*"/gi, '')
-    .replace(/\sstyle='[^']*'/gi, '')
+  output = output.replace(/\sstyle=(?:"[^"]*"|'[^']*')/gi, '')
 
   return output
 }

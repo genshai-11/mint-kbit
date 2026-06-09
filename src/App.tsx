@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-route
 import { Component, Suspense, lazy, useEffect } from 'react'
 import type { ReactNode } from 'react'
 import { useSiteMotion } from '@/lib/useSiteMotion'
+import { LOCALES, type Locale, isLocale } from '@/lib/locale'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -21,13 +22,6 @@ const Contact = lazy(() => import('./pages/Contact'))
 const Experts = lazy(() => import('./pages/Experts'))
 const Centers = lazy(() => import('./pages/Centers'))
 const NotFound = lazy(() => import('./pages/NotFound'))
-
-const LOCALES = ['en', 'vi', 'ko'] as const
-type Locale = (typeof LOCALES)[number]
-
-function isLocale(s: string): s is Locale {
-  return (LOCALES as readonly string[]).includes(s)
-}
 
 function LocaleRoutes() {
   return (
@@ -83,12 +77,17 @@ class RouteErrorBoundary extends Component<{ children: ReactNode }, { error: Err
   }
 }
 
+function MotionTrigger({ routeKey }: { routeKey: string }) {
+  useSiteMotion(routeKey)
+  return null
+}
+
 function AnimatedRoutes() {
   const location = useLocation()
-  useSiteMotion(location.pathname)
 
   return (
     <Suspense fallback={<div className="page-loading" />}>
+      <MotionTrigger routeKey={location.pathname} />
       <ScrollToTop />
       <div key={location.pathname} className="page-transition">
         <Routes location={location}>
@@ -104,8 +103,8 @@ function AnimatedRoutes() {
 }
 
 function LocaleRedirect() {
-  const path = window.location.pathname
-  const segment = path.split('/')[1]
-  const target = isLocale(segment) ? path : `/en${path}`
+  const { pathname } = useLocation()
+  const segment = pathname.split('/')[1]
+  const target = isLocale(segment) ? pathname : `/en${pathname}`
   return <Navigate to={target} replace />
 }
