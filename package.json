@@ -11,7 +11,11 @@
     "analyze": "vite build --mode analyze",
     "export-translations": "node scripts/export-missing-translations.mjs",
     "migrate-sanity": "node --env-file=.env.local scripts/migrate-to-sanity.mjs",
-    "studio": "cd studio && npm run dev"
+    "studio": "cd studio && npm run dev",
+    "export-sanity": "node scripts/export-sanity-ndjson.mjs",
+    "studio:build": "cd studio && npm run build",
+    "studio:deploy": "cd studio && npm run deploy",
+    "studio:deploy-graphql": "cd studio && npm run deploy-graphql"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.7",
