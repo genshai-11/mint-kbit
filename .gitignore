@@ -41,3 +41,4 @@ tmp-*.spec.ts
 public/debug-*.html
 translations-needed.csv
 .env.local
+kbit-migration.ndjson
