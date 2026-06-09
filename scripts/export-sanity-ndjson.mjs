@@ -44,7 +44,7 @@ async function exportPartners() {
   if (!data?.length) return
   for (const p of data) {
     docs.push({
-      _id: `partner-${p.sourceId ?? p.slug ?? p.name.toLowerCase().replace(/\s+/g, '-')}`,
+      _id: `partner-${p.sourceId ?? p.slug ?? (p.name ?? 'unknown').toLowerCase().replace(/\s+/g, '-')}`,
       _type: 'partner',
       name: p.name,
       url: p.url ?? p.website ?? '',
@@ -163,7 +163,7 @@ async function exportSettings() {
       copyright: cleanI18n(s.org?.copyright),
     },
     offices: (s.offices ?? []).map((o) => ({
-      _key: createHash('md5').update(o.phone ?? o.label?.en ?? Math.random().toString()).digest('hex').slice(0, 8),
+      _key: createHash('md5').update(o.phone ?? o.label?.en ?? o.email ?? String(Math.random())).digest('hex').slice(0, 8),
       label: cleanI18n(o.label),
       address: cleanI18n(o.address),
       hours: cleanI18n(o.hours),

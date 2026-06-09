@@ -8,7 +8,7 @@ const dataset = (import.meta.env.VITE_SANITY_DATASET as string | undefined) ?? '
 export const sanityEnabled = Boolean(projectId)
 
 export const client = createClient({
-  projectId: projectId ?? 'placeholder',
+  projectId: projectId ?? 'not-configured',
   dataset,
   useCdn: true,
   apiVersion: '2024-01-01',
@@ -21,14 +21,16 @@ export function urlFor(source: SanityImageSource) {
   return builder.image(source)
 }
 
-export function sanityImageSrcSet(source: SanityImageSource): string {
+export function sanityImageSrcSet(source: SanityImageSource | null | undefined): string {
+  if (!source) return ''
   const widths = [400, 800, 1200, 1600] as const
   return widths
     .map((w) => `${urlFor(source).width(w).format('webp').quality(82).url()} ${w}w`)
     .join(', ')
 }
 
-export function sanityImageSrc(source: SanityImageSource, width = 800): string {
+export function sanityImageSrc(source: SanityImageSource | null | undefined, width = 800): string {
+  if (!source) return ''
   return urlFor(source).width(width).format('webp').quality(82).url()
 }
 
