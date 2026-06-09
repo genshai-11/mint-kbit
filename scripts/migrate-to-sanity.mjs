@@ -14,6 +14,7 @@ import { createReadStream, existsSync } from 'fs'
 import { readFile } from 'fs/promises'
 import { resolve, basename } from 'path'
 import { fileURLToPath } from 'url'
+import { createHash, randomUUID } from 'crypto'
 
 const __dir = fileURLToPath(new URL('.', import.meta.url))
 const ROOT = resolve(__dir, '..')
@@ -53,12 +54,18 @@ async function uploadImage(localPath) {
 }
 
 function cleanI18n(obj) {
-  if (!obj || typeof obj !== 'object') return obj
+  if (!obj || typeof obj !== 'object') return { en: '', vi: '', ko: '' }
   const cleaned = {}
-  for (const [k, v] of Object.entries(obj)) {
-    cleaned[k] = typeof v === 'string' && v.startsWith('[') ? '' : (v ?? '')
+  for (const locale of ['en', 'vi', 'ko']) {
+    const v = obj[locale] ?? ''
+    cleaned[locale] = typeof v === 'string' && v.startsWith('[') ? '' : v
   }
   return cleaned
+}
+
+function officeKey(o) {
+  const src = o.phone ?? o.label?.en ?? o.email ?? String(Math.random())
+  return createHash('md5').update(src).digest('hex').slice(0, 8)
 }
 
 async function upsert(doc) {
@@ -102,7 +109,7 @@ async function migrateCenters() {
     const images = []
     for (const img of (c.images ?? [])) {
       const uploaded = await uploadImage(img.imageUrl || img.localPath)
-      if (uploaded) images.push({ ...uploaded, altText: img.altText, sortOrder: img.sortOrder })
+      if (uploaded) images.push({ _key: randomUUID(), ...uploaded, altText: img.altText, sortOrder: img.sortOrder })
     }
     await upsert({
       _id: `center-${c.sourceId}`,
@@ -134,6 +141,7 @@ async function migrateEvents() {
       const uploaded = await uploadImage(img.imageUrl || img.localPath)
       if (uploaded) {
         images.push({
+          _key: randomUUID(),
           ...uploaded,
           caption: cleanI18n(img.caption),
           altText: img.altText,
@@ -180,6 +188,7 @@ async function migrateNews() {
       const uploaded = await uploadImage(img.localPath || img.imageUrl)
       if (uploaded) {
         images.push({
+          _key: randomUUID(),
           ...uploaded,
           role: img.role,
           isCover: img.isCover ?? false,
@@ -235,14 +244,15 @@ async function migrateSettings() {
       copyright: cleanI18n(s.org?.copyright),
     },
     offices: (s.offices ?? []).map((o) => ({
+      _key: officeKey(o),
       label: cleanI18n(o.label),
       address: cleanI18n(o.address),
       hours: cleanI18n(o.hours),
-      phone: o.phone,
-      email: o.email,
-      mapLat: o.mapLat,
-      mapLng: o.mapLng,
-      contactPerson: o.contactPerson,
+      phone: o.phone ?? '',
+      email: o.email ?? '',
+      mapLat: o.mapLat ?? null,
+      mapLng: o.mapLng ?? null,
+      contactPerson: o.contactPerson ?? '',
     })),
   })
   console.log('  ✓ Settings')
@@ -256,6 +266,7 @@ async function migrateHomeHero() {
   for (const [i, slide] of rawSlides.entries()) {
     const image = await uploadImage(slide.image)
     slides.push({
+      _key: `slide-${i}`,
       image: image ?? undefined,
       heading: cleanI18n(slide.heading),
       sub: cleanI18n(slide.sub),
@@ -283,12 +294,14 @@ async function migratePages() {
       heroImage: heroImage ?? undefined,
       title: cleanI18n(data.title),
       intro: cleanI18n(data.intro),
-      pillars: (data.pillars ?? []).map((p) => ({
+      pillars: (data.pillars ?? []).map((p, i) => ({
+        _key: `pillar-${i}`,
         icon: p.icon,
         title: cleanI18n(p.title),
         desc: cleanI18n(p.desc),
       })),
-      faq: (data.faq ?? []).map((f) => ({
+      faq: (data.faq ?? []).map((f, i) => ({
+        _key: `faq-${i}`,
         question: cleanI18n(f.question),
         answer: cleanI18n(f.answer),
       })),
