@@ -74,15 +74,15 @@ export default function About() {
 
   const mission = fallback(
     aboutPage.mission,
-    `Keep members updated with Korea's newest rejuvenation technology and training standards.`
+    `Bring Korea's newest rejuvenation technology and training standards within reach of every member clinic — so your patients always benefit from proven, current techniques.`
   )
   const vision = fallback(
     aboutPage.vision,
-    'Shape a trusted route for education, clinics, and cross-border exchange.'
+    'One trusted bridge between Korean clinical innovation and aesthetic practitioners across Vietnam, Asia, and beyond.'
   )
   const history = fallback(
     aboutPage.history,
-    'The live platform now carries events, news, centers, and membership signals from the source data.'
+    'From symposiums in Seoul to MOU signings in Ho Chi Minh City, KBIT grew out of working partnerships between hospitals, clinics, and educators on both sides.'
   )
   const leader = aboutPage.leadership?.[0]
   const leaderName = leader?.name || settings.org.vicePresident
@@ -90,7 +90,7 @@ export default function About() {
   const leadDescription = localize(settings.siteMeta.description, locale)
 
   const signals = [
-    { icon: Sparkle, label: 'Editorial calm', value: 'Curated updates' },
+    { icon: Sparkle, label: 'Latest techniques', value: 'Direct from Seoul' },
     { icon: GlobeHemisphereEast, label: 'Cross-border', value: 'Korea · Vietnam · Asia' },
     { icon: UsersThree, label: 'Member network', value: 'Clinics + doctors' },
   ]
@@ -99,23 +99,23 @@ export default function About() {
     {
       icon: Sparkle,
       label: 'Mission',
-      title: 'Keep the network current',
+      title: 'Advancing your practice',
       body: mission,
-      chips: ['Programs', 'Standards', 'Education'],
+      chips: ['Training programs', 'Clinical standards', 'Certification'],
     },
     {
       icon: GlobeHemisphereEast,
       label: 'Vision',
-      title: 'One elegant route',
+      title: 'A bridge between two worlds',
       body: vision,
       chips: ['Korea', 'Vietnam', 'Asia'],
     },
     {
       icon: SealCheck,
-      label: 'History',
-      title: 'What is live now',
+      label: 'Our story',
+      title: 'Born from real exchange',
       body: history,
-      chips: ['Events', 'News', 'Centers'],
+      chips: ['Symposiums', 'Partnerships', 'Education centers'],
     },
   ]
 
@@ -138,10 +138,11 @@ export default function About() {
             <div className={s.introGrid}>
               <article className={`${s.storyCard} motion-surface reveal-soft`} style={{ animationDelay: '40ms' }}>
                 <div className="section-divider" />
-                <span className="overline">Live operating story</span>
-                <h2>What KBIT is right now</h2>
+                <span className="overline">Who we are</span>
+                <h2>Korean aesthetic medicine, shared across borders</h2>
                 <p>
-                  A premium clinical network, presented with more silence than copy.
+                  KBIT brings Korea's leading aesthetic doctors, training centers, and clinics
+                  together with practitioners across Vietnam and Asia.
                 </p>
 
                 <figure className={s.storyMedia}>
@@ -185,7 +186,7 @@ export default function About() {
               <aside className={`${s.statsCard} motion-surface reveal-clip`} style={{ animationDelay: '140ms' }}>
                 <div className={s.statsHeader}>
                   <div>
-                    <div className={s.statsLabel}>Operating snapshot</div>
+                    <div className={s.statsLabel}>Our network</div>
                     <h3>Network scale</h3>
                   </div>
                   <SealCheck size={48} weight="thin" className={`${s.statsIcon} ambient-drift`} aria-hidden="true" />
@@ -201,7 +202,7 @@ export default function About() {
                     </div>
                   ))}
                 </div>
-                <p className={s.statsNote}>Education, events, and exchange — all in one system.</p>
+                <p className={s.statsNote}>Education, events, and exchange — one connected community.</p>
               </aside>
             </div>
           </div>
@@ -213,22 +214,21 @@ export default function About() {
               <div>
                 <div className="section-divider" />
                 <span className="overline">Mission / Vision / History</span>
-                <h2 className="headline-display">Three editorial statements</h2>
+                <h2 className="headline-display">What we stand for</h2>
               </div>
-              <span className={s.gapPill}>client copy pending</span>
             </div>
 
             <div className={s.manifestoGrid}>
               <article className={`${s.manifestoFeature} ${s.manifestoFeaturePhoto} motion-surface reveal-clip`} style={{ animationDelay: '60ms' }}>
                 <div className={s.featureBackdrop} aria-hidden="true">
                   <Img
-                    src="events/event-12-image-fc6d2bc8.png"
+                    src="news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-4-a08a737e.jpg"
                     alt=""
                     className={s.featureBackdropImg}
                     loading="lazy"
                     sizes="(max-width: 1040px) 100vw, 55vw"
                     width={960}
-                    height={720}
+                    height={640}
                   />
                 </div>
                 <div className={s.manifestoHead}>
@@ -292,15 +292,15 @@ export default function About() {
               </figure>
               <figure className={`${s.galleryItem} motion-surface reveal`} style={{ animationDelay: '120ms' }}>
                 <Img
-                  src="events/event-11-image-8918d1da.png"
-                  alt="Hands-on clinical training workshop"
+                  src="news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-1-6841cdc8.jpg"
+                  alt="Audience and speaker at a KAT 2025 specialist seminar"
                   className={s.galleryImg}
                   loading="lazy"
                   sizes="(max-width: 1040px) 100vw, 42vw"
                   width={720}
                   height={450}
                 />
-                <figcaption>Hands-on clinical workshop</figcaption>
+                <figcaption>Specialist seminar — KAT 2025</figcaption>
               </figure>
               <figure className={`${s.galleryItem} motion-surface reveal`} style={{ animationDelay: '220ms' }}>
                 <Img
@@ -324,7 +324,7 @@ export default function About() {
               <div>
                 <div className="section-divider" />
                 <span className="overline">Leadership</span>
-                <h2 className="headline-display">Operational leadership and center network</h2>
+                <h2 className="headline-display">The people and places behind KBIT</h2>
               </div>
             </div>
 
@@ -340,7 +340,7 @@ export default function About() {
                   <div className={s.leaderMeta}>
                     <span><UsersThree size={16} weight="bold" aria-hidden="true" /> Network liaison</span>
                     <span><GlobeHemisphereEast size={16} weight="bold" aria-hidden="true" /> Korea / Vietnam / Asia</span>
-                    <span><SealCheck size={16} weight="bold" aria-hidden="true" /> Editorial quality</span>
+                    <span><SealCheck size={16} weight="bold" aria-hidden="true" /> Clinical standards</span>
                   </div>
                 </div>
               </article>
