@@ -144,6 +144,19 @@ export default function About() {
                   A premium clinical network, presented with more silence than copy.
                 </p>
 
+                <figure className={s.storyMedia}>
+                  <Img
+                    src="news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-2-eb299842.jpg"
+                    alt="KBIT delegates at the KAT 2025 Korea-Vietnam medical aesthetic collaboration"
+                    className={s.storyImage}
+                    loading="lazy"
+                    sizes="(max-width: 1040px) 100vw, 50vw"
+                    width={840}
+                    height={470}
+                  />
+                  <figcaption>KAT 2025 — Korea · Vietnam clinical exchange</figcaption>
+                </figure>
+
                 <div className={s.signalGrid}>
                   {signals.map((signal, index) => {
                     const Icon = signal.icon
@@ -206,7 +219,18 @@ export default function About() {
             </div>
 
             <div className={s.manifestoGrid}>
-              <article className={`${s.manifestoFeature} motion-surface reveal-clip`} style={{ animationDelay: '60ms' }}>
+              <article className={`${s.manifestoFeature} ${s.manifestoFeaturePhoto} motion-surface reveal-clip`} style={{ animationDelay: '60ms' }}>
+                <div className={s.featureBackdrop} aria-hidden="true">
+                  <Img
+                    src="events/event-12-image-fc6d2bc8.png"
+                    alt=""
+                    className={s.featureBackdropImg}
+                    loading="lazy"
+                    sizes="(max-width: 1040px) 100vw, 55vw"
+                    width={960}
+                    height={720}
+                  />
+                </div>
                 <div className={s.manifestoHead}>
                   <Sparkle size={22} weight="bold" className={s.manifestoIcon} aria-hidden="true" />
                   <div>
@@ -240,6 +264,56 @@ export default function About() {
                   )
                 })}
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className={`${s.gallerySection} section`} aria-label="Network in motion">
+          <div className="container">
+            <div className={s.sectionHeader}>
+              <div>
+                <div className="section-divider" />
+                <span className="overline">Network in motion</span>
+                <h2 className="headline-display">Moments from the field</h2>
+              </div>
+            </div>
+            <div className={s.galleryGrid}>
+              <figure className={`${s.galleryItem} ${s.galleryWide} motion-surface reveal-clip`}>
+                <Img
+                  src="news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-2f9512d4.jpg"
+                  alt="MOU signing ceremony between Le Van Thinh Hospital and KBIT"
+                  className={s.galleryImg}
+                  loading="lazy"
+                  sizes="(max-width: 1040px) 100vw, 58vw"
+                  width={960}
+                  height={640}
+                />
+                <figcaption>MOU signing — Le Van Thinh Hospital × KBIT, 2024</figcaption>
+              </figure>
+              <figure className={`${s.galleryItem} motion-surface reveal`} style={{ animationDelay: '120ms' }}>
+                <Img
+                  src="events/event-11-image-8918d1da.png"
+                  alt="Hands-on clinical training workshop"
+                  className={s.galleryImg}
+                  loading="lazy"
+                  sizes="(max-width: 1040px) 100vw, 42vw"
+                  width={720}
+                  height={450}
+                />
+                <figcaption>Hands-on clinical workshop</figcaption>
+              </figure>
+              <figure className={`${s.galleryItem} motion-surface reveal`} style={{ animationDelay: '220ms' }}>
+                <Img
+                  src="news/news-kat-2025-nang-tam-hop-tac-y-hoc-tham-my-han-viet-inline-3-5cce493f.jpg"
+                  alt="KAT 2025 conference session in Vietnam"
+                  className={s.galleryImg}
+                  loading="lazy"
+                  sizes="(max-width: 1040px) 100vw, 42vw"
+                  width={720}
+                  height={450}
+                />
+                <figcaption>KAT 2025 — conference session</figcaption>
+              </figure>
             </div>
           </div>
         </section>

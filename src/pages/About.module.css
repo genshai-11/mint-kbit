@@ -493,3 +493,184 @@
     transition: none;
   }
 }
+
+/* ===== Story card editorial photo ===== */
+.storyMedia {
+  position: relative;
+  margin-top: var(--sp-5);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--clr-ash);
+}
+
+.storyImage {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 900ms var(--ease-out-expo);
+}
+
+.storyCard:hover .storyImage {
+  transform: scale(1.03);
+}
+
+.storyMedia figcaption {
+  position: absolute;
+  left: var(--sp-3);
+  bottom: var(--sp-3);
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  background: rgba(10, 21, 37, 0.74);
+  border: 1px solid rgba(201, 169, 110, 0.30);
+  backdrop-filter: blur(6px);
+  color: var(--clr-gold-light);
+  font-size: var(--type-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ===== Mission feature card — photographic backdrop ===== */
+.manifestoFeaturePhoto {
+  overflow: hidden;
+  background: var(--clr-midnight);
+  border-color: rgba(201, 169, 110, 0.32);
+}
+
+.manifestoFeaturePhoto > * {
+  position: relative;
+  z-index: 1;
+}
+
+.featureBackdrop {
+  position: absolute !important;
+  inset: 0;
+  z-index: 0 !important;
+  pointer-events: none;
+}
+
+.featureBackdropImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featureBackdrop::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(10, 21, 37, 0.55) 0%, rgba(10, 21, 37, 0.88) 78%),
+    linear-gradient(100deg, rgba(10, 21, 37, 0.82) 0%, rgba(10, 21, 37, 0.30) 100%);
+}
+
+.manifestoFeaturePhoto .manifestoHead h3,
+.manifestoFeaturePhoto h3 {
+  color: var(--clr-white);
+}
+
+.manifestoFeaturePhoto p {
+  color: var(--clr-mist);
+}
+
+.manifestoFeaturePhoto .manifestoIcon {
+  color: var(--clr-gold-light);
+}
+
+.manifestoFeaturePhoto .cardLabel {
+  background: rgba(10, 21, 37, 0.55);
+  border-color: rgba(201, 169, 110, 0.45);
+  color: var(--clr-gold-light);
+}
+
+.manifestoFeaturePhoto .chipRow span {
+  background: rgba(10, 21, 37, 0.55);
+  border-color: rgba(226, 223, 216, 0.24);
+  color: var(--clr-mist);
+}
+
+/* ===== Gallery band — Network in motion ===== */
+.gallerySection {
+  position: relative;
+  background: var(--clr-cream);
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: var(--sp-4);
+}
+
+.galleryItem {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--clr-ash);
+  background: var(--clr-midnight);
+  box-shadow: var(--shadow-card);
+}
+
+.galleryWide {
+  grid-row: span 2;
+}
+
+.galleryImg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 900ms var(--ease-out-expo);
+}
+
+.galleryItem:hover .galleryImg {
+  transform: scale(1.04);
+}
+
+.galleryItem:not(.galleryWide) .galleryImg {
+  aspect-ratio: 16 / 10;
+}
+
+.galleryItem::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 21, 37, 0) 55%, rgba(10, 21, 37, 0.55) 100%);
+  pointer-events: none;
+}
+
+.galleryItem figcaption {
+  position: absolute;
+  left: var(--sp-4);
+  right: var(--sp-4);
+  bottom: var(--sp-4);
+  z-index: 1;
+  color: var(--clr-white);
+  font-size: var(--type-sm);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 1040px) {
+  .galleryGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+
+  .galleryWide {
+    grid-row: auto;
+  }
+
+  .galleryWide .galleryImg {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .storyImage,
+  .galleryImg {
+    transition: none;
+  }
+}
