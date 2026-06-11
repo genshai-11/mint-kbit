@@ -128,6 +128,8 @@ export default function About() {
         overline="Network / Standards / Exchange"
         title={localize(aboutPage.title, locale)}
         desc={leadDescription}
+        image="home/banner4-b978e3ea.jpg"
+        imageAlt="KBIT clinical training session"
       />
 
       <main className={s.pageShell}>

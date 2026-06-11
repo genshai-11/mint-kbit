@@ -1,5 +1,6 @@
 /* ===== PageHero — shared inner-page banner =====
-   Watermark: giant ghost text anchored to right edge, partially cropped.
+   Watermark: giant ghost text anchored near right edge, fully visible.
+   Optional photographic banner via `image` prop (.heroWithImage).
    Used on all inner pages. See 07-ui-system.md § PageHero.
    ================================================= */
 
@@ -28,22 +29,73 @@
 .heroDark  { background: var(--clr-midnight); }
 .heroLight { background: var(--clr-ivory); }
 
-/* ===== Ghost watermark ===== */
+/* ===== Photographic banner (optional `image` prop) ===== */
+.heroWithImage {
+  min-height: clamp(320px, 38vh, 440px);
+  display: flex;
+  align-items: flex-end;
+}
+
+.media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.mediaImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 32%;
+  animation: heroMediaIn 1100ms var(--ease-out-expo) both;
+}
+
+.mediaScrim {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(10, 21, 37, 0.42) 0%, rgba(10, 21, 37, 0.30) 45%, rgba(10, 21, 37, 0.86) 100%),
+    linear-gradient(100deg, rgba(10, 21, 37, 0.88) 0%, rgba(10, 21, 37, 0.55) 46%, rgba(10, 21, 37, 0.12) 100%);
+}
+
+.heroWithImage .inner {
+  padding-bottom: var(--sp-2);
+}
+
+@keyframes heroMediaIn {
+  from {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ===== Ghost watermark =====
+   right inset > 0 so the final letter is never cropped (was right: -3%). */
 .watermark {
   position: absolute;
-  right: -3%;
+  right: clamp(16px, 4vw, 56px);
   top: 50%;
   transform: translateY(-50%);
   font-family: var(--font-display);
-  font-size: clamp(96px, 15vw, 196px);
+  font-size: clamp(72px, 11vw, 156px);
   font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 0.82;
+  letter-spacing: -0.02em;
+  line-height: 1;
   white-space: nowrap;
   pointer-events: none;
   user-select: none;
   z-index: 0;
   animation: heroWatermarkIn 900ms var(--ease-out-expo) both, pageHeroDrift 11s ease-in-out 900ms infinite;
+}
+
+.watermarkOnImage {
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.10);
+  opacity: 1;
 }
 
 .watermarkDark {
@@ -54,6 +106,13 @@
 .watermarkLight {
   color: var(--clr-ash);
   opacity: 0.95;
+}
+
+/* watermarkOnImage must win over variant colors */
+.watermarkOnImage.watermarkDark,
+.watermarkOnImage.watermarkLight {
+  color: rgba(255, 255, 255, 0.10);
+  opacity: 1;
 }
 
 /* ===== Content (above watermark) ===== */
@@ -135,7 +194,8 @@
 @media (prefers-reduced-motion: reduce) {
   .hero::after,
   .watermark,
-  .inner {
+  .inner,
+  .mediaImg {
     animation: none;
   }
 }
