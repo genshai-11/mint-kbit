@@ -7,7 +7,6 @@ import {
   GraduationCap,
   SealCheck,
   Shield,
-  Sparkle,
   Stethoscope,
   UsersThree,
 } from '@phosphor-icons/react'
@@ -20,23 +19,6 @@ import { isLocale, type Locale } from '@/lib/locale'
 import s from './Experts.module.css'
 
 const COLLABORATE_ICONS = [Stethoscope, GlobeHemisphereEast, Certificate, UsersThree]
-
-const SPECIALTIES = [
-  'Thread Lifting',
-  'Rhinoplasty',
-  'Laser Therapy',
-  'Dermal Fillers',
-  'Anti-Aging Protocols',
-  'PRP Therapy',
-  'Stem Cell Treatment',
-  'Body Contouring',
-  'Skin Rejuvenation',
-  'Eyelid Surgery',
-  'Botulinum Toxin',
-  'Hyaluronic Acid',
-  'Microneedling',
-  'Ultherapy',
-]
 
 const PLACEHOLDER_PROFILES = [
   { initials: 'KJ', region: 'Seoul · Korea', specialties: ['Thread Lifting', 'Rhinoplasty', 'Brow Contouring'] },
@@ -90,10 +72,6 @@ export default function Experts() {
     }>
   }
 
-  const featureStat = (page.stats ?? [])[0]
-  const featureValue = featureStat?.value?.replace('+', '') ?? '50'
-  const allSpecialties = [...SPECIALTIES, ...SPECIALTIES]
-
   return (
     <>
       <Nav />
@@ -106,57 +84,6 @@ export default function Experts() {
       />
 
       <main className={s.pageShell}>
-
-        {/* ── Cinematic stats band ── */}
-        <section className={s.statsSection}>
-          <div className={s.statsWatermark} aria-hidden="true">DOCTORS</div>
-          <div className={`container ${s.statsLayout}`}>
-
-            <div className={`${s.statFeature} reveal-soft`}>
-              <span className={s.statFeatureNum}>
-                {featureValue}<span className={s.statSup}>+</span>
-              </span>
-              <div className={s.statFeatureMeta}>
-                <span className={s.statFeatureLabel}>
-                  {localize(featureStat?.label, locale) || 'Verified experts'}
-                </span>
-                <p>
-                  {localize(featureStat?.desc, locale) ||
-                    "Korea's leading aesthetic doctors, training faculty, and clinical researchers — curated for the KBIT network."}
-                </p>
-              </div>
-            </div>
-
-            <div className={s.statsDivider} aria-hidden="true" />
-
-            <div className={s.statsSecondary}>
-              {(page.stats ?? []).slice(1).map((stat, i) => (
-                <article
-                  key={i}
-                  className={`${s.statCard} reveal`}
-                  style={{ animationDelay: `${(i + 1) * 120}ms` }}
-                >
-                  <span className={s.statCardIndex}>0{i + 2}</span>
-                  <h3>{localize(stat.label, locale)}</h3>
-                  <p>{localize(stat.desc, locale)}</p>
-                </article>
-              ))}
-            </div>
-
-          </div>
-        </section>
-
-        {/* ── Specialty marquee ── */}
-        <div className={s.marqueeSection} aria-hidden="true">
-          <div className={s.marqueeTrack}>
-            {allSpecialties.map((sp, i) => (
-              <span key={i} className={s.marqueeTag}>
-                <Sparkle size={10} weight="fill" aria-hidden="true" />
-                {sp}
-              </span>
-            ))}
-          </div>
-        </div>
 
         {/* ── Expert directory ── */}
         <section className={`${s.directorySection} section`}>

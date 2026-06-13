@@ -7,182 +7,8 @@
 
 .pageShell {
   background: var(--clr-ivory);
-  overflow-x: hidden; /* prevent marquee / watermark from causing horizontal scroll */
-}
-
-/* ──────────────────────────────────────────────────────────────
-   Stats section — dark cinematic band
-   ────────────────────────────────────────────────────────────── */
-.statsSection {
-  position: relative;
-  overflow: hidden;
-  background: var(--clr-midnight);
-  padding-block: var(--sp-9);
-}
-
-.statsWatermark {
-  position: absolute;
-  right: var(--container-px);
-  top: var(--sp-4);
-  font-family: var(--font-display);
-  font-size: clamp(100px, 17vw, 260px);
-  color: var(--clr-white);
-  opacity: 0.03;
-  pointer-events: none;
-  user-select: none;
-  letter-spacing: 0.06em;
-  line-height: 1;
-  animation: floatSlow 22s var(--ease-soft) infinite alternate;
-}
-
-/* Asymmetric layout: large stat | divider | 2 stacked cards */
-.statsLayout {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1px 380px;
-  gap: var(--sp-8);
-  align-items: center;
-}
-
-.statFeature {
-  display: grid;
-  gap: var(--sp-5);
-}
-
-.statFeatureNum {
-  display: block;
-  font-family: var(--font-mono);
-  font-size: clamp(56px, 9vw, 128px);
-  line-height: 1;
-  color: var(--clr-gold);
-  letter-spacing: -0.05em;
-}
-
-.statSup {
-  font-size: 0.42em;
-  color: var(--clr-gold-light);
-  opacity: 0.75;
-  vertical-align: super;
-  letter-spacing: 0;
-}
-
-.statFeatureMeta {
-  display: grid;
-  gap: var(--sp-3);
-  padding-top: var(--sp-3);
-  border-top: 1px solid rgba(201, 169, 110, 0.2);
-}
-
-.statFeatureLabel {
-  display: block;
-  font-size: var(--type-xs);
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--clr-gold-light);
-}
-
-.statFeature p {
-  color: var(--clr-mist);
-  line-height: 1.72;
-  max-width: 400px;
-  font-size: var(--type-body);
-}
-
-/* Gold gradient divider between feature stat and secondary cards */
-.statsDivider {
-  align-self: stretch;
-  min-height: 180px;
-  background: linear-gradient(180deg,
-    transparent 0%,
-    rgba(201, 169, 110, 0.28) 30%,
-    rgba(201, 169, 110, 0.28) 70%,
-    transparent 100%
-  );
-}
-
-.statsSecondary {
-  display: grid;
-  gap: var(--sp-4);
-}
-
-.statCard {
-  padding: var(--sp-5);
-  border: 1px solid rgba(232, 213, 163, 0.1);
-  border-radius: var(--radius-lg);
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(8px);
-  transition:
-    border-color var(--duration-slow) var(--ease-soft),
-    background-color var(--duration-slow) var(--ease-soft);
-}
-
-.statCard:hover {
-  border-color: rgba(201, 169, 110, 0.28);
-  background: rgba(255, 255, 255, 0.07);
-}
-
-.statCardIndex {
-  display: block;
-  margin-bottom: var(--sp-3);
-  font-family: var(--font-mono);
-  font-size: var(--type-xs);
-  letter-spacing: 0.1em;
-  color: var(--clr-gold-light);
-  opacity: 0.6;
-}
-
-.statCard h3 {
-  font-family: var(--font-display);
-  font-size: var(--type-h1);
-  font-weight: 400;
-  line-height: 1.15;
-  color: var(--clr-white);
-  margin-bottom: var(--sp-2);
-}
-
-.statCard p {
-  color: var(--clr-mist);
-  font-size: var(--type-sm);
-  line-height: 1.65;
-}
-
-/* ──────────────────────────────────────────────────────────────
-   Specialty marquee
-   Reusable: copy .marqueeSection + .marqueeTrack + @keyframes
-   marqueeScroll to global.css for other pages.
-   ────────────────────────────────────────────────────────────── */
-.marqueeSection {
-  overflow: hidden;
-  max-width: 100vw;
-  background: linear-gradient(90deg, var(--clr-gold-dark) 0%, #7a5e30 100%);
-  padding-block: 14px;
-}
-
-.marqueeTrack {
-  display: flex;
-  gap: var(--sp-5);
-  width: max-content;
-  animation: marqueeScroll 32s linear infinite;
-  will-change: transform;
-}
-
-.marqueeTag {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
-  white-space: nowrap;
-  font-size: var(--type-xs);
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: rgba(253, 251, 247, 0.88);
-}
-
-.marqueeTag svg {
-  color: rgba(232, 213, 163, 0.65);
-  flex-shrink: 0;
+  overflow-x: hidden;
+  --section-py: 40px;
 }
 
 /* ──────────────────────────────────────────────────────────────
@@ -300,6 +126,7 @@
 }
 
 .profileAvatar {
+  display: none;
   position: relative;
   height: 148px;
   background: linear-gradient(
@@ -862,11 +689,6 @@
   to   { transform: translate3d(-14px, 10px, 0) rotate(-0.4deg); }
 }
 
-@keyframes marqueeScroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-
 @keyframes shimmerSweep {
   0%   { transform: translateX(-120%) skewX(-6deg); }
   100% { transform: translateX(220%) skewX(-6deg); }
@@ -881,20 +703,6 @@
    Responsive
    ────────────────────────────────────────────────────────────── */
 @media (max-width: 1080px) {
-  .statsLayout {
-    grid-template-columns: 1fr;
-    gap: var(--sp-6);
-  }
-
-  .statsDivider {
-    display: none;
-  }
-
-  .statsSecondary {
-    grid-template-columns: repeat(2, 1fr);
-    display: grid;
-  }
-
   .directoryLayout {
     grid-template-columns: 1fr;
     gap: var(--sp-6);
@@ -948,10 +756,6 @@
 }
 
 @media (max-width: 680px) {
-  .statsSecondary {
-    grid-template-columns: 1fr;
-  }
-
   .processStep {
     grid-template-columns: 36px minmax(0, 1fr);
     gap: var(--sp-3);
@@ -980,23 +784,14 @@
   .ctaHeadline {
     font-size: clamp(28px, 7vw, 40px);
   }
-
-  .statFeatureNum {
-    font-size: clamp(48px, 13vw, 72px);
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .statsWatermark,
   .ctaWatermark,
   .profileShimmer,
   .verifyBadge,
   .profileNameLines span::after {
     animation: none;
-  }
-
-  .marqueeTrack {
-    animation-play-state: paused;
   }
 
   .collaborateBackdropImg,
