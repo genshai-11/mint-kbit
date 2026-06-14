@@ -68,6 +68,8 @@ export default function Events() {
         overline="Programs & Education"
         title={<>Global Workshops &amp;<br />Clinical Summits</>}
         desc="Join Korea's leading clinicians at international events bridging evidence-based aesthetics and hands-on training."
+        image="events/event-12-bannerimageurl-ade6047b.png"
+        imageAlt="KBIT international clinical workshop audience"
       />
 
       <div className={`${s.filterBar} reveal-soft reveal--delay-1`}>

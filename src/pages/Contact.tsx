@@ -70,6 +70,8 @@ export default function Contact() {
         overline="Support / Offices / Inquiry"
         title={localize(contactPage.title, locale)}
         desc={localize(contactPage.intro, locale)}
+        image="news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-7aed75b9.jpg"
+        imageAlt="KBIT representatives during a medical aesthetic partnership signing"
       />
 
       <main>

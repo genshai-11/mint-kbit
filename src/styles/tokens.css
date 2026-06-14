@@ -65,9 +65,9 @@
   --sp-10: 128px;
   --sp-11: 192px;
 
-  --section-py:     clamp(64px, 8vw, 120px);
+  --section-py:     40px;
   --container-max:  1280px;
-  --container-px:   clamp(20px, 4vw, 80px);
+  --container-px:   40px;
 
   /* === Elevation === */
   --shadow-sm:   0 1px 3px rgba(10, 21, 37, 0.07);

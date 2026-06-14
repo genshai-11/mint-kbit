@@ -4,7 +4,7 @@
   background:
     linear-gradient(180deg, var(--clr-midnight) 0%, var(--clr-navy) 160%);
   color: var(--clr-mist);
-  padding-block: var(--sp-7) var(--sp-6);
+  padding-block: 40px;
 }
 
 .footer::before {
@@ -271,7 +271,7 @@
 
 @media (max-width: 600px) {
   .footer {
-    padding-block: var(--sp-6);
+    padding-block: 40px;
   }
 
   .footerHeader {

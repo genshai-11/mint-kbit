@@ -141,10 +141,10 @@ The legacy `kbitassociation.com` site is a migration/reference source only. Publ
 --sp-11: 192px;
 
 /* Section vertical rhythm */
---section-py: clamp(64px, 8vw, 120px);
+--section-py: 40px;
 /* Container max width */
 --container-max: 1280px;
---container-px:  clamp(20px, 4vw, 80px);
+--container-px:  40px;
 ```
 
 ---

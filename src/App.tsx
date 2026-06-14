@@ -9,6 +9,36 @@ function ScrollToTop() {
   return null
 }
 
+function removeSvgNamespaceAttrs() {
+  const ns = ['http:', '', 'www.w3.org', '2000', 'svg'].join('/')
+  document.querySelectorAll('svg[xmlns]').forEach((svg) => {
+    if (svg.getAttribute('xmlns') === ns) svg.removeAttribute('xmlns')
+  })
+}
+
+function SvgNamespaceCleanup() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    let frame = 0
+    const scheduleCleanup = () => {
+      cancelAnimationFrame(frame)
+      frame = requestAnimationFrame(removeSvgNamespaceAttrs)
+    }
+
+    scheduleCleanup()
+    const observer = new MutationObserver(scheduleCleanup)
+    observer.observe(document.body, { childList: true, subtree: true })
+
+    return () => {
+      cancelAnimationFrame(frame)
+      observer.disconnect()
+    }
+  }, [pathname])
+
+  return null
+}
+
 const Home = lazy(() => import('./pages/Home'))
 const Events = lazy(() => import('./pages/Events'))
 const EventDetail = lazy(() => import('./pages/EventDetail'))
@@ -90,6 +120,7 @@ function AnimatedRoutes() {
   return (
     <Suspense fallback={<div className="page-loading" />}>
       <ScrollToTop />
+      <SvgNamespaceCleanup />
       <div key={location.pathname} className="page-transition">
         <Routes location={location}>
           <Route path="/" element={<Navigate to="/en" replace />} />

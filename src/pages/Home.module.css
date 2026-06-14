@@ -732,7 +732,7 @@
 /* ===== Partners Strip ===== */
 .partners {
   background: var(--clr-ivory);
-  padding-block: var(--sp-9);
+  padding-block: 40px;
 }
 
 .partnersTitle {
@@ -797,7 +797,7 @@
 /* ===== CTA Band ===== */
 .cta {
   background: var(--clr-midnight);
-  padding-block: var(--sp-10);
+  padding-block: 40px;
   text-align: center;
   position: relative;
   overflow: hidden;

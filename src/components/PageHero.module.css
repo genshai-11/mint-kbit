@@ -6,7 +6,7 @@
 
 .hero {
   position: relative;
-  padding-block: var(--sp-8) var(--sp-7);
+  padding-block: 40px;
   overflow: hidden;
 }
 

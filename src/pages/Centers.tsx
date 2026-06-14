@@ -52,6 +52,9 @@ export default function Centers() {
     hours: string
     images: Array<{ imageUrl: string; altText: string }>
   }>
+  const heroImage = centerList[0]?.images?.[0]?.imageUrl
+    ? getImgKey(centerList[0].images[0].imageUrl)
+    : 'centers/center-31-1-71612daa.jpg'
 
   if (!page?.highlights?.length) {
     return (
@@ -75,6 +78,8 @@ export default function Centers() {
         overline="Center Network"
         title={localize(page.title, locale)}
         desc={localize(page.intro, locale)}
+        image={heroImage}
+        imageAlt="KBIT education center and clinical training space"
       />
 
       <main>

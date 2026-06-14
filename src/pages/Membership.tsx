@@ -48,6 +48,8 @@ export default function Membership() {
         overline="Professional Excellence Program"
         title={localize(page.title, locale)}
         desc={localize(page.intro, locale)}
+        image="membership/banner1-abd0c28e.jpg"
+        imageAlt="KBIT membership and professional training program"
       />
 
       <main className={s.pageShell}>

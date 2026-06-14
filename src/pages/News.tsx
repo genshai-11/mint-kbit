@@ -31,6 +31,8 @@ export default function News() {
         overline="News / Stories / Archive"
         title={localize(page.title, locale)}
         desc={localize(page.intro, locale)}
+        image={featuredImage || 'news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-thumb-6ee67691.png'}
+        imageAlt="KBIT medical aesthetic collaboration news coverage"
       />
 
       <main id="news-archive" className={s.pageShell}>

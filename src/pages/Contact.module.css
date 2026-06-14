@@ -389,6 +389,7 @@
 
 .officesSection {
   position: relative;
+  padding-block: 40px;
   background: linear-gradient(180deg, var(--clr-section-alt), var(--clr-ivory));
 }
 
