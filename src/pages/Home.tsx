@@ -229,8 +229,9 @@ export default function Home() {
 
           <div className={s.eventsGrid}>
             {featuredEvents.map((ev, i) => (
-              <article
+              <Link
                 key={ev.slug}
+                to={`/${locale}/events/${ev.slug}`}
                 className={`${s.eventCard} ${eventsVisible ? 'reveal' : ''}`}
                 style={{ animationDelay: `${i * 120}ms` }}
               >
@@ -252,7 +253,7 @@ export default function Home() {
                   </div>
                   <h3 className={s.eventTitle}>{t(ev.title, locale)}</h3>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
         </div>

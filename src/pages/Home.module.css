@@ -648,6 +648,9 @@
 }
 
 .eventCard {
+  display: block;
+  text-decoration: none;
+  color: inherit;
   background: var(--clr-cream);
   border: 1px solid var(--clr-ash);
   border-radius: var(--radius-lg);
