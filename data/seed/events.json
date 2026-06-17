@@ -3,7 +3,6 @@
   "data": [
     {
       "sourceId": 12,
-      "sourceUrl": "https://kbitassociation.com/en/events-workshops/12",
       "slug": "kat-2025-1st-korea-vietnam-k-beauty-advanced-skill-training-2025",
       "title": {
         "en": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025 ",
@@ -49,8 +48,7 @@
           },
           "altText": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025 ",
           "sortOrder": 0,
-          "isCover": true,
-          "driveFileId": "source:https://api.kbitassociation.com/uploads/events/file-1761368833746-632590418.png"
+          "isCover": true
         },
         {
           "imageUrl": "data/assets/events/event-12-bannerimageurl-ade6047b.png",
@@ -62,8 +60,7 @@
           },
           "altText": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025 ",
           "sortOrder": 1,
-          "isCover": false,
-          "driveFileId": "source:https://api.kbitassociation.com/uploads/events/file-1760015572978-497927837.png"
+          "isCover": false
         },
         {
           "imageUrl": "data/assets/events/event-12-imageurl2-3b97537d.png",
@@ -75,8 +72,7 @@
           },
           "altText": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025 ",
           "sortOrder": 2,
-          "isCover": false,
-          "driveFileId": "source:https://api.kbitassociation.com/uploads/events/file-1761371966411-37732198.png"
+          "isCover": false
         },
         {
           "imageUrl": "data/assets/events/event-12-detail-1-c04da753.jpg",
@@ -88,8 +84,7 @@
           },
           "altText": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025  detail 1",
           "sortOrder": 3,
-          "isCover": false,
-          "driveFileId": "source:https://api.kbitassociation.com/uploads/events/file-1761368843798-986757686.jpg"
+          "isCover": false
         },
         {
           "imageUrl": "data/assets/events/event-12-detail-2-7bc95f01.png",
@@ -101,14 +96,12 @@
           },
           "altText": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025  detail 2",
           "sortOrder": 4,
-          "isCover": false,
-          "driveFileId": "source:https://api.kbitassociation.com/uploads/events/file-1761368898387-419780280.png"
+          "isCover": false
         }
       ]
     },
     {
       "sourceId": 11,
-      "sourceUrl": "https://kbitassociation.com/en/events-workshops/11",
       "slug": "kbit-expert-meeting-1-seminar-specialized-demo-2025",
       "title": {
         "en": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025",
@@ -151,8 +144,7 @@
           },
           "altText": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025",
           "sortOrder": 0,
-          "isCover": true,
-          "driveFileId": "source:https://api.kbitassociation.com/uploads/events/file-1758132526849-154633253.png"
+          "isCover": true
         },
         {
           "imageUrl": "data/assets/events/event-11-bannerimageurl-7aa69047.png",
@@ -164,8 +156,7 @@
           },
           "altText": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025",
           "sortOrder": 1,
-          "isCover": false,
-          "driveFileId": "source:https://api.kbitassociation.com/uploads/events/file-1758132540603-900778664.png"
+          "isCover": false
         },
         {
           "imageUrl": "data/assets/events/event-11-imageurl2-7d79ebd4.png",
@@ -177,8 +168,7 @@
           },
           "altText": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025",
           "sortOrder": 2,
-          "isCover": false,
-          "driveFileId": "source:https://api.kbitassociation.com/uploads/events/file-1758126602577-778144718.png"
+          "isCover": false
         },
         {
           "imageUrl": "data/assets/events/event-11-detail-1-a1fe3f89.png",
@@ -190,14 +180,12 @@
           },
           "altText": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025 detail 1",
           "sortOrder": 3,
-          "isCover": false,
-          "driveFileId": "source:https://api.kbitassociation.com/uploads/events/file-1758132545127-708210403.png"
+          "isCover": false
         }
       ]
     },
     {
       "sourceId": 9,
-      "sourceUrl": "https://kbitassociation.com/en/events-workshops/9",
       "slug": "kla-vietnam-2025-science-driven-protocols-for-non-invasive-rejuvenation",
       "title": {
         "en": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation",
@@ -240,8 +228,7 @@
           },
           "altText": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation",
           "sortOrder": 0,
-          "isCover": true,
-          "driveFileId": "source:https://api.kbitassociation.com/uploads/events/file-1751047405486-752312374.png"
+          "isCover": true
         },
         {
           "imageUrl": "data/assets/events/event-9-bannerimageurl-fa1c9d57.png",
@@ -253,8 +240,7 @@
           },
           "altText": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation",
           "sortOrder": 1,
-          "isCover": false,
-          "driveFileId": "source:https://api.kbitassociation.com/uploads/events/file-1751047406317-234854348.png"
+          "isCover": false
         },
         {
           "imageUrl": "data/assets/events/event-9-imageurl2-9a3c6057.png",
@@ -266,8 +252,7 @@
           },
           "altText": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation",
           "sortOrder": 2,
-          "isCover": false,
-          "driveFileId": "source:https://api.kbitassociation.com/uploads/events/file-1751048403583-114085324.png"
+          "isCover": false
         },
         {
           "imageUrl": "data/assets/events/event-9-detail-1-b79de2e6.png",
@@ -279,14 +264,12 @@
           },
           "altText": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation detail 1",
           "sortOrder": 3,
-          "isCover": false,
-          "driveFileId": "source:https://api.kbitassociation.com/uploads/events/file-1751047406919-667364048.png"
+          "isCover": false
         }
       ]
     },
     {
       "sourceId": 8,
-      "sourceUrl": "https://kbitassociation.com/en/events-workshops/8",
       "slug": "kla-korea-2025-knowledge-in-lifting-and-anti-aging",
       "title": {
         "en": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging",
@@ -329,8 +312,7 @@
           },
           "altText": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging",
           "sortOrder": 0,
-          "isCover": true,
-          "driveFileId": "source:https://api.kbitassociation.com/uploads/events/file-1750068835957-343631202.png"
+          "isCover": true
         },
         {
           "imageUrl": "data/assets/events/event-8-bannerimageurl-a63759c0.png",
@@ -342,8 +324,7 @@
           },
           "altText": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging",
           "sortOrder": 1,
-          "isCover": false,
-          "driveFileId": "source:https://api.kbitassociation.com/uploads/events/file-1750085034250-32356809.png"
+          "isCover": false
         },
         {
           "imageUrl": "data/assets/events/event-8-imageurl2-cc2f0ea0.png",
@@ -355,8 +336,7 @@
           },
           "altText": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging",
           "sortOrder": 2,
-          "isCover": false,
-          "driveFileId": "source:https://api.kbitassociation.com/uploads/events/file-1750129138500-506887540.png"
+          "isCover": false
         },
         {
           "imageUrl": "data/assets/events/event-8-detail-1-1ea4d91e.png",
@@ -368,8 +348,7 @@
           },
           "altText": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging detail 1",
           "sortOrder": 3,
-          "isCover": false,
-          "driveFileId": "source:https://api.kbitassociation.com/uploads/events/file-1750066136571-159253807.png"
+          "isCover": false
         }
       ]
     }
@@ -414,8 +393,7 @@
         },
         "altText": "Thread lifting demonstration",
         "sortOrder": 0,
-        "isCover": true,
-        "driveFileId": "[DRIVE_ID]"
+        "isCover": true
       }
     ]
   }

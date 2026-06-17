@@ -126,7 +126,8 @@
 
 .highlightItem h3,
 .officeInfo strong,
-.contactRows a {
+.contactRows a,
+.contactRows strong {
   font-family: var(--font-body);
   color: var(--clr-charcoal);
 }
@@ -327,7 +328,8 @@
   color: var(--clr-stone);
 }
 
-.contactRows a {
+.contactRows a,
+.contactRows strong {
   color: var(--clr-navy);
   font-weight: 700;
 }

@@ -25,10 +25,10 @@ export default function Footer() {
             <h2 className={s.footerHeading}>Clinical education, partnerships, and global exchange.</h2>
           </div>
           <div className={s.footerActions}>
-            <a href={`mailto:${settings.contact.email}`} className={s.footerAction}>
+            <NavLink to={`/${locale}/contact`} className={s.footerAction}>
               <EnvelopeSimple size={18} weight="regular" aria-hidden="true" />
               Contact KBIT
-            </a>
+            </NavLink>
             <NavLink to={`/${locale}/contact`} className={s.footerGhost}>
               <MapPinLine size={18} weight="regular" aria-hidden="true" />
               Offices
@@ -78,7 +78,7 @@ export default function Footer() {
           <div className={s.col}>
             <p className={s.colTitle}>Contact</p>
             <div className={s.colLinks}>
-              <a href={`mailto:${settings.contact.email}`} className={s.colLink}>{settings.contact.email}</a>
+              <span className={s.colLink}>{settings.contact.email}</span>
               <a href={`tel:${settings.contact.phoneKr}`} className={s.colLink}>KR: {settings.contact.phoneKr}</a>
               <a href={`tel:${settings.contact.phoneVn}`} className={s.colLink}>VN: {settings.contact.phoneVn}</a>
               <NavLink to={`/${locale}/contact`} className={s.colLink}>Office locations →</NavLink>

@@ -11,7 +11,7 @@
       "vi": "[NEEDS_TRANSLATION:vi]",
       "ko": "[NEEDS_TRANSLATION:ko]"
     },
-    "heroImage": "https://kbitassociation.com/images/memer_banner/banner1.jpg",
+    "heroImage": "data/assets/membership/banner1-abd0c28e.jpg",
     "pillars": [
       {
         "icon": "heart",
@@ -335,8 +335,7 @@
           "ko": "[NEEDS_TRANSLATION:ko]"
         }
       }
-    ],
-    "sourceUrl": "https://kbitassociation.com/en/centers"
+    ]
   },
   "liveSitemap": {
     "locales": [

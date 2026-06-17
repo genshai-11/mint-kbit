@@ -1,15 +1,115 @@
 {
   "_note": "10 đối tác khoa học từ trang Home cũ. description là [GAP] cần khách cấp mô tả từng đối tác cho trang Partners. logoUrl tạm để URL gốc, Content Agent re-host lên Cloudinary (folder partners/).",
   "data": [
-    { "name": "BAROG", "logoUrl": "https://kbitassociation.com/images/partners/barog.png", "website": null, "description": { "en": "[GAP]", "vi": "[GAP]", "ko": "[GAP]" }, "sortOrder": 1 },
-    { "name": "Cheong-dam-jin", "logoUrl": "https://kbitassociation.com/images/partners/Cheong-dam-jin.png", "website": null, "description": { "en": "[GAP]", "vi": "[GAP]", "ko": "[GAP]" }, "sortOrder": 2 },
-    { "name": "GOODDAY", "logoUrl": "https://kbitassociation.com/images/partners/GOODDAY.jpg", "website": null, "description": { "en": "[GAP]", "vi": "[GAP]", "ko": "[GAP]" }, "sortOrder": 3 },
-    { "name": "Meylin", "logoUrl": "https://kbitassociation.com/images/partners/meylin.png", "website": null, "description": { "en": "[GAP]", "vi": "[GAP]", "ko": "[GAP]" }, "sortOrder": 4 },
-    { "name": "Orseyun", "logoUrl": "https://kbitassociation.com/images/partners/orseyun.jpg", "website": null, "description": { "en": "[GAP]", "vi": "[GAP]", "ko": "[GAP]" }, "sortOrder": 5 },
-    { "name": "RENOVO", "logoUrl": "https://kbitassociation.com/images/partners/RENOVO.png", "website": null, "description": { "en": "[GAP]", "vi": "[GAP]", "ko": "[GAP]" }, "sortOrder": 6 },
-    { "name": "Verni", "logoUrl": "https://kbitassociation.com/images/partners/verni.png", "website": null, "description": { "en": "[GAP]", "vi": "[GAP]", "ko": "[GAP]" }, "sortOrder": 7 },
-    { "name": "Byeong", "logoUrl": "https://kbitassociation.com/images/partners/byeong.jpg", "website": null, "description": { "en": "[GAP]", "vi": "[GAP]", "ko": "[GAP]" }, "sortOrder": 8 },
-    { "name": "Senteomko", "logoUrl": "https://kbitassociation.com/images/partners/senteomko.png", "website": null, "description": { "en": "[GAP]", "vi": "[GAP]", "ko": "[GAP]" }, "sortOrder": 9 },
-    { "name": "Keuliseumaseu", "logoUrl": "https://kbitassociation.com/images/partners/keuliseumaseu.png", "website": null, "description": { "en": "[GAP]", "vi": "[GAP]", "ko": "[GAP]" }, "sortOrder": 10 }
+    {
+      "name": "BAROG",
+      "logoUrl": "data/assets/partners/barog-e7be7269.png",
+      "website": null,
+      "description": {
+        "en": "[GAP]",
+        "vi": "[GAP]",
+        "ko": "[GAP]"
+      },
+      "sortOrder": 1
+    },
+    {
+      "name": "Cheong-dam-jin",
+      "logoUrl": "data/assets/partners/cheong-dam-jin-b2f5133a.png",
+      "website": null,
+      "description": {
+        "en": "[GAP]",
+        "vi": "[GAP]",
+        "ko": "[GAP]"
+      },
+      "sortOrder": 2
+    },
+    {
+      "name": "GOODDAY",
+      "logoUrl": "data/assets/partners/goodday-e0f736f4.jpg",
+      "website": null,
+      "description": {
+        "en": "[GAP]",
+        "vi": "[GAP]",
+        "ko": "[GAP]"
+      },
+      "sortOrder": 3
+    },
+    {
+      "name": "Meylin",
+      "logoUrl": "data/assets/partners/meylin-7e0debce.png",
+      "website": null,
+      "description": {
+        "en": "[GAP]",
+        "vi": "[GAP]",
+        "ko": "[GAP]"
+      },
+      "sortOrder": 4
+    },
+    {
+      "name": "Orseyun",
+      "logoUrl": "data/assets/partners/orseyun-1094e63d.jpg",
+      "website": null,
+      "description": {
+        "en": "[GAP]",
+        "vi": "[GAP]",
+        "ko": "[GAP]"
+      },
+      "sortOrder": 5
+    },
+    {
+      "name": "RENOVO",
+      "logoUrl": "data/assets/partners/renovo-0f6c51b4.png",
+      "website": null,
+      "description": {
+        "en": "[GAP]",
+        "vi": "[GAP]",
+        "ko": "[GAP]"
+      },
+      "sortOrder": 6
+    },
+    {
+      "name": "Verni",
+      "logoUrl": "data/assets/partners/verni-0367cfea.png",
+      "website": null,
+      "description": {
+        "en": "[GAP]",
+        "vi": "[GAP]",
+        "ko": "[GAP]"
+      },
+      "sortOrder": 7
+    },
+    {
+      "name": "Byeong",
+      "logoUrl": "data/assets/partners/byeong-7c4edec1.jpg",
+      "website": null,
+      "description": {
+        "en": "[GAP]",
+        "vi": "[GAP]",
+        "ko": "[GAP]"
+      },
+      "sortOrder": 8
+    },
+    {
+      "name": "Senteomko",
+      "logoUrl": "data/assets/partners/senteomko-058e0807.png",
+      "website": null,
+      "description": {
+        "en": "[GAP]",
+        "vi": "[GAP]",
+        "ko": "[GAP]"
+      },
+      "sortOrder": 9
+    },
+    {
+      "name": "Keuliseumaseu",
+      "logoUrl": "data/assets/partners/keuliseumaseu-79b8d5f7.png",
+      "website": null,
+      "description": {
+        "en": "[GAP]",
+        "vi": "[GAP]",
+        "ko": "[GAP]"
+      },
+      "sortOrder": 10
+    }
   ]
 }

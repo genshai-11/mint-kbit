@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { ArrowRight, Buildings, GlobeHemisphereEast, MapPinLine, SealCheck, Sparkle, UsersThree } from '@phosphor-icons/react'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
@@ -174,9 +174,9 @@ export default function About() {
                 </div>
 
                 <div className={s.storyActions}>
-                  <a href={`mailto:${settings.contact.email}`} className={s.primaryLink}>
+                  <Link to={`/${locale}/contact`} className={s.primaryLink}>
                     Contact team <ArrowRight size={16} weight="bold" aria-hidden="true" />
-                  </a>
+                  </Link>
                   <a href={`/${locale}/events`} className={s.secondaryLink}>
                     Programs
                   </a>

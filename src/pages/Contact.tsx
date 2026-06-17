@@ -116,8 +116,8 @@ export default function Contact() {
                     Use the contact form, email, or the office details below to reach the team most relevant to your need.
                   </p>
                   <div className={s.heroActions}>
-                    <a href={`mailto:${settings.contact.email}`} className={s.primaryLink}>
-                      Email us <EnvelopeSimple size={16} weight="bold" aria-hidden="true" />
+                    <a href="#contact-form" className={s.primaryLink}>
+                      Send inquiry <EnvelopeSimple size={16} weight="bold" aria-hidden="true" />
                     </a>
                     <a href={`tel:${settings.contact.phoneVn}`} className={s.secondaryLink}>
                       Call Vietnam office <Phone size={16} weight="bold" aria-hidden="true" />
@@ -129,7 +129,7 @@ export default function Contact() {
           </div>
         </section>
 
-        <section className={`${s.formSection} section`}>
+        <section id="contact-form" className={`${s.formSection} section`}>
           <div className="container">
             <div className={s.formGrid}>
               <article className={`${s.formCard} motion-surface reveal-soft`} style={{ animationDelay: '60ms' }}>
@@ -201,7 +201,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <span>Email</span>
-                      <a href={`mailto:${settings.contact.email}`}>{settings.contact.email}</a>
+                      <strong>{settings.contact.email}</strong>
                     </div>
                   </div>
                 </article>

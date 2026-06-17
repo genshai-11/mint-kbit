@@ -3,7 +3,7 @@ import { ArrowRight, ClipboardText, DownloadSimple, Heart, SealCheck, TrendUp, U
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import PageHero from '@/components/PageHero'
-import { pages, settings } from '@/lib/data'
+import { pages } from '@/lib/data'
 import { useMembershipProgram } from '@/lib/content/membership'
 import { isLocale, type Locale } from '@/lib/locale'
 import s from './Membership.module.css'
@@ -207,9 +207,9 @@ export default function Membership() {
                 ))}
               </div>
               <div className={s.ctaActions}>
-                <a href={`mailto:${settings.contact.email}?subject=Membership Inquiry`} className={s.ctaPrimary}>
-                  Email KBIT <ArrowRight size={16} weight="bold" aria-hidden="true" />
-                </a>
+                <Link to={`/${locale}/contact`} className={s.ctaPrimary}>
+                  Contact KBIT <ArrowRight size={16} weight="bold" aria-hidden="true" />
+                </Link>
                 <Link to={`/${locale}/contact`} className={s.ctaSecondary}>
                   Contact page
                 </Link>

@@ -85,9 +85,10 @@ export function rewriteNewsHtml(item: NewsItem, locale: Locale): string {
   const imageMap = new Map<string, string>()
 
   for (const image of item.images || []) {
-    if (image.originalUrl && image.localPath) {
+    const originalUrl = (image as { originalUrl?: string }).originalUrl
+    if (originalUrl && image.localPath) {
       const src = assetSrc(image.localPath) || `/${image.localPath.replace(/^\/+/, '')}`
-      imageMap.set(image.originalUrl, src)
+      imageMap.set(originalUrl, src)
     }
   }
 

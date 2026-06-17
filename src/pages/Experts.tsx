@@ -3,7 +3,7 @@ import { ArrowRight, Certificate, GlobeHemisphereEast, Stethoscope, UsersThree }
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import PageHero from '@/components/PageHero'
-import { pages, settings } from '@/lib/data'
+import { pages } from '@/lib/data'
 import { isLocale, type Locale } from '@/lib/locale'
 import s from './Experts.module.css'
 
@@ -106,9 +106,9 @@ export default function Experts() {
                 <span className="overline">Collaborate with KBIT</span>
                 <h2 className="headline-display">Join our expert network</h2>
               </div>
-              <a href={`mailto:${settings.contact.email}?subject=Expert Collaboration Inquiry`} className={s.textLink}>
+              <Link to={`/${locale}/contact`} className={s.textLink}>
                 Submit credentials
-              </a>
+              </Link>
             </div>
             <div className={s.collaborateGrid}>
               {(page.collaborate ?? []).map((item, index) => {
