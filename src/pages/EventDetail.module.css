@@ -301,6 +301,9 @@
   grid-template-columns: 18px minmax(0, 1fr);
   gap: var(--sp-4);
   align-items: start;
+  transform: none !important;
+  box-shadow: none !important;
+  transition: none !important;
 }
 
 .timelineRail {

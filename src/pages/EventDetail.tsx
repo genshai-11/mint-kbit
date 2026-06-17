@@ -249,7 +249,7 @@ export default function EventDetail() {
               {outline.sections.length > 0 ? (
                 <div className={s.programTimeline}>
                   {outline.sections.map((section, sectionIndex) => (
-                    <section key={`${section.heading}-${sectionIndex}`} className={s.programSection}>
+                    <div key={`${section.heading}-${sectionIndex}`} className={s.programSection} data-motion-skip="true">
                       <div className={s.programSectionHead}>
                         <span className={s.programSectionTag}>{section.heading}</span>
                       </div>
@@ -279,7 +279,7 @@ export default function EventDetail() {
                           </div>
                         ))}
                       </div>
-                    </section>
+                    </div>
                   ))}
                 </div>
               ) : (
