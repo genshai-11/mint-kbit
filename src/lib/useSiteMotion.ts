@@ -64,8 +64,8 @@ export function useSiteMotion(routeKey: string) {
         })
       },
       {
-        rootMargin: '0px 0px -8% 0px',
-        threshold: 0.12,
+        rootMargin: '0px 0px 0px 0px',
+        threshold: 0.04,
       },
     )
 
