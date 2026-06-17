@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { Link, useLocation, useParams } from 'react-router-dom'
-import { ArrowLeft, ArrowRight, CalendarBlank, GlobeHemisphereEast, MapPin, SealCheck, Users } from '@phosphor-icons/react'
+import { ArrowLeft, ArrowRight, CalendarBlank, GlobeHemisphereEast, MapPin, Users } from '@phosphor-icons/react'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import Img from '@/components/Img'
@@ -213,7 +213,6 @@ export default function EventDetail() {
                 <p className={`${s.lead} reveal reveal--delay-2`}>{description.split('\n\n')[0]}</p>
               </div>
               <aside className={`${s.factPanel} reveal-clip reveal--delay-3`} aria-label="Event facts">
-                <SealCheck className={s.panelIcon} size={130} weight="thin" aria-hidden="true" />
                 {facts.map(({ label, value, Icon }) => (
                   <div className={s.fact} key={label}>
                     <Icon size={20} weight="bold" aria-hidden="true" />
