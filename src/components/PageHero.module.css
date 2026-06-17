@@ -73,48 +73,6 @@
   }
 }
 
-/* ===== Ghost watermark =====
-   right inset > 0 so the final letter is never cropped (was right: -3%). */
-.watermark {
-  position: absolute;
-  right: clamp(16px, 4vw, 56px);
-  top: 50%;
-  transform: translateY(-50%);
-  font-family: var(--font-display);
-  font-size: clamp(72px, 11vw, 156px);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1;
-  white-space: nowrap;
-  pointer-events: none;
-  user-select: none;
-  z-index: 0;
-  animation: heroWatermarkIn 900ms var(--ease-out-expo) both, pageHeroDrift 11s ease-in-out 900ms infinite;
-}
-
-.watermarkOnImage {
-  z-index: 1;
-  color: rgba(255, 255, 255, 0.10);
-  opacity: 1;
-}
-
-.watermarkDark {
-  color: var(--clr-navy-soft);
-  opacity: 0.62;
-}
-
-.watermarkLight {
-  color: var(--clr-ash);
-  opacity: 0.95;
-}
-
-/* watermarkOnImage must win over variant colors */
-.watermarkOnImage.watermarkDark,
-.watermarkOnImage.watermarkLight {
-  color: rgba(255, 255, 255, 0.10);
-  opacity: 1;
-}
-
 /* ===== Content (above watermark) ===== */
 .inner {
   position: relative;
@@ -193,7 +151,6 @@
 
 @media (prefers-reduced-motion: reduce) {
   .hero::after,
-  .watermark,
   .inner,
   .mediaImg {
     animation: none;
