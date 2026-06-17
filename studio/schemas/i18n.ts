@@ -6,11 +6,12 @@ const LOCALES = [
   { name: 'ko', title: '한국어' },
 ]
 
-export function i18nString(fieldName: string, title: string) {
+export function i18nString(fieldName: string, title: string, group?: string) {
   return defineField({
     name: fieldName,
     title,
     type: 'object',
+    group,
     options: { collapsible: true, collapsed: false },
     fields: LOCALES.map(({ name, title: localeTitle }) =>
       defineField({ name, title: localeTitle, type: 'string' })
@@ -18,11 +19,12 @@ export function i18nString(fieldName: string, title: string) {
   })
 }
 
-export function i18nText(fieldName: string, title: string) {
+export function i18nText(fieldName: string, title: string, group?: string) {
   return defineField({
     name: fieldName,
     title,
     type: 'object',
+    group,
     options: { collapsible: true, collapsed: true },
     fields: LOCALES.map(({ name, title: localeTitle }) =>
       defineField({ name, title: localeTitle, type: 'text', rows: 5 })
@@ -30,11 +32,12 @@ export function i18nText(fieldName: string, title: string) {
   })
 }
 
-export function i18nHtml(fieldName: string, title: string) {
+export function i18nHtml(fieldName: string, title: string, group?: string) {
   return defineField({
     name: fieldName,
     title,
     type: 'object',
+    group,
     options: { collapsible: true, collapsed: true },
     fields: LOCALES.map(({ name, title: localeTitle }) =>
       defineField({ name, title: localeTitle, type: 'text', rows: 12 })

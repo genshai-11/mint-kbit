@@ -11,9 +11,13 @@
     "analyze": "vite build --mode analyze",
     "export-translations": "node scripts/export-missing-translations.mjs",
     "migrate-sanity": "node --env-file=.env.local scripts/migrate-to-sanity.mjs",
+    "migrate-membership:cli": "cd studio && npx sanity exec scripts/migrate-membership-with-user-token.cjs --with-user-token",
+    "migrate-event-library:cli": "cd studio && npx sanity exec scripts/migrate-event-library-with-user-token.cjs --with-user-token",
+    "migrate-event-program:cli": "cd studio && npx sanity exec scripts/migrate-event-program-with-user-token.cjs --with-user-token",
     "studio": "cd studio && npm run dev",
     "export-sanity": "node scripts/export-sanity-ndjson.mjs",
     "studio:build": "cd studio && npm run build",
+    "sanity:smoke": "node --env-file=.env.local scripts/sanity-smoke.mjs",
     "studio:deploy": "cd studio && npm run deploy",
     "studio:deploy-graphql": "cd studio && npm run deploy-graphql"
   },

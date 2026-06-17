@@ -4,8 +4,10 @@ import { GlobeHemisphereEast, GraduationCap, SealCheck, Stethoscope, UsersThree 
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import Img from '@/components/Img'
-import { settings, events, partners } from '@/lib/data'
+import ContentImg from '@/components/ContentImg'
+import { settings, partners } from '@/lib/data'
 import { assetSrc, assetSrcSet } from '@/lib/assets'
+import { eventImageLocalPath, sortEventsByStartDesc, useEvents } from '@/lib/content/events'
 import { isLocale, type Locale } from '@/lib/locale'
 import s from './Home.module.css'
 
@@ -38,10 +40,6 @@ function formatDate(iso: string, locale: Locale): string {
   } catch {
     return iso.slice(0, 10)
   }
-}
-
-function getEventImageKey(coverImage: string): string {
-  return coverImage.replace(/^(\.\/)?data\/assets\//, '')
 }
 
 function useOnceVisible<T extends Element>(threshold = 0.25) {
@@ -108,9 +106,8 @@ export default function Home() {
     sub: t(h.sub, locale),
   }))
 
-  const featuredEvents = (events.data as typeof events.data)
-    .sort((a, b) => new Date(b.startAt).getTime() - new Date(a.startAt).getTime())
-    .slice(0, 3)
+  const syncedEvents = useEvents()
+  const featuredEvents = sortEventsByStartDesc(syncedEvents).slice(0, 3)
 
   const partnerList = partners.data
 
@@ -236,8 +233,9 @@ export default function Home() {
                 style={{ animationDelay: `${i * 120}ms` }}
               >
                 <div className={s.eventImgWrap}>
-                  <Img
-                    src={getEventImageKey(ev.coverImage)}
+                  <ContentImg
+                    localSrc={eventImageLocalPath(ev.coverImage)}
+                    sanityImage={ev.coverSanityImage}
                     alt={t(ev.title, locale)}
                     className={s.eventImg}
                     sizes="(max-width: 768px) 100vw, 33vw"

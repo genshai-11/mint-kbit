@@ -21,10 +21,11 @@ Checked evidence is in:
 ## Current blockers
 
 1. ~~Lucy confirmation required before React + Vite scaffold.~~ **Cleared 2026-06-08.**
-2. Image optimization script must run before any image component is built.
+2. ~~Image optimization script must run before any image component is built.~~ **Done; Sanity migration now prefers optimized `data/assets-opt/` WebP files.**
 3. ~~Experts content remains missing (gap — render explicit gap state, do not invent).~~ **Done — gap state page live.**
 4. Testimonials remain missing (gap).
-5. Production asset hosting not finalized (use local `data/assets-opt/` until Sanity CDN migration is run and verified).
+5. ~~`SANITY_TOKEN` is not present in local `.env.local`, so membership write migration cannot be run yet.~~ **Cleared 2026-06-17 via Sanity CLI user-token migration.**
+6. Production asset hosting now has Sanity CDN path for events and KAT 2025 program library images; final production cutover still requires preview QA and release controls.
 
 ## Hermes board
 
@@ -51,9 +52,9 @@ Checked evidence is in:
 | `t_4a_gate` | done | [Gate] Lucy confirms Phase 4a design direction |
 | `t_4b_pages` | done | [Phase 4b] Build remaining pages after gate |
 | `t_0bed4a30` | todo | Performance pass: lazy routes, split JSON, bundle report |
-| `t_314397dd` | in_progress | Plan future admin/content operations path — Sanity Studio/schema/migration tooling verified 2026-06-09 |
+| `t_314397dd` | in_progress | Admin/content operations path — Sanity event runtime sync, optimized migration, membership schema/migration + live membershipProgram migration completed 2026-06-17 |
 | `t_eb42c8dd` | todo | Add verification and release controls |
 
 ## Next task
 
-Phase 5 — Performance pass remains the canonical next build task. Sanity Phase 6 setup tooling is now partially implemented; remaining Sanity work requires real project credentials/CORS, live migration, content QA, and frontend wiring.
+Preview/canary verify Sanity runtime pages before production, especially `/en/events/kat-2025-1st-korea-vietnam-k-beauty-advanced-skill-training-2025` Program Library. Phase 5 performance pass remains open; Sanity runtime sync adds a `sanity` client chunk that should be included in the next bundle review.

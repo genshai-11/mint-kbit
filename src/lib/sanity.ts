@@ -42,7 +42,9 @@ export async function fetchEvents() {
       _id, slug, title, description, coverImage, startAt, endAt,
       additionalDates, location, status, isFeatured, registrationOpen,
       fee, capacity, seatsLeft, language, targetAudience, speakerSlugs,
-      images[]{ image, caption, altText, sortOrder, isCover }
+      programSections[]{ title, intro, sortOrder, entries[]{ startTime, endTime, title, speaker, details, sortOrder } },
+      images[]{ image, caption, altText, sortOrder, isCover },
+      libraryItems[]{ kind, title, description, image, file{ asset->{ url, originalFilename } }, altText, sortOrder }
     }
   `)
 }
@@ -53,7 +55,9 @@ export async function fetchEvent(slug: string) {
       _id, slug, title, description, coverImage, startAt, endAt,
       additionalDates, location, status, isFeatured, registrationOpen,
       fee, capacity, seatsLeft, language, targetAudience, speakerSlugs,
-      images[]{ image, caption, altText, sortOrder, isCover }
+      programSections[]{ title, intro, sortOrder, entries[]{ startTime, endTime, title, speaker, details, sortOrder } },
+      images[]{ image, caption, altText, sortOrder, isCover },
+      libraryItems[]{ kind, title, description, image, file{ asset->{ url, originalFilename } }, altText, sortOrder }
     }
   `, { slug })
 }
@@ -119,4 +123,26 @@ export async function fetchPage(key: string) {
       key, heroImage, title, intro, pillars, faq
     }
   `, { key })
+}
+
+export async function fetchMembershipProgram() {
+  return client.fetch(`
+    *[_type == "membershipProgram" && _id == "membershipProgram"][0] {
+      membershipInfo,
+      benefits,
+      requirements,
+      fees,
+      registrationForms {
+        tab,
+        title,
+        description,
+        forms[]{
+          id,
+          title,
+          filePath,
+          file{ asset->{url, originalFilename} }
+        }
+      }
+    }
+  `)
 }

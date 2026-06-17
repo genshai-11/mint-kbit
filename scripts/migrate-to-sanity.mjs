@@ -6,7 +6,7 @@
  *   2. npm install @sanity/client dotenv (in root or run: node --env-file=.env.local scripts/migrate-to-sanity.mjs)
  *   3. Run: node --env-file=.env.local scripts/migrate-to-sanity.mjs
  *
- * Order: experts → partners → centers → events → news → pages → settings → homeHero
+ * Order: experts → partners → centers → events → news → settings → homeHero → pages → membership
  */
 
 import { createClient } from '@sanity/client'
@@ -30,6 +30,7 @@ if (!projectId || !token) {
 }
 
 const assetManifestRaw = JSON.parse(await readFile(resolve(ROOT, 'data/seed/asset-manifest.json'), 'utf8'))
+const optimizedManifestRaw = JSON.parse(await readFile(resolve(ROOT, 'data/assets-opt/manifest.json'), 'utf8'))
 const assetByOriginalUrl = new Map((assetManifestRaw.assets ?? []).map((a) => [a.originalUrl, a.localPath]))
 const uploadedImages = new Map()
 
@@ -48,10 +49,26 @@ async function readSeed(name) {
   return JSON.parse(raw)
 }
 
+function toAssetKey(path) {
+  return path.replace(/^(\.\/)?data\/assets\//, '').replace(/\\/g, '/')
+}
+
 function resolveLocalImagePath(input) {
   if (!input || typeof input !== 'string' || input.startsWith('[')) return null
   if (/^https?:\/\//.test(input)) return assetByOriginalUrl.get(input) ?? null
   return input
+}
+
+function resolveOptimizedImagePath(localPath) {
+  const key = toAssetKey(localPath)
+  const entry = optimizedManifestRaw[key]
+  const variant = entry?.variants?.['1600w']
+    ?? entry?.variants?.['1200w']
+    ?? entry?.variants?.['800w']
+    ?? entry?.variants?.default
+    ?? entry?.variants?.['400w']
+
+  return variant ? `data/assets-opt/${variant}` : localPath
 }
 
 function numberOrNull(value) {
@@ -67,11 +84,13 @@ function stringOrEmpty(value) {
 async function uploadImage(localPath) {
   const resolvedPath = resolveLocalImagePath(localPath)
   if (!resolvedPath) return null
-  if (uploadedImages.has(resolvedPath)) return uploadedImages.get(resolvedPath)
 
-  const fullPath = resolve(ROOT, resolvedPath)
+  const uploadPath = resolveOptimizedImagePath(resolvedPath)
+  if (uploadedImages.has(uploadPath)) return uploadedImages.get(uploadPath)
+
+  const fullPath = resolve(ROOT, uploadPath)
   if (!existsSync(fullPath)) {
-    console.warn(`  ⚠ Image not found: ${localPath} → ${resolvedPath}`)
+    console.warn(`  ⚠ Image not found: ${localPath} → ${uploadPath}`)
     return null
   }
   try {
@@ -79,8 +98,9 @@ async function uploadImage(localPath) {
       filename: basename(fullPath),
     })
     const image = { _type: 'image', asset: { _type: 'reference', _ref: asset._id } }
-    uploadedImages.set(resolvedPath, image)
-    console.log(`  ✓ Uploaded: ${basename(fullPath)}`)
+    uploadedImages.set(uploadPath, image)
+    const sourceNote = uploadPath !== resolvedPath ? ` optimized from ${basename(resolvedPath)}` : ''
+    console.log(`  ✓ Uploaded: ${basename(fullPath)}${sourceNote}`)
     return image
   } catch (err) {
     console.error(`  ✗ Upload failed: ${localPath}`, err.message)
@@ -96,6 +116,41 @@ function cleanI18n(obj) {
     cleaned[locale] = typeof v === 'string' && v.startsWith('[') ? '' : v
   }
   return cleaned
+}
+
+function i18nFromValue(value) {
+  if (value && typeof value === 'object') return cleanI18n(value)
+  if (typeof value === 'string' && !value.startsWith('[')) return { en: value, vi: '', ko: '' }
+  return { en: '', vi: '', ko: '' }
+}
+
+function localizedList(items) {
+  return Array.isArray(items) ? items.map((item) => ({
+    _key: randomUUID(),
+    _type: 'localizedListItem',
+    text: i18nFromValue(item),
+  })) : []
+}
+
+async function uploadFile(filePath) {
+  if (!filePath || typeof filePath !== 'string') return null
+  const relativePath = filePath.startsWith('/') ? `public${filePath}` : filePath
+  const fullPath = resolve(ROOT, relativePath)
+  if (!existsSync(fullPath)) {
+    console.warn(`  ⚠ File not found: ${filePath}`)
+    return null
+  }
+
+  try {
+    const asset = await client.assets.upload('file', createReadStream(fullPath), {
+      filename: basename(fullPath),
+    })
+    console.log(`  ✓ Uploaded file: ${basename(fullPath)}`)
+    return { _type: 'file', asset: { _type: 'reference', _ref: asset._id } }
+  } catch (err) {
+    console.error(`  ✗ File upload failed: ${filePath}`, err.message)
+    return null
+  }
 }
 
 function officeKey(o) {
@@ -360,6 +415,104 @@ async function migratePages() {
   }
 }
 
+async function migrateMembership() {
+  console.log('\n── Membership Program ──')
+  const raw = await readSeed('membership')
+  const forms = []
+
+  for (const form of raw.registrationForms?.forms ?? []) {
+    const file = await uploadFile(form.filePath)
+    forms.push({
+      _key: form.id ?? randomUUID(),
+      _type: 'membershipRegistrationForm',
+      id: form.id ?? '',
+      title: i18nFromValue(form.title),
+      filePath: form.filePath ?? '',
+      file: file ?? undefined,
+    })
+  }
+
+  await upsert({
+    _id: 'membershipProgram',
+    _type: 'membershipProgram',
+    membershipInfo: {
+      tab: i18nFromValue(raw.membershipInfo?.tab),
+      title: i18nFromValue(raw.membershipInfo?.title),
+      types: (raw.membershipInfo?.types ?? []).map((type) => ({
+        _key: type.id ?? randomUUID(),
+        _type: 'membershipType',
+        id: type.id ?? '',
+        title: i18nFromValue(type.title),
+        subtitle: i18nFromValue(type.subtitle),
+        description: i18nFromValue(type.description),
+        highlights: localizedList(type.highlights),
+      })),
+    },
+    benefits: {
+      title: i18nFromValue(raw.benefits?.title),
+      groups: (raw.benefits?.groups ?? []).map((group) => ({
+        _key: group.id ?? randomUUID(),
+        _type: 'membershipBenefitGroup',
+        id: group.id ?? '',
+        title: i18nFromValue(group.title),
+        items: localizedList(group.items),
+      })),
+    },
+    requirements: {
+      tab: i18nFromValue(raw.requirements?.tab),
+      general: {
+        title: i18nFromValue(raw.requirements?.general?.title),
+        intro: i18nFromValue(raw.requirements?.general?.intro),
+        items: (raw.requirements?.general?.items ?? []).map((item) => ({
+          _key: randomUUID(),
+          _type: 'membershipRequirementItem',
+          title: i18nFromValue(item.title),
+          points: localizedList(item.points),
+        })),
+      },
+      specific: (raw.requirements?.specific ?? []).map((item) => ({
+        _key: randomUUID(),
+        _type: 'membershipSpecificRequirement',
+        name: i18nFromValue(item.name),
+        points: localizedList(item.points),
+      })),
+      steps: localizedList(raw.requirements?.steps),
+    },
+    fees: {
+      tab: i18nFromValue(raw.fees?.tab),
+      title: i18nFromValue(raw.fees?.title),
+      tiers: (raw.fees?.tiers ?? []).map((tier) => ({
+        _key: tier.id ?? randomUUID(),
+        _type: 'membershipFeeTier',
+        id: tier.id ?? '',
+        name: i18nFromValue(tier.name),
+        audience: i18nFromValue(tier.audience),
+        packages: (tier.packages ?? []).map((pkg) => ({
+          _key: randomUUID(),
+          _type: 'membershipPackage',
+          duration: i18nFromValue(pkg.duration),
+          price: pkg.price ?? '',
+        })),
+        notes: localizedList(tier.notes),
+        lifeBenefits: localizedList(tier.lifeBenefits),
+      })),
+      limitPolicy: {
+        title: i18nFromValue(raw.fees?.limitPolicy?.title),
+        releases: localizedList(raw.fees?.limitPolicy?.releases),
+        note: i18nFromValue(raw.fees?.limitPolicy?.note),
+      },
+    },
+    registrationForms: {
+      tab: i18nFromValue(raw.registrationForms?.tab),
+      title: i18nFromValue(raw.registrationForms?.title),
+      description: i18nFromValue(raw.registrationForms?.description),
+      forms,
+    },
+  })
+
+  console.log('  ✓ Membership Program')
+}
+
 // ─── Run ─────────────────────────────────────────────────────────────────────
 
 const migrations = {
@@ -371,6 +524,7 @@ const migrations = {
   settings: migrateSettings,
   homeHero: migrateHomeHero,
   pages: migratePages,
+  membership: migrateMembership,
 }
 
 async function main() {
@@ -383,7 +537,7 @@ async function main() {
     .map((name) => name.trim())
     .filter(Boolean)
 
-  const steps = selected.length ? selected : ['experts', 'partners', 'centers', 'events', 'news', 'settings', 'homeHero', 'pages']
+  const steps = selected.length ? selected : ['experts', 'partners', 'centers', 'events', 'news', 'settings', 'homeHero', 'pages', 'membership']
 
   for (const step of steps) {
     const run = migrations[step]

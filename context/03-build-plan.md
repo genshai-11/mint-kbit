@@ -135,14 +135,16 @@ After all pages render (including Event Detail):
 - Core Web Vitals baseline recorded (LCP, CLS, FID targets)
 
 ### Phase 6 — Sanity CMS + Content Management
-**Status: partially implemented — Studio/schema/client/migration tooling verified locally 2026-06-09; requires real Sanity project credentials, CORS setup, migration run, content QA, then frontend wiring.**
+**Status: in progress — event runtime sync implemented 2026-06-17; Studio/schema/client/migration tooling verified; membership schema/migration added and live `membershipProgram` migrated through Sanity CLI account; remaining work is preview QA, release controls, and optional full content-page cutover beyond Events/Membership.**
 
 #### 6a — Sanity project setup
 
 - ✅ Frontend Sanity dependencies installed: `@sanity/client`, `@sanity/image-url`.
 - ✅ Sanity Studio scaffold exists in `studio/` and builds locally.
 - ✅ Env examples added at `.env.example` and `studio/.env.example`.
-- ⏳ Lucy/project owner must create or confirm the real Sanity project, dataset, API token, and CORS origins in Sanity Manage.
+- ✅ Sanity project/dataset read env is configured locally (`q9mwbl6e`, `production`).
+- ✅ Membership write migration completed through Sanity CLI user-token flow, without storing `SANITY_TOKEN` in `.env.local`.
+- ⏳ Lucy/project owner must confirm CORS origins in Sanity Manage before production.
 
 #### 6b — Schema definitions
 
@@ -158,6 +160,7 @@ After all pages render (including Event Detail):
 | `expert` | name, slug, bio(i18n), avatar, role(i18n) |
 | `partner` | name, logo, url, tier |
 | `center` | name(i18n), slug, address(i18n), image |
+| `membershipProgram` | membership types, benefits, requirements, fees, registration forms |
 
 Tất cả `i18n` fields dùng pattern:
 ```js
@@ -166,7 +169,8 @@ Tất cả `i18n` fields dùng pattern:
 
 #### 6c — Image migration (assets → Sanity CDN)
 
-- Upload toàn bộ `data/assets-opt/` lên Sanity Asset API bằng migration script
+- Migration script now prefers optimized WebP assets from `data/assets-opt/manifest.json` before falling back to raw assets.
+- Upload optimized assets to Sanity Asset API bằng migration script
 - Sau khi upload: mọi image reference dùng `@sanity/image-url` builder
 - Frontend `<Img>` component tạo `srcset` từ Sanity CDN URL:
   ```
@@ -178,22 +182,24 @@ Tất cả `i18n` fields dùng pattern:
 
 #### 6d — Data migration (seed JSON → Sanity)
 
-- ✅ `scripts/migrate-to-sanity.mjs` reads `data/seed/*.json`, resolves legacy asset URLs through `data/seed/asset-manifest.json`, uploads local images, and upserts schema-valid documents with `.createOrReplace()`.
+- ✅ `scripts/migrate-to-sanity.mjs` reads `data/seed/*.json`, resolves legacy asset URLs through `data/seed/asset-manifest.json`, uploads optimized local images from `data/assets-opt/`, uploads membership PDFs, and upserts schema-valid documents with `.createOrReplace()`.
 - ✅ `scripts/export-sanity-ndjson.mjs` generates `kbit-migration.ndjson` for manual dataset import without assets.
 - ✅ `docs/sanity-setup.md` documents the remaining manual setup and migration flow.
 - ⏳ Run the live migration after `.env.local` contains the real `SANITY_PROJECT_ID`, `SANITY_DATASET`, and `SANITY_TOKEN`.
 
 Migration order:
 ```
-experts → partners → centers → events → news → settings → homeHero → pages
+experts → partners → centers → events → news → settings → homeHero → pages → membership
 ```
 
 #### 6e — Frontend wiring
 
-- Thay tất cả `import * from 'data/seed/*.json'` → GROQ query qua `@sanity/client`
-- Tạo `src/lib/sanity.ts` — centralized client + typed queries
-- Giữ nguyên route structure, chỉ thay data source
-- Fetch strategy: `useSWR` hoặc `useEffect` + cache headers từ Sanity CDN
+- ✅ `src/lib/sanity.ts` centralizes client + GROQ queries.
+- ✅ Events runtime sync implemented for Home event teaser, Events listing, Event Detail, Event Gallery, and Event Program Library via Sanity CDN with seed fallback.
+- ✅ Membership page can read the live `membershipProgram` singleton from Sanity with seed fallback.
+- ✅ KAT 2025 local program library images migrated to Sanity `event-12.libraryItems[]` after WebP optimization: 55.91 MB → 1.29 MB before upload.
+- ⏳ Remaining optional cutover: News, About, Contact, Centers, Experts, Footer/Nav settings if Lucy wants every public surface fully CMS-driven.
+- Fetch strategy: React `useEffect` runtime reads from Sanity CDN; local seed remains fallback when Sanity is disabled/unavailable.
 
 ---
 

@@ -1,14 +1,12 @@
-import { useMemo } from 'react'
 import { Link, useLocation, useParams } from 'react-router-dom'
 import { ArrowLeft, ArrowRight, CalendarBlank, GlobeHemisphereEast, MapPin, Users } from '@phosphor-icons/react'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
-import Img from '@/components/Img'
-import { events, t as translate } from '@/lib/data'
+import ContentImg from '@/components/ContentImg'
+import { t as translate } from '@/lib/data'
+import { eventImageLocalPath, sortEventsByStartDesc, useEventBySlug, type EventItem } from '@/lib/content/events'
 import { isLocale, type Locale } from '@/lib/locale'
 import s from './EventDetail.module.css'
-
-type EventItem = (typeof events.data)[number]
 
 type ProgramEntry = {
   time: string
@@ -25,10 +23,6 @@ type ProgramSection = {
 type ProgramOutline = {
   intro: string[]
   sections: ProgramSection[]
-}
-
-function getImgKey(path: string): string {
-  return path.replace(/^(\.\/)?data\/assets\//, '')
 }
 
 function localeCode(locale: Locale): string {
@@ -68,6 +62,41 @@ function normalizeLine(line: string): string {
 
 function isSectionHeading(line: string): boolean {
   return /^(PART\s+[IVXLC]+|PHẦN\s+[IVXLC]+|DAY\s+\d+|ROOM\s+\d+|PHÒNG\s+\d+)/i.test(line)
+}
+
+function localizedBlocks(value: EventItem['description'], locale: Locale): string[] {
+  return textBlocks(translate(value, locale))
+}
+
+function structuredProgramOutline(event: EventItem, locale: Locale): ProgramOutline | null {
+  const programSections = [...event.programSections]
+    .sort((a, b) => a.sortOrder - b.sortOrder)
+    .filter((section) => section.entries.length > 0 || translate(section.title, locale) || translate(section.intro, locale))
+
+  if (!programSections.length) return null
+
+  return {
+    intro: [],
+    sections: programSections.map((section, sectionIndex) => ({
+      heading: translate(section.title, locale) || `Agenda ${sectionIndex + 1}`,
+      preamble: localizedBlocks(section.intro, locale),
+      entries: [...section.entries]
+        .sort((a, b) => a.sortOrder - b.sortOrder)
+        .map((entry) => {
+          const time = [entry.startTime, entry.endTime].filter(Boolean).join(' – ')
+          const speaker = translate(entry.speaker, locale)
+          return {
+            time,
+            title: translate(entry.title, locale),
+            details: [
+              ...(speaker ? [`Speaker: ${speaker}`] : []),
+              ...localizedBlocks(entry.details, locale),
+            ],
+          }
+        })
+        .filter((entry) => entry.title || entry.time || entry.details.length > 0),
+    })),
+  }
 }
 
 function parseProgramOutline(description: string): ProgramOutline {
@@ -142,10 +171,23 @@ export default function EventDetail() {
   const segments = location.pathname.split('/')
   const locale: Locale = isLocale(segments[1]) ? segments[1] : 'en'
 
-  const allEvents = useMemo(() => (events.data as EventItem[]).slice().sort(
-    (a, b) => new Date(b.startAt).getTime() - new Date(a.startAt).getTime()
-  ), [])
-  const event = allEvents.find(item => item.slug === slug)
+  const { event, allEvents: syncedEvents, loading } = useEventBySlug(slug)
+  const allEvents = sortEventsByStartDesc(syncedEvents)
+
+  if (loading && !event) {
+    return (
+      <>
+        <Nav />
+        <main className={s.notFound}>
+          <div className="container">
+            <span className="overline">Loading program</span>
+            <h1>Fetching the latest Sanity event content.</h1>
+          </div>
+        </main>
+        <Footer />
+      </>
+    )
+  }
 
   if (!event) {
     return (
@@ -173,8 +215,24 @@ export default function EventDetail() {
     .sort((a, b) => a.sortOrder - b.sortOrder)
     .filter(img => !img.isCover)
     .slice(0, 6)
+  const libraryImages = [...event.libraryItems]
+    .sort((a, b) => a.sortOrder - b.sortOrder)
+    .filter(item => item.sanityImage)
+  const scenes = libraryImages.length > 0
+    ? libraryImages.map((item, index) => ({
+      key: item.imageUrl || item.altText || `library-${index}`,
+      localSrc: '',
+      sanityImage: item.sanityImage,
+      alt: item.altText || translate(item.title, locale) || title,
+    }))
+    : gallery.map((img, index) => ({
+      key: img.imageUrl || img.altText || `gallery-${index}`,
+      localSrc: eventImageLocalPath(img.imageUrl),
+      sanityImage: img.sanityImage,
+      alt: img.altText || title,
+    }))
   const related = allEvents.filter(item => item.slug !== event.slug).slice(0, 3)
-  const outline = parseProgramOutline(description)
+  const outline = structuredProgramOutline(event, locale) ?? parseProgramOutline(description)
 
   const facts = [
     { label: 'Date', value: formatRange(event, locale), Icon: CalendarBlank },
@@ -189,8 +247,9 @@ export default function EventDetail() {
 
       <main>
         <section className={s.hero} aria-labelledby="event-title">
-          <Img
-            src={getImgKey(event.coverImage)}
+          <ContentImg
+            localSrc={eventImageLocalPath(event.coverImage)}
+            sanityImage={event.coverSanityImage}
             alt={title}
             className={s.heroImg}
             loading="eager"
@@ -315,7 +374,7 @@ export default function EventDetail() {
           </div>
         </section>
 
-        {gallery.length > 0 && (
+        {scenes.length > 0 && (
           <section className={s.gallerySection}>
             <div className="container">
               <div className={s.sectionHeader}>
@@ -326,11 +385,12 @@ export default function EventDetail() {
                 </div>
               </div>
               <div className={s.galleryGrid}>
-                {gallery.map((img, index) => (
-                  <figure className={`${s.galleryItem} reveal`} style={{ animationDelay: `${index * 90}ms` }} key={`${img.imageUrl}-${index}`}>
-                    <Img
-                      src={getImgKey(img.imageUrl)}
-                      alt={img.altText || title}
+                {scenes.map((scene, index) => (
+                  <figure className={`${s.galleryItem} reveal`} style={{ animationDelay: `${index * 90}ms` }} key={`${scene.key}-${index}`}>
+                    <ContentImg
+                      localSrc={scene.localSrc}
+                      sanityImage={scene.sanityImage}
+                      alt={scene.alt}
                       className={s.galleryImg}
                       sizes="(max-width: 700px) 100vw, 33vw"
                       width={560}
@@ -357,8 +417,9 @@ export default function EventDetail() {
               <div className={s.relatedGrid}>
                 {related.map(item => (
                   <Link to={`/${locale}/events/${item.slug}`} className={s.relatedCard} key={item.slug}>
-                    <Img
-                      src={getImgKey(item.coverImage)}
+                    <ContentImg
+                      localSrc={eventImageLocalPath(item.coverImage)}
+                      sanityImage={item.coverSanityImage}
                       alt={translate(item.title, locale)}
                       className={s.relatedImg}
                       sizes="(max-width: 700px) 100vw, 33vw"

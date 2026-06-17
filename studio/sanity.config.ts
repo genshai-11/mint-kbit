@@ -30,6 +30,9 @@ export default defineConfig({
             S.listItem()
               .title('Site Settings')
               .child(S.document().schemaType('settings').documentId('siteSettings').title('Site Settings')),
+            S.listItem()
+              .title('Membership Program')
+              .child(S.document().schemaType('membershipProgram').documentId('membershipProgram').title('Membership Program')),
             S.divider(),
             S.listItem()
               .title('Pages')

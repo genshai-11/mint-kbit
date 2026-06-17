@@ -3,7 +3,8 @@ import { ArrowRight, ClipboardText, DownloadSimple, Heart, SealCheck, TrendUp, U
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import PageHero from '@/components/PageHero'
-import { membership, pages, settings } from '@/lib/data'
+import { pages, settings } from '@/lib/data'
+import { useMembershipProgram } from '@/lib/content/membership'
 import { isLocale, type Locale } from '@/lib/locale'
 import s from './Membership.module.css'
 
@@ -32,7 +33,7 @@ export default function Membership() {
     }>
   }
 
-  const content = membership as any
+  const content = useMembershipProgram(locale)
   const types = content.membershipInfo?.types ?? []
   const benefits = content.benefits?.groups ?? []
   const requirements = content.requirements

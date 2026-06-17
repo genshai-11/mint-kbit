@@ -3,9 +3,9 @@ import { Link, useLocation } from 'react-router-dom'
 import { ArrowRight, CalendarBlank, MapPin, Users } from '@phosphor-icons/react'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
-import Img from '@/components/Img'
+import ContentImg from '@/components/ContentImg'
 import PageHero from '@/components/PageHero'
-import { events } from '@/lib/data'
+import { eventImageLocalPath, sortEventsByStartDesc, useEvents } from '@/lib/content/events'
 import { isLocale, type Locale } from '@/lib/locale'
 import s from './Events.module.css'
 
@@ -28,10 +28,6 @@ function formatDate(iso: string, locale: Locale): string {
   }
 }
 
-function getImgKey(coverImage: string): string {
-  return coverImage.replace(/^(\.\/)?data\/assets\//, '')
-}
-
 export default function Events() {
   const location = useLocation()
   const segments = location.pathname.split('/')
@@ -39,9 +35,8 @@ export default function Events() {
 
   const [filter, setFilter] = useState<Filter>('all')
 
-  const allEvents = (events.data as typeof events.data).sort(
-    (a, b) => new Date(b.startAt).getTime() - new Date(a.startAt).getTime()
-  )
+  const syncedEvents = useEvents()
+  const allEvents = sortEventsByStartDesc(syncedEvents)
 
   const featured = allEvents.find(e => e.isFeatured) ?? allEvents[0]
 
@@ -93,8 +88,9 @@ export default function Events() {
             <span className="overline" style={{ marginBottom: 'var(--sp-5)', display: 'block' }}>Featured Event</span>
             <article className={`${s.featuredCard} reveal-clip reveal--delay-2`}>
               <div className={s.featuredImgWrap}>
-                <Img
-                  src={getImgKey(featured.coverImage)}
+                <ContentImg
+                  localSrc={eventImageLocalPath(featured.coverImage)}
+                  sanityImage={featured.coverSanityImage}
                   alt={t(featured.title, locale)}
                   className={s.featuredImg}
                   loading="eager"
@@ -162,8 +158,9 @@ export default function Events() {
                   aria-label={`View details for ${t(ev.title, locale)}`}
                 >
                   <div className={s.cardImgWrap}>
-                    <Img
-                      src={getImgKey(ev.coverImage)}
+                    <ContentImg
+                      localSrc={eventImageLocalPath(ev.coverImage)}
+                      sanityImage={ev.coverSanityImage}
                       alt={t(ev.title, locale)}
                       className={s.cardImg}
                       sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
