@@ -46,9 +46,7 @@ export default function PageHero({
           <div className={s.mediaScrim} />
         </div>
       )}
-      <div className={`${s.watermark} ${isDark ? s.watermarkDark : s.watermarkLight} ${hasImage ? s.watermarkOnImage : ''}`} aria-hidden="true">
-        {watermark}
-      </div>
+
       <div className={`container ${s.inner}`}>
         <span className={`${s.overline} ${isDark ? s.overlineDark : s.overlineLight}`}>
           {overline}
