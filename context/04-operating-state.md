@@ -54,7 +54,8 @@ Checked evidence is in:
 | `t_0bed4a30` | done | Performance pass: lazy routes, split JSON, bundle report (CWV live run pending — see context/audits/phase-5-performance.md) |
 | `t_314397dd` | in_progress | Admin/content operations path — Sanity event runtime sync, optimized migration, membership schema/migration + live membershipProgram migration completed 2026-06-17 |
 | `t_eb42c8dd` | todo | Add verification and release controls |
+| `t_phase8_membership` | planned | Phase 8 — Membership Platform (Supabase auth + tier-gated docs + separate admin app). Plan in context/03-build-plan.md; awaiting owner sign-off before 8a |
 
 ## Next task
 
-Preview/canary verify Sanity runtime pages before production, especially `/en/events/kat-2025-1st-korea-vietnam-k-beauty-advanced-skill-training-2025` Program Library. Phase 5 performance pass remains open; Sanity runtime sync adds a `sanity` client chunk that should be included in the next bundle review.
+Phase 5 performance pass is done (seed JSON split per entity; see `context/audits/phase-5-performance.md`) — only the live Core Web Vitals run on a preview URL remains. CMS cutover is partial: only Events + Membership read from Sanity at runtime; News/Settings/HomeHero/Pages/Experts/Partners/Centers still read seed JSON (their `fetch*` GROQ helpers in `src/lib/sanity.ts` are written but unused). Phase 8 (Supabase membership platform) is planned in `context/03-build-plan.md` and awaits owner sign-off. Next concrete actions: (1) Lighthouse baseline on preview, (2) finish optional Sanity cutover or formally defer it, (3) sign off Phase 8 8a.

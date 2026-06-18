@@ -253,6 +253,110 @@ scripts/export-missing-translations.mjs
 
 ---
 
+## Phase 8 — Membership Platform (Supabase)
+
+**Status: planned — implementation plan below. Owner sign-off needed before 8a.**
+
+Adds real member accounts, a tier-gated document library, and a **separate standalone
+admin app**. This is the capability that lets KBIT claim "admin/content operations" per
+CONTEXT.md (no such claim is valid until auth + backend + admin ship).
+
+### Architecture decisions (ADR)
+
+- **Backend:** Supabase — Auth + Postgres + Storage + Row Level Security. (MCP already
+  connected; no custom server to operate.)
+- **Sanity stays** the source of truth for **public marketing content** (events, news,
+  pages). Supabase owns **member identity + private documents only**. The two never share
+  data; the membership tier *ids* defined in Sanity `membershipProgram` are mirrored as a
+  `tiers` lookup in Supabase.
+- **Admin = separate standalone app** (`admin/`, its own Vite React TS project + Vercel
+  deploy), so admin code, auth surface, and bundle never ship to the public site. Shares
+  the Supabase project and a small `packages/`-style copy of tier/types contracts.
+- **Document gating = by membership tier.** Each document declares a minimum tier; a member
+  sees a document when their tier is ≥ required AND their membership is active (not expired).
+- **Files are private.** Stored in a private Supabase Storage bucket and served only via
+  short-lived signed URLs. RLS enforces access server-side — UI gating is never the only
+  guard.
+
+### Repository layout
+
+```
+/            (existing public React+Vite site — adds only "Member login" / "Apply" CTAs + /account portal)
+/studio      (existing Sanity Studio — unchanged)
+/admin       (NEW: standalone Vite React TS admin app, separate package.json + vercel project)
+/supabase    (NEW: migrations/*.sql, seed.sql, config.toml — schema + RLS as code)
+```
+
+### Data model (Supabase Postgres)
+
+| Table | Key columns | Notes |
+|---|---|---|
+| `profiles` | `id`(=auth.users.id), `role`(`member`\|`admin`), `full_name`, `created_at` | 1:1 with auth user; `role` drives admin access |
+| `tiers` | `id`(text, e.g. `standard`/`professional`), `name`, `rank`(int) | mirrors Sanity `membershipProgram` tier ids; `rank` enables "≥ tier" checks |
+| `members` | `profile_id`, `tier_id`, `status`(`pending`\|`active`\|`suspended`\|`expired`), `joined_at`, `expires_at` | the membership record |
+| `membership_applications` | `id`, `applicant_email`, `tier_id`, `payload`(jsonb), `status`, `submitted_at`, `reviewed_by` | digitizes the current static PDF forms |
+| `documents` | `id`, `title`, `description`, `category`, `required_tier_id`, `storage_path`, `published`, `published_at`, `created_by` | metadata; file lives in Storage |
+| `document_downloads` | `document_id`, `member_id`, `downloaded_at` | optional analytics/audit |
+| `audit_log` | `id`, `actor_id`, `action`, `target`, `meta`(jsonb), `at` | admin action trail |
+
+### RLS policy intent (enforced in SQL migrations)
+
+- `profiles`: a user reads/updates only their own row; admins read all.
+- `members`: a member reads only their own row; admins read/write all.
+- `documents`: a member can `select` a row only when `published = true` AND
+  `required_tier.rank <= their active member tier.rank` AND their `members.status = 'active'`
+  AND `expires_at > now()`; admins full access.
+- Storage `member-documents` bucket: **private**; download only through an edge function /
+  RPC that re-checks the same predicate and returns a signed URL (≤ 60s TTL).
+- `membership_applications`: anon can `insert` (apply); only admins can `select`/`update`.
+- Admin writes use a server-side service role (in the admin app's serverless functions),
+  never the anon key.
+
+### Sub-phases
+
+#### 8a — Foundation
+- Create Supabase project; capture `VITE_SUPABASE_URL` + `VITE_SUPABASE_ANON_KEY` (public
+  site + admin) and `SUPABASE_SERVICE_ROLE_KEY` (admin server only) in env examples.
+- `supabase/migrations/`: tables above + RLS policies + `tiers` seed matching Sanity ids.
+- Private Storage bucket `member-documents` + signed-URL RPC/edge function.
+- Install `@supabase/supabase-js`; add `src/lib/supabase.ts` (public client) and an
+  `AuthProvider` + `useAuth()` hook.
+
+#### 8b — Member portal (in the public app)
+- Routes `/:locale/login`, `/:locale/account` (lazy, code-split so the public bundle is
+  untouched for anonymous visitors).
+- Login (email/password + magic link), profile view, membership status + expiry, renewal CTA.
+- **Document library**: lists documents the member is entitled to; download via signed-URL
+  RPC. Empty/locked states for pending/expired members.
+- Membership marketing page gains "Member login" + "Apply" CTAs (replaces PDF download CTA).
+
+#### 8c — Admin app (`admin/`)
+- New Vite React TS project; Supabase auth gate requiring `profiles.role = 'admin'`.
+- Screens: Members (approve / suspend / change tier / set expiry), Applications inbox
+  (review → approve provisions a `members` row + sends email), Document manager (upload to
+  private bucket, set title/category/required tier, publish/unpublish), lightweight metrics.
+- Separate Vercel project + its own env; never imported by the public site.
+
+#### 8d — Application flow
+- Replace static PDF registration forms with an online form writing to
+  `membership_applications` (anon insert via RLS).
+- Admin approval creates the auth user (invite email) + `members` row + `profiles` row.
+
+#### 8e — Hardening & release
+- RLS test matrix (member-of-wrong-tier, expired, suspended, anon) — automated where possible.
+- Audit log on all admin mutations; rate-limit auth + apply endpoints.
+- Email templates (welcome, approval, renewal reminder).
+- GDPR delete path (member → cascade), backup/restore doc, rollback notes.
+- Pre-production gate items from AGENTS.md: preview/canary validation + restore-path verify.
+
+### Security gates (must hold before production)
+- No private document is ever reachable by public URL — signed URLs only, short TTL.
+- Every access predicate exists in RLS, not just in the UI.
+- Admin role checked server-side (service role isolated to admin serverless functions).
+- Anon key is the only Supabase key shipped to browsers.
+
+---
+
 ## Bundle budget (to enforce at Phase 5)
 
 | Asset type | Budget (gzipped) |
