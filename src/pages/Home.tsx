@@ -5,24 +5,12 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import Img from '@/components/Img'
 import ContentImg from '@/components/ContentImg'
-import { settings, partners } from '@/lib/data'
-import { assetSrc, assetSrcSet } from '@/lib/assets'
+import { localize as t } from '@/lib/data'
 import { eventImageLocalPath, sortEventsByStartDesc, useEvents } from '@/lib/content/events'
+import { useHomeHero } from '@/lib/content/site'
+import { usePartners } from '@/lib/content/partners'
 import { isLocale, type Locale } from '@/lib/locale'
 import s from './Home.module.css'
-
-function t(val: Record<string, string> | string, locale: Locale): string {
-  if (typeof val === 'string') return val
-  const raw = val[locale] ?? val['en'] ?? ''
-  if (raw.startsWith('[')) return val['en'] ?? ''
-  return raw
-}
-
-const HERO_ASSET_KEYS = [
-  'home/banner1-8900b3d5.jpg',
-  'home/banner4-b978e3ea.jpg',
-  'home/banner3-4962fcb5.jpg',
-]
 
 const STAT_TARGETS = [16, 50, 8, 500]
 const STAT_ITEMS = [
@@ -80,7 +68,9 @@ export default function Home() {
   const [partnersRef, partnersVisible] = useOnceVisible<HTMLElement>(0.2)
   const [ctaRef, ctaVisible] = useOnceVisible<HTMLElement>(0.25)
 
-  const advance = useCallback(() => setSlide(s => (s + 1) % HERO_ASSET_KEYS.length), [])
+  const heroSlides = useHomeHero(locale)
+  const slideCount = heroSlides.length || 1
+  const advance = useCallback(() => setSlide(s => (s + 1) % slideCount), [slideCount])
 
   useEffect(() => {
     const id = setInterval(advance, 5000)
@@ -100,16 +90,10 @@ export default function Home() {
     requestAnimationFrame(tick)
   }, [statsActive])
 
-  const heroSlides = settings.homeHero.map((h, i) => ({
-    key: HERO_ASSET_KEYS[i],
-    heading: t(h.heading, locale),
-    sub: t(h.sub, locale),
-  }))
-
   const syncedEvents = useEvents()
   const featuredEvents = sortEventsByStartDesc(syncedEvents).slice(0, 3)
 
-  const partnerList = partners.data
+  const partnerList = usePartners()
 
   return (
     <>
@@ -119,9 +103,9 @@ export default function Home() {
       <section className={s.hero} aria-label="Hero">
         {heroSlides.map((slide_, i) => (
           <div key={i} className={`${s.heroSlide} ${i === slide ? s.active : ''}`}>
-            <img
-              src={assetSrc(slide_.key, i === 0 ? '1600w' : '1200w')}
-              srcSet={assetSrcSet(slide_.key)}
+            <ContentImg
+              localSrc={slide_.imageKey}
+              sanityImage={slide_.sanityImage}
               sizes="100vw"
               alt=""
               className={s.heroImg}
@@ -265,23 +249,19 @@ export default function Home() {
         <div className={`${s.partnersInner} ${partnersVisible ? s.partnersInnerVisible : ''}`}>
           <div className={s.partnersTrack} aria-hidden="true">
             {[...partnerList, ...partnerList].map((p, i) => {
-              const imgKeys = [
-                `partners/barog-e7be7269.png`,
-                `partners/cheong-dam-jin-b2f5133a.png`,
-                `partners/goodday-e0f736f4.jpg`,
-                `partners/meylin-7e0debce.png`,
-                `partners/orseyun-1094e63d.jpg`,
-                `partners/renovo-0f6c51b4.png`,
-                `partners/verni-0367cfea.png`,
-                `partners/byeong-7c4edec1.jpg`,
-                `partners/senteomko-058e0807.png`,
-                `partners/keuliseumaseu-79b8d5f7.png`,
-              ]
-              const imgKey = imgKeys[p.sortOrder - 1] ?? ''
-              const src = imgKey ? assetSrc(imgKey, '400w') : ''
-              return src ? (
+              const hasLogo = Boolean(p.sanityImage || p.logoUrl)
+              return hasLogo ? (
                 <div key={i} className={s.partnerItem} title={p.name}>
-                  <img src={src} alt={p.name} className={s.partnerLogo} width={120} height={48} loading="lazy" />
+                  <ContentImg
+                    localSrc={p.logoUrl}
+                    sanityImage={p.sanityImage}
+                    alt={p.name}
+                    sizes="120px"
+                    className={s.partnerLogo}
+                    width={120}
+                    height={48}
+                    loading="lazy"
+                  />
                 </div>
               ) : (
                 <div key={i} className={s.partnerItem}>

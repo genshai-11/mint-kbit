@@ -12,11 +12,17 @@ All public surfaces keep a **local seed fallback**: when `VITE_SANITY_PROJECT_ID
 |---|---|---|
 | Events (list, detail, gallery, program library) | `src/lib/content/events.ts` | full mapping, images via Sanity CDN |
 | Membership | `src/lib/content/membership.ts` | `membershipProgram` singleton |
-| **Site settings** (Footer text, Contact offices/contact, About leadership/desc) | `src/lib/content/site.ts` *(new)* | Sanity `settings` overlaid on seed; brand logos + home hero stay on seed |
-| **Centers** page | `src/lib/content/centers.ts` *(new)* | address localized in loader; images via `ContentImg` (Sanity ref or local seed) |
+| **Site settings** (Footer text, Contact offices/contact, About leadership/desc) | `src/lib/content/site.ts` | Sanity `settings` overlaid on seed; brand logos stay on seed |
+| **Home hero** | `src/lib/content/site.ts` → `useHomeHero` | Sanity `homeHero` slides; images via `ContentImg`; seed (`settings.homeHero`) fallback |
+| **Partners strip** (Home) | `src/lib/content/partners.ts` | Sanity `partner` logos via `ContentImg`; seed `partners.data` fallback (replaced the hardcoded logo path list) |
+| **Centers** page | `src/lib/content/centers.ts` | address localized in loader; images via `ContentImg` (Sanity ref or local seed) |
 
-The unused `fetchSettings` / `fetchCenters` GROQ helpers in `src/lib/sanity.ts` are now
-consumed.
+`fetchSettings`, `fetchHomeHero`, `fetchPartners`, and `fetchCenters` are now consumed.
+
+**Bundle safeguard:** `site.ts` is reachable from `Footer` (every page), so it gates on
+`VITE_SANITY_PROJECT_ID` and **dynamic-imports** `@/lib/sanity` inside the loaders. This keeps
+the ~30 KB-gzip Sanity client out of the global shared chunk when the project id is unset.
+`partners.ts` and `centers.ts` use the same dynamic-import pattern.
 
 ## Still seed-only — and *why* (these are not just "unwired")
 
@@ -25,8 +31,6 @@ line up**, so wiring them blindly would ship broken or no-op code. Concrete bloc
 
 | Surface | `fetch*` helper | Blocker | Unblock step |
 |---|---|---|---|
-| Home hero | `fetchHomeHero` | Home maps `settings.homeHero` text but pulls hero **images from a hardcoded `HERO_ASSET_KEYS` array**. Sanity stores hero in a separate `homeHero` doc with image refs. | Add `useHomeHero(locale)`, drop `HERO_ASSET_KEYS`, render slides with `ContentImg` |
-| Partners strip (Home) | `fetchPartners` | The Home strip renders a **hardcoded list of logo paths**, not `partners.data`. No consumer reads partner records. | Replace the hardcoded list with `usePartners()` → seed `partners.data` → hardcoded fallback |
 | Experts | `fetchExperts` | The Experts page renders a **gap-state from `pages.experts`**, not from `expert` documents. No card UI exists. | Build an expert-card grid that renders `expert` docs when present, else the gap state |
 | News (list + detail) | `fetchNews`, `fetchNewsArticle` | `lib/news.ts` is built on seed-only fields: `localizedSlugs` (absent from the Sanity `news` schema) and inline-image rewriting via `images[].originalUrl`/`localPath`. Sanity stores images as refs by `role`. | Add `localizedSlugs` to the `news` schema (or resolve slugs differently) and rewrite `rewriteNewsHtml` to map inline images to Sanity CDN URLs |
 | Page bodies (About / Contact rich content) | `fetchPage` | The Sanity `page` schema is intentionally thin (`key`, `heroImage`, `title`, `intro`, `pillars`, `faq`) and cannot reproduce the seed page bodies (mission/vision/history/leadership, contact highlights/subjects). | Enrich the `page` schema to cover the rendered sections, then overlay like `site.ts` |

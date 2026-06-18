@@ -2,9 +2,10 @@ import { useEffect, useState } from 'react'
 import type { SanityImageSource } from '@sanity/image-url/lib/types/types'
 
 import centersSeed from '../../../data/seed/centers.json'
-import { fetchCenters, sanityEnabled } from '@/lib/sanity'
 import { localize } from '@/lib/i18n'
 import type { Locale } from '@/lib/locale'
+
+const sanityEnabled = Boolean(import.meta.env.VITE_SANITY_PROJECT_ID)
 
 export type CenterImage = {
   imageUrl: string
@@ -76,6 +77,7 @@ async function loadCenters(locale: Locale): Promise<Center[]> {
   if (!sanityEnabled) return seedCenters
 
   try {
+    const { fetchCenters } = await import('@/lib/sanity')
     const docs = (await fetchCenters()) as SanityRecord[]
     if (!Array.isArray(docs) || docs.length === 0) return seedCenters
     return docs.map((doc, i) => mapCenter(doc, locale, i))
