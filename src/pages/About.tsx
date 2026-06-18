@@ -5,7 +5,8 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import Img from '@/components/Img'
 import PageHero from '@/components/PageHero'
-import { centers, localize, pages, settings } from '@/lib/data'
+import { centers, localize, pages } from '@/lib/data'
+import { useSiteSettings } from '@/lib/content/site'
 import { isLocale, type Locale } from '@/lib/locale'
 import s from './About.module.css'
 
@@ -22,6 +23,7 @@ export default function About() {
   const location = useLocation()
   const segments = location.pathname.split('/')
   const locale: Locale = isLocale(segments[1]) ? segments[1] : 'en'
+  const settings = useSiteSettings()
 
   const aboutPage = pages.about as {
     title: { en: string; vi?: string; ko?: string }

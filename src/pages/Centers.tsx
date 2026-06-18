@@ -2,9 +2,10 @@ import { useLocation } from 'react-router-dom'
 import { ArrowRight, Buildings, Clock, Phone, Shield, UsersThree } from '@phosphor-icons/react'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
-import Img from '@/components/Img'
+import ContentImg from '@/components/ContentImg'
 import PageHero from '@/components/PageHero'
-import { centers, localize, pages } from '@/lib/data'
+import { localize, pages } from '@/lib/data'
+import { useCenters } from '@/lib/content/centers'
 import { isLocale, type Locale } from '@/lib/locale'
 import s from './Centers.module.css'
 
@@ -36,14 +37,7 @@ export default function Centers() {
     }>
   }
 
-  const centerList = (centers.data ?? []) as Array<{
-    sourceId: number
-    name: string
-    address: string
-    phone: string
-    hours: string
-    images: Array<{ imageUrl: string; altText: string }>
-  }>
+  const centerList = useCenters(locale)
   const heroImage = centerList[0]?.images?.[0]?.imageUrl
     ? getImgKey(centerList[0].images[0].imageUrl)
     : 'centers/center-31-1-71612daa.jpg'
@@ -127,8 +121,9 @@ export default function Centers() {
                   >
                     <div className={s.centerImageWrap}>
                       {image ? (
-                        <Img
-                          src={getImgKey(image.imageUrl)}
+                        <ContentImg
+                          localSrc={image.imageUrl}
+                          sanityImage={image.sanityImage}
                           alt={center.name}
                           className={s.centerImage}
                           loading="lazy"

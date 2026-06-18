@@ -198,7 +198,9 @@ experts → partners → centers → events → news → settings → homeHero �
 - ✅ Events runtime sync implemented for Home event teaser, Events listing, Event Detail, Event Gallery, and Event Program Library via Sanity CDN with seed fallback.
 - ✅ Membership page can read the live `membershipProgram` singleton from Sanity with seed fallback.
 - ✅ KAT 2025 local program library images migrated to Sanity `event-12.libraryItems[]` after WebP optimization: 55.91 MB → 1.29 MB before upload.
-- ⏳ Remaining optional cutover: News, About, Contact, Centers, Experts, Footer/Nav settings if Lucy wants every public surface fully CMS-driven.
+- ✅ Site **settings** wired (`src/lib/content/site.ts`): Footer text, Contact offices/contact, About leadership/description read the Sanity `settings` doc overlaid on seed.
+- ✅ **Centers** page wired (`src/lib/content/centers.ts`): address localized in loader, images render through `ContentImg` (Sanity ref or local seed).
+- ⏳ Remaining cutover (each gated on a schema/page change, not a blind wiring) — see `context/audits/sanity-cutover-status.md`: Home hero (hardcoded hero image keys), Partners (hardcoded Home strip), Experts (gap-state UI vs `expert` docs), News (missing `localizedSlugs` + inline-image rewrite), Page bodies (thin `page` schema).
 - Fetch strategy: React `useEffect` runtime reads from Sanity CDN; local seed remains fallback when Sanity is disabled/unavailable.
 
 ---

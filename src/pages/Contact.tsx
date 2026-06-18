@@ -4,7 +4,8 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import Img from '@/components/Img'
 import PageHero from '@/components/PageHero'
-import { localize, pages, settings } from '@/lib/data'
+import { localize, pages } from '@/lib/data'
+import { useSiteSettings } from '@/lib/content/site'
 import { isLocale, type Locale } from '@/lib/locale'
 import s from './Contact.module.css'
 
@@ -25,6 +26,7 @@ export default function Contact() {
   const location = useLocation()
   const segments = location.pathname.split('/')
   const locale: Locale = isLocale(segments[1]) ? segments[1] : 'en'
+  const settings = useSiteSettings()
 
   const contactPage = pages.contact as {
     title: { en: string; vi?: string; ko?: string }

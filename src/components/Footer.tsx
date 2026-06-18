@@ -1,7 +1,7 @@
 import { NavLink, useLocation } from 'react-router-dom'
 import { ArrowUpRight, EnvelopeSimple, MapPinLine } from '@phosphor-icons/react'
 import { isLocale } from '@/lib/locale'
-import { settings } from '@/lib/data'
+import { useSiteSettings } from '@/lib/content/site'
 import { assetSrc } from '@/lib/assets'
 import s from './Footer.module.css'
 
@@ -9,6 +9,7 @@ export default function Footer() {
   const location = useLocation()
   const segments = location.pathname.split('/')
   const locale = isLocale(segments[1]) ? segments[1] : 'en'
+  const settings = useSiteSettings()
 
   const logoSrc = assetSrc('brand/kbit-logo-44082c6c.png', '400w')
   const copyright = typeof settings.org.copyright === 'object'
