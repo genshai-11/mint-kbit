@@ -3,7 +3,9 @@ import { ArrowRight, Certificate, GlobeHemisphereEast, Stethoscope, UsersThree }
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import PageHero from '@/components/PageHero'
+import ContentImg from '@/components/ContentImg'
 import { localize, pages } from '@/lib/data'
+import { useExperts } from '@/lib/content/experts'
 import { isLocale, type Locale } from '@/lib/locale'
 import s from './Experts.module.css'
 
@@ -13,6 +15,7 @@ export default function Experts() {
   const location = useLocation()
   const segments = location.pathname.split('/')
   const locale: Locale = isLocale(segments[1]) ? segments[1] : 'en'
+  const experts = useExperts(locale)
 
   const page = pages.experts as {
     title: { en: string; vi?: string; ko?: string }
@@ -63,30 +66,76 @@ export default function Experts() {
 
         <section className={`${s.directorySection} section`}>
           <div className="container">
-            <div className={s.directoryGrid}>
-              <article className={`${s.directoryCard} motion-surface reveal-clip`}>
-                <div className="section-divider" />
-                <span className="overline">Expert directory</span>
-                <h2>Verified clinical profiles are being prepared</h2>
-                <p>
-                  KBIT is organizing doctor profiles around credentials, specialty focus, training role,
-                  and international collaboration readiness. Until every profile is verified, the public page
-                  presents the qualification framework rather than placeholder biographies.
-                </p>
-                <Link to={`/${locale}/contact`} className={s.primaryLink}>
-                  Request expert connection <ArrowRight size={16} weight="bold" aria-hidden="true" />
-                </Link>
-              </article>
-
-              <aside className={s.vettingRail}>
-                {vettingSteps.map((step, index) => (
-                  <div className={`${s.vettingStep} reveal`} style={{ animationDelay: `${120 + index * 100}ms` }} key={step}>
-                    <span>{index + 1}</span>
-                    <p>{step}</p>
+            {experts.length > 0 ? (
+              <>
+                <div className={s.sectionHeader}>
+                  <div>
+                    <div className="section-divider" />
+                    <span className="overline">Expert directory</span>
+                    <h2 className="headline-display">Verified clinical profiles</h2>
                   </div>
-                ))}
-              </aside>
-            </div>
+                </div>
+                <div className={s.expertGrid}>
+                  {experts.map((expert) => (
+                    <article key={expert.slug} className={`${s.expertCard} motion-surface reveal`}>
+                      <div className={s.expertAvatarWrap}>
+                        {expert.avatarSanity ? (
+                          <ContentImg
+                            sanityImage={expert.avatarSanity}
+                            alt={expert.name}
+                            className={s.expertAvatar}
+                            sizes="120px"
+                            width={240}
+                            height={240}
+                          />
+                        ) : (
+                          <div className={s.expertAvatarFallback} aria-hidden="true">
+                            {expert.name.charAt(0)}
+                          </div>
+                        )}
+                      </div>
+                      <div className={s.expertBody}>
+                        <h3>{expert.name}</h3>
+                        {expert.title && <p className={s.expertTitle}>{expert.title}</p>}
+                        {expert.region && <p className={s.expertRegion}>{expert.region}</p>}
+                        {expert.specialties.length > 0 && (
+                          <ul className={s.expertTags}>
+                            {expert.specialties.map((sp) => (
+                              <li key={sp} className={s.expertTag}>{sp}</li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </>
+            ) : (
+              <div className={s.directoryGrid}>
+                <article className={`${s.directoryCard} motion-surface reveal-clip`}>
+                  <div className="section-divider" />
+                  <span className="overline">Expert directory</span>
+                  <h2>Verified clinical profiles are being prepared</h2>
+                  <p>
+                    KBIT is organizing doctor profiles around credentials, specialty focus, training role,
+                    and international collaboration readiness. Until every profile is verified, the public page
+                    presents the qualification framework rather than placeholder biographies.
+                  </p>
+                  <Link to={`/${locale}/contact`} className={s.primaryLink}>
+                    Request expert connection <ArrowRight size={16} weight="bold" aria-hidden="true" />
+                  </Link>
+                </article>
+
+                <aside className={s.vettingRail}>
+                  {vettingSteps.map((step, index) => (
+                    <div className={`${s.vettingStep} reveal`} style={{ animationDelay: `${120 + index * 100}ms` }} key={step}>
+                      <span>{index + 1}</span>
+                      <p>{step}</p>
+                    </div>
+                  ))}
+                </aside>
+              </div>
+            )}
           </div>
         </section>
 

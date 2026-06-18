@@ -6,7 +6,7 @@ import Img from '@/components/Img'
 import PageHero from '@/components/PageHero'
 import { pages } from '@/lib/data'
 import { isLocale, type Locale } from '@/lib/locale'
-import { excerptFrom, formatDate, getImgKey, getSortedNews, localize, resolveNewsSlug, newsLead } from '@/lib/news'
+import { excerptFrom, formatDate, getImgKey, useNewsList, localize, resolveNewsSlug, newsLead } from '@/lib/news'
 import s from './News.module.css'
 
 export default function News() {
@@ -15,7 +15,7 @@ export default function News() {
   const locale: Locale = isLocale(segments[1]) ? segments[1] : 'en'
 
   const page = pages.news as { title: { en: string; vi?: string; ko?: string }; intro: { en: string; vi?: string; ko?: string } }
-  const allNews = getSortedNews()
+  const allNews = useNewsList()
   const featured = allNews[0]
   const archive = allNews.slice(1)
   const featuredSlug = featured ? resolveNewsSlug(featured, locale) : ''

@@ -16,8 +16,10 @@ All public surfaces keep a **local seed fallback**: when `VITE_SANITY_PROJECT_ID
 | **Home hero** | `src/lib/content/site.ts` → `useHomeHero` | Sanity `homeHero` slides; images via `ContentImg`; seed (`settings.homeHero`) fallback |
 | **Partners strip** (Home) | `src/lib/content/partners.ts` | Sanity `partner` logos via `ContentImg`; seed `partners.data` fallback (replaced the hardcoded logo path list) |
 | **Centers** page | `src/lib/content/centers.ts` | address localized in loader; images via `ContentImg` (Sanity ref or local seed) |
+| **Experts** page | `src/lib/content/experts.ts` | renders verified expert cards (avatar via `ContentImg`) when `expert` docs exist, else keeps the qualification-framework gap state |
+| **News** (list + detail) | `src/lib/content/` → `useNewsList` / `useNewsArticle` in `src/lib/news.ts` | Sanity images resolved to CDN URL strings so the existing `<Img>` render is unchanged; `localizedSlugs` added to the schema; seed fallback preserved |
 
-`fetchSettings`, `fetchHomeHero`, `fetchPartners`, and `fetchCenters` are now consumed.
+All ten `fetch*` helpers in `src/lib/sanity.ts` except `fetchPage` are now consumed.
 
 **Bundle safeguard:** `site.ts` is reachable from `Footer` (every page), so it gates on
 `VITE_SANITY_PROJECT_ID` and **dynamic-imports** `@/lib/sanity` inside the loaders. This keeps
@@ -31,12 +33,18 @@ line up**, so wiring them blindly would ship broken or no-op code. Concrete bloc
 
 | Surface | `fetch*` helper | Blocker | Unblock step |
 |---|---|---|---|
-| Experts | `fetchExperts` | The Experts page renders a **gap-state from `pages.experts`**, not from `expert` documents. No card UI exists. | Build an expert-card grid that renders `expert` docs when present, else the gap state |
-| News (list + detail) | `fetchNews`, `fetchNewsArticle` | `lib/news.ts` is built on seed-only fields: `localizedSlugs` (absent from the Sanity `news` schema) and inline-image rewriting via `images[].originalUrl`/`localPath`. Sanity stores images as refs by `role`. | Add `localizedSlugs` to the `news` schema (or resolve slugs differently) and rewrite `rewriteNewsHtml` to map inline images to Sanity CDN URLs |
 | Page bodies (About / Contact rich content) | `fetchPage` | The Sanity `page` schema is intentionally thin (`key`, `heroImage`, `title`, `intro`, `pillars`, `faq`) and cannot reproduce the seed page bodies (mission/vision/history/leadership, contact highlights/subjects). | Enrich the `page` schema to cover the rendered sections, then overlay like `site.ts` |
+
+## Notes for the live migration
+
+- **News model:** the Sanity `news` schema is one **tri-lingual** doc per article (i18n
+  title/excerpt/content). The seed stores articles as **separate per-language docs** with
+  `localizedSlugs`. When migrating, consolidate each article into a single Sanity doc and set
+  `localizedSlugs` for per-locale URLs. The frontend already resolves either model.
+- **Experts:** seed `experts.data` is empty (content gap). Cards appear automatically once
+  active `expert` documents exist in Sanity.
 
 ## Recommendation
 
-Treat the five rows above as scoped follow-ups, each gated on a small schema/page change —
-not a single mechanical "wire the fetchers" task. Home hero and Partners are the cheapest
-next wins; News and Page bodies need schema work first.
+`fetchPage` (page bodies) is the only remaining surface, and it needs the `page` schema
+enriched before wiring. Everything else reads Sanity at runtime with a seed fallback.

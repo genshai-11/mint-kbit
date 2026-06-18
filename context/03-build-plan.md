@@ -200,7 +200,9 @@ experts → partners → centers → events → news → settings → homeHero �
 - ✅ KAT 2025 local program library images migrated to Sanity `event-12.libraryItems[]` after WebP optimization: 55.91 MB → 1.29 MB before upload.
 - ✅ Site **settings**, **home hero**, and **partners** wired (`src/lib/content/site.ts`, `partners.ts`): Footer/Contact/About text, hero slides, and the partners strip read Sanity with seed fallback. Sanity client is dynamic-imported so it stays out of the global shared chunk.
 - ✅ **Centers** page wired (`src/lib/content/centers.ts`): address localized in loader, images render through `ContentImg` (Sanity ref or local seed).
-- ⏳ Remaining cutover (each gated on a schema/page change, not a blind wiring) — see `context/audits/sanity-cutover-status.md`: Experts (gap-state UI vs `expert` docs), News (missing `localizedSlugs` + inline-image rewrite), Page bodies (thin `page` schema).
+- ✅ **Experts** wired (`src/lib/content/experts.ts`): renders verified expert cards when `expert` docs exist, else keeps the gap state.
+- ✅ **News** list + detail wired (`useNewsList`/`useNewsArticle` in `src/lib/news.ts`): Sanity images resolved to CDN URLs (render unchanged), `localizedSlugs` added to the `news` schema, seed fallback preserved.
+- ⏳ Only remaining surface: **Page bodies** (About/Contact rich content) — needs the thin `page` schema enriched first. See `context/audits/sanity-cutover-status.md`.
 - Fetch strategy: React `useEffect` runtime reads from Sanity CDN; local seed remains fallback when Sanity is disabled/unavailable.
 
 ---

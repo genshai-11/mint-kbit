@@ -352,3 +352,82 @@
     transform: none;
   }
 }
+
+/* ── Expert directory grid (rendered when Sanity has expert docs) ── */
+.expertGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-5);
+  margin-top: var(--sp-5);
+}
+.expertCard {
+  display: flex;
+  flex-direction: column;
+  background: var(--clr-cream);
+  border: 1px solid var(--clr-ash);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+.expertAvatarWrap {
+  aspect-ratio: 4 / 3;
+  background: var(--clr-ivory);
+  overflow: hidden;
+}
+.expertAvatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.expertAvatarFallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-display);
+  font-size: var(--type-d2);
+  color: var(--clr-gold);
+  background: var(--clr-midnight);
+}
+.expertBody {
+  padding: var(--sp-5);
+}
+.expertBody h3 {
+  font-family: var(--font-display);
+  font-size: var(--type-d3);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--clr-navy);
+  margin-bottom: var(--sp-2);
+}
+.expertTitle {
+  color: var(--clr-stone);
+  line-height: 1.6;
+  margin-bottom: var(--sp-2);
+}
+.expertRegion {
+  font-family: var(--font-mono);
+  font-size: var(--type-sm);
+  color: var(--clr-gold);
+  margin-bottom: var(--sp-3);
+}
+.expertTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  list-style: none;
+}
+.expertTag {
+  padding: 2px 10px;
+  border: 1px solid var(--clr-ash);
+  border-radius: var(--radius-pill);
+  font-size: var(--type-xs);
+  color: var(--clr-charcoal);
+}
+@media (max-width: 900px) {
+  .expertGrid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .expertGrid { grid-template-columns: 1fr; }
+}

@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { assetSrc } from './assets'
 import { news, localize } from './data'
 import type { Locale } from './locale'
@@ -5,6 +6,11 @@ import type { Locale } from './locale'
 export type NewsItem = (typeof news.data)[number]
 
 export { localize }
+
+const sanityEnabled = Boolean(import.meta.env.VITE_SANITY_PROJECT_ID)
+type SanityRecord = Record<string, unknown>
+
+const seedNews = news.data as NewsItem[]
 
 export function getImgKey(path: string): string {
   return path.replace(/^(\.\/)?data\/assets\//, '')
@@ -28,8 +34,8 @@ export function formatDate(iso: string, locale: Locale): string {
   }
 }
 
-export function getSortedNews(): NewsItem[] {
-  return (news.data as NewsItem[]).slice().sort(
+export function sortNews(items: NewsItem[]): NewsItem[] {
+  return items.slice().sort(
     (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   )
 }
@@ -38,8 +44,8 @@ export function resolveNewsSlug(item: NewsItem, locale: Locale): string {
   return item.localizedSlugs?.[locale] ?? item.slug
 }
 
-export function findNewsBySlug(slug: string): NewsItem | undefined {
-  return getSortedNews().find(item =>
+export function findNewsBySlug(items: NewsItem[], slug: string): NewsItem | undefined {
+  return sortNews(items).find(item =>
     item.slug === slug || Object.values(item.localizedSlugs || {}).includes(slug)
   )
 }
@@ -106,4 +112,108 @@ export function localeLabel(locale: Locale): string {
   if (locale === 'ko') return 'Korean'
   if (locale === 'vi') return 'Vietnamese'
   return 'English'
+}
+
+// ─── Sanity-backed loading (seed fallback) ───────────────────────────────────
+// Sanity images are resolved to CDN URL strings and placed in the same string
+// fields the pages already read (coverImage, images[].localPath). The <Img>
+// component treats http(s) sources as external, so the page render is unchanged.
+
+function slugCurrent(value: unknown): string {
+  if (typeof value === 'string') return value
+  if (value && typeof value === 'object') return ((value as SanityRecord).current as string) ?? ''
+  return ''
+}
+
+function mapNewsDoc(doc: SanityRecord, toUrl: (s: any, w?: number) => string): NewsItem {
+  const images = Array.isArray(doc.images)
+    ? (doc.images as SanityRecord[]).map((raw, i) => ({
+        localPath: raw.image ? toUrl(raw.image, 1600) : '',
+        originalUrl: '',
+        role: (raw.role as string) ?? 'gallery',
+        isCover: Boolean(raw.isCover),
+        sortOrder: (raw.sortOrder as number) ?? i,
+      }))
+    : []
+  return {
+    slug: slugCurrent(doc.slug),
+    localizedSlugs: (doc.localizedSlugs as Record<string, string>) ?? undefined,
+    title: doc.title ?? { en: '', vi: '', ko: '' },
+    excerpt: doc.excerpt ?? { en: '', vi: '', ko: '' },
+    content: doc.content ?? { en: '', vi: '', ko: '' },
+    coverImage: doc.coverImage ? toUrl(doc.coverImage, 1200) : '',
+    images,
+    category: (doc.category as string) ?? 'News',
+    tags: Array.isArray(doc.tags) ? doc.tags : [],
+    publishedAt: (doc.publishedAt as string) ?? '',
+    viewCount: (doc.viewCount as number) ?? 0,
+    seoMeta: doc.seoMeta,
+  } as unknown as NewsItem
+}
+
+async function loadNewsList(): Promise<NewsItem[]> {
+  if (!sanityEnabled) return seedNews
+  try {
+    const { fetchNews, sanityImageSrc } = await import('./sanity')
+    const docs = (await fetchNews()) as SanityRecord[]
+    if (!Array.isArray(docs) || docs.length === 0) return seedNews
+    return docs.map((doc) => mapNewsDoc(doc, sanityImageSrc))
+  } catch (error) {
+    console.warn('Sanity news unavailable; using local seed fallback.', error)
+    return seedNews
+  }
+}
+
+async function loadNewsArticle(slug: string): Promise<NewsItem | undefined> {
+  if (!sanityEnabled) return findNewsBySlug(seedNews, slug)
+  try {
+    const { fetchNewsArticle, sanityImageSrc } = await import('./sanity')
+    const doc = (await fetchNewsArticle(slug)) as SanityRecord | null
+    return doc ? mapNewsDoc(doc, sanityImageSrc) : findNewsBySlug(seedNews, slug)
+  } catch (error) {
+    console.warn('Sanity news article unavailable; using local seed fallback.', error)
+    return findNewsBySlug(seedNews, slug)
+  }
+}
+
+export function useNewsList(): NewsItem[] {
+  const [items, setItems] = useState<NewsItem[]>(() => sortNews(seedNews))
+
+  useEffect(() => {
+    let active = true
+    loadNewsList().then((loaded) => { if (active) setItems(sortNews(loaded)) })
+    return () => { active = false }
+  }, [])
+
+  return items
+}
+
+export function useNewsArticle(slug: string | undefined): {
+  item: NewsItem | undefined
+  allNews: NewsItem[]
+  loading: boolean
+} {
+  const seedItem = slug ? findNewsBySlug(seedNews, slug) : undefined
+  const [allNews, setAllNews] = useState<NewsItem[]>(() => sortNews(seedNews))
+  const [item, setItem] = useState<NewsItem | undefined>(seedItem)
+  const [loading, setLoading] = useState(Boolean(sanityEnabled && slug && !seedItem))
+
+  useEffect(() => {
+    let active = true
+    setLoading(Boolean(sanityEnabled && slug && !seedItem))
+    loadNewsList().then((loaded) => { if (active) setAllNews(sortNews(loaded)) })
+    if (slug) {
+      loadNewsArticle(slug).then((found) => {
+        if (!active) return
+        setItem(found)
+        setLoading(false)
+      })
+    } else {
+      setItem(undefined)
+      setLoading(false)
+    }
+    return () => { active = false }
+  }, [slug, seedItem])
+
+  return { item, allNews, loading }
 }

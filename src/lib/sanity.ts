@@ -65,7 +65,7 @@ export async function fetchEvent(slug: string) {
 export async function fetchNews() {
   return client.fetch(`
     *[_type == "news" && status == "published"] | order(publishedAt desc) {
-      _id, slug, title, excerpt, coverImage, category, tags,
+      _id, slug, localizedSlugs, title, excerpt, coverImage, category, tags,
       publishedAt, viewCount, seoMeta
     }
   `)
@@ -73,8 +73,12 @@ export async function fetchNews() {
 
 export async function fetchNewsArticle(slug: string) {
   return client.fetch(`
-    *[_type == "news" && slug.current == $slug][0] {
-      _id, slug, title, excerpt, content, coverImage, images,
+    *[_type == "news" && (
+      slug.current == $slug ||
+      localizedSlugs.en == $slug || localizedSlugs.vi == $slug || localizedSlugs.ko == $slug
+    )][0] {
+      _id, slug, localizedSlugs, title, excerpt, content, coverImage,
+      images[]{ image, role, isCover, sortOrder },
       category, tags, publishedAt, viewCount, seoMeta
     }
   `, { slug })

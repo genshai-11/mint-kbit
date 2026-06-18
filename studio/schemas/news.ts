@@ -35,6 +35,19 @@ export const news = defineType({
       validation: (R) => R.required(),
     }),
     i18nString('title', 'Title'),
+    defineField({
+      name: 'localizedSlugs',
+      title: 'Localized Slugs',
+      type: 'object',
+      group: 'content',
+      description: 'Optional per-locale URL slugs. Each falls back to the main slug when empty.',
+      options: { collapsible: true, collapsed: true },
+      fields: [
+        defineField({ name: 'en', title: 'EN slug', type: 'string' }),
+        defineField({ name: 'vi', title: 'VI slug', type: 'string' }),
+        defineField({ name: 'ko', title: 'KO slug', type: 'string' }),
+      ],
+    }),
     i18nText('excerpt', 'Excerpt'),
     i18nHtml('content', 'Content (HTML)'),
     defineField({

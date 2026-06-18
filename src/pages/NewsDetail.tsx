@@ -5,11 +5,10 @@ import Footer from '@/components/Footer'
 import Img from '@/components/Img'
 import { isLocale, type Locale } from '@/lib/locale'
 import {
-  findNewsBySlug,
   firstParagraphFrom,
   formatDate,
   getImgKey,
-  getSortedNews,
+  useNewsArticle,
   localize,
   newsLead,
   readingTimeFrom,
@@ -24,8 +23,21 @@ export default function NewsDetail() {
   const segments = location.pathname.split('/')
   const locale: Locale = isLocale(segments[1]) ? segments[1] : 'en'
 
-  const allNews = getSortedNews()
-  const item = slug ? findNewsBySlug(slug) : undefined
+  const { item, allNews, loading } = useNewsArticle(slug)
+
+  if (loading) {
+    return (
+      <>
+        <Nav />
+        <main className={s.notFound}>
+          <div className="container">
+            <span className="overline">Loading story…</span>
+          </div>
+        </main>
+        <Footer />
+      </>
+    )
+  }
 
   if (!item) {
     return (
