@@ -125,14 +125,14 @@ Done so far: **News, News Detail, About, Contact, Membership, Centers, Experts; 
 10. **Centers** — Center cards ✓
 
 ### Phase 5 — Performance pass
-After all pages render (including Event Detail):
+**Status: mostly complete — see `context/audits/phase-5-performance.md`. CWV live run pending on preview.**
 
-- Route-level lazy loading (`React.lazy` + `Suspense`)
-- JSON split by entity (no single giant import)
-- Bundle report: target < 200 KB initial JS (gzipped)
-- Image audit: confirm all images in production serve WebP via `srcset`
-- Font audit: confirm `font-display: swap` active, no render-blocking
-- Core Web Vitals baseline recorded (LCP, CLS, FID targets)
+- [x] Route-level lazy loading (`React.lazy` + `Suspense`) — `src/App.tsx`
+- [x] JSON split by entity (no single giant import) — `src/lib/data.ts` is a re-export barrel; seed files live in `src/lib/seed/*`; shared Footer chunk dropped from 18.6 KB → 6.6 KB gzip
+- [x] Bundle report: ~112 KB initial JS gzipped for Home (budget < 200 KB)
+- [x] Image audit: WebP via `srcset` in `Img`/`ContentImg`
+- [x] Font audit: `font-display: swap` active, fonts preconnected
+- [ ] Core Web Vitals baseline (LCP/CLS/INP) — run Lighthouse against preview/canary before production
 
 ### Phase 6 — Sanity CMS + Content Management
 **Status: in progress — event runtime sync implemented 2026-06-17; Studio/schema/client/migration tooling verified; membership schema/migration added and live `membershipProgram` migrated through Sanity CLI account; remaining work is preview QA, release controls, and optional full content-page cutover beyond Events/Membership.**

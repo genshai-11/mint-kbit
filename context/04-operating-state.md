@@ -51,7 +51,7 @@ Checked evidence is in:
 | `t_4a_qa` | done | [Phase 4a] Visual QA + design iteration -> update 07-ui-system.md |
 | `t_4a_gate` | done | [Gate] Lucy confirms Phase 4a design direction |
 | `t_4b_pages` | done | [Phase 4b] Build remaining pages after gate |
-| `t_0bed4a30` | todo | Performance pass: lazy routes, split JSON, bundle report |
+| `t_0bed4a30` | done | Performance pass: lazy routes, split JSON, bundle report (CWV live run pending — see context/audits/phase-5-performance.md) |
 | `t_314397dd` | in_progress | Admin/content operations path — Sanity event runtime sync, optimized migration, membership schema/migration + live membershipProgram migration completed 2026-06-17 |
 | `t_eb42c8dd` | todo | Add verification and release controls |
 

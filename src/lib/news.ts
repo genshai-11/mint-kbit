@@ -1,16 +1,10 @@
 import { assetSrc } from './assets'
-import { news } from './data'
+import { news, localize } from './data'
 import type { Locale } from './locale'
 
 export type NewsItem = (typeof news.data)[number]
 
-export function localize(val: any, locale: Locale): string {
-  if (!val) return ''
-  if (typeof val === 'string') return val
-  const raw = val[locale] ?? val.en ?? ''
-  if (typeof raw === 'string' && raw.startsWith('[')) return val.en ?? ''
-  return raw
-}
+export { localize }
 
 export function getImgKey(path: string): string {
   return path.replace(/^(\.\/)?data\/assets\//, '')

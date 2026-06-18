@@ -4,17 +4,9 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import Img from '@/components/Img'
 import PageHero from '@/components/PageHero'
-import { centers, pages } from '@/lib/data'
+import { centers, localize, pages } from '@/lib/data'
 import { isLocale, type Locale } from '@/lib/locale'
 import s from './Centers.module.css'
-
-function localize(val: any, locale: Locale): string {
-  if (!val) return ''
-  if (typeof val === 'string') return val
-  const raw = val[locale] ?? val.en ?? ''
-  if (typeof raw === 'string' && raw.startsWith('[')) return val.en ?? ''
-  return raw
-}
 
 function getImgKey(path: string): string {
   return path.replace(/^(\.\/)?data\/assets\//, '')

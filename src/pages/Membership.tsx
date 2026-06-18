@@ -3,18 +3,10 @@ import { ArrowRight, ClipboardText, DownloadSimple, Heart, SealCheck, TrendUp, U
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import PageHero from '@/components/PageHero'
-import { pages } from '@/lib/data'
+import { localize, pages } from '@/lib/data'
 import { useMembershipProgram } from '@/lib/content/membership'
 import { isLocale, type Locale } from '@/lib/locale'
 import s from './Membership.module.css'
-
-function localize(val: any, locale: Locale): string {
-  if (!val) return ''
-  if (typeof val === 'string') return val
-  const raw = val[locale] ?? val.en ?? ''
-  if (typeof raw === 'string' && raw.startsWith('[')) return val.en ?? ''
-  return raw
-}
 
 const TYPE_ICONS = [Heart, UsersThree, TrendUp]
 
