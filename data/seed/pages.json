@@ -22,8 +22,8 @@
         },
         "desc": {
           "en": "Access discounts, training, resources, and networking opportunities.",
-          "vi": "[NEEDS_TRANSLATION:vi]",
-          "ko": "[NEEDS_TRANSLATION:ko]"
+          "vi": "Tiếp cận ưu đãi, đào tạo, tài nguyên và cơ hội kết nối.",
+          "ko": "할인, 교육, 자료 및 네트워킹 기회를 누리세요."
         }
       },
       {
@@ -35,8 +35,8 @@
         },
         "desc": {
           "en": "Connect with leading experts, clinics, and suppliers in the industry.",
-          "vi": "[NEEDS_TRANSLATION:vi]",
-          "ko": "[NEEDS_TRANSLATION:ko]"
+          "vi": "Kết nối với các chuyên gia, phòng khám và nhà cung cấp hàng đầu trong ngành.",
+          "ko": "업계 최고의 전문가, 클리닉, 공급업체와 연결하세요."
         }
       },
       {
@@ -48,8 +48,8 @@
         },
         "desc": {
           "en": "Contribute to and benefit from the advancement of aesthetic medicine in Vietnam.",
-          "vi": "[NEEDS_TRANSLATION:vi]",
-          "ko": "[NEEDS_TRANSLATION:ko]"
+          "vi": "Đóng góp và hưởng lợi từ sự phát triển của y học thẩm mỹ tại Việt Nam.",
+          "ko": "베트남 미용의학의 발전에 기여하고 그 혜택을 누리세요."
         }
       }
     ],
@@ -68,18 +68,18 @@
     },
     "cta": {
       "en": "Ready to Elevate Your Expertise?",
-      "vi": "[NEEDS_TRANSLATION:vi]",
-      "ko": "[NEEDS_TRANSLATION:ko]"
+      "vi": "Sẵn sàng nâng tầm chuyên môn của bạn?",
+      "ko": "전문성을 한 단계 높일 준비가 되셨나요?"
     },
     "ctaBody": {
       "en": "Register for our upcoming events and workshops to gain invaluable insights, hands-on experience, and network with industry leaders. Secure your spot today!",
-      "vi": "[NEEDS_TRANSLATION:vi]",
-      "ko": "[NEEDS_TRANSLATION:ko]"
+      "vi": "Đăng ký các sự kiện và hội thảo sắp tới để thu nhận kiến thức giá trị, trải nghiệm thực hành và kết nối với những người dẫn đầu ngành. Giữ chỗ ngay hôm nay!",
+      "ko": "다가오는 행사와 워크숍에 등록하여 값진 통찰과 실습 경험을 얻고 업계 리더들과 교류하세요. 지금 자리를 확보하세요!"
     },
     "ctaNote": {
       "en": "Seats are limited. Early registration is recommended.",
-      "vi": "[NEEDS_TRANSLATION:vi]",
-      "ko": "[NEEDS_TRANSLATION:ko]"
+      "vi": "Số lượng chỗ có hạn. Khuyến khích đăng ký sớm.",
+      "ko": "좌석이 한정되어 있습니다. 조기 등록을 권장합니다."
     }
   },
   "news": {
@@ -112,12 +112,12 @@
         "label": {
           "en": "Experts",
           "vi": "Chuyên gia",
-          "ko": "[NEEDS_TRANSLATION:ko]"
+          "ko": "전문가"
         },
         "desc": {
           "en": "Experienced team of specialists and doctors",
-          "vi": "[NEEDS_TRANSLATION:vi]",
-          "ko": "[NEEDS_TRANSLATION:ko]"
+          "vi": "Đội ngũ bác sĩ và chuyên gia giàu kinh nghiệm",
+          "ko": "경험이 풍부한 전문의 및 의료진"
         }
       },
       {
@@ -125,12 +125,12 @@
         "label": {
           "en": "International Certification",
           "vi": "Chứng nhận quốc tế",
-          "ko": "[NEEDS_TRANSLATION:ko]"
+          "ko": "국제 인증"
         },
         "desc": {
           "en": "Meeting standards and recognized globally",
-          "vi": "[NEEDS_TRANSLATION:vi]",
-          "ko": "[NEEDS_TRANSLATION:ko]"
+          "vi": "Đạt chuẩn và được công nhận trên toàn cầu",
+          "ko": "국제 표준을 충족하고 전 세계적으로 인정받음"
         }
       },
       {
@@ -138,12 +138,12 @@
         "label": {
           "en": "Global Collaboration",
           "vi": "Hợp tác toàn cầu",
-          "ko": "[NEEDS_TRANSLATION:ko]"
+          "ko": "글로벌 협력"
         },
         "desc": {
           "en": "Extensive partner network across Asia",
-          "vi": "[NEEDS_TRANSLATION:vi]",
-          "ko": "[NEEDS_TRANSLATION:ko]"
+          "vi": "Mạng lưới đối tác rộng khắp châu Á",
+          "ko": "아시아 전역에 걸친 광범위한 파트너 네트워크"
         }
       }
     ],
@@ -156,8 +156,8 @@
         },
         "desc": {
           "en": "Participate in teaching intensive training programs and international workshops.",
-          "vi": "[NEEDS_TRANSLATION:vi]",
-          "ko": "[NEEDS_TRANSLATION:ko]"
+          "vi": "Tham gia giảng dạy các chương trình đào tạo chuyên sâu và hội thảo quốc tế.",
+          "ko": "집중 교육 프로그램과 국제 워크숍의 강의에 참여하세요."
         }
       },
       {
@@ -168,8 +168,8 @@
         },
         "desc": {
           "en": "Connect with leading experts and expand international collaboration opportunities.",
-          "vi": "[NEEDS_TRANSLATION:vi]",
-          "ko": "[NEEDS_TRANSLATION:ko]"
+          "vi": "Kết nối với các chuyên gia hàng đầu và mở rộng cơ hội hợp tác quốc tế.",
+          "ko": "선도적인 전문가들과 연결하고 국제 협력 기회를 확대하세요."
         }
       },
       {
@@ -180,8 +180,8 @@
         },
         "desc": {
           "en": "Receive certification from KBIT and enhance personal brand value.",
-          "vi": "[NEEDS_TRANSLATION:vi]",
-          "ko": "[NEEDS_TRANSLATION:ko]"
+          "vi": "Nhận chứng nhận từ KBIT và nâng cao giá trị thương hiệu cá nhân.",
+          "ko": "KBIT의 인증을 받고 개인 브랜드 가치를 높이세요."
         }
       },
       {
@@ -192,8 +192,8 @@
         },
         "desc": {
           "en": "Access new technologies and participate in pioneering research projects.",
-          "vi": "[NEEDS_TRANSLATION:vi]",
-          "ko": "[NEEDS_TRANSLATION:ko]"
+          "vi": "Tiếp cận công nghệ mới và tham gia các dự án nghiên cứu tiên phong.",
+          "ko": "새로운 기술을 접하고 선도적인 연구 프로젝트에 참여하세요."
         }
       }
     ]
@@ -220,8 +220,8 @@
         },
         "desc": {
           "en": "Get free advice from our experts",
-          "vi": "[NEEDS_TRANSLATION:vi]",
-          "ko": "[NEEDS_TRANSLATION:ko]"
+          "vi": "Nhận tư vấn miễn phí từ các chuyên gia của chúng tôi",
+          "ko": "전문가에게 무료 상담을 받으세요"
         }
       },
       {
@@ -234,7 +234,7 @@
         "desc": {
           "en": "Monday - Sunday: 08:00 - 20:00",
           "vi": "Thứ 2 - Chủ nhật: 08:00 - 20:00",
-          "ko": "[NEEDS_TRANSLATION:ko]"
+          "ko": "월요일 - 일요일: 08:00 - 20:00"
         }
       },
       {
@@ -246,8 +246,8 @@
         },
         "desc": {
           "en": "Present in major cities nationwide",
-          "vi": "[NEEDS_TRANSLATION:vi]",
-          "ko": "[NEEDS_TRANSLATION:ko]"
+          "vi": "Hiện diện tại các thành phố lớn trên cả nước",
+          "ko": "전국 주요 도시에 위치"
         }
       }
     ],
@@ -275,7 +275,7 @@
         "role": {
           "en": "Vice President",
           "vi": "Phó Chủ tịch",
-          "ko": "[NEEDS_TRANSLATION:ko]"
+          "ko": "부회장"
         },
         "avatar": "[GAP]"
       }
@@ -305,8 +305,8 @@
         },
         "desc": {
           "en": "Equipment and technology meeting international standards",
-          "vi": "[NEEDS_TRANSLATION:vi]",
-          "ko": "[NEEDS_TRANSLATION:ko]"
+          "vi": "Trang thiết bị và công nghệ đạt chuẩn quốc tế",
+          "ko": "국제 표준에 부합하는 장비 및 기술"
         }
       },
       {
@@ -318,8 +318,8 @@
         },
         "desc": {
           "en": "Doctors and specialists thoroughly trained in Korea",
-          "vi": "[NEEDS_TRANSLATION:vi]",
-          "ko": "[NEEDS_TRANSLATION:ko]"
+          "vi": "Bác sĩ và chuyên gia được đào tạo bài bản tại Hàn Quốc",
+          "ko": "한국에서 철저히 교육받은 의료진 및 전문가"
         }
       },
       {
@@ -331,8 +331,8 @@
         },
         "desc": {
           "en": "Strict adherence to international medical standards",
-          "vi": "[NEEDS_TRANSLATION:vi]",
-          "ko": "[NEEDS_TRANSLATION:ko]"
+          "vi": "Tuân thủ nghiêm ngặt các tiêu chuẩn y tế quốc tế",
+          "ko": "국제 의료 표준의 엄격한 준수"
         }
       }
     ]

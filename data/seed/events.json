@@ -25,7 +25,7 @@
       "location": {
         "en": "REX Hotel Saigon + Le Van Thinh Hospital",
         "vi": "Khách sạn REX Saigon + Bệnh viện Lê Văn Thịnh",
-        "ko": "REX Hotel Saigon + Le Van Thinh Hospital"
+        "ko": "렉스 호텔 사이공 + 레반틴 병원"
       },
       "capacity": 0,
       "seatsLeft": 0,
@@ -43,8 +43,8 @@
           "thumbnailUrl": "data/assets/events/event-12-image-fc6d2bc8.png",
           "caption": {
             "en": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025 ",
-            "vi": "[NEEDS_TRANSLATION:vi]",
-            "ko": "[NEEDS_TRANSLATION:ko]"
+            "vi": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025 ",
+            "ko": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025 "
           },
           "altText": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025 ",
           "sortOrder": 0,
@@ -55,8 +55,8 @@
           "thumbnailUrl": "data/assets/events/event-12-bannerimageurl-ade6047b.png",
           "caption": {
             "en": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025 ",
-            "vi": "[NEEDS_TRANSLATION:vi]",
-            "ko": "[NEEDS_TRANSLATION:ko]"
+            "vi": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025 ",
+            "ko": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025 "
           },
           "altText": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025 ",
           "sortOrder": 1,
@@ -67,8 +67,8 @@
           "thumbnailUrl": "data/assets/events/event-12-imageurl2-3b97537d.png",
           "caption": {
             "en": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025 ",
-            "vi": "[NEEDS_TRANSLATION:vi]",
-            "ko": "[NEEDS_TRANSLATION:ko]"
+            "vi": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025 ",
+            "ko": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025 "
           },
           "altText": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025 ",
           "sortOrder": 2,
@@ -79,8 +79,8 @@
           "thumbnailUrl": "data/assets/events/event-12-detail-1-c04da753.jpg",
           "caption": {
             "en": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025  detail 1",
-            "vi": "[NEEDS_TRANSLATION:vi]",
-            "ko": "[NEEDS_TRANSLATION:ko]"
+            "vi": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025  detail 1",
+            "ko": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025  detail 1"
           },
           "altText": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025  detail 1",
           "sortOrder": 3,
@@ -91,8 +91,8 @@
           "thumbnailUrl": "data/assets/events/event-12-detail-2-7bc95f01.png",
           "caption": {
             "en": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025  detail 2",
-            "vi": "[NEEDS_TRANSLATION:vi]",
-            "ko": "[NEEDS_TRANSLATION:ko]"
+            "vi": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025  detail 2",
+            "ko": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025  detail 2"
           },
           "altText": "KAT 2025 - 1st Korea-Vietnam K-Beauty Advanced SKILL TRAINING 2025  detail 2",
           "sortOrder": 4,
@@ -139,8 +139,8 @@
           "thumbnailUrl": "data/assets/events/event-11-image-8918d1da.png",
           "caption": {
             "en": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025",
-            "vi": "[NEEDS_TRANSLATION:vi]",
-            "ko": "[NEEDS_TRANSLATION:ko]"
+            "vi": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025",
+            "ko": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025"
           },
           "altText": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025",
           "sortOrder": 0,
@@ -151,8 +151,8 @@
           "thumbnailUrl": "data/assets/events/event-11-bannerimageurl-7aa69047.png",
           "caption": {
             "en": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025",
-            "vi": "[NEEDS_TRANSLATION:vi]",
-            "ko": "[NEEDS_TRANSLATION:ko]"
+            "vi": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025",
+            "ko": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025"
           },
           "altText": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025",
           "sortOrder": 1,
@@ -163,8 +163,8 @@
           "thumbnailUrl": "data/assets/events/event-11-imageurl2-7d79ebd4.png",
           "caption": {
             "en": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025",
-            "vi": "[NEEDS_TRANSLATION:vi]",
-            "ko": "[NEEDS_TRANSLATION:ko]"
+            "vi": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025",
+            "ko": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025"
           },
           "altText": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025",
           "sortOrder": 2,
@@ -175,8 +175,8 @@
           "thumbnailUrl": "data/assets/events/event-11-detail-1-a1fe3f89.png",
           "caption": {
             "en": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025 detail 1",
-            "vi": "[NEEDS_TRANSLATION:vi]",
-            "ko": "[NEEDS_TRANSLATION:ko]"
+            "vi": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025 detail 1",
+            "ko": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025 detail 1"
           },
           "altText": "KBIT EXPERT MEETING #1 - Seminar & Specialized Demo 2025 detail 1",
           "sortOrder": 3,
@@ -223,8 +223,8 @@
           "thumbnailUrl": "data/assets/events/event-9-image-e0355d48.png",
           "caption": {
             "en": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation",
-            "vi": "[NEEDS_TRANSLATION:vi]",
-            "ko": "[NEEDS_TRANSLATION:ko]"
+            "vi": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation",
+            "ko": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation"
           },
           "altText": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation",
           "sortOrder": 0,
@@ -235,8 +235,8 @@
           "thumbnailUrl": "data/assets/events/event-9-bannerimageurl-fa1c9d57.png",
           "caption": {
             "en": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation",
-            "vi": "[NEEDS_TRANSLATION:vi]",
-            "ko": "[NEEDS_TRANSLATION:ko]"
+            "vi": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation",
+            "ko": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation"
           },
           "altText": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation",
           "sortOrder": 1,
@@ -247,8 +247,8 @@
           "thumbnailUrl": "data/assets/events/event-9-imageurl2-9a3c6057.png",
           "caption": {
             "en": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation",
-            "vi": "[NEEDS_TRANSLATION:vi]",
-            "ko": "[NEEDS_TRANSLATION:ko]"
+            "vi": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation",
+            "ko": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation"
           },
           "altText": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation",
           "sortOrder": 2,
@@ -259,8 +259,8 @@
           "thumbnailUrl": "data/assets/events/event-9-detail-1-b79de2e6.png",
           "caption": {
             "en": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation detail 1",
-            "vi": "[NEEDS_TRANSLATION:vi]",
-            "ko": "[NEEDS_TRANSLATION:ko]"
+            "vi": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation detail 1",
+            "ko": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation detail 1"
           },
           "altText": "KLA VIETNAM 2025 - Science-Driven Protocols for Non-invasive Rejuvenation detail 1",
           "sortOrder": 3,
@@ -307,8 +307,8 @@
           "thumbnailUrl": "data/assets/events/event-8-image-177bbc6c.png",
           "caption": {
             "en": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging",
-            "vi": "[NEEDS_TRANSLATION:vi]",
-            "ko": "[NEEDS_TRANSLATION:ko]"
+            "vi": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging",
+            "ko": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging"
           },
           "altText": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging",
           "sortOrder": 0,
@@ -319,8 +319,8 @@
           "thumbnailUrl": "data/assets/events/event-8-bannerimageurl-a63759c0.png",
           "caption": {
             "en": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging",
-            "vi": "[NEEDS_TRANSLATION:vi]",
-            "ko": "[NEEDS_TRANSLATION:ko]"
+            "vi": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging",
+            "ko": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging"
           },
           "altText": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging",
           "sortOrder": 1,
@@ -331,8 +331,8 @@
           "thumbnailUrl": "data/assets/events/event-8-imageurl2-cc2f0ea0.png",
           "caption": {
             "en": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging",
-            "vi": "[NEEDS_TRANSLATION:vi]",
-            "ko": "[NEEDS_TRANSLATION:ko]"
+            "vi": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging",
+            "ko": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging"
           },
           "altText": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging",
           "sortOrder": 2,
@@ -343,8 +343,8 @@
           "thumbnailUrl": "data/assets/events/event-8-detail-1-1ea4d91e.png",
           "caption": {
             "en": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging detail 1",
-            "vi": "[NEEDS_TRANSLATION:vi]",
-            "ko": "[NEEDS_TRANSLATION:ko]"
+            "vi": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging detail 1",
+            "ko": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging detail 1"
           },
           "altText": "KLA KOREA 2025 - Knowledge in Lifting and Anti-Aging detail 1",
           "sortOrder": 3,
