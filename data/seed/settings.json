@@ -8,13 +8,13 @@
   "siteMeta": {
     "title": {
       "en": "KBIT - Korean Beauty International Technology Association",
-      "vi": "[NEEDS_TRANSLATION:vi]",
-      "ko": "[NEEDS_TRANSLATION:ko]"
+      "vi": "KBIT - Hiệp hội Công nghệ Thẩm mỹ Quốc tế Hàn Quốc",
+      "ko": "KBIT - 한국뷰티국제기술협회"
     },
     "description": {
       "en": "KBIT keeps updating the latest rejuvenation technology of Korea to our Members all over the world. We have 16 education centers in Korea and overseas with 20 Key Doctors who are experts in the field of Aesthetics and Plastic Surgery.",
-      "vi": "[NEEDS_TRANSLATION:vi]",
-      "ko": "[NEEDS_TRANSLATION:ko]"
+      "vi": "KBIT liên tục cập nhật công nghệ trẻ hóa mới nhất của Hàn Quốc đến các hội viên trên toàn thế giới. Chúng tôi có 16 trung tâm đào tạo tại Hàn Quốc và nước ngoài cùng 20 bác sĩ chủ chốt là chuyên gia trong lĩnh vực Thẩm mỹ và Phẫu thuật Tạo hình.",
+      "ko": "KBIT는 한국의 최신 재생·안티에이징 기술을 전 세계 회원들에게 지속적으로 전달합니다. 한국과 해외에 16개의 교육 센터를 운영하고 있으며, 미용 및 성형외과 분야의 전문가인 20명의 핵심 의료진이 함께합니다."
     },
     "ogImage": "[GAP] cần OG image 1200x630"
   },
@@ -34,8 +34,8 @@
     "businessReg": "880-81-03251",
     "copyright": {
       "en": "© 2026 Korean Beauty International Technology (KBIT). All rights reserved.",
-      "vi": "[NEEDS_TRANSLATION:vi]",
-      "ko": "[NEEDS_TRANSLATION:ko]"
+      "vi": "© 2026 Korean Beauty International Technology (KBIT). Bảo lưu mọi quyền.",
+      "ko": "© 2026 Korean Beauty International Technology (KBIT). 모든 권리 보유."
     }
   },
   "contact": {
@@ -53,12 +53,12 @@
       "address": {
         "en": "12, Teheran-ro 70-gil, Gangnam-gu, Seoul, Republic of Korea",
         "vi": "12, Teheran-ro 70-gil, Gangnam-gu, Seoul, Hàn Quốc",
-        "ko": "[NEEDS_TRANSLATION:ko]"
+        "ko": "대한민국 서울특별시 강남구 테헤란로70길 12"
       },
       "hours": {
         "en": "Mon-Fri 9:00 AM - 6:00 PM (KST)",
         "vi": "Thứ 2-6: 9:00 - 18:00 (KST)",
-        "ko": "[NEEDS_TRANSLATION:ko]"
+        "ko": "월–금 오전 9:00 – 오후 6:00 (KST)"
       },
       "phone": "010-4159-8777",
       "email": "mint@kbitassociation.com",
@@ -75,12 +75,12 @@
       "address": {
         "en": "17 Tran Quy Kien, Binh Trung Ward, Ho Chi Minh City",
         "vi": "17 Trần Quý Kiên, phường Bình Trưng, TP. Hồ Chí Minh",
-        "ko": "[NEEDS_TRANSLATION:ko]"
+        "ko": "베트남 호치민시 빈쯩동 쩐꾸이끼엔 17"
       },
       "hours": {
         "en": "Mon-Fri: 8:00 AM - 5:00 PM",
         "vi": "Thứ 2-6: 8:00 - 17:00",
-        "ko": "[NEEDS_TRANSLATION:ko]"
+        "ko": "월–금 오전 8:00 – 오후 5:00"
       },
       "phone": "0914539088",
       "email": "mint@kbitassociation.com",
@@ -89,7 +89,7 @@
       "contactPerson": {
         "en": "Ms. Mint - Foreign Affair Manager",
         "vi": "Ms. Mint - Quản lý Đối ngoại",
-        "ko": "[NEEDS_TRANSLATION:ko]"
+        "ko": "민(Mint) – 대외협력 매니저"
       }
     }
   ],
@@ -98,39 +98,39 @@
       "image": "data/assets/home/banner1-8900b3d5.jpg",
       "heading": {
         "en": "With the best Korea doctors and experts",
-        "vi": "[NEEDS_TRANSLATION:vi]",
-        "ko": "[NEEDS_TRANSLATION:ko]"
+        "vi": "Cùng các bác sĩ và chuyên gia hàng đầu Hàn Quốc",
+        "ko": "한국 최고의 의료진과 전문가와 함께"
       },
       "sub": {
         "en": "Welcome to KBIT",
         "vi": "Chào mừng đến với KBIT",
-        "ko": "[NEEDS_TRANSLATION:ko]"
+        "ko": "KBIT에 오신 것을 환영합니다"
       }
     },
     {
       "image": "data/assets/home/banner4-b978e3ea.jpg",
       "heading": {
         "en": "KBIT, Korea Beauty International Technology Association",
-        "vi": "[NEEDS_TRANSLATION:vi]",
-        "ko": "[NEEDS_TRANSLATION:ko]"
+        "vi": "KBIT, Hiệp hội Công nghệ Thẩm mỹ Quốc tế Hàn Quốc",
+        "ko": "KBIT, 한국뷰티국제기술협회"
       },
       "sub": {
         "en": "Beauty Meets Innovation",
-        "vi": "[NEEDS_TRANSLATION:vi]",
-        "ko": "[NEEDS_TRANSLATION:ko]"
+        "vi": "Vẻ đẹp gặp gỡ đổi mới",
+        "ko": "뷰티, 혁신을 만나다"
       }
     },
     {
       "image": "data/assets/home/banner3-4962fcb5.jpg",
       "heading": {
         "en": "The latest rejuvenation technology of Korea",
-        "vi": "[NEEDS_TRANSLATION:vi]",
-        "ko": "[NEEDS_TRANSLATION:ko]"
+        "vi": "Công nghệ trẻ hóa mới nhất của Hàn Quốc",
+        "ko": "한국의 최신 재생·안티에이징 기술"
       },
       "sub": {
         "en": "Beauty Meets Innovation",
-        "vi": "[NEEDS_TRANSLATION:vi]",
-        "ko": "[NEEDS_TRANSLATION:ko]"
+        "vi": "Vẻ đẹp gặp gỡ đổi mới",
+        "ko": "뷰티, 혁신을 만나다"
       }
     }
   ]

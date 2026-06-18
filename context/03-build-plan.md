@@ -211,13 +211,25 @@ experts → partners → centers → events → news → settings → homeHero �
 
 #### Tình trạng hiện tại
 
+Updated 2026-06-18. UI-priority strings filled via `scripts/apply-ui-translations.mjs`
+(settings + page titles/intros/labels). Remaining gaps are long-form body and genuine
+content gaps. Total missing dropped 216 → 147.
+
 | Content type | EN | VI | KO |
 |---|---|---|---|
-| Events (title, desc, location) | ✅ đầy đủ | ⚠️ thiếu một số | ❌ phần lớn trống |
-| News (title, excerpt, content) | ✅ đầy đủ | ⚠️ thiếu | ❌ trống |
-| Settings (offices, org info) | ✅ | ⚠️ | ❌ |
-| Pages (membership, about) | ✅ | ⚠️ | ❌ |
-| homeHero (heading, sub) | ✅ | ⚠️ | ❌ |
+| homeHero (heading, sub) | ✅ | ✅ done | ✅ done |
+| Settings (offices, meta, org) | ✅ | ✅ done | ✅ done |
+| Pages — titles / intros / labels | ✅ | ✅ done | ✅ done |
+| Pages — body (mission/vision/sections) | ✅ | ⚠️ pending | ⚠️ pending |
+| Events (title, location) | ✅ | ✅ already | ✅ already |
+| Events (image captions, desc) | ✅ | ⚠️ pending | ⚠️ pending |
+| News (title) | ✅ per-locale docs | ✅ per-locale docs | ✅ per-locale docs |
+| News (excerpt) | ❌ empty in source — **content gap, not translation** | ❌ | ❌ |
+| Partners (description) | ❌ `[GAP]` in source — **content gap** | ❌ | ❌ |
+
+> Note: News is stored as **separate per-language documents** (not one i18n doc), so titles
+> are already localized; excerpts are empty even in English (write content first). Partner
+> descriptions are `[GAP]` in all locales — a content task, not a translation task.
 
 #### Workflow dịch thuật
 
