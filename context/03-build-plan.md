@@ -213,25 +213,20 @@ experts → partners → centers → events → news → settings → homeHero �
 
 #### Tình trạng hiện tại
 
-Updated 2026-06-18. UI-priority strings filled via `scripts/apply-ui-translations.mjs`
-(settings + page titles/intros/labels). Remaining gaps are long-form body and genuine
-content gaps. Total missing dropped 216 → 147.
+Updated 2026-06-19. Branch `claude/funny-davinci-4182tk` was fast-forwarded into `main`, then remaining seed fallback gaps were completed in `bb726c2`.
+
+`node scripts/export-missing-translations.mjs` now reports **0 missing translation fields** across Events, News, Settings, Pages, Membership, Partners, Experts, and Centers.
 
 | Content type | EN | VI | KO |
 |---|---|---|---|
 | homeHero (heading, sub) | ✅ | ✅ done | ✅ done |
 | Settings (offices, meta, org) | ✅ | ✅ done | ✅ done |
-| Pages — titles / intros / labels | ✅ | ✅ done | ✅ done |
-| Pages — body (mission/vision/sections) | ✅ | ⚠️ pending | ⚠️ pending |
-| Events (title, location) | ✅ | ✅ already | ✅ already |
-| Events (image captions, desc) | ✅ | ⚠️ pending | ⚠️ pending |
-| News (title) | ✅ per-locale docs | ✅ per-locale docs | ✅ per-locale docs |
-| News (excerpt) | ❌ empty in source — **content gap, not translation** | ❌ | ❌ |
-| Partners (description) | ❌ `[GAP]` in source — **content gap** | ❌ | ❌ |
+| Pages — titles / intros / labels/body fallback | ✅ | ✅ done | ✅ done |
+| Events (title, location, captions, desc fallback) | ✅ | ✅ done | ✅ done |
+| News (title, slug, excerpt, body, SEO fallback) | ✅ | ✅ done | ✅ done |
+| Partners (neutral partner-network descriptions) | ✅ | ✅ done | ✅ done |
 
-> Note: News is stored as **separate per-language documents** (not one i18n doc), so titles
-> are already localized; excerpts are empty even in English (write content first). Partner
-> descriptions are `[GAP]` in all locales — a content task, not a translation task.
+> Note: seed fallback is now translation-complete and placeholder-free. Live Sanity content still remains the primary runtime source for Events/Membership/News/Experts/etc.; editors can refine copy in Studio without changing this fallback baseline.
 
 #### Workflow dịch thuật
 
