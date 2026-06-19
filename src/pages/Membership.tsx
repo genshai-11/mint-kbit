@@ -200,11 +200,11 @@ export default function Membership() {
                 ))}
               </div>
               <div className={s.ctaActions}>
-                <Link to={`/${locale}/contact`} className={s.ctaPrimary}>
-                  {tr('Contact KBIT', locale)} <ArrowRight size={16} weight="bold" aria-hidden="true" />
+                <Link to={`/${locale}/membership/apply`} className={s.ctaPrimary}>
+                  {tr('Apply online', locale)} <ArrowRight size={16} weight="bold" aria-hidden="true" />
                 </Link>
-                <Link to={`/${locale}/contact`} className={s.ctaSecondary}>
-                  {tr('Contact page', locale)}
+                <Link to={`/${locale}/login`} className={s.ctaSecondary}>
+                  {tr('Member login', locale)}
                 </Link>
               </div>
             </div>

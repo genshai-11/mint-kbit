@@ -19,12 +19,16 @@
     "studio:build": "cd studio && npm run build",
     "sanity:smoke": "node --env-file=.env.local scripts/sanity-smoke.mjs",
     "studio:deploy": "cd studio && npm run deploy",
-    "studio:deploy-graphql": "cd studio && npm run deploy-graphql"
+    "studio:deploy-graphql": "cd studio && npm run deploy-graphql",
+    "admin:dev": "cd admin && npm run dev",
+    "admin:build": "cd admin && npm run build",
+    "admin:preview": "cd admin && npm run preview"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.7",
     "@sanity/client": "^6.28.2",
     "@sanity/image-url": "^1.1.0",
+    "@supabase/supabase-js": "^2.108.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.2"

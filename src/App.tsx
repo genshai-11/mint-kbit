@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-route
 import { Component, Suspense, lazy, useEffect } from 'react'
 import type { ReactNode } from 'react'
 import { useSiteMotion } from '@/lib/useSiteMotion'
+import { AuthProvider } from '@/lib/auth/AuthProvider'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -51,6 +52,9 @@ const Contact = lazy(() => import('./pages/Contact'))
 const Experts = lazy(() => import('./pages/Experts'))
 const Centers = lazy(() => import('./pages/Centers'))
 const NotFound = lazy(() => import('./pages/NotFound'))
+const Login = lazy(() => import('./pages/member/Login'))
+const Account = lazy(() => import('./pages/member/Account'))
+const MembershipApply = lazy(() => import('./pages/member/MembershipApply'))
 
 const LOCALES = ['en', 'vi', 'ko'] as const
 type Locale = (typeof LOCALES)[number]
@@ -68,6 +72,9 @@ function LocaleRoutes() {
       <Route path="news" element={<News />} />
       <Route path="news/:slug" element={<NewsDetail />} />
       <Route path="membership" element={<Membership />} />
+      <Route path="membership/apply" element={<MembershipApply />} />
+      <Route path="login" element={<Login />} />
+      <Route path="account" element={<Account />} />
       <Route path="about" element={<About />} />
       <Route path="partners" element={<Partners />} />
       <Route path="contact" element={<Contact />} />
@@ -81,9 +88,11 @@ function LocaleRoutes() {
 export default function App() {
   return (
     <BrowserRouter>
-      <RouteErrorBoundary>
-        <AnimatedRoutes />
-      </RouteErrorBoundary>
+      <AuthProvider>
+        <RouteErrorBoundary>
+          <AnimatedRoutes />
+        </RouteErrorBoundary>
+      </AuthProvider>
     </BrowserRouter>
   )
 }
