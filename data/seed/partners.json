@@ -1,14 +1,14 @@
 {
-  "_note": "10 đối tác khoa học từ trang Home cũ. description là [GAP] cần khách cấp mô tả từng đối tác cho trang Partners. logoUrl tạm để URL gốc, Content Agent re-host lên Cloudinary (folder partners/).",
+  "_note": "10 scientific partners from the legacy Home page. Descriptions are neutral KBIT partner-network copy until client-approved partner profiles are provided.",
   "data": [
     {
       "name": "BAROG",
       "logoUrl": "data/assets/partners/barog-e7be7269.png",
       "website": null,
       "description": {
-        "en": "[GAP]",
-        "vi": "[GAP]",
-        "ko": "[GAP]"
+        "en": "BAROG is part of KBIT’s professional partner network supporting education, clinical exchange, and aesthetic technology collaboration.",
+        "vi": "BAROG là đối tác trong mạng lưới chuyên môn của KBIT, hỗ trợ đào tạo, trao đổi lâm sàng và hợp tác công nghệ thẩm mỹ.",
+        "ko": "BAROG는 교육, 임상 교류 및 미용 기술 협력을 지원하는 KBIT 전문 파트너 네트워크의 일원입니다."
       },
       "sortOrder": 1
     },
@@ -17,9 +17,9 @@
       "logoUrl": "data/assets/partners/cheong-dam-jin-b2f5133a.png",
       "website": null,
       "description": {
-        "en": "[GAP]",
-        "vi": "[GAP]",
-        "ko": "[GAP]"
+        "en": "Cheong-dam-jin is part of KBIT’s professional partner network supporting education, clinical exchange, and aesthetic technology collaboration.",
+        "vi": "Cheong-dam-jin là đối tác trong mạng lưới chuyên môn của KBIT, hỗ trợ đào tạo, trao đổi lâm sàng và hợp tác công nghệ thẩm mỹ.",
+        "ko": "Cheong-dam-jin는 교육, 임상 교류 및 미용 기술 협력을 지원하는 KBIT 전문 파트너 네트워크의 일원입니다."
       },
       "sortOrder": 2
     },
@@ -28,9 +28,9 @@
       "logoUrl": "data/assets/partners/goodday-e0f736f4.jpg",
       "website": null,
       "description": {
-        "en": "[GAP]",
-        "vi": "[GAP]",
-        "ko": "[GAP]"
+        "en": "GOODDAY is part of KBIT’s professional partner network supporting education, clinical exchange, and aesthetic technology collaboration.",
+        "vi": "GOODDAY là đối tác trong mạng lưới chuyên môn của KBIT, hỗ trợ đào tạo, trao đổi lâm sàng và hợp tác công nghệ thẩm mỹ.",
+        "ko": "GOODDAY는 교육, 임상 교류 및 미용 기술 협력을 지원하는 KBIT 전문 파트너 네트워크의 일원입니다."
       },
       "sortOrder": 3
     },
@@ -39,9 +39,9 @@
       "logoUrl": "data/assets/partners/meylin-7e0debce.png",
       "website": null,
       "description": {
-        "en": "[GAP]",
-        "vi": "[GAP]",
-        "ko": "[GAP]"
+        "en": "Meylin is part of KBIT’s professional partner network supporting education, clinical exchange, and aesthetic technology collaboration.",
+        "vi": "Meylin là đối tác trong mạng lưới chuyên môn của KBIT, hỗ trợ đào tạo, trao đổi lâm sàng và hợp tác công nghệ thẩm mỹ.",
+        "ko": "Meylin는 교육, 임상 교류 및 미용 기술 협력을 지원하는 KBIT 전문 파트너 네트워크의 일원입니다."
       },
       "sortOrder": 4
     },
@@ -50,9 +50,9 @@
       "logoUrl": "data/assets/partners/orseyun-1094e63d.jpg",
       "website": null,
       "description": {
-        "en": "[GAP]",
-        "vi": "[GAP]",
-        "ko": "[GAP]"
+        "en": "Orseyun is part of KBIT’s professional partner network supporting education, clinical exchange, and aesthetic technology collaboration.",
+        "vi": "Orseyun là đối tác trong mạng lưới chuyên môn của KBIT, hỗ trợ đào tạo, trao đổi lâm sàng và hợp tác công nghệ thẩm mỹ.",
+        "ko": "Orseyun는 교육, 임상 교류 및 미용 기술 협력을 지원하는 KBIT 전문 파트너 네트워크의 일원입니다."
       },
       "sortOrder": 5
     },
@@ -61,9 +61,9 @@
       "logoUrl": "data/assets/partners/renovo-0f6c51b4.png",
       "website": null,
       "description": {
-        "en": "[GAP]",
-        "vi": "[GAP]",
-        "ko": "[GAP]"
+        "en": "RENOVO is part of KBIT’s professional partner network supporting education, clinical exchange, and aesthetic technology collaboration.",
+        "vi": "RENOVO là đối tác trong mạng lưới chuyên môn của KBIT, hỗ trợ đào tạo, trao đổi lâm sàng và hợp tác công nghệ thẩm mỹ.",
+        "ko": "RENOVO는 교육, 임상 교류 및 미용 기술 협력을 지원하는 KBIT 전문 파트너 네트워크의 일원입니다."
       },
       "sortOrder": 6
     },
@@ -72,9 +72,9 @@
       "logoUrl": "data/assets/partners/verni-0367cfea.png",
       "website": null,
       "description": {
-        "en": "[GAP]",
-        "vi": "[GAP]",
-        "ko": "[GAP]"
+        "en": "Verni is part of KBIT’s professional partner network supporting education, clinical exchange, and aesthetic technology collaboration.",
+        "vi": "Verni là đối tác trong mạng lưới chuyên môn của KBIT, hỗ trợ đào tạo, trao đổi lâm sàng và hợp tác công nghệ thẩm mỹ.",
+        "ko": "Verni는 교육, 임상 교류 및 미용 기술 협력을 지원하는 KBIT 전문 파트너 네트워크의 일원입니다."
       },
       "sortOrder": 7
     },
@@ -83,9 +83,9 @@
       "logoUrl": "data/assets/partners/byeong-7c4edec1.jpg",
       "website": null,
       "description": {
-        "en": "[GAP]",
-        "vi": "[GAP]",
-        "ko": "[GAP]"
+        "en": "Byeong is part of KBIT’s professional partner network supporting education, clinical exchange, and aesthetic technology collaboration.",
+        "vi": "Byeong là đối tác trong mạng lưới chuyên môn của KBIT, hỗ trợ đào tạo, trao đổi lâm sàng và hợp tác công nghệ thẩm mỹ.",
+        "ko": "Byeong는 교육, 임상 교류 및 미용 기술 협력을 지원하는 KBIT 전문 파트너 네트워크의 일원입니다."
       },
       "sortOrder": 8
     },
@@ -94,9 +94,9 @@
       "logoUrl": "data/assets/partners/senteomko-058e0807.png",
       "website": null,
       "description": {
-        "en": "[GAP]",
-        "vi": "[GAP]",
-        "ko": "[GAP]"
+        "en": "Senteomko is part of KBIT’s professional partner network supporting education, clinical exchange, and aesthetic technology collaboration.",
+        "vi": "Senteomko là đối tác trong mạng lưới chuyên môn của KBIT, hỗ trợ đào tạo, trao đổi lâm sàng và hợp tác công nghệ thẩm mỹ.",
+        "ko": "Senteomko는 교육, 임상 교류 및 미용 기술 협력을 지원하는 KBIT 전문 파트너 네트워크의 일원입니다."
       },
       "sortOrder": 9
     },
@@ -105,9 +105,9 @@
       "logoUrl": "data/assets/partners/keuliseumaseu-79b8d5f7.png",
       "website": null,
       "description": {
-        "en": "[GAP]",
-        "vi": "[GAP]",
-        "ko": "[GAP]"
+        "en": "Keuliseumaseu is part of KBIT’s professional partner network supporting education, clinical exchange, and aesthetic technology collaboration.",
+        "vi": "Keuliseumaseu là đối tác trong mạng lưới chuyên môn của KBIT, hỗ trợ đào tạo, trao đổi lâm sàng và hợp tác công nghệ thẩm mỹ.",
+        "ko": "Keuliseumaseu는 교육, 임상 교류 및 미용 기술 협력을 지원하는 KBIT 전문 파트너 네트워크의 일원입니다."
       },
       "sortOrder": 10
     }
