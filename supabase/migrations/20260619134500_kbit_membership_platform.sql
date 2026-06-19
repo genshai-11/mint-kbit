@@ -38,6 +38,15 @@ create table if not exists public.profiles (
   updated_at timestamptz not null default now()
 );
 
+-- The KBIT production project already had an early `profiles` table from
+-- `initial_membership_schema`. Evolve it in-place without dropping data.
+alter table public.profiles add column if not exists role public.profile_role not null default 'member';
+alter table public.profiles add column if not exists full_name text;
+alter table public.profiles add column if not exists email text;
+alter table public.profiles add column if not exists phone text;
+alter table public.profiles add column if not exists created_at timestamptz not null default now();
+alter table public.profiles add column if not exists updated_at timestamptz not null default now();
+
 create table if not exists public.tiers (
   id text primary key,
   name text not null,
