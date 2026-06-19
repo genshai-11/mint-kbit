@@ -7,6 +7,7 @@ import ContentImg from '@/components/ContentImg'
 import { localize, pages } from '@/lib/data'
 import { useExperts } from '@/lib/content/experts'
 import { isLocale, type Locale } from '@/lib/locale'
+import { tr } from '@/lib/ui'
 import s from './Experts.module.css'
 
 const COLLABORATE_ICONS = [Stethoscope, GlobeHemisphereEast, Certificate, UsersThree]
@@ -32,9 +33,9 @@ export default function Experts() {
   }
 
   const vettingSteps = [
-    'Credentials and clinical scope are reviewed before a profile is published.',
-    'Specialties, teaching roles, and regional availability are structured for browsing.',
-    'Verified doctors can be connected to events, training programs, and member benefits.',
+    tr('Credentials and clinical scope are reviewed before a profile is published.', locale),
+    tr('Specialties, teaching roles, and regional availability are structured for browsing.', locale),
+    tr('Verified doctors can be connected to events, training programs, and member benefits.', locale),
   ]
 
   return (
@@ -43,7 +44,7 @@ export default function Experts() {
 
       <PageHero
         watermark="EXPERTS"
-        overline="Key Doctors & Specialists"
+        overline={tr('Key Doctors & Specialists', locale)}
         title={localize(page.title, locale)}
         desc={localize(page.intro, locale)}
         image="news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-inline-1-6841cdc8.jpg"
@@ -71,8 +72,8 @@ export default function Experts() {
                 <div className={s.sectionHeader}>
                   <div>
                     <div className="section-divider" />
-                    <span className="overline">Expert directory</span>
-                    <h2 className="headline-display">Verified clinical profiles</h2>
+                    <span className="overline">{tr('Expert directory', locale)}</span>
+                    <h2 className="headline-display">{tr('Verified clinical profiles', locale)}</h2>
                   </div>
                 </div>
                 <div className={s.expertGrid}>
@@ -114,15 +115,13 @@ export default function Experts() {
               <div className={s.directoryGrid}>
                 <article className={`${s.directoryCard} motion-surface reveal-clip`}>
                   <div className="section-divider" />
-                  <span className="overline">Expert directory</span>
-                  <h2>Verified clinical profiles are being prepared</h2>
+                  <span className="overline">{tr('Expert directory', locale)}</span>
+                  <h2>{tr('Verified clinical profiles are being prepared', locale)}</h2>
                   <p>
-                    KBIT is organizing doctor profiles around credentials, specialty focus, training role,
-                    and international collaboration readiness. Until every profile is verified, the public page
-                    presents the qualification framework rather than placeholder biographies.
+                    {tr('KBIT is organizing doctor profiles around credentials, specialty focus, training role, and international collaboration readiness. Until every profile is verified, the public page presents the qualification framework rather than placeholder biographies.', locale)}
                   </p>
                   <Link to={`/${locale}/contact`} className={s.primaryLink}>
-                    Request expert connection <ArrowRight size={16} weight="bold" aria-hidden="true" />
+                    {tr('Request expert connection', locale)} <ArrowRight size={16} weight="bold" aria-hidden="true" />
                   </Link>
                 </article>
 
@@ -144,11 +143,11 @@ export default function Experts() {
             <div className={s.sectionHeader}>
               <div>
                 <div className="section-divider" />
-                <span className="overline">Collaborate with KBIT</span>
-                <h2 className="headline-display">Join our expert network</h2>
+                <span className="overline">{tr('Collaborate with KBIT', locale)}</span>
+                <h2 className="headline-display">{tr('Join our expert network', locale)}</h2>
               </div>
               <Link to={`/${locale}/contact`} className={s.textLink}>
-                Submit credentials
+                {tr('Submit credentials', locale)}
               </Link>
             </div>
             <div className={s.collaborateGrid}>

@@ -137,6 +137,52 @@ const UI: Record<string, Tri> = {
   'Selected frames': { vi: 'Hình ảnh chọn lọc', ko: '선별 이미지' },
   'Related stories': { vi: 'Bài liên quan', ko: '관련 기사' },
   'Edition': { vi: 'Chuyên mục', ko: '에디션' },
+
+  // ── Experts ──
+  'Key Doctors & Specialists': { vi: 'Bác sĩ & Chuyên gia chủ chốt', ko: '핵심 의료진 및 전문가' },
+  'Credentials and clinical scope are reviewed before a profile is published.': {
+    vi: 'Bằng cấp và phạm vi lâm sàng được rà soát trước khi hồ sơ được công bố.',
+    ko: '프로필 공개 전 자격과 진료 범위를 검토합니다.',
+  },
+  'Specialties, teaching roles, and regional availability are structured for browsing.': {
+    vi: 'Chuyên khoa, vai trò giảng dạy và khu vực hoạt động được sắp xếp để dễ tra cứu.',
+    ko: '전문 분야, 강의 역할, 지역별 활동을 보기 쉽게 정리합니다.',
+  },
+  'Verified doctors can be connected to events, training programs, and member benefits.': {
+    vi: 'Bác sĩ đã xác minh có thể kết nối với sự kiện, chương trình đào tạo và quyền lợi hội viên.',
+    ko: '인증된 의료진은 행사, 교육 프로그램, 회원 혜택과 연결될 수 있습니다.',
+  },
+  'Expert directory': { vi: 'Danh bạ chuyên gia', ko: '전문가 디렉터리' },
+  'Verified clinical profiles': { vi: 'Hồ sơ lâm sàng đã xác minh', ko: '인증된 임상 프로필' },
+  'Verified clinical profiles are being prepared': {
+    vi: 'Hồ sơ lâm sàng đã xác minh đang được chuẩn bị',
+    ko: '인증된 임상 프로필을 준비하고 있습니다',
+  },
+  'KBIT is organizing doctor profiles around credentials, specialty focus, training role, and international collaboration readiness. Until every profile is verified, the public page presents the qualification framework rather than placeholder biographies.': {
+    vi: 'KBIT đang sắp xếp hồ sơ bác sĩ theo bằng cấp, lĩnh vực chuyên môn, vai trò đào tạo và mức độ sẵn sàng hợp tác quốc tế. Cho đến khi mọi hồ sơ được xác minh, trang công khai trình bày khung tiêu chuẩn thay vì các tiểu sử tạm.',
+    ko: 'KBIT는 자격, 전문 분야, 교육 역할, 국제 협력 준비도를 기준으로 의료진 프로필을 정리하고 있습니다. 모든 프로필이 인증될 때까지 공개 페이지는 임시 약력 대신 자격 기준을 제시합니다.',
+  },
+  'Request expert connection': { vi: 'Yêu cầu kết nối chuyên gia', ko: '전문가 연결 요청' },
+  'Collaborate with KBIT': { vi: 'Hợp tác với KBIT', ko: 'KBIT와 협력하기' },
+  'Join our expert network': { vi: 'Tham gia mạng lưới chuyên gia', ko: '전문가 네트워크에 참여하세요' },
+
+  // ── Centers ──
+  'Content coming soon.': { vi: 'Nội dung sẽ sớm ra mắt.', ko: '콘텐츠가 곧 제공됩니다.' },
+  'Center Network': { vi: 'Mạng lưới trung tâm', ko: '센터 네트워크' },
+  'What to expect': { vi: 'Điều bạn nhận được', ko: '기대할 수 있는 것' },
+  'Korean-standard excellence': { vi: 'Chất lượng chuẩn Hàn Quốc', ko: '한국 표준의 우수성' },
+  'Education Center': { vi: 'Trung tâm đào tạo', ko: '교육 센터' },
+  'Our centers': { vi: 'Trung tâm của chúng tôi', ko: '우리 센터' },
+  'Find a KBIT center': { vi: 'Tìm trung tâm KBIT', ko: 'KBIT 센터 찾기' },
+  'Visit or inquire about our centers': {
+    vi: 'Ghé thăm hoặc tìm hiểu về các trung tâm của chúng tôi',
+    ko: '센터를 방문하거나 문의해 보세요',
+  },
+  'Reach us directly to get directions, schedule a visit, or learn more about what each KBIT center offers.': {
+    vi: 'Liên hệ trực tiếp với chúng tôi để được chỉ đường, đặt lịch ghé thăm hoặc tìm hiểu thêm về những gì mỗi trung tâm KBIT mang lại.',
+    ko: '길 안내를 받거나 방문을 예약하고, 각 KBIT 센터가 제공하는 내용을 자세히 알아보려면 직접 문의해 주세요.',
+  },
+  'Contact us': { vi: 'Liên hệ với chúng tôi', ko: '문의하기' },
 }
 
 export function tr(en: string, locale: Locale): string {

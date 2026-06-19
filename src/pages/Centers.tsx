@@ -7,6 +7,7 @@ import PageHero from '@/components/PageHero'
 import { localize, pages } from '@/lib/data'
 import { useCenters } from '@/lib/content/centers'
 import { isLocale, type Locale } from '@/lib/locale'
+import { tr } from '@/lib/ui'
 import s from './Centers.module.css'
 
 function getImgKey(path: string): string {
@@ -47,8 +48,8 @@ export default function Centers() {
       <>
         <Nav />
         <div className="container section" style={{ minHeight: '60vh' }}>
-          <h1>Centers</h1>
-          <p>Content coming soon.</p>
+          <h1>{tr('Centers', locale)}</h1>
+          <p>{tr('Content coming soon.', locale)}</p>
         </div>
         <Footer />
       </>
@@ -61,7 +62,7 @@ export default function Centers() {
 
       <PageHero
         watermark="CENTERS"
-        overline="Center Network"
+        overline={tr('Center Network', locale)}
         title={localize(page.title, locale)}
         desc={localize(page.intro, locale)}
         image={heroImage}
@@ -75,8 +76,8 @@ export default function Centers() {
             <div className={s.sectionHeader}>
               <div>
                 <div className="section-divider" />
-                <span className="overline">What to expect</span>
-                <h2 className="headline-display">Korean-standard excellence</h2>
+                <span className="overline">{tr('What to expect', locale)}</span>
+                <h2 className="headline-display">{tr('Korean-standard excellence', locale)}</h2>
               </div>
             </div>
             <div className={s.highlightsGrid}>
@@ -106,8 +107,8 @@ export default function Centers() {
             <div className={s.sectionHeader}>
               <div>
                 <div className="section-divider" />
-                <span className="overline">Our centers</span>
-                <h2 className="headline-display">Find a KBIT center</h2>
+                <span className="overline">{tr('Our centers', locale)}</span>
+                <h2 className="headline-display">{tr('Find a KBIT center', locale)}</h2>
               </div>
             </div>
             <div className={s.centersGrid}>
@@ -135,7 +136,7 @@ export default function Centers() {
                       )}
                     </div>
                     <div className={s.centerBody}>
-                      <div className={s.centerTag}>Education Center</div>
+                      <div className={s.centerTag}>{tr('Education Center', locale)}</div>
                       <h3>{center.name}</h3>
                       <ul className={s.centerMeta}>
                         <li><Buildings size={14} weight="bold" aria-hidden="true" />{center.address}</li>
@@ -156,14 +157,13 @@ export default function Centers() {
             <div className={s.ctaInner}>
               <div>
                 <div className="section-divider" />
-                <h2>Visit or inquire about our centers</h2>
+                <h2>{tr('Visit or inquire about our centers', locale)}</h2>
                 <p>
-                  Reach us directly to get directions, schedule a visit, or learn more about
-                  what each KBIT center offers.
+                  {tr('Reach us directly to get directions, schedule a visit, or learn more about what each KBIT center offers.', locale)}
                 </p>
               </div>
               <a href={`/${locale}/contact`} className={s.ctaPrimary}>
-                Contact us <ArrowRight size={16} weight="bold" aria-hidden="true" />
+                {tr('Contact us', locale)} <ArrowRight size={16} weight="bold" aria-hidden="true" />
               </a>
             </div>
           </div>
