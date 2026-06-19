@@ -6,6 +6,7 @@ import PageHero from '@/components/PageHero'
 import { localize, pages } from '@/lib/data'
 import { useMembershipProgram } from '@/lib/content/membership'
 import { isLocale, type Locale } from '@/lib/locale'
+import { tr } from '@/lib/ui'
 import s from './Membership.module.css'
 
 const TYPE_ICONS = [Heart, UsersThree, TrendUp]
@@ -37,8 +38,8 @@ export default function Membership() {
       <Nav />
 
       <PageHero
-        watermark="MEMBER"
-        overline="Professional Excellence Program"
+        watermark={tr('MEMBER', locale)}
+        overline={tr('Professional Excellence Program', locale)}
         title={localize(page.title, locale)}
         desc={localize(page.intro, locale)}
         image="membership/banner1-abd0c28e.jpg"
@@ -46,12 +47,12 @@ export default function Membership() {
       />
 
       <main className={s.pageShell}>
-        <section className={s.indexBand} aria-label="Membership sections">
+        <section className={s.indexBand} aria-label={tr('Membership sections', locale)}>
           <div className={`container ${s.indexGrid}`}>
             {['Structure', 'Benefits', 'Requirements', 'Fee', 'Forms'].map((item, index) => (
               <a key={item} href={`#${item.toLowerCase()}`} className={`${s.indexItem} reveal-soft`} style={{ animationDelay: `${index * 70}ms` }}>
                 <span>0{index + 1}</span>
-                <strong>{item}</strong>
+                <strong>{tr(item, locale)}</strong>
               </a>
             ))}
           </div>
@@ -90,7 +91,7 @@ export default function Membership() {
             <div className={s.sectionHeader}>
               <div>
                 <div className="section-divider" />
-                <span className="overline">Benefits</span>
+                <span className="overline">{tr('Benefits', locale)}</span>
                 <h2 className="headline-display">{content.benefits?.title}</h2>
               </div>
             </div>
@@ -133,7 +134,7 @@ export default function Membership() {
               <aside className={s.stepsRail}>
                 <div className={`${s.stepsCard} motion-surface reveal-clip`}>
                   <ClipboardText size={34} weight="bold" aria-hidden="true" />
-                  <h3>How to register</h3>
+                  <h3>{tr('How to register', locale)}</h3>
                   <ol>
                     {requirements?.steps?.map((step: string, index: number) => <li key={step}><span>{index + 1}</span>{step}</li>)}
                   </ol>
@@ -200,10 +201,10 @@ export default function Membership() {
               </div>
               <div className={s.ctaActions}>
                 <Link to={`/${locale}/contact`} className={s.ctaPrimary}>
-                  Contact KBIT <ArrowRight size={16} weight="bold" aria-hidden="true" />
+                  {tr('Contact KBIT', locale)} <ArrowRight size={16} weight="bold" aria-hidden="true" />
                 </Link>
                 <Link to={`/${locale}/contact`} className={s.ctaSecondary}>
-                  Contact page
+                  {tr('Contact page', locale)}
                 </Link>
               </div>
             </div>

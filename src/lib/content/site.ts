@@ -18,6 +18,26 @@ function asObject(value: unknown): SanityRecord | undefined {
   return value && typeof value === 'object' && !Array.isArray(value) ? (value as SanityRecord) : undefined
 }
 
+const LEGACY_PUBLIC_DOMAIN = /(?:^|@|\/\/)kbitassociation\.com/i
+
+function safePublicContact(value: unknown): unknown {
+  return typeof value === 'string' && LEGACY_PUBLIC_DOMAIN.test(value) ? 'Use contact form' : value
+}
+
+function safePublicSettings(settings: SiteSettings): SiteSettings {
+  return {
+    ...settings,
+    contact: {
+      ...settings.contact,
+      email: safePublicContact(settings.contact.email) as string,
+    },
+    offices: settings.offices.map((office) => ({
+      ...office,
+      email: safePublicContact(office.email) as string,
+    })),
+  }
+}
+
 /**
  * Overlay the Sanity `settings` document on top of the local seed.
  * Sanity wins for any field it provides; the seed fills everything Sanity does
@@ -28,7 +48,7 @@ function asObject(value: unknown): SanityRecord | undefined {
 function mapSettings(doc: SanityRecord): SiteSettings {
   const base = settingsSeed as SiteSettings
   const offices = Array.isArray(doc.offices) && doc.offices.length ? doc.offices : base.offices
-  return {
+  return safePublicSettings({
     ...base,
     siteMeta: { ...base.siteMeta, ...(asObject(doc.siteMeta) ?? {}) },
     stats: { ...base.stats, ...(asObject(doc.stats) ?? {}) },
@@ -36,24 +56,25 @@ function mapSettings(doc: SanityRecord): SiteSettings {
     org: { ...base.org, ...(asObject(doc.org) ?? {}) },
     contact: { ...base.contact, ...(asObject(doc.contact) ?? {}) },
     offices,
-  } as SiteSettings
+  } as SiteSettings)
 }
 
 async function loadSettings(): Promise<SiteSettings> {
-  if (!sanityEnabled) return settingsSeed
+  const seedFallback = safePublicSettings(settingsSeed)
+  if (!sanityEnabled) return seedFallback
 
   try {
     const { fetchSettings } = await import('@/lib/sanity')
     const doc = (await fetchSettings()) as SanityRecord | null
-    return doc ? mapSettings(doc) : settingsSeed
+    return doc ? mapSettings(doc) : seedFallback
   } catch (error) {
     console.warn('Sanity settings unavailable; using local seed fallback.', error)
-    return settingsSeed
+    return seedFallback
   }
 }
 
 export function useSiteSettings(): SiteSettings {
-  const [settings, setSettings] = useState<SiteSettings>(settingsSeed)
+  const [settings, setSettings] = useState<SiteSettings>(() => safePublicSettings(settingsSeed))
 
   useEffect(() => {
     let active = true

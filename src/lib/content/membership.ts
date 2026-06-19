@@ -20,7 +20,8 @@ function localizeList(items: unknown, locale: Locale): string[] {
   return items
     .map((item) => {
       if (typeof item === 'string') return item
-      return localize((item as SanityRecord).text, locale)
+      const record = item as SanityRecord
+      return localize(record.text ?? record, locale)
     })
     .filter(Boolean)
 }
@@ -96,19 +97,20 @@ function mapMembershipProgram(doc: SanityRecord, locale: Locale): SanityRecord {
 }
 
 async function loadMembershipProgram(locale: Locale): Promise<SanityRecord> {
-  if (!sanityEnabled) return membershipSeed
+  const seedFallback = mapMembershipProgram(membershipSeed, locale)
+  if (!sanityEnabled) return seedFallback
 
   try {
     const doc = await fetchMembershipProgram() as SanityRecord | null
-    return doc ? mapMembershipProgram(doc, locale) : membershipSeed
+    return doc ? mapMembershipProgram(doc, locale) : seedFallback
   } catch (error) {
     console.warn('Sanity membership program unavailable; using local seed fallback.', error)
-    return membershipSeed
+    return seedFallback
   }
 }
 
 export function useMembershipProgram(locale: Locale): SanityRecord {
-  const [program, setProgram] = useState<SanityRecord>(membershipSeed)
+  const [program, setProgram] = useState<SanityRecord>(() => mapMembershipProgram(membershipSeed, locale))
 
   useEffect(() => {
     let active = true

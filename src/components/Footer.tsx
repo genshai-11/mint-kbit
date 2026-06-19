@@ -80,7 +80,7 @@ export default function Footer() {
           <div className={s.col}>
             <p className={s.colTitle}>{tr('Contact', locale)}</p>
             <div className={s.colLinks}>
-              <span className={s.colLink}>{settings.contact.email}</span>
+              <span className={s.colLink}>{tr(settings.contact.email, locale)}</span>
               <a href={`tel:${settings.contact.phoneKr}`} className={s.colLink}>KR: {settings.contact.phoneKr}</a>
               <a href={`tel:${settings.contact.phoneVn}`} className={s.colLink}>VN: {settings.contact.phoneVn}</a>
               <NavLink to={`/${locale}/contact`} className={s.colLink}>{tr('Office locations →', locale)}</NavLink>

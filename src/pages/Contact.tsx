@@ -7,6 +7,7 @@ import PageHero from '@/components/PageHero'
 import { localize, pages } from '@/lib/data'
 import { useSiteSettings } from '@/lib/content/site'
 import { isLocale, type Locale } from '@/lib/locale'
+import { tr } from '@/lib/ui'
 import s from './Contact.module.css'
 
 function getImgKey(path: string): string {
@@ -46,13 +47,13 @@ export default function Contact() {
     hours: localize(office.hours, locale),
     contactPerson: office.contactPerson ? localize(office.contactPerson, locale) : '',
     phone: office.phone,
-    email: office.email,
+    email: tr(office.email, locale),
   }))
 
   const responseSteps = [
-    'Inquiry received by the KBIT coordination team.',
-    'Membership, event, or partnership request is routed to the right office.',
-    'A coordinator follows up with the next action or required documents.',
+    tr('Inquiry received by the KBIT coordination team.', locale),
+    tr('Membership, event, or partnership request is routed to the right office.', locale),
+    tr('A coordinator follows up with the next action or required documents.', locale),
   ]
 
   return (
@@ -60,8 +61,8 @@ export default function Contact() {
       <Nav />
 
       <PageHero
-        watermark="CONTACT"
-        overline="Support / Offices / Inquiry"
+        watermark={tr('CONTACT', locale)}
+        overline={tr('Support / Offices / Inquiry', locale)}
         title={localize(contactPage.title, locale)}
         desc={localize(contactPage.intro, locale)}
         image="news/news-le-van-thinh-hospital-korea-beauty-technology-association-kbit-sign-mou-for-beauty-te-7aed75b9.jpg"
@@ -74,8 +75,8 @@ export default function Contact() {
             <div className={s.introGrid}>
               <article className={`${s.highlightsCard} motion-surface reveal-soft`}>
                 <div className="section-divider" />
-                <span className="overline">Quick support channels</span>
-                <h2>Reach the right team</h2>
+                <span className="overline">{tr('Quick support channels', locale)}</span>
+                <h2>{tr('Reach the right team', locale)}</h2>
                 <div className={s.highlightsGrid}>
                   {contactPage.highlights.map((item, index) => {
                     const Icon = getIcon(item.icon)
@@ -104,17 +105,15 @@ export default function Contact() {
                   />
                 </div>
                 <div className={s.heroCardBody}>
-                  <div className={s.heroCardTag}>Contact KBIT</div>
-                  <h2>We are always ready to listen and support you.</h2>
-                  <p>
-                    Use the contact form, email, or the office details below to reach the team most relevant to your need.
-                  </p>
+                  <div className={s.heroCardTag}>{tr('Contact KBIT', locale)}</div>
+                  <h2>{tr('We are always ready to listen and support you.', locale)}</h2>
+                  <p>{tr('Use the contact form, email, or the office details below to reach the team most relevant to your need.', locale)}</p>
                   <div className={s.heroActions}>
                     <a href="#contact-form" className={s.primaryLink}>
-                      Send inquiry <EnvelopeSimple size={16} weight="bold" aria-hidden="true" />
+                      {tr('Send inquiry', locale)} <EnvelopeSimple size={16} weight="bold" aria-hidden="true" />
                     </a>
                     <a href={`tel:${settings.contact.phoneVn}`} className={s.secondaryLink}>
-                      Call Vietnam office <Phone size={16} weight="bold" aria-hidden="true" />
+                      {tr('Call Vietnam office', locale)} <Phone size={16} weight="bold" aria-hidden="true" />
                     </a>
                   </div>
                 </div>
@@ -128,44 +127,44 @@ export default function Contact() {
             <div className={s.formGrid}>
               <article className={`${s.formCard} motion-surface reveal-soft`} style={{ animationDelay: '60ms' }}>
                 <div className="section-divider" />
-                <span className="overline">Inquiry form</span>
-                <h2>Send a message</h2>
+                <span className="overline">{tr('Inquiry form', locale)}</span>
+                <h2>{tr('Send a message', locale)}</h2>
                 <form className={s.form}>
                   <div className={s.fieldGrid}>
                     <label className={s.field}>
-                      <span>Name</span>
-                      <input type="text" placeholder="Your full name" />
+                      <span>{tr('Name', locale)}</span>
+                      <input type="text" placeholder={tr('Your full name', locale)} />
                     </label>
                     <label className={s.field}>
-                      <span>Email</span>
+                      <span>{tr('Email', locale)}</span>
                       <input type="email" placeholder="name@clinic.com" />
                     </label>
                   </div>
 
                   <div className={s.fieldGrid}>
                     <label className={s.field}>
-                      <span>Phone</span>
-                      <input type="tel" placeholder="Phone number" />
+                      <span>{tr('Phone', locale)}</span>
+                      <input type="tel" placeholder={tr('Phone number', locale)} />
                     </label>
                     <label className={s.field}>
-                      <span>Subject</span>
+                      <span>{tr('Subject', locale)}</span>
                       <select defaultValue="">
-                        <option value="" disabled>Select a subject</option>
-                        {contactPage.subjects.map(subject => <option key={subject} value={subject}>{subject}</option>)}
+                        <option value="" disabled>{tr('Select a subject', locale)}</option>
+                        {contactPage.subjects.map(subject => <option key={subject} value={subject}>{tr(subject, locale)}</option>)}
                       </select>
                     </label>
                   </div>
 
                   <label className={s.field}>
-                    <span>Message</span>
-                    <textarea rows={7} placeholder="Tell us what you need help with..." />
+                    <span>{tr('Message', locale)}</span>
+                    <textarea rows={7} placeholder={tr('Tell us what you need help with...', locale)} />
                   </label>
 
                   <div className={s.formActions}>
                     <button type="button" className={s.primaryLink}>
-                      Submit inquiry <PaperPlaneTilt size={16} weight="bold" aria-hidden="true" />
+                      {tr('Submit inquiry', locale)} <PaperPlaneTilt size={16} weight="bold" aria-hidden="true" />
                     </button>
-                    <span className={s.formNote}>This UI is ready for backend wiring.</span>
+                    <span className={s.formNote}>{tr('This UI is ready for backend wiring.', locale)}</span>
                   </div>
                 </form>
               </article>
@@ -173,8 +172,8 @@ export default function Contact() {
               <aside className={s.sideRail}>
                 <article className={`${s.responseCard} motion-surface reveal-clip`}>
                   <Sparkle size={28} weight="bold" className={s.responseIcon} aria-hidden="true" />
-                  <div className={s.cardTag}>Response flow</div>
-                  <h3>What happens after you send it</h3>
+                  <div className={s.cardTag}>{tr('Response flow', locale)}</div>
+                  <h3>{tr('What happens after you send it', locale)}</h3>
                   <ol>
                     {responseSteps.map((step, index) => (
                       <li key={step}><span>{index + 1}</span>{step}</li>
@@ -183,28 +182,28 @@ export default function Contact() {
                 </article>
 
                 <article className={`${s.contactCard} motion-surface`}>
-                  <div className={s.cardTag}>Direct contact</div>
+                  <div className={s.cardTag}>{tr('Direct contact', locale)}</div>
                   <div className={s.contactRows}>
                     <div>
-                      <span>Vietnam</span>
+                      <span>{tr('Vietnam', locale)}</span>
                       <a href={`tel:${settings.contact.phoneVn}`}>{settings.contact.phoneVn}</a>
                     </div>
                     <div>
-                      <span>Korea</span>
+                      <span>{tr('Korea', locale)}</span>
                       <a href={`tel:${settings.contact.phoneKr}`}>{settings.contact.phoneKr}</a>
                     </div>
                     <div>
-                      <span>Email</span>
-                      <strong>{settings.contact.email}</strong>
+                      <span>{tr('Email', locale)}</span>
+                      <strong>{tr(settings.contact.email, locale)}</strong>
                     </div>
                   </div>
                 </article>
 
                 <article className={`${s.contactCard} motion-surface`}>
-                  <div className={s.cardTag}>Working hours</div>
+                  <div className={s.cardTag}>{tr('Working hours', locale)}</div>
                   <div className={s.hoursList}>
-                    <div><Clock size={16} weight="bold" aria-hidden="true" /> Monday - Sunday: 08:00 - 20:00</div>
-                    <div><MapPinLine size={16} weight="bold" aria-hidden="true" /> Korea + Vietnam office coverage</div>
+                    <div><Clock size={16} weight="bold" aria-hidden="true" /> {tr('Monday - Sunday: 08:00 - 20:00', locale)}</div>
+                    <div><MapPinLine size={16} weight="bold" aria-hidden="true" /> {tr('Korea + Vietnam office coverage', locale)}</div>
                   </div>
                 </article>
               </aside>
@@ -217,8 +216,8 @@ export default function Contact() {
             <div className={s.sectionHeader}>
               <div>
                 <div className="section-divider" />
-                <span className="overline">Office locations</span>
-                <h2 className="headline-display">Reach us in person</h2>
+                <span className="overline">{tr('Office locations', locale)}</span>
+                <h2 className="headline-display">{tr('Reach us in person', locale)}</h2>
               </div>
             </div>
 
@@ -234,20 +233,20 @@ export default function Contact() {
                   </div>
                   <div className={s.officeInfo}>
                     <div>
-                      <span>Hours</span>
+                      <span>{tr('Hours', locale)}</span>
                       <strong>{office.hours}</strong>
                     </div>
                     <div>
-                      <span>Phone</span>
+                      <span>{tr('Phone', locale)}</span>
                       <strong>{office.phone}</strong>
                     </div>
                     <div>
-                      <span>Email</span>
+                      <span>{tr('Email', locale)}</span>
                       <strong>{office.email}</strong>
                     </div>
                     {office.contactPerson && (
                       <div>
-                        <span>Contact person</span>
+                        <span>{tr('Contact person', locale)}</span>
                         <strong>{office.contactPerson}</strong>
                       </div>
                     )}

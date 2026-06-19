@@ -8,6 +8,7 @@ import PageHero from '@/components/PageHero'
 import { centers, localize, pages } from '@/lib/data'
 import { useSiteSettings } from '@/lib/content/site'
 import { isLocale, type Locale } from '@/lib/locale'
+import { tr } from '@/lib/ui'
 import s from './About.module.css'
 
 function getImgKey(path: string): string {
@@ -36,10 +37,10 @@ export default function About() {
 
   const centerList = (centers.data as Array<Record<string, any>>).slice(0, 1)
   const stats = [
-    { value: 16, suffix: '+', label: 'Education centers' },
-    { value: 50, suffix: '+', label: 'Expert doctors' },
-    { value: 8, suffix: '+', label: 'Countries reached' },
-    { value: 500, suffix: '+', label: 'Members connected' },
+    { value: 16, suffix: '+', label: tr('Education centers', locale) },
+    { value: 50, suffix: '+', label: tr('Expert doctors', locale) },
+    { value: 8, suffix: '+', label: tr('Countries reached', locale) },
+    { value: 500, suffix: '+', label: tr('Members connected', locale) },
   ]
   const [animatedStats, setAnimatedStats] = useState(stats.map(() => 0))
 
@@ -68,15 +69,15 @@ export default function About() {
 
   const mission = fallback(
     aboutPage.mission,
-    `Bring Korea's newest rejuvenation technology and training standards within reach of every member clinic — so your patients always benefit from proven, current techniques.`
+    tr(`Bring Korea's newest rejuvenation technology and training standards within reach of every member clinic — so your patients always benefit from proven, current techniques.`, locale)
   )
   const vision = fallback(
     aboutPage.vision,
-    'One trusted bridge between Korean clinical innovation and aesthetic practitioners across Vietnam, Asia, and beyond.'
+    tr('One trusted bridge between Korean clinical innovation and aesthetic practitioners across Vietnam, Asia, and beyond.', locale)
   )
   const history = fallback(
     aboutPage.history,
-    'From symposiums in Seoul to MOU signings in Ho Chi Minh City, KBIT grew out of working partnerships between hospitals, clinics, and educators on both sides.'
+    tr('From symposiums in Seoul to MOU signings in Ho Chi Minh City, KBIT grew out of working partnerships between hospitals, clinics, and educators on both sides.', locale)
   )
   const leader = aboutPage.leadership?.[0]
   const leaderName = leader?.name || settings.org.vicePresident
@@ -84,32 +85,32 @@ export default function About() {
   const leadDescription = localize(settings.siteMeta.description, locale)
 
   const signals = [
-    { icon: Sparkle, label: 'Latest techniques', value: 'Direct from Seoul' },
-    { icon: GlobeHemisphereEast, label: 'Cross-border', value: 'Korea · Vietnam · Asia' },
-    { icon: UsersThree, label: 'Member network', value: 'Clinics + doctors' },
+    { icon: Sparkle, label: tr('Latest techniques', locale), value: tr('Direct from Seoul', locale) },
+    { icon: GlobeHemisphereEast, label: tr('Cross-border', locale), value: tr('Korea · Vietnam · Asia', locale) },
+    { icon: UsersThree, label: tr('Member network', locale), value: tr('Clinics + doctors', locale) },
   ]
 
   const manifesto = [
     {
       icon: Sparkle,
-      label: 'Mission',
-      title: 'Advancing your practice',
+      label: tr('Mission', locale),
+      title: tr('Advancing your practice', locale),
       body: mission,
-      chips: ['Training programs', 'Clinical standards', 'Certification'],
+      chips: [tr('Training programs', locale), tr('Clinical standards', locale), tr('Certification', locale)],
     },
     {
       icon: GlobeHemisphereEast,
-      label: 'Vision',
-      title: 'A bridge between two worlds',
+      label: tr('Vision', locale),
+      title: tr('A bridge between two worlds', locale),
       body: vision,
-      chips: ['Korea', 'Vietnam', 'Asia'],
+      chips: [tr('Korea', locale), tr('Vietnam', locale), tr('Asia', locale)],
     },
     {
       icon: SealCheck,
-      label: 'Our story',
-      title: 'Born from real exchange',
+      label: tr('Our story', locale),
+      title: tr('Born from real exchange', locale),
       body: history,
-      chips: ['Symposiums', 'Partnerships', 'Education centers'],
+      chips: [tr('Symposiums', locale), tr('Partnerships', locale), tr('Education centers', locale)],
     },
   ]
 
@@ -118,8 +119,8 @@ export default function About() {
       <Nav />
 
       <PageHero
-        watermark="ABOUT"
-        overline="Network / Standards / Exchange"
+        watermark={tr('ABOUT', locale)}
+        overline={tr('Network / Standards / Exchange', locale)}
         title={localize(aboutPage.title, locale)}
         desc={leadDescription}
         image="home/banner4-b978e3ea.jpg"
@@ -132,12 +133,9 @@ export default function About() {
             <div className={s.introGrid}>
               <article className={`${s.storyCard} motion-surface reveal-soft`} style={{ animationDelay: '40ms' }}>
                 <div className="section-divider" />
-                <span className="overline">Who we are</span>
-                <h2>Korean aesthetic medicine, shared across borders</h2>
-                <p>
-                  KBIT brings Korea's leading aesthetic doctors, training centers, and clinics
-                  together with practitioners across Vietnam and Asia.
-                </p>
+                <span className="overline">{tr('Who we are', locale)}</span>
+                <h2>{tr('Korean aesthetic medicine, shared across borders', locale)}</h2>
+                <p>{tr("KBIT brings Korea's leading aesthetic doctors, training centers, and clinics together with practitioners across Vietnam and Asia.", locale)}</p>
 
                 <figure className={s.storyMedia}>
                   <Img
@@ -149,7 +147,7 @@ export default function About() {
                     width={840}
                     height={470}
                   />
-                  <figcaption>KAT 2025 — Korea · Vietnam clinical exchange</figcaption>
+                  <figcaption>{tr('KAT 2025 — Korea · Vietnam clinical exchange', locale)}</figcaption>
                 </figure>
 
                 <div className={s.signalGrid}>
@@ -169,10 +167,10 @@ export default function About() {
 
                 <div className={s.storyActions}>
                   <Link to={`/${locale}/contact`} className={s.primaryLink}>
-                    Contact team <ArrowRight size={16} weight="bold" aria-hidden="true" />
+                    {tr('Contact team', locale)} <ArrowRight size={16} weight="bold" aria-hidden="true" />
                   </Link>
                   <a href={`/${locale}/events`} className={s.secondaryLink}>
-                    Programs
+                    {tr('Programs', locale)}
                   </a>
                 </div>
               </article>
@@ -180,8 +178,8 @@ export default function About() {
               <aside className={`${s.statsCard} motion-surface reveal-clip`} style={{ animationDelay: '140ms' }}>
                 <div className={s.statsHeader}>
                   <div>
-                    <div className={s.statsLabel}>Our network</div>
-                    <h3>Network scale</h3>
+                    <div className={s.statsLabel}>{tr('Our network', locale)}</div>
+                    <h3>{tr('Network scale', locale)}</h3>
                   </div>
                   <SealCheck size={48} weight="thin" className={`${s.statsIcon} ambient-drift`} aria-hidden="true" />
                 </div>
@@ -196,7 +194,7 @@ export default function About() {
                     </div>
                   ))}
                 </div>
-                <p className={s.statsNote}>Education, events, and exchange — one connected community.</p>
+                <p className={s.statsNote}>{tr('Education, events, and exchange — one connected community.', locale)}</p>
               </aside>
             </div>
           </div>
@@ -207,8 +205,8 @@ export default function About() {
             <div className={s.sectionHeader}>
               <div>
                 <div className="section-divider" />
-                <span className="overline">Mission / Vision / History</span>
-                <h2 className="headline-display">What we stand for</h2>
+                <span className="overline">{tr('Mission / Vision / History', locale)}</span>
+                <h2 className="headline-display">{tr('What we stand for', locale)}</h2>
               </div>
             </div>
 
@@ -262,13 +260,13 @@ export default function About() {
           </div>
         </section>
 
-        <section className={`${s.gallerySection} section`} aria-label="Network in motion">
+        <section className={`${s.gallerySection} section`} aria-label={tr('Network in motion', locale)}>
           <div className="container">
             <div className={s.sectionHeader}>
               <div>
                 <div className="section-divider" />
-                <span className="overline">Network in motion</span>
-                <h2 className="headline-display">Moments from the field</h2>
+                <span className="overline">{tr('Network in motion', locale)}</span>
+                <h2 className="headline-display">{tr('Moments from the field', locale)}</h2>
               </div>
             </div>
             <div className={s.galleryGrid}>
@@ -282,7 +280,7 @@ export default function About() {
                   width={960}
                   height={640}
                 />
-                <figcaption>MOU signing — Le Van Thinh Hospital × KBIT, 2024</figcaption>
+                <figcaption>{tr('MOU signing — Le Van Thinh Hospital × KBIT, 2024', locale)}</figcaption>
               </figure>
               <figure className={`${s.galleryItem} motion-surface reveal`} style={{ animationDelay: '120ms' }}>
                 <Img
@@ -294,7 +292,7 @@ export default function About() {
                   width={720}
                   height={450}
                 />
-                <figcaption>Specialist seminar — KAT 2025</figcaption>
+                <figcaption>{tr('Specialist seminar — KAT 2025', locale)}</figcaption>
               </figure>
               <figure className={`${s.galleryItem} motion-surface reveal`} style={{ animationDelay: '220ms' }}>
                 <Img
@@ -306,7 +304,7 @@ export default function About() {
                   width={720}
                   height={450}
                 />
-                <figcaption>KAT 2025 — conference session</figcaption>
+                <figcaption>{tr('KAT 2025 — conference session', locale)}</figcaption>
               </figure>
             </div>
           </div>
@@ -317,8 +315,8 @@ export default function About() {
             <div className={s.sectionHeader}>
               <div>
                 <div className="section-divider" />
-                <span className="overline">Leadership</span>
-                <h2 className="headline-display">The people and places behind KBIT</h2>
+                <span className="overline">{tr('Leadership', locale)}</span>
+                <h2 className="headline-display">{tr('The people and places behind KBIT', locale)}</h2>
               </div>
             </div>
 
@@ -328,13 +326,13 @@ export default function About() {
                   {leaderName.split(' ').map(word => word[0]).join('').slice(0, 3)}
                 </div>
                 <div className={s.leaderCopy}>
-                  <span className={s.cardKicker}>Lead executive</span>
+                  <span className={s.cardKicker}>{tr('Lead executive', locale)}</span>
                   <h3>{leaderName}</h3>
                   <p>{leaderRole}</p>
                   <div className={s.leaderMeta}>
-                    <span><UsersThree size={16} weight="bold" aria-hidden="true" /> Network liaison</span>
-                    <span><GlobeHemisphereEast size={16} weight="bold" aria-hidden="true" /> Korea / Vietnam / Asia</span>
-                    <span><SealCheck size={16} weight="bold" aria-hidden="true" /> Clinical standards</span>
+                    <span><UsersThree size={16} weight="bold" aria-hidden="true" /> {tr('Network liaison', locale)}</span>
+                    <span><GlobeHemisphereEast size={16} weight="bold" aria-hidden="true" /> {tr('Korea / Vietnam / Asia', locale)}</span>
+                    <span><SealCheck size={16} weight="bold" aria-hidden="true" /> {tr('Clinical standards', locale)}</span>
                   </div>
                 </div>
               </article>
@@ -357,7 +355,7 @@ export default function About() {
                         <div className={s.centerFallback}>KBIT</div>
                       )}
                       <div className={s.centerOverlay}>
-                        <span>Network anchor</span>
+                        <span>{tr('Network anchor', locale)}</span>
                         <strong>{center.name}</strong>
                       </div>
                     </div>
