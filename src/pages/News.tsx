@@ -7,6 +7,7 @@ import PageHero from '@/components/PageHero'
 import { pages } from '@/lib/data'
 import { isLocale, type Locale } from '@/lib/locale'
 import { excerptFrom, formatDate, getImgKey, useNewsList, localize, resolveNewsSlug, newsLead } from '@/lib/news'
+import { tr } from '@/lib/ui'
 import s from './News.module.css'
 
 export default function News() {
@@ -28,7 +29,7 @@ export default function News() {
 
       <PageHero
         watermark="NEWS"
-        overline="News / Stories / Archive"
+        overline={tr('News / Stories / Archive', locale)}
         title={localize(page.title, locale)}
         desc={localize(page.intro, locale)}
         image={featuredImage || 'news/news-kat-2025-elevating-korea-vietnam-medical-aesthetic-collaboration-thumb-6ee67691.png'}
@@ -54,9 +55,9 @@ export default function News() {
                   </div>
                   <div className={s.featureBody}>
                     <div className={s.cardMetaRow}>
-                      <span className={s.metaChip}><Sparkle size={14} weight="bold" aria-hidden="true" />Featured</span>
+                      <span className={s.metaChip}><Sparkle size={14} weight="bold" aria-hidden="true" />{tr('Featured', locale)}</span>
                       <span className={s.metaChip}><CalendarBlank size={14} weight="bold" aria-hidden="true" />{formatDate(featured.publishedAt, locale)}</span>
-                      <span className={s.metaChip}><Eye size={14} weight="bold" aria-hidden="true" />{featured.viewCount} views</span>
+                      <span className={s.metaChip}><Eye size={14} weight="bold" aria-hidden="true" />{featured.viewCount} {tr('views', locale)}</span>
                     </div>
                     <h2>{localize(featured.title, locale)}</h2>
                     <p>{newsLead(featured, locale)}</p>
@@ -64,7 +65,7 @@ export default function News() {
                       {(featured.tags || []).slice(0, 4).map((tag: string) => <span key={tag}>{tag}</span>)}
                     </div>
                     <Link to={`/${locale}/news/${featuredSlug}`} className={s.primaryLink}>
-                      Read story <ArrowRight size={16} weight="bold" aria-hidden="true" />
+                      {tr('Read story', locale)} <ArrowRight size={16} weight="bold" aria-hidden="true" />
                     </Link>
                   </div>
                 </article>
@@ -72,7 +73,7 @@ export default function News() {
 
               <aside className={`${s.heroRail} reveal-soft`}>
                 <article className={s.railCard}>
-                  <div className={s.railTag}><ListMagnifyingGlass size={16} weight="bold" aria-hidden="true" />Spotlight index</div>
+                  <div className={s.railTag}><ListMagnifyingGlass size={16} weight="bold" aria-hidden="true" />{tr('Spotlight index', locale)}</div>
                   <div className={s.spotlightList}>
                     {spotlight.map(item => (
                       <Link key={item.slug} to={`/${locale}/news/${resolveNewsSlug(item, locale)}`} className={s.spotlightItem}>
@@ -84,15 +85,15 @@ export default function News() {
                 </article>
 
                 <article className={s.railCard}>
-                  <div className={s.railTag}><Tag size={16} weight="bold" aria-hidden="true" />Archive count</div>
+                  <div className={s.railTag}><Tag size={16} weight="bold" aria-hidden="true" />{tr('Archive count', locale)}</div>
                   <div className={s.railStats}>
                     <div>
                       <strong>{allNews.length}</strong>
-                      <span>stories</span>
+                      <span>{tr('stories', locale)}</span>
                     </div>
                     <div>
                       <strong>{archive.length}</strong>
-                      <span>more below</span>
+                      <span>{tr('more below', locale)}</span>
                     </div>
                   </div>
                 </article>
@@ -106,8 +107,8 @@ export default function News() {
             <div className={s.sectionHeader}>
               <div>
                 <div className="section-divider" />
-                <span className="overline">Latest archive</span>
-                <h2 className="headline-display">More articles</h2>
+                <span className="overline">{tr('Latest archive', locale)}</span>
+                <h2 className="headline-display">{tr('More articles', locale)}</h2>
               </div>
             </div>
 
@@ -132,7 +133,7 @@ export default function News() {
                       <div className={s.archiveBody}>
                         <div className={s.archiveMeta}>
                           <span>{formatDate(item.publishedAt, locale)}</span>
-                          <span>{item.viewCount} views</span>
+                          <span>{item.viewCount} {tr('views', locale)}</span>
                         </div>
                         <h3>{localize(item.title, locale)}</h3>
                         <p>{excerptFrom(item, locale)}</p>
@@ -140,7 +141,7 @@ export default function News() {
                           {(item.tags || []).slice(0, 3).map((tag: string) => <span key={tag}>{tag}</span>)}
                         </div>
                         <div className={s.readMore}>
-                          Read story <ArrowRight size={15} weight="bold" aria-hidden="true" />
+                          {tr('Read story', locale)} <ArrowRight size={15} weight="bold" aria-hidden="true" />
                         </div>
                       </div>
                     </Link>

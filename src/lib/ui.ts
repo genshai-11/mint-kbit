@@ -88,6 +88,55 @@ const UI: Record<string, Tri> = {
   },
   'Apply for Membership': { vi: 'Đăng ký Hội viên', ko: '회원 신청' },
   'Contact Us': { vi: 'Liên hệ với chúng tôi', ko: '문의하기' },
+
+  // ── Events ──
+  'Programs & Education': { vi: 'Chương trình & Đào tạo', ko: '프로그램 및 교육' },
+  'Global Workshops & Clinical Summits': {
+    vi: 'Hội thảo Toàn cầu & Hội nghị Lâm sàng',
+    ko: '글로벌 워크숍 & 임상 서밋',
+  },
+  "Join Korea's leading clinicians at international events bridging evidence-based aesthetics and hands-on training.": {
+    vi: 'Tham gia cùng các bác sĩ hàng đầu Hàn Quốc tại các sự kiện quốc tế kết nối thẩm mỹ dựa trên bằng chứng và đào tạo thực hành.',
+    ko: '근거 기반 미용과 실습 교육을 잇는 국제 행사에서 한국 최고의 임상의들과 함께하세요.',
+  },
+  'All Events': { vi: 'Tất cả sự kiện', ko: '전체 행사' },
+  'Past Events': { vi: 'Sự kiện đã qua', ko: '지난 행사' },
+  'Featured Event': { vi: 'Sự kiện nổi bật', ko: '주요 행사' },
+  'Past Event': { vi: 'Đã diễn ra', ko: '종료된 행사' },
+  'View detail': { vi: 'Xem chi tiết', ko: '상세 보기' },
+  'Request program info': { vi: 'Yêu cầu thông tin chương trình', ko: '프로그램 정보 요청' },
+  'Program Index': { vi: 'Danh mục chương trình', ko: '프로그램 목록' },
+  'Explore KBIT clinical programs': {
+    vi: 'Khám phá các chương trình lâm sàng KBIT',
+    ko: 'KBIT 임상 프로그램 둘러보기',
+  },
+  'Programs listed': { vi: 'Chương trình được liệt kê', ko: '등록된 프로그램' },
+  'Upcoming programs': { vi: 'Chương trình sắp tới', ko: '예정 프로그램' },
+  'Past programs': { vi: 'Chương trình đã qua', ko: '지난 프로그램' },
+  'Multilingual': { vi: 'Đa ngôn ngữ', ko: '다국어' },
+  'No upcoming events found.': { vi: 'Không tìm thấy sự kiện sắp tới.', ko: '예정된 행사가 없습니다.' },
+  'No past events found.': { vi: 'Không tìm thấy sự kiện đã qua.', ko: '지난 행사가 없습니다.' },
+
+  // ── News (list) ──
+  'News / Stories / Archive': { vi: 'Tin tức / Câu chuyện / Lưu trữ', ko: '뉴스 / 스토리 / 아카이브' },
+  'Spotlight index': { vi: 'Mục nổi bật', ko: '주요 기사 색인' },
+  'Archive count': { vi: 'Số bài lưu trữ', ko: '아카이브 수' },
+  'stories': { vi: 'bài viết', ko: '기사' },
+  'more below': { vi: 'thêm bên dưới', ko: '아래 더보기' },
+  'Latest archive': { vi: 'Lưu trữ mới nhất', ko: '최신 아카이브' },
+  'More articles': { vi: 'Thêm bài viết', ko: '더 많은 기사' },
+
+  // ── News detail ──
+  'News not found': { vi: 'Không tìm thấy tin', ko: '뉴스를 찾을 수 없습니다' },
+  'We could not find this story.': { vi: 'Chúng tôi không tìm thấy bài viết này.', ko: '해당 기사를 찾을 수 없습니다.' },
+  'Loading story…': { vi: 'Đang tải bài viết…', ko: '기사 불러오는 중…' },
+  'News story': { vi: 'Bài viết', ko: '뉴스 기사' },
+  'KBIT NEWS ARCHIVE': { vi: 'KHO TIN KBIT', ko: 'KBIT 뉴스 아카이브' },
+  'Story info': { vi: 'Thông tin bài', ko: '기사 정보' },
+  'min': { vi: 'phút', ko: '분' },
+  'Selected frames': { vi: 'Hình ảnh chọn lọc', ko: '선별 이미지' },
+  'Related stories': { vi: 'Bài liên quan', ko: '관련 기사' },
+  'Edition': { vi: 'Chuyên mục', ko: '에디션' },
 }
 
 export function tr(en: string, locale: Locale): string {

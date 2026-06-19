@@ -15,6 +15,7 @@ import {
   resolveNewsSlug,
   rewriteNewsHtml,
 } from '@/lib/news'
+import { tr } from '@/lib/ui'
 import s from './NewsDetail.module.css'
 
 export default function NewsDetail() {
@@ -31,7 +32,7 @@ export default function NewsDetail() {
         <Nav />
         <main className={s.notFound}>
           <div className="container">
-            <span className="overline">Loading story…</span>
+            <span className="overline">{tr('Loading story…', locale)}</span>
           </div>
         </main>
         <Footer />
@@ -45,11 +46,11 @@ export default function NewsDetail() {
         <Nav />
         <main className={s.notFound}>
           <div className="container">
-            <span className="overline">News not found</span>
-            <h1>We could not find this story.</h1>
+            <span className="overline">{tr('News not found', locale)}</span>
+            <h1>{tr('We could not find this story.', locale)}</h1>
             <Link to={`/${locale}/news`} className={s.backLink}>
               <ArrowLeft size={16} weight="bold" aria-hidden="true" />
-              Back to News
+              {tr('Back to News', locale)}
             </Link>
           </div>
         </main>
@@ -72,7 +73,7 @@ export default function NewsDetail() {
 
   const heroFacts = [
     { icon: CalendarBlank, label: 'Published', value: formatDate(item.publishedAt, locale) },
-    { icon: Eye, label: 'Reading time', value: `${readingTime} min` },
+    { icon: Eye, label: 'Reading time', value: `${readingTime} ${tr('min', locale)}` },
     { icon: Tag, label: 'Edition', value: item.category },
   ]
 
@@ -91,7 +92,7 @@ export default function NewsDetail() {
             <div className={s.heroGrid}>
               <article className={`${s.heroCopy} reveal-soft`}>
                 <div className="section-divider" />
-                <span className="overline">News story</span>
+                <span className="overline">{tr('News story', locale)}</span>
                 <h1>{title}</h1>
                 <p className={s.heroLead}>{lead}</p>
 
@@ -127,7 +128,7 @@ export default function NewsDetail() {
           <div className="container">
             <div className={s.articleGrid}>
               <article className={`${s.articleBody} reveal-soft`}>
-                <div className={s.issueLabel}>KBIT NEWS ARCHIVE</div>
+                <div className={s.issueLabel}>{tr('KBIT NEWS ARCHIVE', locale)}</div>
                 <h2>{title}</h2>
 
                 <div className={s.articleDeck}>
@@ -141,22 +142,22 @@ export default function NewsDetail() {
 
               <aside className={s.articleRail}>
                 <article className={`${s.sideCard} motion-surface reveal`}>
-                  <div className={s.sideTag}>Story info</div>
+                  <div className={s.sideTag}>{tr('Story info', locale)}</div>
                   <div className={s.noteGrid}>
                     <div>
-                      <span>Published</span>
+                      <span>{tr('Published', locale)}</span>
                       <strong>{formatDate(item.publishedAt, locale)}</strong>
                     </div>
                     <div>
-                      <span>Reading time</span>
-                      <strong>{readingTime} min</strong>
+                      <span>{tr('Reading time', locale)}</span>
+                      <strong>{readingTime} {tr('min', locale)}</strong>
                     </div>
                   </div>
                 </article>
 
                 {gallery.length > 0 && (
                   <article className={`${s.sideCard} motion-surface reveal`}>
-                    <div className={s.sideTag}>Selected frames</div>
+                    <div className={s.sideTag}>{tr('Selected frames', locale)}</div>
                     <div className={s.galleryGrid}>
                       {gallery.map((img, index) => (
                         <figure key={`${img.localPath}-${index}`} className={s.galleryItem}>
@@ -176,7 +177,7 @@ export default function NewsDetail() {
                 )}
 
                 <article className={`${s.sideCard} motion-surface reveal`}>
-                  <div className={s.sideTag}>Related stories</div>
+                  <div className={s.sideTag}>{tr('Related stories', locale)}</div>
                   <div className={s.relatedList}>
                     {related.map(story => (
                       <Link key={story.slug} to={`/${locale}/news/${resolveNewsSlug(story, locale)}`} className={s.relatedItem}>

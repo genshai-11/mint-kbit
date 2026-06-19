@@ -7,6 +7,7 @@ import ContentImg from '@/components/ContentImg'
 import PageHero from '@/components/PageHero'
 import { eventImageLocalPath, sortEventsByStartDesc, useEvents } from '@/lib/content/events'
 import { isLocale, type Locale } from '@/lib/locale'
+import { tr } from '@/lib/ui'
 import s from './Events.module.css'
 
 type Filter = 'all' | 'upcoming' | 'past'
@@ -53,6 +54,9 @@ export default function Events() {
     { id: 'upcoming', label: 'Upcoming' },
     { id: 'past', label: 'Past Events' },
   ]
+  const summaryLabel = filter === 'all'
+    ? tr('Programs listed', locale)
+    : tr(filter === 'upcoming' ? 'Upcoming programs' : 'Past programs', locale)
 
   return (
     <>
@@ -60,9 +64,9 @@ export default function Events() {
 
       <PageHero
         watermark="EVENTS"
-        overline="Programs & Education"
-        title={<>Global Workshops &amp;<br />Clinical Summits</>}
-        desc="Join Korea's leading clinicians at international events bridging evidence-based aesthetics and hands-on training."
+        overline={tr('Programs & Education', locale)}
+        title={tr('Global Workshops & Clinical Summits', locale)}
+        desc={tr("Join Korea's leading clinicians at international events bridging evidence-based aesthetics and hands-on training.", locale)}
         image="events/event-12-bannerimageurl-ade6047b.png"
         imageAlt="KBIT international clinical workshop audience"
       />
@@ -75,7 +79,7 @@ export default function Events() {
               className={`${s.filterTab} ${filter === tab.id ? s.filterTabActive : ''}`}
               onClick={() => setFilter(tab.id)}
             >
-              {tab.label}
+              {tr(tab.label, locale)}
             </button>
           ))}
         </div>
@@ -85,7 +89,7 @@ export default function Events() {
         <section className={s.featured}>
           <div className="container">
             <div className="section-divider" />
-            <span className="overline" style={{ marginBottom: 'var(--sp-5)', display: 'block' }}>Featured Event</span>
+            <span className="overline" style={{ marginBottom: 'var(--sp-5)', display: 'block' }}>{tr('Featured Event', locale)}</span>
             <article className={`${s.featuredCard} reveal-clip reveal--delay-2`}>
               <div className={s.featuredImgWrap}>
                 <ContentImg
@@ -100,7 +104,7 @@ export default function Events() {
                 />
               </div>
               <div className={s.featuredBody}>
-                <span className={s.featuredBadge}>{featured.status === 'past' ? 'Past Event' : 'Upcoming'}</span>
+                <span className={s.featuredBadge}>{featured.status === 'past' ? tr('Past Event', locale) : tr('Upcoming', locale)}</span>
                 <h2 className={s.featuredTitle}>{t(featured.title, locale)}</h2>
                 <div className={s.featuredMeta}>
                   <div className={s.metaItem}>
@@ -121,10 +125,10 @@ export default function Events() {
                 <p className={s.featuredDesc}>{t(featured.description, locale)}</p>
                 <div className={s.featuredActions}>
                   <Link to={`/${locale}/events/${featured.slug}`} className={s.btnPrimary}>
-                    View detail <ArrowRight size={15} weight="bold" aria-hidden="true" />
+                    {tr('View detail', locale)} <ArrowRight size={15} weight="bold" aria-hidden="true" />
                   </Link>
                   <Link to={`/${locale}/contact`} className={s.btnGhost}>
-                    Request program info
+                    {tr('Request program info', locale)}
                   </Link>
                 </div>
               </div>
@@ -138,12 +142,12 @@ export default function Events() {
           <div className={`${s.gridHeader} reveal-soft`}>
             <div>
               <div className="section-divider" />
-              <span className="overline">Program Index</span>
-              <h2 className={s.gridTitle}>Explore KBIT clinical programs</h2>
+              <span className="overline">{tr('Program Index', locale)}</span>
+              <h2 className={s.gridTitle}>{tr('Explore KBIT clinical programs', locale)}</h2>
             </div>
             <div className={s.gridSummary}>
               <span>{gridEvents.length}</span>
-              <p>{filter === 'all' ? 'Programs listed' : `${filter} programs`}</p>
+              <p>{summaryLabel}</p>
             </div>
           </div>
 
@@ -168,7 +172,7 @@ export default function Events() {
                       height={360}
                     />
                     <span className={`${s.statusBadge} ${ev.status === 'past' ? s.statusPast : s.statusUpcoming}`}>
-                      {ev.status === 'past' ? 'Past' : 'Upcoming'}
+                      {ev.status === 'past' ? tr('Past', locale) : tr('Upcoming', locale)}
                     </span>
                   </div>
                   <div className={s.cardBody}>
@@ -185,7 +189,7 @@ export default function Events() {
                     </div>
                     <h3 className={s.cardTitle}>{t(ev.title, locale)}</h3>
                     <div className={s.cardFooter}>
-                      <span>{ev.language || 'Multilingual'}</span>
+                      <span>{ev.language || tr('Multilingual', locale)}</span>
                       <ArrowRight size={16} weight="bold" aria-hidden="true" />
                     </div>
                   </div>
@@ -196,7 +200,7 @@ export default function Events() {
             <div className={s.eventsGrid}>
               <div className={s.emptyState}>
                 <div className={s.emptyIcon}>.</div>
-                <p className={s.emptyText}>No {filter === 'upcoming' ? 'upcoming' : 'past'} events found.</p>
+                <p className={s.emptyText}>{tr(filter === 'upcoming' ? 'No upcoming events found.' : 'No past events found.', locale)}</p>
               </div>
             </div>
           )}
