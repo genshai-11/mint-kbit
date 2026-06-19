@@ -43,3 +43,4 @@ translations-needed.csv
 .env.local
 kbit-migration.ndjson
 studio/.sanity/
+.vercel
