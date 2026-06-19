@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { LOCALES, type Locale, isLocale } from '@/lib/locale'
 import { assetSrc } from '@/lib/assets'
+import { tr } from '@/lib/ui'
 import s from './Nav.module.css'
 
 const NAV_LINKS = [
@@ -42,7 +43,7 @@ export default function Nav() {
               to={`/${currentLocale}/${path}`}
               className={({ isActive }) => `${s.link} ${isActive ? s.linkActive : ''}`}
             >
-              {label}
+              {tr(label, currentLocale)}
             </NavLink>
           ))}
         </div>
@@ -61,7 +62,7 @@ export default function Nav() {
             ))}
           </div>
           <NavLink to={`/${currentLocale}/membership`} className={s.ctaBtn}>
-            Join KBIT
+            {tr('Join KBIT', currentLocale)}
           </NavLink>
           <button className={s.hamburger} onClick={() => setOpen(true)} aria-label="Open menu">
             <span /><span /><span />
@@ -82,7 +83,7 @@ export default function Nav() {
                   className={s.drawerLink}
                   onClick={() => setOpen(false)}
                 >
-                  {label}
+                  {tr(label, currentLocale)}
                 </NavLink>
               ))}
             </div>

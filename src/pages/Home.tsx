@@ -10,6 +10,7 @@ import { eventImageLocalPath, sortEventsByStartDesc, useEvents } from '@/lib/con
 import { useHomeHero } from '@/lib/content/site'
 import { usePartners } from '@/lib/content/partners'
 import { isLocale, type Locale } from '@/lib/locale'
+import { tr } from '@/lib/ui'
 import s from './Home.module.css'
 
 const STAT_TARGETS = [16, 50, 8, 500]
@@ -120,18 +121,18 @@ export default function Home() {
           <div className="container">
             <div className={s.heroInner}>
               <div className={s.heroPanel}>
-                <span className={`${s.heroTag} reveal reveal--delay-1`}>KBIT Association</span>
+                <span className={`${s.heroTag} reveal reveal--delay-1`}>{tr('KBIT Association', locale)}</span>
                 <h1 className={`${s.heroHeading} reveal reveal--delay-2`}>{heroSlides[slide]?.heading}</h1>
                 <p className={`${s.heroSub} reveal reveal--delay-3`}>{heroSlides[slide]?.sub}</p>
                 <div className={`${s.heroCtas} reveal reveal--delay-4`}>
-                  <Link to={`/${locale}/events`} className={s.btnPrimary}>Upcoming Events</Link>
-                  <Link to={`/${locale}/about`} className={s.btnOutline}>Learn More</Link>
+                  <Link to={`/${locale}/events`} className={s.btnPrimary}>{tr('Upcoming Events', locale)}</Link>
+                  <Link to={`/${locale}/about`} className={s.btnOutline}>{tr('Learn More', locale)}</Link>
                 </div>
               </div>
               <div className={`${s.heroSideNote} reveal reveal--delay-4`} aria-hidden="true">
-                <span>Clinical</span>
-                <strong>Exchange</strong>
-                <span>Korea / Asia</span>
+                <span>{tr('Clinical', locale)}</span>
+                <strong>{tr('Exchange', locale)}</strong>
+                <span>{tr('Korea / Asia', locale)}</span>
               </div>
             </div>
           </div>
@@ -145,8 +146,8 @@ export default function Home() {
                   <div>
                     <div className={s.statNumber}>{statsVals[i]}{suffix}</div>
                     <div className={s.statLabel}>
-                      <span className={s.labelFull}>{label}</span>
-                      <span className={s.labelShort}>{shortLabel}</span>
+                      <span className={s.labelFull}>{tr(label, locale)}</span>
+                      <span className={s.labelShort}>{tr(shortLabel, locale)}</span>
                     </div>
                   </div>
                 </div>
@@ -172,15 +173,14 @@ export default function Home() {
           <div className={s.aboutGrid}>
             <div className={`${s.aboutText} ${aboutVisible ? 'reveal reveal--delay-1' : ''}`}>
               <div className="section-divider" />
-              <span className="overline">About KBIT</span>
+              <span className="overline">{tr('About KBIT', locale)}</span>
               <h2 id="about-heading" className={s.aboutHeading}>
-                Advancing Korean Beauty &amp; Medical Technology
+                {tr('Advancing Korean Beauty & Medical Technology', locale)}
               </h2>
               <p className={s.aboutLead}>
-                KBIT connects Korea's foremost clinical experts with medical professionals and institutions across Asia and beyond.
-                Through rigorous training, international events, and curated partnerships, we drive the future of aesthetic medicine.
+                {tr("KBIT connects Korea's foremost clinical experts with medical professionals and institutions across Asia and beyond. Through rigorous training, international events, and curated partnerships, we drive the future of aesthetic medicine.", locale)}
               </p>
-              <Link to={`/${locale}/about`} className={s.btnNavy}>About KBIT</Link>
+              <Link to={`/${locale}/about`} className={s.btnNavy}>{tr('About KBIT', locale)}</Link>
             </div>
             <div className={`${s.aboutVisual} ${aboutVisible ? 'reveal reveal--delay-2' : ''}`}>
               <Img
@@ -202,10 +202,10 @@ export default function Home() {
           <div className={s.sectionHeader}>
             <div className={s.sectionMeta}>
               <div className="section-divider" />
-              <span className="overline">Events &amp; Workshops</span>
-              <h2 id="events-heading" className={s.sectionTitle}>Upcoming Programs</h2>
+              <span className="overline">{tr('Events & Workshops', locale)}</span>
+              <h2 id="events-heading" className={s.sectionTitle}>{tr('Upcoming Programs', locale)}</h2>
             </div>
-            <Link to={`/${locale}/events`} className={s.btnGhost}>View all events →</Link>
+            <Link to={`/${locale}/events`} className={s.btnGhost}>{tr('View all events →', locale)}</Link>
           </div>
 
           <div className={s.eventsGrid}>
@@ -226,7 +226,7 @@ export default function Home() {
                     width={640}
                     height={360}
                   />
-                  <span className={s.eventBadge}>{ev.status === 'past' ? 'Past' : 'Upcoming'}</span>
+                  <span className={s.eventBadge}>{ev.status === 'past' ? tr('Past', locale) : tr('Upcoming', locale)}</span>
                 </div>
                 <div className={s.eventBody}>
                   <div className={s.eventMeta}>
@@ -244,7 +244,7 @@ export default function Home() {
       {/* ===== Partners Strip ===== */}
       <section ref={partnersRef} className={s.partners} aria-label="Scientific partners">
         <div className="container">
-          <p className={`${s.partnersTitle} ${partnersVisible ? 'reveal' : ''}`}>Scientific &amp; Industry Partners</p>
+          <p className={`${s.partnersTitle} ${partnersVisible ? 'reveal' : ''}`}>{tr('Scientific & Industry Partners', locale)}</p>
         </div>
         <div className={`${s.partnersInner} ${partnersVisible ? s.partnersInnerVisible : ''}`}>
           <div className={s.partnersTrack} aria-hidden="true">
@@ -279,16 +279,16 @@ export default function Home() {
           <div className={s.ctaFrame}>
             <span className={s.ctaWatermark} aria-hidden="true">KBIT</span>
             <SealCheck className={s.ctaSeal} size={220} weight="thin" aria-hidden="true" />
-            <span className={`${s.ctaOverline} ${ctaVisible ? 'reveal' : ''}`}>Ready to Elevate Your Practice?</span>
+            <span className={`${s.ctaOverline} ${ctaVisible ? 'reveal' : ''}`}>{tr('Ready to Elevate Your Practice?', locale)}</span>
             <h2 id="cta-heading" className={`${s.ctaHeading} ${ctaVisible ? 'reveal reveal--delay-1' : ''}`}>
-              Join the Vanguard of Korean Clinical Excellence
+              {tr('Join the Vanguard of Korean Clinical Excellence', locale)}
             </h2>
             <p className={`${s.ctaSub} ${ctaVisible ? 'reveal reveal--delay-2' : ''}`}>
-              Access world-class training, global networks, and Korea's most advanced aesthetic protocols.
+              {tr("Access world-class training, global networks, and Korea's most advanced aesthetic protocols.", locale)}
             </p>
             <div className={`${s.ctaBtns} ${ctaVisible ? 'reveal reveal--delay-3' : ''}`}>
-              <Link to={`/${locale}/membership`} className={s.btnPrimary}>Apply for Membership</Link>
-              <Link to={`/${locale}/contact`} className={s.btnOutline}>Contact Us</Link>
+              <Link to={`/${locale}/membership`} className={s.btnPrimary}>{tr('Apply for Membership', locale)}</Link>
+              <Link to={`/${locale}/contact`} className={s.btnOutline}>{tr('Contact Us', locale)}</Link>
             </div>
           </div>
         </div>
