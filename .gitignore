@@ -44,3 +44,5 @@ translations-needed.csv
 kbit-migration.ndjson
 studio/.sanity/
 .vercel
+playwright-report/
+test-results/
