@@ -1,5 +1,5 @@
 import { FormEvent, useEffect, useMemo, useState } from 'react'
-import { Link, Navigate, Route, Routes, useLocation } from 'react-router-dom'
+import { Link, Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import type { Session, User } from '@supabase/supabase-js'
 import { callFunction, uploadPrivateDocument } from './lib/api'
 import { requireSupabase, supabase, supabaseConfigured } from './lib/supabase'
@@ -46,7 +46,7 @@ export default function App() {
 
   return (
     <Routes>
-      <Route path="/login" element={<Login />} />
+      <Route path="/login" element={session?.user && profile?.role === 'admin' ? <Navigate to="/" replace /> : <Login />} />
       <Route path="/*" element={session?.user && profile?.role === 'admin' ? <AdminLayout user={session.user} profile={profile} /> : <Navigate to="/login" replace />} />
     </Routes>
   )
@@ -55,6 +55,7 @@ export default function App() {
 function Shell({ children }: { children: React.ReactNode }) { return <main className="shell">{children}</main> }
 
 function Login() {
+  const navigate = useNavigate()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [magic, setMagic] = useState(false)
@@ -69,9 +70,10 @@ function Login() {
         if (error) throw error
         setMessage('Check your email for the admin login link.')
       } else {
-        const { error } = await requireSupabase().auth.signInWithPassword({ email, password })
+        const { data, error } = await requireSupabase().auth.signInWithPassword({ email, password })
         if (error) throw error
-        window.location.href = '/'
+        if (!data.session) throw new Error('Sign in did not return a session. Please try again.')
+        navigate('/', { replace: true })
       }
     } catch (err) { setError(err instanceof Error ? err.message : 'Unable to sign in') }
   }
