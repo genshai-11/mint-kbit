@@ -13,7 +13,9 @@ button:disabled { opacity: .5; cursor: not-allowed; }
 .login { width: min(100%, 440px); }
 .form { display: grid; gap: 12px; }
 .form input, .form select, .form textarea { width: 100%; border: 1px solid rgba(18,33,63,.15); border-radius: 12px; padding: 11px 12px; background: white; }
-.check { display: flex; gap: 8px; align-items: center; font-size: 14px; }
+.check, .inlineCheck { display: flex; gap: 8px; align-items: center; font-size: 14px; }
+.inlineCheck { margin-bottom: 8px; font-weight: 700; }
+td input[type="password"] { width: min(100%, 220px); border: 1px solid rgba(18,33,63,.15); border-radius: 12px; padding: 9px 10px; }
 .admin { display: grid; grid-template-columns: 280px 1fr; min-height: 100vh; }
 aside { position: sticky; top: 0; height: 100vh; padding: 26px; background: #12213f; color: white; display: flex; flex-direction: column; gap: 22px; }
 aside h2 { margin: 0; }

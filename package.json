@@ -23,7 +23,8 @@
     "admin:dev": "cd admin && npm run dev",
     "admin:build": "cd admin && npm run build",
     "admin:preview": "cd admin && npm run preview",
-    "test:e2e": "playwright test"
+    "test:e2e": "npm run e2e:build && node scripts/e2e-run.mjs",
+    "e2e:build": "node scripts/e2e-build.mjs"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.7",

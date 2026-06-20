@@ -98,6 +98,7 @@ function Dashboard() {
 function Applications() {
   const [items, setItems] = useState<Application[]>([])
   const [plans, setPlans] = useState<Plan[]>([])
+  const [approvalOptions, setApprovalOptions] = useState<Record<string, { sendInvite: boolean; tempPassword: string }>>({})
   const [error, setError] = useState('')
   const load = async () => {
     const client = requireSupabase()
@@ -111,9 +112,23 @@ function Applications() {
   }
   useEffect(() => { load().catch(e => setError(e.message)) }, [])
   async function approve(app: Application) {
-    try { await callFunction('admin-approve-application', { application_id: app.id, send_invite: true }); await load() } catch (e) { setError(e instanceof Error ? e.message : 'Approve failed') }
+    const options = approvalOptions[app.id] ?? { sendInvite: true, tempPassword: '' }
+    try {
+      await callFunction('admin-approve-application', {
+        application_id: app.id,
+        send_invite: options.sendInvite,
+        temp_password: options.sendInvite ? undefined : options.tempPassword || undefined,
+      })
+      await load()
+    } catch (e) { setError(e instanceof Error ? e.message : 'Approve failed') }
   }
-  return <Page title="Applications">{error && <div className="error">{error}</div>}<table><thead><tr><th>Name</th><th>Email</th><th>Plan</th><th>Status</th><th></th></tr></thead><tbody>{items.map(app => <tr key={app.id}><td>{app.applicant_name}</td><td>{app.applicant_email}</td><td>{plans.find(p=>p.id===app.plan_id)?.name ?? app.plan_id}</td><td>{app.status}</td><td><button onClick={() => approve(app)} disabled={app.status === 'approved_active'}>Approve + invite</button></td></tr>)}</tbody></table></Page>
+  function updateApproval(appId: string, next: Partial<{ sendInvite: boolean; tempPassword: string }>) {
+    setApprovalOptions((current) => {
+      const existing = current[appId] ?? { sendInvite: true, tempPassword: '' }
+      return { ...current, [appId]: { ...existing, ...next } }
+    })
+  }
+  return <Page title="Applications">{error && <div className="error">{error}</div>}<table><thead><tr><th>Name</th><th>Email</th><th>Plan</th><th>Status</th><th>Account setup</th><th></th></tr></thead><tbody>{items.map(app => { const options = approvalOptions[app.id] ?? { sendInvite: true, tempPassword: '' }; return <tr key={app.id}><td>{app.applicant_name}</td><td>{app.applicant_email}</td><td>{plans.find(p=>p.id===app.plan_id)?.name ?? app.plan_id}</td><td>{app.status}</td><td><label className="inlineCheck"><input type="checkbox" checked={options.sendInvite} onChange={e=>updateApproval(app.id, { sendInvite: e.target.checked })} /> Send invite email</label>{!options.sendInvite && <input type="password" placeholder="Temporary password" value={options.tempPassword} onChange={e=>updateApproval(app.id, { tempPassword: e.target.value })} />}</td><td><button onClick={() => approve(app)} disabled={app.status === 'approved_active' || (!options.sendInvite && !options.tempPassword)}>Approve + account</button></td></tr> })}</tbody></table></Page>
 }
 
 function Members() {
