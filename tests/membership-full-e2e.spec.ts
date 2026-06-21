@@ -43,6 +43,20 @@ test.describe('membership admin-to-member workflow', () => {
     await row.getByPlaceholder(/temporary password/i).fill(memberPassword!)
     await row.getByRole('button', { name: /approve \+ account/i }).click()
     await expect(row.getByText(/approved_active/i)).toBeVisible({ timeout: 15000 })
+
+    const documentTitle = `KBIT E2E Shared Document ${unique}`
+    await adminPage.getByRole('link', { name: /documents/i }).click()
+    await expect(adminPage.getByRole('heading', { name: /documents/i })).toBeVisible()
+    await adminPage.getByPlaceholder(/title/i).fill(documentTitle)
+    await adminPage.getByRole('combobox').selectOption('standard')
+    await adminPage.getByPlaceholder(/category/i).fill('e2e')
+    await adminPage.locator('input[type="file"]').setInputFiles({
+      name: `kbit-e2e-shared-${unique}.txt`,
+      mimeType: 'text/plain',
+      buffer: Buffer.from(`KBIT E2E shared document ${unique}`),
+    })
+    await adminPage.getByRole('button', { name: /upload \+ publish/i }).click()
+    await expect(adminPage.getByRole('row').filter({ hasText: documentTitle })).toBeVisible({ timeout: 15000 })
     await adminPage.close()
 
     await page.goto('/en/login')
@@ -55,5 +69,7 @@ test.describe('membership admin-to-member workflow', () => {
     await expect(page.getByText(memberEmail)).toBeVisible()
     await expect(page.getByText(/membership status/i)).toBeVisible()
     await expect(page.getByText(/active/i)).toBeVisible()
+    await expect(page.getByText(/member documents/i)).toBeVisible()
+    await expect(page.getByText(documentTitle)).toBeVisible({ timeout: 15000 })
   })
 })
