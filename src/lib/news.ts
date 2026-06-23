@@ -80,6 +80,14 @@ export function excerptFrom(item: NewsItem, locale: Locale): string {
   return clean.length > 230 ? `${clean.slice(0, 230).trim()}…` : clean
 }
 
+function resolveInlineNewsImageSrc(src: string): string {
+  if (/^(https?:|data:|blob:|\/\/)/i.test(src)) return src
+
+  const normalized = src.replace(/^\/+/, '')
+  const optimized = assetSrc(normalized) || assetSrc(normalized.replace(/^(\.\/)?data\/assets\//, ''))
+  return optimized || src
+}
+
 export function rewriteNewsHtml(item: NewsItem, locale: Locale): string {
   const html = localize(item.content, locale)
   const imageMap = new Map<string, string>()
@@ -87,7 +95,7 @@ export function rewriteNewsHtml(item: NewsItem, locale: Locale): string {
   for (const image of item.images || []) {
     const originalUrl = (image as { originalUrl?: string }).originalUrl
     if (originalUrl && image.localPath) {
-      const src = assetSrc(image.localPath) || `/${image.localPath.replace(/^\/+/, '')}`
+      const src = assetSrc(image.localPath) || resolveInlineNewsImageSrc(image.localPath)
       imageMap.set(originalUrl, src)
     }
   }
@@ -98,6 +106,9 @@ export function rewriteNewsHtml(item: NewsItem, locale: Locale): string {
   })
 
   output = output
+    .replace(/(<img\b[^>]*?\ssrc\s*=\s*)(["'])([^"']+)\2/gi, (_match, prefix: string, quote: string, src: string) => {
+      return `${prefix}${quote}${resolveInlineNewsImageSrc(src)}${quote}`
+    })
     .replace(/\sstyle="[^"]*"/gi, '')
     .replace(/\sstyle='[^']*'/gi, '')
 
